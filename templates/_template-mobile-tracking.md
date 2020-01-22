@@ -97,21 +97,175 @@ The <notranslate>**EVENTS**</notranslate> table shows summary data on the perfor
 
 On the top right side of the table you can find a download button to retrieve the chart's content as a CSV file.  For more info about Ads Analytics refer [here](/activity-reports-analytics/paid-ads-analytics/).
 
-{! ingredients/deep-linked-ads/people-based-attribution.md !}
+#### View your data with People-Based Attribution
 
-{! ingredients/deep-linked-ads/view-through-attribution.md !}
+The [Ads Analytics Page](https://dashboard.branch.io/ads/analytics) on the Branch dashboard shows the performance of your ad campaigns _across both web and app_. You can view performance over time, including purchase and other custom events.
+
+Events are attributed using Branch's unified last-click attribution model. This means that Branch will attribute to the last click across channels, and across platforms.
+
+For example, if a customer clicks a Branch email link, and then clicks an ad, installs the the app and purchases an item, Branch will attribute the install and the purchase to the last clicked ad link.
+
+If the customer then goes on to purchase an item on web within the attribution window, Branch will also attribute the web purchase to the same ad link, connecting the web and app actions taken by a single user for a more accurate view of your marketing channels and customer behavior.
+
+![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/install-by-secondary-pub.png)
+
+You can read more about [People-Based Attribution here](/dashboard/people-based-attribution/).
+
+
+#### View-Through Attribution (VTA) with Impression Pixels
+
+View-through attribution allows you to track installs, session starts and conversion events back to an ad impression, even if the ad was never clicked on.
+
+Our view-through attribution logic is currently as follows for any given event:
+
+- If there's a click within a valid attribution window, give credit to the click.
+- If there's no click within a valid attribution window, give credit to the last impression that was within a valid attribution window.
+
+Currently, view through attribution is supported for Self Attributing Networks (SANs), such as Facebook and Google, and non-SAN networks with server to server impression link support. To create a impression tracking link for non-SAN networks, simply [create an ad link](#create-an-ad-link), and grab the impression link from the final step of link creation. SAN networks support VTA without any additional links.
+
 
 ## Advanced
 
-{! ingredients/deep-linked-ads/add-more-postbacks-short.md !}
+#### Adding/Enabling More Postbacks
 
-{! ingredients/deep-linked-ads/all-events-toggle.md !}
+Basic postbacks are automatically activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then add additional postbacks, for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_.
 
-{! ingredients/deep-linked-ads/edit-postbacks.md !}
+To add a postback:
 
-{! ingredients/deep-linked-ads/tracking-link-params.md !}
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. Click the <notranslate>**Add New Postback**</notranslate> button at the bottom of the screen.
+4. A modal will appear with Branch default events, as well as any commerce (reserved events like _PURCHASE)_ or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click <notranslate>**Save**</notranslate>. This will be the event that triggers your new postback.
+    1. NOTE: If Branch does not already have a postback template for a partner, please provide a valid URL for your partner.
 
-{! ingredients/deep-linked-ads/attribution-windows.md !}
+![image](/_assets/img/pages/partner-management/postback-add.gif)
+
+#### Sending All Events
+
+If you want to send <notranslate>**All Events**</notranslate> - whether attributed to this partner or not  - you can enable this setting by checking the <notranslate>**All Events**</notranslate> box on a per postback basis.
+
+!!! warning "Privacy Implications"
+	As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
+
+![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/all-events.png)
+
+
+#### Editing Templates
+
+In most cases, the default postback URL generated from your selections is sufficient to provide postback notification to interested parties.
+
+But sometimes you may need/want to edit or remove a parameter from the postback URL, or append a macro expression/variable to include additional information.
+
+!!! tip "Example"
+	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
+
+Please refer to [Postback Macros & Functions](#postback-macros-functions) when looking to append additional macros.
+
+To edit the postback template:
+
+1. Under <notranslate>**Partner Management**</notranslate>, select the partner for whom you want to add/edit their postback.
+2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
+3. In the <notranslate>**Postback URL**</notranslate> field, add/edit/remove the key-value pairs necessary.
+    1. You must include a `&` before each key-value pairs you append.
+4. Click <notranslate>**Save**</notranslate>.
+5. Alternatively, hover on the three dots icon to the right of the postback and click <notranslate>**Advanced Edit**</notranslate>.
+6. In the <notranslate>**Send a Webhook to**</notranslate> field, add/edit/remove the key-value pairs necessary.
+    2. You must include a `&` before each key-value pairs you append.
+7. Click <notranslate>**Save**</notranslate>.
+
+!!! tip "Reset Postbacks"
+    We all make mistakes from time to time. If you need to reset your postbacks and your credentials, navigate to the <notranslate>**Account Settings**</notranslate> tab and look for the <notranslate>**Reset all settings**</notranslate> button. Be careful though! This will disable the ad partner, clear out all credentials and postbacks that you've set up, and return the ad partner to its basic configuration. You can then start afresh.
+
+
+Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the <notranslate>**Link Parameters**</notranslate> tab:
+
+![image](/_assets/img/ingredients/deep-linked-ads/link-parameters.png)
+
+Additional parameters for advanced analysis may be added to the link after the '?' or '&' character, to trace extra information.
+
+!!! tip "Example Tracking Link with Additional Parameters"
+    Example Branch link including additional parameters to pass Agency and Sub Publisher information:`https://tracking.app.link?$3p=a_partner&~agency=myAgency&~secondary_publisher=best_publisher`
+
+The following parameters are available to use within the pre-generated tracking link:
+
+#### Campaign Information
+
+Branch Parameter | Description
+--- | ---
+`~agency` | Agency name
+`~secondary_publisher` | Sub Publisher
+`~campaign` | Campaign name
+`~campaign_id` | Campaign ID
+`~channel` | Channel
+`~feature` | Feature
+`~stage` | Stage
+`~tags` | Tags
+`~creative_name` | Creative name
+`~creative_id` | Creative ID
+`~ad_set_name` | Ad set name
+`~ad_set_id` | Ad set ID
+`~ad_name` | Ad unit name
+`~ad_id` | Ad unit ID
+`~banner_dimensions` | Banner Dimension
+`~placement` | Placement
+`~keyword_id` | Keyword ID
+`~keyword_text` | Keyword Text
+
+#### Device Information
+
+Branch Parameter | Description
+--- | ---
+`%24aaid` | Google AAID
+`%24idfa` | Apple IDFA
+
+#### Spend Calculation
+
+!!! info "Cost Data Availability"
+    Cost data passed via these macros is available in exports but is not visible in the Branch dashboard.
+
+Branch Parameter | Description
+--- | ---
+`~cost_model` | Cost Model; e.g. CPI, eCPC
+`~cost_value` | Cost Value; e.g. 10.00
+`~cost_currency` | Cost Currency; e.g. USD
+
+
+#### Changing Attribution Windows
+
+Attribution windows can be specified at the global account level or on a per link basis with the link level window taking priority. See the below instructions for setup.
+
+For customer experience and data accuracy, please do not set your deep linking window longer than the other attribution windows.
+
+#### Account Level Attribution Windows
+
+You can edit your attribution windows under Link Settings > Attribution Windows.
+
+   ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+
+Learn more about account level attribution windows in [People-Based Attribution](/dashboard/people-based-attribution/#attribution-windows).
+
+#### Ad Network Attribution Windows
+
+You can edit your attribution windows at the ad network level, if your ad network requires it. This is recommended when you enable networks like Facebook and Google, who may have different windows for installs. With this, you can preserve your Account Level Attribution Windows, as well.
+
+   ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+
+#### Link Level Attribution Windows
+
+To set attribution windows on a link level, you can append the following parameters to your generated Branch link.
+
+Key | Example Link
+--- | ---
+`$click_install_window_days`| https://branchster.app.link/hpNVE52gxE?$click_install_window_days=3
+`$click_session_start_window_days` | https://branchster.app.link/hpNVE52gxE?$click_session_start_window_days=7
+`$click_conversion_window_days` | https://branchster.app.link/hpNVE52gxE?$click_session_start_window_days=30
+`$impression_install_window_days`| https://branchster.app.link/hpNVE52gxE?$impression_install_window_days=3
+`$impression_session_start_window_days` | https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=1
+`$impression_conversion_window_days` | https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=7
+
+!!! warning "Link Level Attribution Support for Standard Branch links"
+    As of July 2017, link level attribution window setting is only available on standard Branch links. Special Branch links such as the ones used for Google's Universal App Campaign or Play Store links with Branch link id parameters are currently not supported.
+
 
 {! ingredients/deep-linked-ads/reset-ad-settings.md !}
 
