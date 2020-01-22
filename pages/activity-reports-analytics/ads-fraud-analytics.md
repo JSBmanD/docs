@@ -4,7 +4,7 @@ title: Fraud Analytics
 ## Overview
 
 !!! warning "Viewing Fraud Data Permissions"
-	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission.  Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
+	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission. Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
 
 Branch’s Fraud Detection Platform uses an intelligent blacklist to block known bad actors in real time, ensuring customers don’t pay for fraudulent traffic. It includes core metrics that help identify forms of fraud such as install hijacking, click flooding and device reset fraud.
 
