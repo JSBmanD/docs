@@ -63,10 +63,10 @@ template: main-lp.html
     </div>
     <div class="clearfix"></div>
   </div>
-  <!-- divider -->
-  <hr style="border:0; background-color: #f0f0f0; height: 5px; margin: 40px 0;" />
   <!-- bottom nav -->
   <div class="bottom-nav">
+    <!-- divider -->
+    <hr style="border:0; background-color: #f0f0f0; height: 5px; margin: 40px 0;" />
     <div class="nav-wrap">
       <a href="https://support.branch.io/support/solutions/folders/6000232535">
         <img src="/_assets/img/pages/main-page/how-to-dot.png" alt="How To Guides"/>
@@ -79,10 +79,6 @@ template: main-lp.html
       <a href="https://support.branch.io/support/solutions/folders/6000232748">
         <img src="/_assets/img/pages/main-page/updates-dot.png" alt="Product Updates"/>
         <p>Product Updates</p>
-      </a>
-      <a href="/translations/overview">
-        <img src="/_assets/img/pages/main-page/supported-languages.png" alt="Translated Documentation"/>
-        <p>Translated Documentation</p>
       </a>
     </div>
   </div>
