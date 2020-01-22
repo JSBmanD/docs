@@ -145,6 +145,7 @@ nav:
     - Creating Branch Links:
       - Creating Quick Links: links/quick-links.md
       - Creating Ad Links: links/creating-ad-links.md
+    - Adding Test Devices: links/adding-test-devices.md
   - Developer Resources:
     - Overview: resources/native-sdks-and-plugins.md
     - Branch SDKs & API:

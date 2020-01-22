@@ -16,10 +16,6 @@ A Branch link is an actual page on the web. When users click a Branch link, they
     <img src="../../../_assets/img/pages/links/advanced-config.png" />
     <p>Advanced Settings</p>
   </a>
-  <a href="/links/quick-links/">
-    <img src="../../../_assets/img/pages/links/create-link.png" />
-    <p>Creating Quick Links</p>
-  </a>
 </div>
 <!--/ Link Configuration -->
 
@@ -57,4 +53,15 @@ A Branch link is an actual page on the web. When users click a Branch link, they
     <p>Ad Links</p>
   </a>
 </div>
-<!--/ Deep Links -->
+<!--/ Branch Links -->
+
+## Test Devices
+
+<!-- Test Devices -->
+<div class="nav-wrap flex-wrap">
+  <a href="/links/adding-test-devices/">
+		<img src="../../../_assets/img/pages/links/test-device.png" />
+		<p>Adding a Test Device</p>
+	</a>
+</div>
+<!--/ Test Devices -->
