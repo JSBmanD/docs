@@ -9,7 +9,12 @@ This guide will walk you through how to setup your campaigns using Branch Univer
 !!! warning "Branch SDK Required"
     Before enabling the partner integration, please make sure you've implemented the [Branch SDK](/resources/native-sdks-and-plugins/) in your application.  This is required to ensure deep linking and attribution. We also highly recommend implementing [event measurement](/apps/v2event/#overview) and passing event metadata to your partner.
 
-{! ingredients/deep-linked-ads/enable-partner.md !}
+### Enabling the Integration
+
+1. Visit the [Ads page](https://dashboard.branch.io/ads) on the Branch dashboard.
+2. Select [Partner Management](https://dashboard.branch.io/ads/partner-management) from the sidebar.
+3. Search for your <notranslate>**Universal Ads Partner**</notranslate>.
+4. Select Ad Partner Name and hit <notranslate>**Save & Enable**</notranslate>.
 
 ![image](/_assets/img/pages/deep-linked-ads/noname/noname-enable.png)
 
@@ -24,9 +29,51 @@ Basic postbacks will automatically be activated for events like _Install_ and _P
 
 ![image](/_assets/img/pages/deep-linked-ads/noname/noname-postbacks.png)
 
-{! ingredients/deep-linked-ads/create-ad-link.md !}
+### Creating an ad link
 
-{! ingredients/deep-linked-ads/view-ad-link-data.md !}
+Once you've enabled an integration it's time to create a tracking link.
+
+1. First, select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format. For Search or Display campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>. <notranslate>**Product Links**</notranslate> are for shopping or dynamic remarketing campaigns.
+
+    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
+
+1. At this point you need to name your link. Select something that will make it easy to find if you need it later. Your Ad Format and Ad Partner should be selected already, but feel free to choose one if they aren't. It's important that you select the right Ad Partner for analytics later on. Click <notranslate>**Configure Options**</notranslate> to continue.
+
+    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-name.png)
+
+1. This is your chance to add deep link data and analytics tags. Analytics tags are important for later segmentation, so click the <notranslate>**Analytics**</notranslate> sub tab to add a Channel and Campaign value.
+
+    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-tags.png)
+
+    !!! tip "Set Analytics tags"
+
+        It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "YouTube", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts."
+
+    !!! info "Links Created by Agency Users"
+        When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup.
+
+
+1. Click <notranslate>**Create Link Now**</notranslate>, and you have your tracking link! Take this link and give it to your Ad Partner's Account Manager or paste it into the tracking section of your campaign yourself.
+
+    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-completed.png)
+
+
+### Viewing Your Data
+
+The Ads Analytics Page on the Branch dashboard provides an interactive time series graph and table to view the performance of your Ad campaigns:
+
+- Easily interact with your Analytics data breakdown and compare aspects of your Ad campaigns' performance by using the <notranslate>**Compare by**</notranslate> button to add a parameter to split the data displayed data by.
+- You can also use the <notranslate>**Add Filter +**</notranslate> button to refine the data displayed to gain deeper insight into the performance of your Ad campaigns.
+
+The <notranslate>**TRENDS**</notranslate> table shows the chart and breakdown of last 7 days data on the campaign performance by ad partner.
+
+![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/trends-graph.png)
+
+The <notranslate>**EVENTS**</notranslate> table shows summary data on the performance of each Ad campaign.
+
+![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/events-table.png)
+
+On the top right side of the table you can find a download button to retrieve the chart's content as a CSV file.  For more info about Ads Analytics refer [here](/activity-reports-analytics/paid-ads-analytics/).
 
 !!! info "Advanced Setup"
     Please refer to our [Advanced Universal Ads](/deep-linked-ads/branch-universal-ads-advanced/) guide for advanced options when enabling a Universal Ads partner.

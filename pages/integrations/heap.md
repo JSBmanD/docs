@@ -7,7 +7,7 @@ title: Heap
 
 This guide will walk you through how to send your Branch data to **[Heap](https://heap.io/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

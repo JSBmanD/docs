@@ -7,7 +7,7 @@ title: Scalarr
 
 This guide will walk you through how to send your Branch data to **[Scalarr](https://scalarr.io/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

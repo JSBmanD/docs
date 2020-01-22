@@ -7,7 +7,7 @@ title: 24Metrics Fraudshield
 
 This guide will walk you through how to send your Branch data to **[24Metrics Fraudshield](https://24metrics.com/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 
