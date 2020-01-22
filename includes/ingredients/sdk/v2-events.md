@@ -18,5 +18,4 @@ Use the table below to quickly find the event you want to track.
 | <notranslate>**Complete Registration**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventCompleteRegistration` | `BRANCH_STANDARD_EVENT.COMPLETE_REGISTRATION` | `COMPLETE_REGISTRATION`
 | <notranslate>**Complete Tutorial**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventCompleteTutorial` | `BRANCH_STANDARD_EVENT.COMPLETE_TUTORIAL` | `COMPLETE_TUTORIAL`
 | <notranslate>**Achieve Level**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventAchieveLevel` | `BRANCH_STANDARD_EVENT.ACHIEVE_LEVEL` | `ACHIEVE_LEVEL`
-| <notranslate>**Unlock Achievement**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventUnlockAchievement` | `BRANCH_STANDARD_EVENT.UNLOCK_ACHIEVEMENT` | `UNLOCK_ACHIEVEMENT
-`
+| <notranslate>**Unlock Achievement**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventUnlockAchievement` | `BRANCH_STANDARD_EVENT.UNLOCK_ACHIEVEMENT` | `UNLOCK_ACHIEVEMENT`
