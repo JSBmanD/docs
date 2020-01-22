@@ -1,7 +1,7 @@
 ---
 title: Android SDK
 ---
-!!! info "Current SDK Version 4.2.0"
+!!! info "Current SDK Version 4.3.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
 !!! warning "Android Studio Version"
@@ -69,7 +69,6 @@ title: Android SDK
 
             // required for all Android apps
             implementation 'io.branch.sdk.android:library:4.+'
-            implementation 'com.android.installreferrer:installreferrer:1.1'
 
             // required if your app is in the Google Play Store (tip: avoid using bundled play services libs)
             implementation 'com.google.firebase:firebase-appindexing:19.0.0' // App indexing
