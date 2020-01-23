@@ -84,7 +84,7 @@ title: Android SDK
         ```
 
 !!! warning "Using Branch Android SDK versions below 4.3.0"
-    As of version 4.3.0, Google's Play Install Referrer Library is bundled into Branch Android SDK.  If you are using a version below 4.3.0, you must udpate your [app's dependencies to include the Play Install Referrer Library](https://developer.android.com/google/play/installreferrer/library#dependencies).
+    As of version 4.3.0, Google's Play Install Referrer Library is bundled into Branch Android SDK.  If you are using a version below 4.3.0, you must update your [app's dependencies to include the Play Install Referrer Library](https://developer.android.com/google/play/installreferrer/library#dependencies).
 
 !!! warning "Google Mobile Ads SDK 17+"
     If you decide to implement the Google Mobile Ads SDK version 17+, you have to declare your app is an Ad Manager app. See [Google Developer Docs](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml) on how to do so. Failure to add this <meta-data> tag results in a crash with the message: "The Google Mobile Ads SDK was initialized incorrectly."
