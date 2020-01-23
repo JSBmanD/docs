@@ -36,7 +36,7 @@ If it is the first time Branch has received a data subject request from you, we 
 
 ## Branch Data Subject Access Request Process
 
-1. **Construct a batched request for all outstanding data access requests which contains the following information and adheres to [this file format](https://drive.google.com/drive/u/0/folders/1oXnSpiKYjiJywGNBu0X14yGEbP5YY7GU) (" Data Subject Access Request Template")**
+1. **Construct a batched request for all outstanding data access requests which contains the following information and adheres to [this file format](/resources/gdpr-request-template.xlsx) (" Data Subject Access Request Template")**
     1. <notranslate>**device_id**</notranslate> - an ID pertaining to the  end user’s device. This could be a number of different identifiers depending on the user’s device type (e.g. IDFA, GAID, IDFV, AAID, MAC address, etc)
     2. <notranslate>**developer_id**</notranslate> - an ID set by you. This is a way for you to identify your users using your own convention (e.g. unique alphanumeric ID, etc)
     3. <notranslate>**browser_id**</notranslate> - also known as browser_fingerprint_id, which is a unique ID created by Branch to identify a specific browser

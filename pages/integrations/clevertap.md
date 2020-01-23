@@ -41,9 +41,21 @@ Find your CleverTap Account Credentials. Later, you'll enter them into the Branc
 1. Copy these account credentials into the Branch dashboard as instructed below.
 
 
-{! ingredients/data-integrations/enable-partner.md !}
+### Enable the integration
 
-{! ingredients/data-integrations/add-credentials.md !}
+1. Visit the [Data Integration](https://branch.dashboard.branch.io/data-import-export/data-feeds/integrations) on the Branch dashboard.
+2. Search for your <notranslate>**Data Integration Partner**</notranslate>
+3. Select your <notranslate>**Data Integration Partner**</notranslate>
+4. Provide the required details
+5. Click <notranslate>**Enable**</notranslate>
+
+
+### Provide account credentials
+
+Enter any credentials that may be required, and click Save and Enable in the bottom right hand corner.
+
+!!! note "Account credentials"
+	Please ask your ad partner where you can find your credentials.
 
 ### Capture IDFA/GAID
 

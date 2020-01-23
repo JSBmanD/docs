@@ -1,20 +1,20 @@
 ---
-title: Cordial
+title: Hootsuite
 ---
 ## Overview
 
-![Cordial](https://cdn.branch.io/branch-assets/email-providers//cordial-1559944328558.png)
+![Hootsuite](https://cdn.branch.io/branch-assets/email-providers/386574786681131050/hootsuite-horizontal-black-registered-1540233532971.png)
 
-This guide will walk you through how to setup your email campaigns with **[Cordial](https://cordial.com/)** using Branch Universal Email to automatically convert your email links into **multi-platform deep links**
+This guide will walk you through how to setup your social links campaigns with **[Hootsuite](https://hootsuite.com){:target="\_blank"}** using Branch Universal Email to automatically convert your social links into **multi-platform deep links**
 
 The basic integration involves four parts:
 
+1. [Configure your Social Links provider](#configure-your-social-links)
 1. [Activate integration and setup link behavior](#activate-integration)
 1. [Configure your mobile app](#configure-your-mobile-app)
-1. [Configure your ESP](#configure-your-esp)
 1. [Updating the links in your email](#using-universal-email)
 
-Universal Email allows you to automatically convert your email links into multi-platform deep links that take users directly to content in the app on mobile devices, while still maintaining the same web experience for desktop and mobile users without the app.
+Universal Email allows you to automatically convert your social links into multi-platform deep links that take users directly to content in the app on mobile devices, while still maintaining the same web experience for desktop and mobile users without the app.
 
 When a link is clicked by a user without the app, it will route that user to the original web URL (including on desktop). When a link is clicked by a user with your app, it will direct that user into the relevant in-app content regardless of platform or email client.
 
@@ -28,11 +28,26 @@ To open the app directly on iOS 9.2+, you must configure your email integration 
 
 Contact your Branch Account Manager or [accounts@branch.io](mailto:accounts@branch.io) at any time for assistance with the setup steps.
 
+## Configure your Social Links
+
+### Setup a custom click tracking domain
+
+1. Add and verify a custom click tracking domain - Hootsuite refers to this as a Vanity URL - in the <notranslate>**[Account & Settings > Vanity URLs]**</notranslate> section of your Hootsuite account.
+
+For more information on how to set up your domain, please visit Hootsuite's [documentation](https://help.hootsuite.com/hc/en-us/articles/204585640-Add-share-or-delete-a-vanity-URL).
+
+!!! tip "Adding a custom click-tracking domain"
+    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Hootsuite.
+
+### Set up your click tracking domain
+
+After you added and verified a click tracking domain you have to update DNS CNAME for it and point it to <notranslate>**`thirdparty.bnc.lt`**</notranslate>. Once the CNAME record is added, please allow up to an hour for Branch to generate SSL and AASA files for your click tracking domain.
+
 ## Activate integration
 
-### Choose your email service provider
+### Choose your Social Link provider
 
-Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Cordial**</notranslate> and click <notranslate>**Enable**</notranslate>.
+Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_blank"} section of the Branch dashboard. Select <notranslate>**Hootsuite**</notranslate> and click <notranslate>**Enable**</notranslate>.
 
 ### Set up Email link behavior
 
@@ -66,7 +81,7 @@ In this step, you will want to enter a web URL that corresponds to a specific sc
 - An article
 - A content page, like a video or image
 
-Once you choose one and click <notranslate>**Submit**</notranslate>, [meta tags that can be used for deep linking](/web/hosted-data/) will be retrieved from your webpage. You will see a result indicating the mapping between your web content and your app content. For a full explanation of the tests run on this page and the possible results, check out the [support section](https://support.branch.io/support/solutions/articles/6000194014-understanding-deep-linked-email-validation-errors).
+Once you choose one and click <notranslate>**Submit**</notranslate>, [meta tags that can be used for deep linking](/web/hosted-data/) will be retrieved from your webpage. You will see a result indicating the mapping between your web content and your app content. For a full explanation of the tests run on this page and the possible results, check out the [support section](/emails/support/#deep-linking-setup-messages).
 
 #### We couldn't determine your deep linking setup
 
@@ -111,12 +126,12 @@ Translate query parameters on URLs into Branch link data from parameter ______ t
 Setting | Description
 --- | ---
 Open to specific web content | Route to the original URL specified in the email.
-Open to default redirects | Route to defaults specified in [Link Settings](https://dashboard.branch.io/link-settings){:target="_blank"}.
+Open to default redirects | Route to defaults specified in [Link Settings](https://dashboard.branch.io/link-settings).
 
 
 ### Tell us your click tracking domain
 
-You can retrieve your click tracking domain from your Cordial account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
+You can retrieve your click tracking domain from the <notranslate>**[Account & Settings > Vanity URLs]**</notranslate> section of your Hootsuite account. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
 ### Configure your app for your click tracking domain
 
@@ -135,9 +150,6 @@ Click Next to proceed to Validate and test the integration
 The last step of the [Universal Email setup flow](https://dashboard.branch.io/email){:target="\_blank"} validates whether you have completed all necessary steps and whether an engineer on your team has completed the integration steps. You will also see recommendations for how to improve your email integration.
 
 Once it's done the AASA file and SSL certificate - required for Universal Links - specific to that domain will be generated.
-
-!!! warning "Important Notice"
-    Please reach out to your CSM or the Support team to configure the Host for your integration.
 
 The conversion to Branch links will only work when your links are wrapped in your click tracking domain. To test links without wrapping, please generate a test link on the Verification step of email onboarding, also accessible by clicking the gear icon for your ESP on the [email page](https://dashboard.branch.io/email){:target="\_blank"}.
 
@@ -168,7 +180,6 @@ You should have [received an email from Branch](#configure-your-app-for-your-cli
 
 !!! protip "How does it work?"
     Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information.
-
 
 ### Add your click tracking domain to your Associated Domains
 
@@ -201,44 +212,13 @@ You should add this code snippet inside the deep link handler code block. Note t
             if (url) {
                 [application openURL:url]; // check to make sure your existing deep linking logic, if any, is not executed, perhaps by returning early
             }
-  } else { 
+  } else {
     // it is a deep link
-    GDLog(@"branch deep link: %@", [params description]); 
+    GDLog(@"branch deep link: %@", [params description]);
     [self handleBranchDeeplink:params];
   }
 }];
 ```
-
-### Return YES to continueUserActivity
-
-When users enter your app via a Universal Link, we check to see to see if the link URL contains `app.link`. If so, `handledByBranch` will return `YES`. If not, `handledByBranch` will return `NO`. This allows us to explicitly confirm the incoming link is from Branch without making a server call.
-
-For most implementations this will never be an issue, since your deep links will be routed correctly either way. However, if you use a custom link domain *and* you rely on `handledByBranch` to return `YES` for every incoming Branch-generated Universal Link, you can inform the Branch SDK by following these steps:
-
-1. In your <notranslate>**Info.plist**</notranslate> file, create a new key called `branch_universal_link_domains`.
-1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
-1. Save the file.
-
-!!! tip "Multiple custom domains"
-	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)
-
-## Configure your ESP
-
-### Setup a custom click tracking domain
-
-1. Add and verify a custom click tracking domain in your Cordial account.
-
-For more information on how to set up your domain, please visit Cordial's [documentation](https://support.cordial.com/hc/en-us).
-
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Cordial.
-
-### Set up your click tracking domain
-
-After you added and verified a click tracking domain you have to update DNS CNAME for it and point it to **`thirdparty.bnc.lt`**. Once the CNAME record is added, please allow up to an hour for Branch to generate SSL and AASA files for your click tracking domain.
-
-!!! warning "SSL Changes"
-	Please be aware that it may take up to an hour to resolve SSL errors once you change the CNAME. During this time, link redirects on the click tracking domain will redirect to `branch.io`. If you are making this change to a live domain that has email click traffic from your users, it’s best to schedule time with your Branch account manager to expedite the changes during a time of low click traffic.
 
 ## Using Universal email
 
@@ -269,4 +249,4 @@ With your email service provider, all email links will open the app by default. 
 
 ## Support
 
-Curious about how email works and more FAQ? **Visit our [Universal Email Overview](/emails/universal-email/) page**.
+Curious about how email works and more FAQ? **Visit our general [email support](/emails/support) page**.

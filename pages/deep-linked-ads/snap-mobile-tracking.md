@@ -81,8 +81,32 @@ To use Branch links in your <notranslate>**Drive Traffic to App**</notranslate> 
 !!! warning "Web Site as Fallback Required for Deferred Deep Linking"
     Please ensure you choose <notranslate>**Web Site**</notranslate> as the <notranslate>**FALLBACK TYPE**</notranslate> and inserting the same Branch link into the provided field.  If you choose <notranslate>**App Install**</notranslate> as the `FALLBACK TYPE`, users not properly routed will be sent to the App Store without the Branch link and deferred deep linking will not occur.
 
+    ## Adding the Agency Tag to Campaign Name
 
-{! ingredients/deep-linked-ads/add-agency-prefix-san-only.md !}
+    Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
+
+    !!! error "Agency ID Required"
+    	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+
+    ### Finding Your Agency ID
+
+    You can find your Agency ID under Account Settings in the [Agency view](/dashboard/agency-view/#managing-your-agency-profile).
+
+    ### Creating Your Agency Tag
+
+    Your agency tag **must** adhere to the following format:
+
+    	`agency_{YOUR AGENCY ID HERE}_`
+
+
+    !!! info "Example Campaign with Agency tag"
+     	`agency_1234567890_My_SAN_Ad_Campaign`
+
+    	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
+
+    !!! warning "Agency ID Removed When Exporting"
+    	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+
 
 ## View Attribution on Dashboard
 
@@ -90,7 +114,28 @@ All attribution can be visible on the [Branch dashboard summary page](https://da
 
 Note that these stats are **limited to the date range** at the top of the page. You can expand the range if you'd like.
 
-{! ingredients/deep-linked-ads/reporting-dimensions-sans.md !}
+!!! info "Available Compare By Dimensions for SANs"
+    Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions.
+
+    |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
+    |---------------------|-------------|-------------|------------------|-------------|
+    | <notranslate>**Feature**</notranslate>             | Supported   | Supported   | Supported        | Supported   |
+    | <notranslate>**Channel**</notranslate>             | Unsupported | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**Campaign**</notranslate>            | Supported   | Supported   | Supported        | Supported   |
+    | <notranslate>**Tags**</notranslate>               | Unsupported | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**Stage**</notranslate>               | Unsupported | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**Ad Partner**</notranslate>          | Supported   | Supported   | Supported        | Supported   |
+    | <notranslate>**Secondary Publisher**</notranslate> | Supported   | Supported   | Unsupported      | Unsupported |
+    | <notranslate>**Ad Set Name**</notranslate>         | Supported   | Unsupported | Supported        | Supported   |
+    | <notranslate>**Ad Name**</notranslate>             | Supported   | Unsupported | Unsupported      | Supported   |
+    | <notranslate>**Creative Name**</notranslate>       | Supported   | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**Keyword**</notranslate>             | Unsupported | Supported   | Supported        | Unsupported |
+    | <notranslate>**Last Touch Type**</notranslate>     | Unsupported | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**Link ID**</notranslate>             | Unsupported | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**Country**</notranslate>             | Supported   | Unsupported | Unsupported      | Unsupported |
+    | <notranslate>**OS**</notranslate>                  | Unsupported | Unsupported | Supported        | Unsupported |
+    | <notranslate>**Platform**</notranslate>            | Unsupported | Unsupported | Unsupported      | Unsupported |
+
 
 ### Changing attribution windows
 
@@ -154,7 +199,22 @@ Branch Data | Snap Data
 | `searchQuery`       | `search_string`  | The text string that was searched.                                                                                                                                                                                                              |
 | `custom_data.level` | `level`          | Level in the game.                                                                                                                                                                                                                              |
 
-{! ingredients/deep-linked-ads/cost-data.md !}
+### Cost Data
+
+Branch provides the following cost metrics for this ad partner:
+
+Analytics Tag | Description | Used for
+--- | --- | ---
+Cost| Total cost (spend) for those dimensions (analytics tags, user data, time range), regardless of cost model | Understanding the total amount spent
+<notranslate>eCPI</notranslate> | cost / installs | Normalizing spend per install, to understand the average price of an install across networks or over time
+<notranslate>eCPC</notranslate> | cost / clicks | Normalizing spend per click, to understand the average price of an click across networks or over time
+<notranslate>eCPM</notranslate> | cost / (impressions / 1000) | Normalizing spend per thousand impressions, to understand the average price of 1000 impressions across networks or over time
+<notranslate>eCPA</notranslate> | cost / purchases [includes web and app purchases] | Normalizing spend per purchase, to understand the average price of a purchase across networks or over time
+<notranslate>Return On Investment (ROI)</notranslate> | (revenue-cost / cost) * 100 | Deriving return on investment, to understand the percentage "profit" made on ad spend
+<notranslate>Return On Ad Spend (ROAS)</notranslate> | (revenue / cost) * 100 | Deriving return on investment by understanding the percentage revenue multiple for a given unit of spend
+
+!!! info
+    All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran.
 
 ## Troubleshooting
 
@@ -168,7 +228,27 @@ Branch Data | Snap Data
 - When deep linking, create a link via the Branch dashboard. If you are running an app campaign, please ensure your link has `%24deeplink_no_attribution=true` as a query parameter to remove that link's ability to claim attribution, otherwise the link may claim attribution over the SAN claim. The link will still deep link.
 - Snap's reporting API does not provide any <notranslate>"compare by"</notranslate> functionality outside of the ads analytics tags. So, you cannot compare Snap click + impression data by platform, OS or country, for example.
 
-{! ingredients/deep-linked-ads/cost-data-discrepancies.md !}
+#### Branch Cost data not matching the Ad Partner dashboard
+
+Please ensure that you've selected the same time zone in your Ad Partner's dashboard and your Branch dashboard.
+
+#### CPI metric doesn't match between Ad Partner and Branch, although cost metric does
+
+Branch's last-click attribution model can lead to differences in install counts for Branch vs self-attributing networks (SANs) that in turn cause differences in CPI metrics. Verify whether your cost and install metrics match the Ad Partner's dashboard. If there is an install discrepancy, it is likely legitimate and due to differences in install counts, where Branch's number is more accurate. If the discrepancy is very large, investigate causes of install discrepancies through the usual troubleshooting steps.
+
+#### Cost, click and impression data is all missing
+
+Generally, reauthenticating a partner and waiting 24 hours will re-enable cost data.
+
+When you reauthenticate, double check that you have selected the correct accounts. We will only pull cost data for accounts that you select as part of the authentication process.
+
+Background:
+Cost, click and impression data for SANs are generally sourced from Partner APIs (unless Branch impression pixels or links are being intentionally used for attribution, for example, in web campaigns). When you enable a SAN, you authenticate with your provider. Branch uses this authentication to retrieve click, cost and impression data. If the authentication token expires (for example, if you reset your password, or the partner force resets your token), then you may not see click, impression or cost data. In this case, simply reauthenticate and that will refresh your token.
+
+#### Cost data is missing or incorrect for certain <notranslate>"compare by"</notranslate> breakdowns
+
+Downstream events, such as _installs_, should always have the full range of compare by options in the dashboard. However, _clicks, impressions and cost_ data for SAN are often imported via Partner APIs. These APIs do not necessarily provide the same breakdowns for cost data that Branch supports with raw install events, so there may be cases where the Branch Dashboard cannot compare by the same dimensions for cost data vs install data.
+
 
 ###Exporting Snap Data
 
