@@ -7,7 +7,7 @@ title: Fraudscore
 
 This guide will walk you through how to send your Branch data to **[Fraudscore](https://fraudscore.mobi/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

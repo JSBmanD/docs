@@ -2,7 +2,7 @@
 
 Once you've enabled an integration it's time to create a tracking link.
 
-1. First, select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format. For Search or Display campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>. <notranslate>**Product Links**</notranslate> are for shopping or dynamic remarketing campaigns and will take you to create a Deep Linked Product Feed.
+1. First, select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format. For Search or Display campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>. <notranslate>**Product Links**</notranslate> are for shopping or dynamic remarketing campaigns.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 
@@ -42,5 +42,3 @@ Once you've enabled an integration it's time to create a tracking link.
 
 	!!! tip "Server to server tracking links"
 		If you just need a server to server tracking link just add `%24s2s=true` at the end of your link, so we know it's a server to server link.
-
-

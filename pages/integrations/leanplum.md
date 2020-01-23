@@ -7,7 +7,7 @@ title: Leanplum
 
 This guide will walk you through how to send your Branch data to **[Leanplum](https://www.leanplum.com/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

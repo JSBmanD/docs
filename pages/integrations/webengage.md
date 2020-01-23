@@ -11,7 +11,7 @@ This guide will walk you through how to send your Branch data to **[WebEngage](h
 	* [x] You must be a WebEngage customer
 	* [x] Have the [WebEngage SDK](https://docs.webengage.com/docs/overview) integrated in your mobile apps.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

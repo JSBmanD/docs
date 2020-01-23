@@ -44,10 +44,6 @@ User journeys happen across channels. To get accurate attribution, you need to m
     <img src="../../../_assets/img/pages/channels/push-notifications.png" />
     <p>Push Notifications</p>
   </a>
-	<a href="/deep-linked-ads/dynamic-product-feeds/">
-    <img src="../../../_assets/img/pages/channels/product-feed.png" />
-    <p>Dynamic<br/>Product Feeds</p>
-  </a>
 </div>
 <!--/ Engagement -->
 

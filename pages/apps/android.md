@@ -1,7 +1,7 @@
 ---
 title: Android SDK
 ---
-!!! info "Current SDK Version 4.2.0"
+!!! info "Current SDK Version 4.3.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
 !!! warning "Android Studio Version"
@@ -69,7 +69,6 @@ title: Android SDK
 
             // required for all Android apps
             implementation 'io.branch.sdk.android:library:4.+'
-            implementation 'com.android.installreferrer:installreferrer:1.1'
 
             // required if your app is in the Google Play Store (tip: avoid using bundled play services libs)
             implementation 'com.google.firebase:firebase-appindexing:19.0.0' // App indexing
@@ -207,8 +206,8 @@ title: Android SDK
                 // activity will skip onStart, handle this case with reInitSession
                 Branch.getInstance().reInitSession(this, branchReferralInitListener);
             }
-            private Branch.BranchUniversalReferralInitListener branchReferralInitListener =
-                    new Branch.BranchUniversalReferralInitListener() {
+            private Branch.BranchReferralInitListener branchReferralInitListener =
+                    new Branch.BranchReferralInitListener() {
                         @Override public void onInitFinished(BranchUniversalObject branchUniversalObject,
                                                              LinkProperties linkProperties, BranchError branchError) {
                             // do something with branchUniversalObject/linkProperties..
@@ -240,7 +239,7 @@ title: Android SDK
             }
 
             object branchListener : Branch.BranchReferralInitListener {
-                    override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+                    override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                         if (error == null) {
                             Log.i("BRANCH SDK", referringParams.toString())
                             // Retrieve deeplink keys from 'referringParams' and evaluate the values to determine where to route the user
@@ -398,7 +397,7 @@ title: Android SDK
             .addControlParameter("custom", "data")
             .addControlParameter("custom_random", Long.toString(Calendar.getInstance().getTimeInMillis()))
 
-        buo.generateShortUrl(this, lp, BranchLinkCreateListener { url, error ->
+        buo.generateShortUrl(this, lp, BranchLinkCreateListener { url?, error? ->
             if (error == null) {
                 Log.i("BRANCH SDK", "got my Branch link to share: " + url)
             }
@@ -476,7 +475,7 @@ title: Android SDK
         buo.showShareSheet(this, lp, ss, object : Branch.BranchLinkShareListener {
             override fun onShareLinkDialogLaunched() {}
             override fun onShareLinkDialogDismissed() {}
-            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError?) {}
+            override fun onLinkShareResponse(sharedLink: String?, sharedChannel: String?, error: BranchError?) {}
             override fun onChannelSelected(channelName: String) {}
         })
         ```
@@ -516,7 +515,7 @@ title: Android SDK
         ```java
         // listener (within Main Activity's onStart)
         Branch.getInstance().initSession(object : BranchReferralInitListener {
-            override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+            override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                 if (error == null) {
                     Log.e("BRANCH SDK", referringParams.toString)
                 } else {
@@ -571,7 +570,7 @@ title: Android SDK
         ```java
         // listener (within Main Activity's onStart)
         Branch.getInstance().initSession(object : BranchReferralInitListener {
-            override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+            override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                 if (error == null) {
                     // option 1: log data
                     Log.i("BRANCH SDK", referringParams.toString())
@@ -728,7 +727,7 @@ title: Android SDK
         - *Kotlin*
 
             ```java
-            Branch.getInstance().loadRewards { changed, error ->
+            Branch.getInstance().loadRewards { changed, error? ->
                 if (error != null) {
                     Log.i("BRANCH SDK", "branch load rewards failed. Caused by -" + error.message)
                 } else {
@@ -757,7 +756,7 @@ title: Android SDK
         - *Kotlin*
 
             ```java
-            Branch.getInstance().getCreditHistory { history, error ->
+            Branch.getInstance().getCreditHistory { history?, error? ->
                 if (error != null) {
                     Log.i("BRANCH SDK", "branch load credit history failed. Caused by -" + error.message)
                 } else {
@@ -1179,37 +1178,6 @@ title: Android SDK
         ```xml
         <application android:name="io.branch.referral.BranchApp">
         ```
-
-- ### Custom install referrer class
-
-    - Google only allows one `BroadcastReceiver` per application
-
-    - Add to your `AndroidManifest.xml`
-
-        ```xml
-        <receiver android:name="com.BRANCH SDK.CustomInstallListener" android:exported="true">
-          <intent-filter>
-            <action android:name="com.android.vending.INSTALL_REFERRER" />
-          </intent-filter>
-        </receiver>
-        ```
-
-    - Create an instance of `io.branch.referral.InstallListener` in `onReceive()`
-
-    - *Java*
-
-        ```java
-        InstallListener listener = new InstallListener();
-        listener.onReceive(context, intent);
-        ```
-
-    - *Kotlin*
-
-        ```java
-        val listener = InstallListener()
-        listener.onReceive(context, intent)
-        ```
-
 - ### Generate signing certificate
 
     - Used for Android <notranslate>**App Link**</notranslate> deep linking

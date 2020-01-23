@@ -25,7 +25,7 @@ Product Catalogue Sales | ✔︎ |  | ✔︎ |  |  |  |
 	* [x] To track installs from Facebook Ads you should [integrate the Branch SDK](/apps/ios/#integrate-branch) into your app.
 	* [x] To use Branch links in Facebook App Install Ads ensure you have Universal Links set up on iOS or App Links enabled on Android to ensure correct routing behavior. For setup, checkout [Universal](/deep-linking/universal-links/) and [App Links](/deep-linking/android-app-links/).
 	* [x] If you want to deep link from your ads directly to content, you should [configure deep link routing](/deep-linking/routing/).
-	* [x] Use [Branch Deep Linked Feeds](/deep-linked-ads/dynamic-product-feeds/) to create your Facebook Dynamic Ad compatible deep links.
+	* [x] [Create Branch Links for Product Feeds](/deep-linked-ads/creating-branch-links-for-product-feeds/) to create your Facebook Dynamic Ad compatible deep links.
 	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality.
 
 {! ingredients/deep-linked-ads/enable-facebook-ad-partner.md !}
