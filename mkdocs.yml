@@ -292,7 +292,7 @@ nav:
       - Cordial: emails/cordial.md
       - Epsilon: emails/epsilon.md
       - Emarsys: emails/emarsys.md
-      - Hootsuite: social-links/hootsuite.md
+      - Hootsuite: emails/hootsuite.md
       - IBM Watson Campaign Automation: emails/ibm-watson-campaign-automation.md
       - Iterable v1: emails/iterable-v1.md
       - Iterable v2: emails/iterable-v2.md
@@ -321,7 +321,7 @@ nav:
       - Sender: emails/sender.md
       - SendGrid: emails/sendgrid.md
       - Smartech: emails/smartech.md
-      - Social Flow: social-links/social-flow.md
+      - Social Flow: emails/social-flow.md
       - SparkPost: emails/sparkpost.md
       - Vero: emails/vero.md
       - WhatCounts: emails/whatcounts.md

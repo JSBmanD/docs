@@ -19,7 +19,8 @@ Facebook Campaign Type | Photo | Video | Carousel | Slideshow | Collection | Dyn
 --- | --- | --- | --- | --- | --- | --- | ---
 Product Catalogue Sales | ✔︎ |  | ✔︎ |  |  |  |
 
-{! ingredients/deep-linked-ads/link-to-facebook-ads-overview.md !}
+!!! note ""
+	Looking for other Facebook Ad campaign types? Please check out our [Facebook Ads Overview guide](/deep-linked-ads/facebook-ads-overview).
 
 !!! warning "Prerequisites"
 	* [x] To track installs from Facebook Ads you should [integrate the Branch SDK](/apps/ios/#integrate-branch) into your app.
@@ -28,7 +29,66 @@ Product Catalogue Sales | ✔︎ |  | ✔︎ |  |  |  |
 	* [x] [Create Branch Links for Product Feeds](/deep-linked-ads/creating-branch-links-for-product-feeds/) to create your Facebook Dynamic Ad compatible deep links.
 	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality.
 
-{! ingredients/deep-linked-ads/enable-facebook-ad-partner.md !}
+	#### Enable Facebook as an Ad Partner (for measurement)
+
+	!!! Note
+	    Completing this section -- "Enable Facebook as an Ad Partner" -- will result in Branch sending app events to Facebook in order to attribute them back to ad campaigns. <notranslate>**This does not enable deep linking for the ad**</notranslate>. Further work below is required for deep linking.
+
+	If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow this section to do so. Advanced options for sending events can be found [here](/deep-linked-ads/facebook-ads-faq/#facebook-mmp-event-options).
+
+	1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management).
+
+	    ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
+
+	1. Search for <notranslate>**Facebook**</notranslate>.
+
+	1. Click <notranslate>**Connect With Facebook**</notranslate>
+
+	    ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
+
+	1. Login to Facebook if you are not logged in
+
+	    ![Login](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
+
+	1. Confirm that Branch can receive your public profile
+
+	    ![Public profile](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
+
+	1. Confirm that Branch can have permissions `ads_read`
+
+	    ![OAuth scopes](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
+
+	 	`ads_read` is used to surface impressions and clicks on the Branch Dashboard.
+
+	1. Select the ad accounts for which you want to run app install ads or app engagement ads
+
+	    ![Choose ad accounts](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
+
+	    !!! Note
+	        If you are having trouble finding or selecting the ad account(s) for which you want to run ads, please visit our [FAQ](/deep-linked-ads/facebook-ads-faq/#im-having-problems-finding-or-choosing-the-correct-ad-accounts).
+
+	1. Click to select a Facebook app id for which you want to run Facebook ads
+
+	    ![enter app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
+
+	1. Copy the app id
+
+	    ![find app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
+
+	1. Paste the app id and press `Save`
+
+	    ![paste app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
+
+	1. Facebook is now enabled as an ad partner!
+
+		Note that if you have different attribution windows between Facebook and Branch, those will be highlighted. The warning has a link to the docs on how to align these attribution windows.
+
+	    ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
+
+	1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
+
+	    ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
+
 
 ## Setup
 
@@ -93,8 +153,23 @@ Use the <notranslate>"Product events"</notranslate> tab in your Product Catalog 
 !!! note "Driving Installs with Dynamic Ads"
 	By default, Facebook sends customers without the app to your mobile website. To drive installs, you can send customers without your app the app store by adding a `web_should_fallback` column to your Feed Source and setting each row to `false`. Then, after you've created your campaign, edit the ad within your ad set. Under "Creative," set your "App link destination" to "Deep link, app store backup."
 
-{! ingredients/deep-linked-ads/view-fb-link-data.md !}
+### View Your Data
+
+The [Ads Analytics Page](https://dashboard.branch.io/ads/analytics) on the Branch dashboard provides an interactive time series graph and table to view the performance of your Ad campaigns.
+
+![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
+
+The table shows summary data on the performance of each Ad campaign. On the right top side of the table you can find a <notranslate>**download button**</notranslate> to retrieve the chart's content as a CSV file.
+
+![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
+
+!!! note "Interacting with your data"
+	Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by.
+
+	Then use the `and +` button to refine the data displayed to gain deeper insight into the performance of your Ad campaigns.
 
 ## Troubleshooting
 
-{! ingredients/deep-linked-ads/fb-ads-support.md !}
+We now have a dedicated [FAQ page for Facebook app ads](/deep-linked-ads/facebook-ads-faq/#sources-of-discrepancies-between-facebook-and-branch). If you are having any issues with app ads, please review the FAQ.
+
+If you are having issues with web-only ads, you can check out the FAQ. Then please [contact us](https://support.branch.io/support/tickets/new) and include "Facebook web-only ads issues" in the subject.
