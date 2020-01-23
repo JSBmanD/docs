@@ -1,6 +1,14 @@
 ---
 title: Android Version History
 ---
+
+### v4.3.0
+
+**( 22 Jan 2020 )**
+
+- Remove install referrer broadcast receiver, bundle Play Install Referrer Library in the SDK.
+- Ensure callbacks are invoked in Kotlin (non-null listeners are passed).
+
 ### v4.2.1
 
 **( 19 Dec 2019 )**

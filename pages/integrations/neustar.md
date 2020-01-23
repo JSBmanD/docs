@@ -7,7 +7,7 @@ title: Neustar
 
 This guide will walk you through how to send your Branch data to **[Neustar](https://www.home.neustar/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

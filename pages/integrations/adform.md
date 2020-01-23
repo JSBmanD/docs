@@ -7,7 +7,7 @@ title: Adform
 
 This guide will walk you through how to send your Branch data to **[Adform](http://www.adform.com/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

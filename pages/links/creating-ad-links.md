@@ -28,7 +28,7 @@ To create a Branch Ad Link:
 	- Create Search Link
 
 	!!! tip "Format Types"
-		For App Install or App Engagement campaigns you'll want to select the App Only format. For Search or Display campaigns where the user should go to web if they don't have the app, then you should select Cross-Platform Search or Cross-Platform Display. Product Links are for shopping or dynamic remarketing campaigns and will take you to create a Deep Linked Product Feed.
+		For App Install or App Engagement campaigns you'll want to select the App Only format. For Search or Display campaigns where the user should go to web if they don't have the app, then you should select Cross-Platform Search or Cross-Platform Display. Product Links are for shopping or dynamic remarketing campaigns.
 
 	![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 

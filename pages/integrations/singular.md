@@ -7,7 +7,7 @@ title: Singular
 
 This guide will walk you through how to send your Branch data to **[Singular](https://www.singular.net/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

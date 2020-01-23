@@ -14,7 +14,6 @@ title: Overview
 - [iOS 유니버설 링크](/ko/universal-links/)
 - [Android App Links 가이드](/ko/android-app-links/)
 - [앱 내 딥링크 라우팅 가이드](/ko/deep-link-routing/)
-- [다이내믹 제품 피드](/ko/dynamic-product-feeds/)
 - [에이전시 보기 관련](/ko/agency-view/)
 - [Branch 계정 내 앱 뷰 기능 ](/ko/app-view/)
 - [Facebook 앱 인스톨 광고](/ko/facebook-app-install-ads/)

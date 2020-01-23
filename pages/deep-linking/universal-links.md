@@ -49,7 +49,7 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 	If the <notranslate>**Default domain name**</notranslate> box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`
 
 !!! tip "Using a custom domain or subdomain?"
-	If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should instead add entries for `applinks:[mycustomdomainorsubdomain]` and `XXXX-alternate.app.link`. If you're unsure of your Branch-assigned app.link subdomain, contact integrations@branch.io, and we can provide it.
+	If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should instead add entries for `applinks:[mycustomdomainorsubdomain]`, `XXXX.app.link` and `XXXX-alternate.app.link`. If you're unsure of your Branch-assigned app.link subdomain, contact integrations@branch.io, and we can provide it.
 
 ## Advanced
 

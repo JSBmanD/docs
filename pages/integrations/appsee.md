@@ -7,7 +7,7 @@ title: Appsee
 
 This guide will walk you through how to send your Branch data to **[Appsee](https://www.appsee.com/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

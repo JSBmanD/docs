@@ -7,7 +7,7 @@ title: Eulerian
 
 This guide will walk you through how to send your Branch data to **[Eulerian](https://www.eulerian.com/en/)** using Branch Data Integration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 

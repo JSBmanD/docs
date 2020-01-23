@@ -7,7 +7,7 @@ title: TrafficGuard
 
 This guide will walk you through how to send your Branch data to **[TrafficGuard](https://www.trafficguard.ai/)** using Branch Data Intgeration.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## TrafficGuard Setup
 
