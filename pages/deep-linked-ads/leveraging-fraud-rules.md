@@ -4,7 +4,7 @@ title: Fraud Rules
 ## Overview
 
 !!! warning "Viewing Fraud Data Permissions"
-	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the **Fraud Settings & Data** permission.  Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
+	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission. Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
 
 Branch recommends creating fraud rules to block erroneous attribution credit in real-time. While Branch still performs last-click attribution, it will not send the ad network a postback when the attribution is flagged as fraudulent.
 

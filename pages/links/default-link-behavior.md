@@ -49,7 +49,7 @@ title: Default Link Behavior Configuration
             - This feature is still in the early stages of development; so usage without a Desktop SDK will not be able to attribute or pass data through an install.
 
     - ##### Fallback
-        - Use these settings to control the default behavior of your deep links on anxy other platform
+        - Use these settings to control the default behavior of your deep links on any other platform
 
             ![image](/_assets/img/pages/dashboard/fallback.png)
 
