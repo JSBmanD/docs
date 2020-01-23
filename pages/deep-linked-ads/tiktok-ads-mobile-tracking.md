@@ -47,7 +47,12 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 
 ![image](/_assets/img/pages/deep-linked-ads/tiktok-ads/tiktok-ads-enable.png)
 
-{! ingredients/deep-linked-ads/add-credentials.md !}
+#### Provide account credentials
+
+Enter any credentials that may be required, and click Save and Enable in the bottom right hand corner.
+
+!!! note "Account credentials"
+	Please ask your ad partner where you can find your credentials.
 
 !!! tip "Enable postbacks"
     Basic postbacks will automatically be activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then [add additional postbacks](#adding-more-postbacks), for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_. You can also [edit postbacks](#advanced-editing-postbacks) if there's additional data you really need to pass along to your ad partner.

@@ -47,7 +47,12 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 
 ![image](/_assets/img/pages/deep-linked-ads/the-trade-desk/the-trade-desk-enable.png)
 
-{! ingredients/deep-linked-ads/add-credentials.md !}
+#### Provide account credentials
+
+Enter any credentials that may be required, and click Save and Enable in the bottom right hand corner.
+
+!!! note "Account credentials"
+	Please ask your ad partner where you can find your credentials.
 
 A hypothetical example of a partner UI configuration page might look like:
 
