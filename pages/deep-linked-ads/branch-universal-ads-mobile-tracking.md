@@ -16,18 +16,18 @@ This guide will walk you through how to setup your campaigns using Branch Univer
 3. Search for your <notranslate>**Universal Ads Partner**</notranslate>.
 4. Select Ad Partner Name and hit <notranslate>**Save & Enable**</notranslate>.
 
-![image](/_assets/img/pages/deep-linked-ads/noname/noname-enable.png)
+![image](/_assets/img/pages/deep-linked-ads/noname-enable.png)
 
 !!! note "Providing Account Credentials"
 	Not all integrations require providing account credentials. When prompted to, enter any credentials that may be required, and click <notranslate>**Save and Enable**</notranslate> in the bottom right hand corner. If you do not know your account credentials for said partner, please ask your ad partner for this information.
 
-![image](/_assets/img/pages/deep-linked-ads/noname/noname-credentials.png)
+![image](/_assets/img/pages/deep-linked-ads/noname-credentials.png)
 
 ### Enabling Postbacks
 
 Basic postbacks will automatically be activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then [add additional postbacks](#adding-more-postbacks), for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_. You can also [edit postbacks](#advanced-editing-postbacks) if there's additional data you really need to pass along to your ad partner.
 
-![image](/_assets/img/pages/deep-linked-ads/noname/noname-postbacks.png)
+![image](/_assets/img/pages/deep-linked-ads/noname-postbacks.png)
 
 ### Creating an ad link
 
