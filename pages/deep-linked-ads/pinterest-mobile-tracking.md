@@ -109,3 +109,45 @@ On the top right side of the table you can find a download button to retrieve th
 ## Advanced Setup
 
 Please refer to our [Advanced Universal Ads](/deep-linked-ads/branch-universal-ads-advanced/) guide for advanced options when enabling a Universal Ads partner.
+
+## Troubleshooting
+
+If you are running campaigns on Pinterest and having issues with Attribution on Branch, please check if you are using correct tracking links:
+
+1. Link to the Apple AppStore or Google Play
+2. Click and Impression links, generated on Branch dashboard, configured as described below.
+
+
+### Verify Link Formatting
+
+**Click Tracking Link**
+
+```
+[https://branchster.app.link/9kLGbtxJo2?%243p=a_pinterest&&%24idfa_sha1={sha1_advertising_id}&%24s2s=true&~ad_set_id={ad_group_id}&~ad_set_name={ad_group_name}&~campaign={campaign_name}&~campaign_id={campaign_id}&~click_id={click_id}&~creative_id={creative_id}&~creative_name={creative_name}&~secondary_publisher={publisher](https://branchster.app.link/9kLGbtxJo2?%243p=a_pinterest&%24aaid_sha1={sha1_advertising_id}&%24idfa_sha1={sha1_advertising_id}&%24s2s=true&~ad_set_id={ad_group_id}&~ad_set_name={ad_group_name}&~campaign={campaign_name}&~campaign_id={campaign_id}&~click_id={click_id}&~creative_id={creative_id}&~creative_name={creative_name}&~secondary_publisher={publisher)}
+```
+
+**Impression Tracking Link**
+
+```
+[https://impression.link/impression?branch_key=key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL&%243p=a_pinterest&%24s2s=true&%24aaid_sha1={sha1_advertising_id}&~ad_set_id={ad_group_id}&~ad_set_name={ad_group_name}&~branch_ad_format=App%20Only&~campaign={campaign_name}&~campaign_id={campaign_id}&~click_id={click_id}&~creative_id={creative_id}&~creative_name={creative_name}&~feature=paid%20advertising&~secondary_publisher={publisher](https://impression.link/impression?branch_key=key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL&%243p=a_pinterest&%24s2s=true&%24aaid_sha1={sha1_advertising_id}&~ad_set_id={ad_group_id}&~ad_set_name={ad_group_name}&~branch_ad_format=App%20Only&~campaign={campaign_name}&~campaign_id={campaign_id}&~click_id={click_id}&~creative_id={creative_id}&~creative_name={creative_name}&~feature=paid%20advertising&~secondary_publisher={publisher)}
+```
+
+Since Pinterest uses server-to-server clicks, make sure the following parameters are always present on the link:
+
+*   **%24s2s=true**
+    *   Must be always present on the link
+*   **%24aaid_sha1={sha1_advertising_id}**
+    *   For Android campaigns only, must be removed from the link for iOS campaigns
+*   **%24idfa_sha1={sha1_advertising_id}**
+    *   For iOS campaigns only, must be removed from the link for Android campaigns
+
+Only **one** OS-specific Advertiser Identifier parameter must be on the link: either **%24idfa_sha1** for iOS or **%24aaid_sha1** for Android campaigns.
+
+### Most common issues:
+
+*   Advertiser ID is missed on the link
+    *   Solution: Add OS-specific Advertiser Identifier
+*   Both Advertiser IDs presented on the link
+    *   Solution: Keep only one OS-specific Advertiser Identifier
+*   Clicks are getting blocked by Branch Anti-Fraud rule - GEO_CONFLICT
+    *   Pinterest current can’t provide user’s IP address and this can cause a GEO_CONFLICT Fraud Rule. If you use a GEO_CONFLICT fraud rule, we recommend either disabling it or not running on Pinterest until they are able to pass the client IP to MMPs.

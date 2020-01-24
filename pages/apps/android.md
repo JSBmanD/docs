@@ -1,7 +1,7 @@
 ---
 title: Android SDK
 ---
-!!! info "Current SDK Version 4.3.0"
+!!! info "Current SDK Version 4.3.1"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
 !!! warning "Android Studio Version"
@@ -1198,10 +1198,11 @@ title: Android SDK
 - ### Using the default application class
 
     - If your app does not have an application class
-
+    
         ```xml
         <application android:name="io.branch.referral.BranchApp">
         ```
+
 - ### Generate signing certificate
 
     - Used for Android <notranslate>**App Link**</notranslate> deep linking

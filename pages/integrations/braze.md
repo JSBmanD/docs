@@ -26,34 +26,20 @@ We have built a custom integration to automatically send all Branch install data
 1. On the Braze dashboard, navigate to the **App Settings** section, and click **3rd Party Integrations**.
 1. From there, grab your API key (this will be the same for all attribution partners listed on the page).
 
+### Enable the integration
 
-### Configure the Branch Dashboard
+1. Visit the [Data Integration](https://branch.dashboard.branch.io/data-import-export/data-feeds/integrations) on the Branch dashboard.
+2. Search for your <notranslate>**Data Integration Partner**</notranslate>.
+3. Select your <notranslate>**Data Integration Partner**</notranslate>.
+4. Provide the required details:
+    1. **API Key**
+    2. **Endpoint Default (rest.iad-01.braze.com)**
+        1. Do not include `http://` or `https://` as Branch adds the protocol on the backend.
+        2. Do not add `/attribution/branch` at the end of your endpoint as Branch adds it on the backend.
+        3. The default Braze endpoint is `rest.iad-01.braze.com`; if you wish to use a different endpoint, please  refer to [Braze's documentation](https://www.braze.com/docs/api/basics?redirected=true#endpoints).
+5. Click <notranslate>**Enable**</notranslate>.
 
-### Enable Data Feeds
-
-Data Integrations are included as part of the Data Feeds product. For more information on Data Feeds, and how to enable it, please read the [Data Feeds summary](/exports/data-feeds/).
-
-### Select the integration
-
-1. Navigate to [Data Integrations](https://dashboard.branch.io/data-import-export/data-feeds/integrations) within Data Feeds.
-1. Find the integration you need by typing in the search box.
-
-    ![Ads Partner Management](/_assets/img/ingredients/data-integrations/search-for-integration.png)
-
-    !!! note "We've upgraded our Data Integrations!"
- 		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
-
-        ![Ads Partner Management](/_assets/img/ingredients/data-integrations/legacy-data-integrations.png)
-
-1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
-1. Search for Braze and click on the tile.
-1. Enter your Braze API Key and hit <notranslate>**Enable**</notranslate>.
-
-    ![image]( /_assets/img/pages/integrations/braze/braze_di.png)
-
-!!! warning "Please test integration!"
-    Branch is not responsible for inaccurate API keys.
-
+![image](/_assets/img/pages/integrations/braze/braze-di.png)
 
 ### Pass Braze Android Install Tracking ID
 

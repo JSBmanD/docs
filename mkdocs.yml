@@ -334,6 +334,7 @@ nav:
       - Adjust: integrations/adjust.md
       - Admost: integrations/admost.md
       - Adobe Analytics: integrations/adobe-analytics.md
+      - Adoya: integrations/adoya.md
       - Airship: integrations/airship.md
       - Amplitude: integrations/amplitude.md
       - AppMetrica: integrations/appmetrica.md
