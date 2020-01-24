@@ -7,13 +7,36 @@ title: Pinterest
 
 This guide will walk you through how to setup your campaigns with **[Pinterest](https://www.pinterest.com/)** using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## Setup
 
-{! ingredients/deep-linked-ads/integrate-branch-sdk.md !}
+### Integrating the SDKs and tracking in-app events
 
-{! ingredients/deep-linked-ads/conversion-events-tracking.md !}
+The Branch SDKs for iOS and Android allow you to get up and running quickly.
+
+If you haven't already integrated Branch SDK into your application, please follow our integration guide to integrate Branch SDK into your application:
+
+1. Documentation for [Android](/apps/android/)
+
+1. Documentation for [iOS](/apps/ios/)
+
+!!! warning "Limitations with setDebug and seeing data in Branch"
+	When integrating the SDKs, it's often useful to use setDebug to verify that your app is able to communicate with Branch servers, and is receiving deep link data. However, our upstream systems don't register test events sent using setDebug, so events will not appear in Liveview or Analytics, nor will they fire postbacks. You should disable setDebug when looking at Liveview or testing postbacks.
+
+#### Track conversion events
+
+Install and open events are automatically tracked using just the Branch SDK integration. However, to track custom events, such as registration or purchase, you will need to integrate them into your application.
+
+!!! warning "Sending event metadata from your application"
+	Please make sure that you setup and pass event metadata from the application to the ad partner. Follow up with your ad partner to get the list of required parameters.
+
+Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview). This will help ensure that you've integrated the right Branch events with the correct metadata.
+
+
+!!! note "Testing your events with Liveview"
+	You can test your integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter with the event name to verify that the Branch SDK is recording each event.
+
 
 ### Enable the integration
 
@@ -23,7 +46,8 @@ This guide will walk you through how to setup your campaigns with **[Pinterest](
 
 ![image](/_assets/img/pages/deep-linked-ads/pinterest/pinterest-enable.png)
 
-{! ingredients/deep-linked-ads/enable-partner-tip.md !}
+!!! tip "Enable postbacks"
+    Basic postbacks will automatically be activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then [add additional postbacks](#adding-more-postbacks), for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_. You can also [edit postbacks](#advanced-editing-postbacks) if there's additional data you really need to pass along to your ad partner.
 
 ![image](/_assets/img/pages/deep-linked-ads/pinterest/pinterest-postbacks.png)
 
@@ -31,7 +55,7 @@ This guide will walk you through how to setup your campaigns with **[Pinterest](
 
 Once you've enabled an integration it's time to create a tracking link.
 
-1. First click <notranslate>**Create Ad Link**</notranslate> and select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format. For campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>. <notranslate>**Product Links**</notranslate> are for shopping or dynamic re-marketing campaigns and will take you to create a Deep Linked Product Feed.
+1. First click <notranslate>**Create Ad Link**</notranslate> and select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format. For campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>. <notranslate>**Product Links**</notranslate> are for shopping or dynamic re-marketing campaigns.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 
@@ -65,26 +89,23 @@ Once you've enabled an integration it's time to create a tracking link.
 
 	![image](/_assets/img/pages/deep-linked-ads/pinterest/pinterest-links.png)
 
-{! ingredients/deep-linked-ads/view-ad-link-data.md !}
+### Viewing Your Data
 
-{! ingredients/deep-linked-ads/people-based-attribution.md !}
+The Ads Analytics Page on the Branch dashboard provides an interactive time series graph and table to view the performance of your Ad campaigns:
 
-{! ingredients/deep-linked-ads/view-through-attribution.md !}
+- Easily interact with your Analytics data breakdown and compare aspects of your Ad campaigns' performance by using the <notranslate>**Compare by**</notranslate> button to add a parameter to split the data displayed data by.
+- You can also use the <notranslate>**Add Filter +**</notranslate> button to refine the data displayed to gain deeper insight into the performance of your Ad campaigns.
 
-{! ingredients/deep-linked-ads/granting-partner-access.md !}
+The <notranslate>**TRENDS**</notranslate> table shows the chart and breakdown of last 7 days data on the campaign performance by ad partner.
 
-## Advanced
+![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/trends-graph.png)
 
-{! ingredients/deep-linked-ads/add-more-postbacks-short.md !}
+The <notranslate>**EVENTS**</notranslate> table shows summary data on the performance of each Ad campaign.
 
-{! ingredients/deep-linked-ads/all-events-toggle.md !}
+![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/events-table.png)
 
-{! ingredients/deep-linked-ads/edit-postbacks.md !}
+On the top right side of the table you can find a download button to retrieve the chart's content as a CSV file.  For more info about Ads Analytics refer [here](/activity-reports-analytics/paid-ads-analytics/).
 
-{! ingredients/deep-linked-ads/tracking-link-params.md !}
+## Advanced Setup
 
-{! ingredients/deep-linked-ads/attribution-windows.md !}
-
-{! ingredients/deep-linked-ads/reset-ad-settings.md !}
-
-{! ingredients/deep-linked-ads/support.md !}
+Please refer to our [Advanced Universal Ads](/deep-linked-ads/branch-universal-ads-advanced/) guide for advanced options when enabling a Universal Ads partner.

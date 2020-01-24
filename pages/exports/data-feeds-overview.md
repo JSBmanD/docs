@@ -24,7 +24,7 @@ Data Feeds is Branch’s premium suite of tools for exporting data. If you want 
     <img src="../../../_assets/img/pages/exports/export-icon.png" />
     <p>Aggregate Exports</p>
   </a>
-  <a href="/exports/cohort-api/">
+  <a href="/exports/cohort-exports/">
     <img src="../../../_assets/img/pages/exports/export-icon.png" />
     <p>Cohort Exports</p>
   </a>

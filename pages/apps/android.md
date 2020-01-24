@@ -1,7 +1,7 @@
 ---
 title: Android SDK
 ---
-!!! info "Current SDK Version 4.2.0"
+!!! info "Current SDK Version 4.3.0"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
 !!! warning "Android Studio Version"
@@ -69,7 +69,6 @@ title: Android SDK
 
             // required for all Android apps
             implementation 'io.branch.sdk.android:library:4.+'
-            implementation 'com.android.installreferrer:installreferrer:1.1'
 
             // required if your app is in the Google Play Store (tip: avoid using bundled play services libs)
             implementation 'com.google.firebase:firebase-appindexing:19.0.0' // App indexing
@@ -83,6 +82,9 @@ title: Android SDK
             testImplementation 'junit:junit:4.12'
         }
         ```
+
+!!! warning "Using Branch Android SDK versions below 4.3.0"
+    As of version 4.3.0, Google's Play Install Referrer Library is bundled into Branch Android SDK.  If you are using a version below 4.3.0, you must update your [app's dependencies to include the Play Install Referrer Library](https://developer.android.com/google/play/installreferrer/library#dependencies).
 
 !!! warning "Google Mobile Ads SDK 17+"
     If you decide to implement the Google Mobile Ads SDK version 17+, you have to declare your app is an Ad Manager app. See [Google Developer Docs](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml) on how to do so. Failure to add this <meta-data> tag results in a crash with the message: "The Google Mobile Ads SDK was initialized incorrectly."
@@ -207,8 +209,8 @@ title: Android SDK
                 // activity will skip onStart, handle this case with reInitSession
                 Branch.getInstance().reInitSession(this, branchReferralInitListener);
             }
-            private Branch.BranchUniversalReferralInitListener branchReferralInitListener =
-                    new Branch.BranchUniversalReferralInitListener() {
+            private Branch.BranchReferralInitListener branchReferralInitListener =
+                    new Branch.BranchReferralInitListener() {
                         @Override public void onInitFinished(BranchUniversalObject branchUniversalObject,
                                                              LinkProperties linkProperties, BranchError branchError) {
                             // do something with branchUniversalObject/linkProperties..
@@ -240,7 +242,7 @@ title: Android SDK
             }
 
             object branchListener : Branch.BranchReferralInitListener {
-                    override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+                    override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                         if (error == null) {
                             Log.i("BRANCH SDK", referringParams.toString())
                             // Retrieve deeplink keys from 'referringParams' and evaluate the values to determine where to route the user
@@ -398,7 +400,7 @@ title: Android SDK
             .addControlParameter("custom", "data")
             .addControlParameter("custom_random", Long.toString(Calendar.getInstance().getTimeInMillis()))
 
-        buo.generateShortUrl(this, lp, BranchLinkCreateListener { url, error ->
+        buo.generateShortUrl(this, lp, BranchLinkCreateListener { url?, error? ->
             if (error == null) {
                 Log.i("BRANCH SDK", "got my Branch link to share: " + url)
             }
@@ -476,7 +478,7 @@ title: Android SDK
         buo.showShareSheet(this, lp, ss, object : Branch.BranchLinkShareListener {
             override fun onShareLinkDialogLaunched() {}
             override fun onShareLinkDialogDismissed() {}
-            override fun onLinkShareResponse(sharedLink: String, sharedChannel: String, error: BranchError?) {}
+            override fun onLinkShareResponse(sharedLink: String?, sharedChannel: String?, error: BranchError?) {}
             override fun onChannelSelected(channelName: String) {}
         })
         ```
@@ -516,7 +518,7 @@ title: Android SDK
         ```java
         // listener (within Main Activity's onStart)
         Branch.getInstance().initSession(object : BranchReferralInitListener {
-            override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+            override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                 if (error == null) {
                     Log.e("BRANCH SDK", referringParams.toString)
                 } else {
@@ -571,7 +573,7 @@ title: Android SDK
         ```java
         // listener (within Main Activity's onStart)
         Branch.getInstance().initSession(object : BranchReferralInitListener {
-            override fun onInitFinished(referringParams: JSONObject, error: BranchError?) {
+            override fun onInitFinished(referringParams: JSONObject?, error: BranchError?) {
                 if (error == null) {
                     // option 1: log data
                     Log.i("BRANCH SDK", referringParams.toString())
@@ -685,7 +687,28 @@ title: Android SDK
     - Validate with the [Branch Dashboard](https://dashboard.branch.io/liveview/events)
 
 
-    {! ingredients/sdk/v2-events.md !}
+
+    Use the table below to quickly find the event you want to track.
+
+    | Event Name | Event Category | iOS | Android | API
+    | :-: | :-: | :-: | :-: | :-:
+    | <notranslate>**Add To Cart**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventAddToCart` | `BRANCH_STANDARD_EVENT.ADD_TO_CART` | `ADD_TO_CART`
+    | <notranslate>**Add To Wishlist**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventAddToWishlist` | `BRANCH_STANDARD_EVENT.ADD_TO_WISHLIST` | `ADD_TO_WISHLIST`
+    | <notranslate>**View Cart**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventViewCart` | `BRANCH_STANDARD_EVENT.VIEW_CART` | `VIEW_CART`
+    | <notranslate>**Initiate Purchase**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventInitiatePurchase` | `BRANCH_STANDARD_EVENT.INITIATE_PURCHASE` | `INITIATE_PURCHASE`
+    | <notranslate>**Add Payment Info**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventAddPaymentInfo` | `BRANCH_STANDARD_EVENT.ADD_PAYMENT_INFO` | `ADD_PAYMENT_INFO`
+    | <notranslate>**Purchase**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventPurchase` | `BRANCH_STANDARD_EVENT.PURCHASE` | `PURCHASE`
+    | <notranslate>**Spend Credits**</notranslate> | [Commerce Event](#track-commerce-events) | `BranchStandardEventSpendCredits` | `BRANCH_STANDARD_EVENT.SPEND_CREDITS` | `SPEND_CREDITS`
+    | <notranslate>**Search**</notranslate> | [Content Event](#track-content-events) | `BranchStandardEventSearch` | `BRANCH_STANDARD_EVENT.SEARCH` | `SEARCH`
+    | <notranslate>**View Item**</notranslate> | [Content Event](#track-content-events) | `BranchStandardEventViewItem` | `BRANCH_STANDARD_EVENT.VIEW_ITEM` | `VIEW_ITEM`
+    | <notranslate>**View Items**</notranslate> | [Content Event](#track-content-events) | `BranchStandardEventViewItems` | `BRANCH_STANDARD_EVENT.VIEW_ITEMS` | `VIEW_ITEMS`
+    | <notranslate>**Rate**</notranslate> | [Content Event](#track-content-events) | `BranchStandardEventRate` | `BRANCH_STANDARD_EVENT.RATE` | `RATE`
+    | <notranslate>**Share**</notranslate> | [Content Event](#track-content-events) | `BranchStandardEventShare` | `BRANCH_STANDARD_EVENT.SHARE` | `SHARE`
+    | <notranslate>**Complete Registration**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventCompleteRegistration` | `BRANCH_STANDARD_EVENT.COMPLETE_REGISTRATION` | `COMPLETE_REGISTRATION`
+    | <notranslate>**Complete Tutorial**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventCompleteTutorial` | `BRANCH_STANDARD_EVENT.COMPLETE_TUTORIAL` | `COMPLETE_TUTORIAL`
+    | <notranslate>**Achieve Level**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventAchieveLevel` | `BRANCH_STANDARD_EVENT.ACHIEVE_LEVEL` | `ACHIEVE_LEVEL`
+    | <notranslate>**Unlock Achievement**</notranslate> | [Lifecycle Event](#track-lifecycle-events) | `BranchStandardEventUnlockAchievement` | `BRANCH_STANDARD_EVENT.UNLOCK_ACHIEVEMENT` | `UNLOCK_ACHIEVEMENT`
+
 
 
 - ### Handle referrals
@@ -728,7 +751,7 @@ title: Android SDK
         - *Kotlin*
 
             ```java
-            Branch.getInstance().loadRewards { changed, error ->
+            Branch.getInstance().loadRewards { changed, error? ->
                 if (error != null) {
                     Log.i("BRANCH SDK", "branch load rewards failed. Caused by -" + error.message)
                 } else {
@@ -757,7 +780,7 @@ title: Android SDK
         - *Kotlin*
 
             ```java
-            Branch.getInstance().getCreditHistory { history, error ->
+            Branch.getInstance().getCreditHistory { history?, error? ->
                 if (error != null) {
                     Log.i("BRANCH SDK", "branch load credit history failed. Caused by -" + error.message)
                 } else {
@@ -1179,37 +1202,6 @@ title: Android SDK
         ```xml
         <application android:name="io.branch.referral.BranchApp">
         ```
-
-- ### Custom install referrer class
-
-    - Google only allows one `BroadcastReceiver` per application
-
-    - Add to your `AndroidManifest.xml`
-
-        ```xml
-        <receiver android:name="com.BRANCH SDK.CustomInstallListener" android:exported="true">
-          <intent-filter>
-            <action android:name="com.android.vending.INSTALL_REFERRER" />
-          </intent-filter>
-        </receiver>
-        ```
-
-    - Create an instance of `io.branch.referral.InstallListener` in `onReceive()`
-
-    - *Java*
-
-        ```java
-        InstallListener listener = new InstallListener();
-        listener.onReceive(context, intent);
-        ```
-
-    - *Kotlin*
-
-        ```java
-        val listener = InstallListener()
-        listener.onReceive(context, intent)
-        ```
-
 - ### Generate signing certificate
 
     - Used for Android <notranslate>**App Link**</notranslate> deep linking

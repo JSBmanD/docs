@@ -52,24 +52,6 @@ You can create new ad links, as well as edit/duplicate/archive current ad links.
 !!! info "Creating an Ad Link"
 	Please refer to any [Universal Ads Partner Integration](/deep-linked-ads/1plusads-mobile-tracking/#create-an-ad-link) article for an in-depth tutorial on how to create an ad link.
 
-#### Deep Linked Feed
-
-You can create new deep linked feeds, and view/archive current deep linked feeds.
-
-![image](/_assets/img/pages/dashboard/access-levels/link-deep-linked-feeds.png)
-
-!!! info "Creating a New Deep Linked Feed"
-	Please refer to the [Dynamic Product Feeds](/deep-linked-ads/dynamic-product-feeds/#create-a-new-deep-linked-feed) article for an in-depth tutorial on how to create a deep linked feed.
-
-#### Feed Sources
-
-You can create new feed sources, as well as debug/archive current feed sources.
-
-![image](/_assets/img/pages/dashboard/access-levels/link-feed-sources.png)
-
-!!! info "Creating a New Feed Source"
-	Please refer to the [Dynamic Product Feeds](/deep-linked-ads/dynamic-product-feeds/#upload-a-feed-source) article for an in-depth tutorial on how to prepare and upload your feed source.
-
 ## Channels & Links
 
 ### Quick Links

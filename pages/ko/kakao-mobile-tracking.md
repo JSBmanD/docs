@@ -7,7 +7,7 @@ title: 카카오 광고 캠페인 트래킹 관련
 
 이 가이드에서는 Branch 유니버설 광고를 사용하여 **[Kakao](https://www.kakaocorp.com/)** 로 캠페인을 설정하고 **모든 기기, 플랫폼, 채널** 에 걸친 광고 전환을 트래킹하는 방법에 대해 살펴봅니다.
 
-{! ingredients/deep-linked-ads/overview-steps.md !}
+
 
 ## 설정
 

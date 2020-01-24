@@ -11,6 +11,8 @@ Before testing, make sure of the following:
 
 ## 1. Add a Test Device
 
+Before you complete the steps below, we highly recommend [adding your test device](https://docs.branch.io/links/adding-test-devices/) to your Branch account.  This enables you to repeatedly test installing your app without affecting real traffic and attribution.
+
 ## 2. Create a Branch Link
 
 Please follow the [Creating Ad Links](https://docs.branch.io/links/creating-ad-links/) instructions.
