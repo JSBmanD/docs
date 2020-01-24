@@ -79,22 +79,22 @@ jobs:
           from: ~/docs/site/
           to: << parameters.s3-bucket >>
           overwrite: true
-      - run:
-          name: Generate Redirects
-          command: |
-            touch index.html
-            while read SOURCE; do
-              IFS=' ' read -ra REDIRECTS \<<< "$SOURCE"
-              echo "Redirecting ${REDIRECTS[0]} to ${REDIRECTS[1]}"
-              aws s3 cp index.html << parameters.s3-bucket >>/${REDIRECTS[0]} --website-redirect ${REDIRECTS[1]}
-            done < redirects.txt
-            rm index.html
+      # - run:
+      #     name: Generate Redirects
+      #     command: |
+      #       touch index.html
+      #       while read SOURCE; do
+      #         IFS=' ' read -ra REDIRECTS \<<< "$SOURCE"
+      #         echo "Redirecting ${REDIRECTS[0]} to ${REDIRECTS[1]}"
+      #         aws s3 cp index.html << parameters.s3-bucket >>/${REDIRECTS[0]} --website-redirect ${REDIRECTS[1]}
+      #       done < redirects.txt
+      #       rm index.html
       - run:
           name: Clear CloudFront
           command: aws cloudfront create-invalidation --distribution-id E2OB89F2B14D80 --paths "/*"
       - run:
           name: Build Docsearch index
-          command: docker run -it --env-file=docsearch.env -e "CONFIG=$(cat docsearch_staging.json | jq -r tostring)" algolia/docsearch-scraper
+          command: docker run -it -e "APPLICATION_ID=WWVVC15B3P" -e "API_KEY" -e "CONFIG=$(cat docsearch_staging.json | jq -r tostring)" algolia/docsearch-scraper # API_KEY from CircleCI Project
   deploy-production:
     parameters:
       s3-bucket:
@@ -141,7 +141,7 @@ jobs:
           command: aws cloudfront create-invalidation --distribution-id E3L0JJHM8M3QTI --paths "/*"
       - run:
           name: Build Docsearch index
-          command: docker run -it --env-file=docsearch.env -e "CONFIG=$(cat docsearch.json | jq -r tostring)" algolia/docsearch-scraper
+          command: docker run -it -e "APPLICATION_ID=WWVVC15B3P" -e "API_KEY" -e "CONFIG=$(cat docsearch.json | jq -r tostring)" algolia/docsearch-scraper # API_KEY from CircleCI Project
 
 workflows:
   version: 2.1
