@@ -212,7 +212,7 @@ Optional parameter; results are returned in UTC if not provided.
    </td>
    <td>Filter
    </td>
-   <td><strong>BRANCH CALLS ONLY</strong>; Filter by fields and boolean operators against fields of the LogInstalls model; must be URI encoded and JSON parsed. Example: <code>&filter_cthulhu=%5B%22and%22%2C%5B%22eq%22%2C%22mat_id%22%2C%223bc15517-92d5-4b7f-9837-e9a30d6fb9b8%22%5D%2C%5B%22eq%22%2C%22site_event_id%22%2C1844998705%5D%5D</code>
+   <td><strong>BRANCH CALLS ONLY</strong>; Filter by fields and boolean operators against fields of the LogInstalls model; must be URI encoded and JSON parsed. Example: <code>&filter=%5B%22and%22%2C%5B%22eq%22%2C%22mat_id%22%2C%223bc15517-92d5-4b7f-9837-e9a30d6fb9b8%22%5D%2C%5B%22eq%22%2C%22site_event_id%22%2C1844998705%5D%5D</code>
    </td>
   </tr>
   <tr>
@@ -220,7 +220,7 @@ Optional parameter; results are returned in UTC if not provided.
    </td>
    <td>Filter
    </td>
-   <td><strong>TUNE CALLS ONLY</strong>; Filter by fields and boolean operators against fields of the LogInstalls model; must be URI encoded and JSON parsed. Example: <code>&filter_cthulhu=%5B%22and%22%2C%5B%22eq%22%2C%22mat_id%22%2C%223bc15517-92d5-4b7f-9837-e9a30d6fb9b8%22%5D%2C%5B%22eq%22%2C%22site_event_id%22%2C1844998705%5D%5D</code>
+   <td><strong>TUNE CALLS ONLY</strong>; Filter by fields and boolean operators against fields of the LogInstalls model; must be URI encoded and JSON parsed. See the Appendix for the Cthulhu Filter Specification. Example: <code>&filter_cthulhu=%5B%22and%22%2C%5B%22eq%22%2C%22mat_id%22%2C%223bc15517-92d5-4b7f-9837-e9a30d6fb9b8%22%5D%2C%5B%22eq%22%2C%22site_event_id%22%2C1844998705%5D%5D</code>
    </td>
   </tr>
   <tr>
@@ -244,7 +244,7 @@ Optional parameter; results are returned in UTC if not provided.
    </td>
    <td><em>Nullable String</em>
    </td>
-   <td>Format of the response; can be either JSON or CSV. If not selected, defaults to CSV.
+   <td>Format of the response; can be either JSON or CSV. If not selected, defaults to CSV. Branch uses UTF-8 encoding for CSV files.
    </td>
   </tr>
 </table>
@@ -253,6 +253,7 @@ Optional parameter; results are returned in UTC if not provided.
 
 - *BRANCH REQUEST*
 
+			```
 			curl -X POST 'https://api2.branch.io/v2/logs?organization_id=732662944269095814'
 			-H "Content-Type: application/json"
 			-H "Access-Token: YOUR_ACCESS_TOKEN_HERE"
@@ -263,20 +264,27 @@ Optional parameter; results are returned in UTC if not provided.
 					"end_date": "2019-12-09T01:59:59Z",
 					"filter": ["gt","app_id",7]
 					}'
+			```
 
 - *TUNE REQUEST*
 
+			```
 			https://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/installs?api_key=YOUR_ACCESS_TOKEN_HERE&start_date=2019-01-14T00:00:00&end_date=2019-01-15T00:00:00&timezone=UTC&fields=site.name,site.id,device_ip&limit=100&response_format=csv
+			```
 
 #### Sample Export Response
 
 - *BRANCH RESPONSE*
 
+			```
 			{"handle":"1612dbb3-85ef-49f8-b1c5-5818c163600c","export_job_status_url":"http://api2.branch.io/v2/logs/1612dbb3-85ef-49f8-b1c5-5818c163600c?organization_id=732662944269095814"}
+			```
 
 - *TUNE RESPONSE*
 
+			```
 			{"handle":"0818e641-cd5c-4498-8a17-77152689bb94","export_job_status_url":"http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=YOUR_ACCESS_TOKEN_HERE","branch_url":"http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/installs?start_date=2019-01-14T00%3A00%3A00%2B00%3A00&end_date=2019-01-15T00%3A00%3A00%2B00%3A00&fields=site.name%2Csite.id%2Cdevice_ip&filter_cthulhu=%5B%22in%22%2C%20%22advertiser_id%22%2C%20ADVERTISER_ID%5D&response_format=csv&timezone=UTC&limit=100&api_key=YOUR_ACCESS_TOKEN_HERE"}
+			```
 
 ### Building the Download Export Request
 
@@ -321,22 +329,30 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 - *BRANCH REQUEST*
 
+			```
 			curl 'http://api2.branch.io/v2/logs/1612dbb3-85ef-49f8-b1c5-5818c163600c?organization_id=732662944269095814'
 			-H "Access-Token: YOUR_ACCESS_TOKEN_HERE"
+			```
 
 - *TUNE REQUEST*
 
+			```
 			http://api.mobileapptracking.com/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=YOUR_ACCESS_TOKEN_HERE
+			```
 
 #### Sample Download Export Response
 
 - *BRANCH RESPONSE*
 
+			```
 			{"code":200,"lines_exported":2000000,"status":"complete","response_url":"https://branch-exports-web.s3.amazonaws.com/732662944269095814-eo_open-2019-12-10-2019-12-10-1612dbb3-85ef-49f8-b1c5-5818c163600c-bUlN2lwyTE10qIVH.csv?Signature=YOUR_ACCESS_TOKEN_HERE&AWSAccessKeyId=YOUR_ACCESS_TOKEN_HERE&Expires=1577305615"}
+			```
 
 - *TUNE RESPONSE*
 
+			```
 			{"report_schedule_id": null, "lines_exported": null, "context": "", "url": "https://branch-exports-web.s3.amazonaws.com/ADVERTISER_ID-installs-2019-01-14-2019-01-15-0818e641-cd5c-4498-8a17-77152689bb94-wxGQxyHo0Djw2ktt.csv?Signature=5XN9MRMftyQ1XafNSTW4STMpT9U%3D&AWSAccessKeyId=AKIAI7A6NRHGMRDK2LIQ&Expires=1548295211", "percent_complete": 100, "status": "complete", "branch_url": "http://tlnk.branch.io/v3/logs/advertisers/ADVERTISER_ID/exports/0818e641-cd5c-4498-8a17-77152689bb94?api_key=YOUR_ACCESS_TOKEN_HERE"}
+			```
 
 ## Appendix
 
@@ -731,3 +747,7 @@ When exporting the following fields, you will notice a difference between the va
 Related objects no longer use periods ( . ) to access the properties on the object. Rather, field names use underscores ( _ ) only.
 
 For example, `site_event.id` will now be exported as `site_event_id`.
+
+### Cthulhu Filter Specification
+
+Please refer to the [Cthulhu Filter Specification](/exports/cthulhu-filter-spec.pdf) if you are unsure how to properly format the filter.

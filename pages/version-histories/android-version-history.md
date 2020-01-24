@@ -1,6 +1,12 @@
 ---
 title: Android Version History
 ---
+### v4.3.1
+
+**( 23 Jan 2020 )**
+
+- Hotfix revert CPID and LATD listener paths to the newer version.
+- Replace "SDK already initialized" error with logs and return latest referring parameters.
 
 ### v4.3.0
 
