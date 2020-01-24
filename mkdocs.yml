@@ -84,7 +84,7 @@ extra:
     bizible: true
     algolia:
       appId: 'WWVVC15B3P'
-      apiKey: '63fed64eb90bdb869334f90e3568b813'
+      apiKey: '558b5a03a82b3492a1a706d984e0e0f4'
       index: 'docsearchIndex' # replaced with parameter by CircleCI
       selector: '#algolia-doc-search'
       debug: false
