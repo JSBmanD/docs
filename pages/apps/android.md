@@ -1,7 +1,7 @@
 ---
 title: Android SDK
 ---
-!!! info "Current SDK Version 4.3.0"
+!!! info "Current SDK Version 4.3.1"
     Please see the [Android Version History](/version-histories/android-version-history) to view change log.
 
 !!! warning "Android Studio Version"
