@@ -15,7 +15,7 @@ Interested in becoming a Data Intgeration Partner? Just fill out this form: **[P
 <a href="https://www.adjust.com/" target="_blank">![Adjust](/_assets/img/pages/integrations/logos/adjust-logo.png)</a>|**[Adjust](/integrations/adjust/)**
 <a href="https://www.admost.com/" target="_blank">![Admost](https://cdn.branch.io/branch-assets/ad-partner-manager/388787843096400122/admost-logo-1-1546469539520.png)</a>|**[Admost](/integrations/admost/)**
 <a href="https://my.omniture.com" target="_blank">![Adobe Analytics](/_assets/img/pages/integrations/logos/adobe_analytics.png)</a>|**[Adobe Analytics](/integrations/adobe-analytics/)**
-<a href="https://www.adoya.io/" target="_blank">![Adoya]https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Adoya_logo-1576552507184.png)</a>|**[Adoya](/integrations/adoya/)**
+<a href="https://www.adoya.io/" target="_blank">![Adoya](https://cdn.branch.io/branch-assets/ad-partner-manager/386574786681131050/Adoya_logo-1576552507184.png)</a>|**[Adoya](/integrations/adoya/)**
 <a href="https://www.urbanairship.com/" target="_blank">![Airship](https://cdn.branch.io/branch-assets/ad-partner-manager//urban_airship-1568181974178.png)</a>|**[Airship](/integrations/airship/)**
 <a href="https://amplitude.com" target="_blank">![Amplitude](/_assets/img/pages/integrations/logos/amplitude-logo.png)</a>|**[Amplitude](/integrations/amplitude/)**
 <a href="https://appmetrica.yandex.com/" target="_blank">![AppMetrica](/_assets/img/pages/integrations/logos/app_metrica.png)</a>|**[Appmetrica](/integrations/appmetrica/)**
