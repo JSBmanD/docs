@@ -1198,10 +1198,11 @@ title: Android SDK
 - ### Using the default application class
 
     - If your app does not have an application class
-
+    
         ```xml
         <application android:name="io.branch.referral.BranchApp">
         ```
+
 - ### Generate signing certificate
 
     - Used for Android <notranslate>**App Link**</notranslate> deep linking
