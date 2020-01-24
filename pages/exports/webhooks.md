@@ -20,11 +20,11 @@ The webhook system is very powerful and customizable. You can register to only r
 1. Open the [Webhooks](https://dashboard.branch.io/data-import-export/webhooks) page on the Branch dashboard.
 1. Click <notranslate>**+ Add A New Webhook**</notranslate>:
 
-![image](/_assets/img/pages/exports/add.png)
+![image](/images/pages/exports/add.png)
 
 ### Configure webhook criteria
 
-![image](/_assets/img/pages/exports/edit.png)
+![image](/images/pages/exports/edit.png)
 
 Here are explanations of what each field on this screen controls:
 
@@ -53,19 +53,19 @@ To test whether your webhook is configured correctly, you can use [requestbin.co
 
 1. Go to [requestbin.com](https://requestbin.com/) and click <notranslate>**+ Create a RequestBin**</notranslate>:
 
-	![image](/_assets/img/pages/exports/requestbin_create.png)
+	![image](/images/pages/exports/requestbin_create.png)
 
 1. Copy the <notranslate>**Bin URL**</notranslate>:
 
-	![image](/_assets/img/pages/exports/requestbin_inspect.png)
+	![image](/images/pages/exports/requestbin_inspect.png)
 
 1. Paste this into the URL field of your Branch webhook's configuration screen:
 
-	![image](/_assets/img/pages/exports/requestbin_add_webhook.png)
+	![image](/images/pages/exports/requestbin_add_webhook.png)
 
 1. Now whenever your webhook is triggered, you will see a full report on RequestBin:
 
-	![image](/_assets/img/pages/exports/requestbin_response.png)
+	![image](/images/pages/exports/requestbin_response.png)
 
 ## Advanced
 
@@ -189,12 +189,12 @@ Filters allow you to specify when a webhook gets sent to your URL based off crit
 !!! note "Example: Filtering installs by referring link campaign"
 	Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~campaign**</notranslate> is equal to <notranslate>**App Install Campaign**</notranslate>. The key would equal <notranslate>**session.link_data.~campaign**</notranslate> and the value would equal <notranslate>**App Install Campaign**</notranslate>.
 
-	![image](/_assets/img/pages/exports/session-filter.png)
+	![image](/images/pages/exports/session-filter.png)
 
 !!! note "Example: Filtering clicks by link channel"
 	Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. The key would equal <notranslate>**click.link_data.~channel**</notranslate> and the value would equal <notranslate>**AppLovin**</notranslate>.
 
-	![image](/_assets/img/pages/exports/click-filter.png)
+	![image](/images/pages/exports/click-filter.png)
 
 !!! note "Example: Filtering custom signup event by location"
 	Let’s say you’re interested in receiving a webhook for every <notranslate>**sign_up**</notranslate> event that is triggered via the <notranslate>**userCompletedAction**</notranslate> method in the SDKs, but only in a specific market, like Chicago. Your event metadata will look something like the following:
@@ -211,7 +211,7 @@ Filters allow you to specify when a webhook gets sent to your URL based off crit
 
 	You would configure a filter to fire a webhook only when <notranslate>**city**</notranslate> is equal to <notranslate>**Chicago**</notranslate>. The key would equal <notranslate>**event.metadata.city**</notranslate> and the value would equal <notranslate>**Chicago**</notranslate>.
 
-	![image](/_assets/img/pages/exports/filters.png)
+	![image](/images/pages/exports/filters.png)
 
 ### Templating your Postback URL
 
@@ -238,15 +238,15 @@ If you plan on sending click or install data to a third party, you’ll likely n
 
     - `http://myagency.com/tracking?event={{ event.name }}&clickId={{ session.link_click.query.clickId }}&idfa={{ device.hardware_id }}`
 
-    ![image](/_assets/img/pages/exports/templates.png)
+    ![image](/images/pages/exports/templates.png)
 
     Additionally, since you don’t want to send them _every_ install event, let’s add a [filter](#filtering-which-webhooks-are-sent) to only send the installs that are referred by links which have a <notranslate>**clickId**</notranslate> in the query parameter. In this case, we use a wildcard parameter (`*`) for the key <notranslate>**session.link_click.query.clickId**</notranslate>, which tells Branch to only trigger this webhook when an <notranslate>**install**</notranslate> event was referred by a link with a <notranslate>**clickId**</notranslate>.
 
-    ![image](/_assets/img/pages/exports/template-filters.png)
+    ![image](/images/pages/exports/template-filters.png)
 
     And with that, we’re finished creating our postback!
 
-    ![image](/_assets/img/pages/exports/template-finished.png)
+    ![image](/images/pages/exports/template-finished.png)
 
 ### Keys available for templating/filtering <notranslate>**Click**</notranslate> webhooks
 

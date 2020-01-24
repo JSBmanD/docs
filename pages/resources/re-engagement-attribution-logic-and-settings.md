@@ -13,7 +13,7 @@ Similar to the function of the attribution windows referenced above, the re-enga
 
 Denoting an event is re-engagement occurs in addition to the attribution of the event itself; i.e. the event is first attributed using the attribution windows above and then marked as re-engagement when applicable using the re-engagement inactivity window.
 
-![image](/_assets/img/pages/resources/matching/reengagement-inactivity.png)
+![image](/images/pages/resources/matching/reengagement-inactivity.png)
 
 ## Re-Engagement Inactivity Window Settings
 
@@ -25,7 +25,7 @@ To modify your app-level re-engagement inactivity window:
 2. On the <notranslate>**Link Settings**</notranslate> page, click on the <notranslate>**Attribution Windows**</notranslate> tab.
 3. Scroll down to the <notranslate>**Re-engagement Inactivity**</notranslate> setting and edit the value to any value between 0.001 and 90 days.
 
-![image](/_assets/img/pages/resources/matching/re-engagement-attribution.png)
+![image](/images/pages/resources/matching/re-engagement-attribution.png)
 
 ## Partner Settings for Acquisition Only Campaigns
 
@@ -44,7 +44,7 @@ Unlike the app-level setting, this impacts all analytics and postbacks, and can 
 4. At the bottom of the attribution window settings table, tick the box next to <notranslate>**Only attribute based on touch**</notranslate>.
 5. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/resources/matching/install-touch-setting.png)
+![image](/images/pages/resources/matching/install-touch-setting.png)
 
 ## Viewing Re-Engagement in Reporting
 
@@ -56,7 +56,7 @@ To view a re-engagement cohort:
 2. Click <notranslate>**Create New Cohort**</notranslate> and select <notranslate>**Re-engagement**</notranslate> as the <notranslate>**Cohort Type**</notranslate>.
 3. Finish your report selections and click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/resources/matching/reengagement-cohort.png)
+![image](/images/pages/resources/matching/reengagement-cohort.png)
 
 ## Tips for TUNE-Migrated Clients
 

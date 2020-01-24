@@ -23,11 +23,11 @@ Our new webhook infrastructure supports for all Branch events. The data is forma
 1. Open the [Webhooks](https://dashboard.branch.io/data-import-export/webhooks) page on the Branch dashboard.
 1. Click <notranslate>**+ Add New Webhook**</notranslate>:
 
-![image](/_assets/img/pages/exports/ua-webhooks/add-new-webhook.png)
+![image](/images/pages/exports/ua-webhooks/add-new-webhook.png)
 
 ### Configure webhook criteria
 
-![image](/_assets/img/pages/exports/ua-webhooks/edit-webhook.png)
+![image](/images/pages/exports/ua-webhooks/edit-webhook.png)
 
 As you fill out the configuration, you'll see the following options:
 
@@ -69,17 +69,17 @@ To create a filter:
 
 This should be your final view before saving:
 
-![image](/_assets/img/pages/exports/ua-webhooks/basic-filtering.png)
+![image](/images/pages/exports/ua-webhooks/basic-filtering.png)
 
 !!! note "Example: Filtering installs by attributed link campaign"
     Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Campaign**</notranslate> is equal to <notranslate>**"App Install Campaign"**</notranslate>. You would select <notranslate>**Campaign**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~campaign**</notranslate>. Finally, you'd set the value equal to <notranslate>**App Install Campaign**</notranslate>.
 
-    ![image](/_assets/img/pages/exports/ua-webhooks/campaign-install-filter.png)
+    ![image](/images/pages/exports/ua-webhooks/campaign-install-filter.png)
 
 !!! note "Example: Filtering clicks by link channel"
     Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. You would select <notranslate>**Channel**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~channel**</notranslate>. Finally, you'd set the value equal to <notranslate>**AppLovin**</notranslate>.
 
-    ![image](/_assets/img/pages/exports/ua-webhooks/channel-click-filter.png)
+    ![image](/images/pages/exports/ua-webhooks/channel-click-filter.png)
 
 
 See the [Advanced Filtering](#advanced-filtering) page to read more about customizing when events are sent.
@@ -91,19 +91,19 @@ To test whether your webhook is configured correctly, you can use [RequestBin](h
 
 1. Go to [RequestBin](https://requestbin.com/) and click <notranslate>**+ Create a RequestBin**</notranslate>:
 
-	![image](/_assets/img/pages/exports/requestbin_create.png)
+	![image](/images/pages/exports/requestbin_create.png)
 
 1. Copy the <notranslate>**Bin URL**</notranslate>:
 
-	![image](/_assets/img/pages/exports/requestbin_inspect.png)
+	![image](/images/pages/exports/requestbin_inspect.png)
 
 1. Paste this into the URL field of your Branch webhook's configuration screen:
 
-    ![image](/_assets/img/pages/exports/ua-webhooks/requestbin.png)
+    ![image](/images/pages/exports/ua-webhooks/requestbin.png)
 
 1. Now whenever your webhook is triggered, you will see a full report on RequestBin:
 
-	![image](/_assets/img/pages/exports/requestbin_response.png)
+	![image](/images/pages/exports/requestbin_response.png)
 
     !!! caution
         Please archive your Requestbin webhook when you have finished testing. Requestbins only last for 24 hours and return errors once they expire.
@@ -238,7 +238,7 @@ To create a filter:
     1. Select "equals" on the equivalency dropdown
     1. Enter a value of <notranslate>**SUMMERDEALS10**</notranslate>
 
-	![image](/_assets/img/pages/exports/ua-webhooks/coupon-filter-purchase.png)
+	![image](/images/pages/exports/ua-webhooks/coupon-filter-purchase.png)
 
 !!! caution "Array filtering not yet available"
 	Currently, webhooks do not support filtering on values inside arrays. Example arrays that cannot be filtered by value are <notranslate>**tags**</notranslate>, <notranslate>**+via_features**</notranslate> and <notranslate>**content_items**</notranslate>.

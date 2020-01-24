@@ -8,7 +8,7 @@
 
 Link Settings > Attribution Windows에서 어트리뷰션 윈도우를 편집할 수 있습니다.
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 계정 수준 어트리뷰션 윈도우에 대한 자세한 내용은 [사용자 중심 어트리뷰션](/dashboard/people-based-attribution/#attribution-windows)을 참조하세요.
 
@@ -16,7 +16,7 @@ Link Settings > Attribution Windows에서 어트리뷰션 윈도우를 편집할
 
 광고 네트워크에서 어트리뷰션 윈도우를 사용해야 한다면 광고 네트워크 수준에서 어트리뷰션 윈도우를 편집할 수 있습니다. 이 방법은 인스톨에 대해 다른 어트리뷰션 윈도우를 두는 Facebook 및 Google과 같은 네트워크를 사용할 때 권장됩니다. 이렇게 하면 계정별로 설정된 어트리뷰션 윈도우도 유지할 수 있습니다.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
 
 #### 링크 수준 어트리뷰션 윈도우
 

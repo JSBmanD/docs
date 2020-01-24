@@ -5,7 +5,7 @@ The <notranslate>"Aggregate Data"</notranslate> level of a Branch account is the
 
 <table>
   <tr>
-    <th rowspan="6"><img src="/_assets/img/pages/dashboard/access-levels/org-level-nav.png"></th>
+    <th rowspan="6"><img src="/images/pages/dashboard/access-levels/org-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -60,7 +60,7 @@ The [Dashboard Summary](https://dashboard.branch.io/) shows a high level overvie
 - View <notranslate>**Journeys**</notranslate> to see you Journey funnel from `view` to `click` to either `install` or `open`
 - View <notranslate>**Deepviews**</notranslate> to see you Deepview funnel from `view` to `click` to either `install` or `open`
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-summary.gif)
+![image](/images/pages/dashboard/access-levels/aggregate-summary.gif)
 
 ## Channels & Links
 
@@ -68,7 +68,7 @@ The [Dashboard Summary](https://dashboard.branch.io/) shows a high level overvie
 
 All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Ads Analytics**</notranslate> page.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-ads-analytics.gif)
+![image](/images/pages/dashboard/access-levels/aggregate-ads-analytics.gif)
 
 !!! info "Viewing Ads Analytics"
     Please refer to the [Paid Ads Analytics](/activity-reports-analytics/paid-ads-analytics/) article for an in-depth tutorial on using viewing your Paid Ads Analytics.
@@ -77,7 +77,7 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Journeys Banners Analytics**</notranslate> page.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-journeys-analytics.gif)
+![image](/images/pages/dashboard/access-levels/aggregate-journeys-analytics.gif)
 
 !!! info "Viewing Journeys Analytics"
     Please refer to the [Paid Ads Analytics](/activity-reports-analytics/journeys-analytics/) article for an in-depth tutorial on using viewing your Journeys Analytics.
@@ -86,7 +86,7 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Email Analytics**</notranslate> page.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-email-analytics.gif)
+![image](/images/pages/dashboard/access-levels/aggregate-email-analytics.gif)
 
 ### Organic Search
 
@@ -95,13 +95,13 @@ All access roles - Admin/Team Member/Full Read - except Limited Read have view a
 !!! warning "Channel-level Access also Required"
     Due to the ability to impact functionality, the Organic Search page also requires the user have Channel-level access.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-organic-search.png)
+![image](/images/pages/dashboard/access-levels/aggregate-organic-search.png)
 
 ### Referrals Analytics
 
 All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Referrals Analytics**</notranslate> page.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-referrals-analytics.gif)
+![image](/images/pages/dashboard/access-levels/aggregate-referrals-analytics.gif)
 
 ## Cross-channel Analytics
 
@@ -109,13 +109,13 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Sources**</notranslate> page.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-sources-analytics.png)
+![image](/images/pages/dashboard/access-levels/aggregate-sources-analytics.png)
 
 ### Content
 
 All access roles - Admin/Team Member/Full Read/Limited Read - have view access to the <notranslate>**Content**</notranslate> page.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-content-analytics.png)
+![image](/images/pages/dashboard/access-levels/aggregate-content-analytics.png)
 
 !!! info "Viewing Content Analytics"
     Please refer to the [Paid Ads Analytics](/activity-reports-analytics/content-analytics/) article for an in-depth tutorial on using viewing your Content Analytics.

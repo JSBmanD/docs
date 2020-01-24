@@ -1,7 +1,7 @@
 ---
 title: Google 광고에 대한 전반적인 소개
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
+!!! info "<img src="../../../images/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
 - **Google Ads 개요(현재 페이지)**
 - [연동 활성화하기](/deep-linked-ads/google-ads-enable/)
 - [유니버설 앱 캠페인(UAC)](/deep-linked-ads/google-ads-uac/)
@@ -12,7 +12,7 @@ title: Google 광고에 대한 전반적인 소개
 
 Branch를 사용하면 **[Google Ads](https://ads.google.com/home/)** 와의 연동을 통해 전환율을 높이고 Branch 대시보드에서 바로 캠페인의 영향을 측정할 수 있습니다.
 
-![이미지](/_assets/img/pages/deep-linked-ads/google/branch-google-ads.png)
+![이미지](/images/pages/deep-linked-ads/google/branch-google-ads.png)
 
 Google Ads 캠페인 지원
 -----------------

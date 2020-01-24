@@ -5,7 +5,7 @@ The <notranslate>"Link"</notranslate> level of a Branch account is the fourth le
 
 <table>
   <tr>
-    <th rowspan="5"><img src="/_assets/img/pages/dashboard/access-levels/org-level-nav.png"></th>
+    <th rowspan="5"><img src="/images/pages/dashboard/access-levels/org-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -47,7 +47,7 @@ If you are an Admin, you have edit access to the following tabs in the <notransl
 
 You can create new ad links, as well as edit/duplicate/archive current ad links.
 
-![image](/_assets/img/pages/dashboard/access-levels/link-ad-links.png)
+![image](/images/pages/dashboard/access-levels/link-ad-links.png)
 
 !!! info "Creating an Ad Link"
 	Please refer to any [Universal Ads Partner Integration](/deep-linked-ads/1plusads-mobile-tracking/#create-an-ad-link) article for an in-depth tutorial on how to create an ad link.
@@ -61,7 +61,7 @@ You can create new ad links, as well as edit/duplicate/archive current ad links.
 
 If you are an Admin, you have edit access to the <notranslate>**Quick Links**</notranslate> section.
 
-![image](/_assets/img/pages/dashboard/access-levels/link-quick-links.png)
+![image](/images/pages/dashboard/access-levels/link-quick-links.png)
 
 You can create new Quick Links, as well as edit/view stats/debug/duplicate/archive existing quick links.
 
@@ -73,7 +73,7 @@ You can create new Quick Links, as well as edit/view stats/debug/duplicate/archi
 !!! warning "Aggregate Data Access Required"
 	Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)
 
-![image](/_assets/img/pages/dashboard/access-levels/link-bulk-create.png)
+![image](/images/pages/dashboard/access-levels/link-bulk-create.png)
 
 To create quick links in bulk:
 
@@ -95,7 +95,7 @@ To create quick links in bulk:
 !!! warning "Aggregate Data Access Required"
 	Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)
 
-![image](/_assets/img/pages/dashboard/access-levels/link-export-csv.png)
+![image](/images/pages/dashboard/access-levels/link-export-csv.png)
 
 To export your existing quick links:
 

@@ -43,7 +43,7 @@ Finally, if you do not already have the following AMP scripts on your page, add 
 
 AMP Journeys can be created as part of the normal [Journeys creation flow](https://dashboard.branch.io/web/journeys/audiencerule/new){:target="\_blank"}. You can target users on AMP pages by checking the box <notranslate>**AMP Web**</notranslate> on the Select Audience step:
 
-![image](/_assets/img/pages/journeys/amp-checkbox.png)
+![image](/images/pages/journeys/amp-checkbox.png)
 
 See the [Journeys Guide](/web/journeys/#select-audience){:target="\_blank"} for more information on selecting your audience.
 
@@ -53,7 +53,7 @@ Once you have your audience selected, you can configure your templates. Currentl
 
 When you click <notranslate>**Select Template**</notranslate> from the <notranslate>**Configure Views**</notranslate> step, the <notranslate>**standard bottom banner**</notranslate> view type should already be selected, showing you the Journeys templates that are compatible with AMP:
 
-![image](/_assets/img/pages/journeys/amp-select-template.png)
+![image](/images/pages/journeys/amp-select-template.png)
 
 Hover over the template and click <notranslate>**Create**</notranslate>.
 
@@ -61,7 +61,7 @@ Hover over the template and click <notranslate>**Create**</notranslate>.
 
 On the <notranslate>**Validate & Test**</notranslate> step, you will see AMP-specific messages if you have targeted <notranslate>**AMP Web**</notranslate> users on the [Select Audience](#target-amp-web-in-your-audience) step.
 
-![image](/_assets/img/pages/journeys/amp-validation.png)
+![image](/images/pages/journeys/amp-validation.png)
 
 #### The selected template is not AMP-compatible
 
@@ -71,7 +71,7 @@ If Branch has detected that you have selected a template that is not compatible 
 
 Analytics for AMP Journeys works the [same way as for regular Journeys](/web/journeys/#visualizing-journeys-performance), in that you can see clicks, opens, installs, and custom events tied to your Journey by clicking <notranslate>**View Performance**</notranslate> from the actions menu for your AMP Journey.
 
-![image](/_assets/img/pages/journeys/view-performance.png)
+![image](/images/pages/journeys/view-performance.png)
 
 ## Advanced
 
@@ -120,7 +120,7 @@ You can customize the appearance of a Journey dynamically using query parameters
 
 You can also add deep link data to a Journey in the dashboard. In the <notranslate>**Customize Template**</notranslate> screen, click the button and add your key:value pairs in the deep link data fields. For example if your deep linking key was <notranslate>**productId**</notranslate>:
 
-![image](/_assets/img/pages/journeys/amp-deep-link-data.png)
+![image](/images/pages/journeys/amp-deep-link-data.png)
 
 ## Support
 

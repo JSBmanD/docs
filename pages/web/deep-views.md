@@ -8,7 +8,7 @@ A Deepview is a mobile web splash page, hosted by Branch, that gives a preview o
 
 Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing, etc), opening up new mechanisms for people to find your app, and drive much higher conversions to install than sending visitors to the App/Play Store directly. Here's an example flow:
 
-![image](/_assets/img/pages/deepviews/deepviews_allthecooks.gif)
+![image](/images/pages/deepviews/deepviews_allthecooks.gif)
 
 !!! note "Intended for apps without a mobile website"
     If you already have a mobile website with content, [Journeys](/web/journeys/) is better suited.
@@ -20,12 +20,12 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 1. Head to the [Deepviews configuration page](https://dashboard.branch.io/web/deepviews) on the Branch dashboard.
 1. Deepviews are configured separately for visitors on each platform (iOS, Android, and desktop). Select the platforms you want and click <notranslate>**Enable**</notranslate>.
 
-![image](/_assets/img/pages/deepviews/deepviews_enable.png)
+![image](/images/pages/deepviews/deepviews_enable.png)
 
 !!! warning
     To enable desktop Deepviews, be sure to select "Branch-hosted SMS Landing Page" for Desktop redirects on [Link Settings](https://dashboard.branch.io/link-settings).
 
-    ![image](/_assets/img/pages/deepviews/deepviews_desktop.png)
+    ![image](/images/pages/deepviews/deepviews_desktop.png)
 
     Note that this will override any [Text-Me-The-App](/web/text-me-the-app/) page you have configured.
 
@@ -36,7 +36,7 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 
 Branch lets you track the flow of users through Deepviews. You can find this information on the [summary page](https://dashboard.branch.io/) of the Branch dashboard.
 
-![image](/_assets/img/pages/deepviews/deepview_analytics.png)
+![image](/images/pages/deepviews/deepview_analytics.png)
 
 There are various metrics to understand when deep linking from your mobile website.
 
@@ -117,7 +117,7 @@ When you create links via a mobile SDK, you simply need to set the OG tag parame
 
 Edit the Title, Description and Image URL in the _Social Media_ section.
 
-![image](/_assets/img/pages/deepviews/deepviews_social_media_descriptions.png)
+![image](/images/pages/deepviews/deepviews_social_media_descriptions.png)
 
 **Note:** the _Deep Link_ section accepts most link control parameters, but `$og_title`, `$og_description` and `$og_image_url` **cannot** be specified there.
 
@@ -166,7 +166,7 @@ Enable iOS and Android Deepviews through the SDK. Below are few examples, but yo
 
 Finally, enable Deepviews for an individual link on the [Marketing dashboard](https://dashboard.branch.io/quick-links/mlc/define) by selecting Deepviews as a redirect option under the second page.
 
-![image](/_assets/img/pages/deepviews/deepviews-mlc.png)
+![image](/images/pages/deepviews/deepviews-mlc.png)
 
 
 ### Disable per-link Deepviews
@@ -183,13 +183,13 @@ If you've enabled Deepviews globally, it's likely that you'll want to disable th
 
 You can disable Deepviews for an individual link on the [Marketing dashboard](https://dashboard.branch.io/quick-links/mlc/define) by selecting Deepviews as a redirect option in Configure Options > Redirects and setting it to false.
 
-![image](/_assets/img/pages/deepviews/deepviews-disable-mlc.png)
+![image](/images/pages/deepviews/deepviews-disable-mlc.png)
 
 ### Create New Deepview Templates
 
 You can create new Deepview templates using the [Deepviews configuration page](https://dashboard.branch.io/web/deepviews) on the Branch dashboard, either by duplicating the default Branch Public Template, or by creating a new one from scratch. New Deepview templates are shared between all platforms (iOS, Android, and desktop), and cannot be deleted after creation.
 
-![image](/_assets/img/pages/deepviews/deepview-create-template.png)
+![image](/images/pages/deepviews/deepview-create-template.png)
 
 The Deepview editing screen contains two tabs: <notranslate>**Basic**</notranslate> and <notranslate>**Editor**</notranslate>.
 
@@ -197,7 +197,7 @@ The Deepview editing screen contains two tabs: <notranslate>**Basic**</notransla
 
 The Basic tab displays your new template, and allows you to modify the default fallback OG tags used if none are specified for a link.
 
-![image](/_assets/img/pages/deepviews/deepviews_editor_basic.png)
+![image](/images/pages/deepviews/deepviews_editor_basic.png)
 
 <notranslate>**Deepview Settings**</notranslate>
 
@@ -222,7 +222,7 @@ The Basic tab displays your new template, and allows you to modify the default f
 
 You can use the Deepview editor to edit created templates. You cannot edit pre-created templates. The Editor tab allows you to edit the raw HTML and CSS for your template. The rendered template will update as you modify the markup.
 
-![image](/_assets/img/pages/deepviews/deepviews_editor_code.png)
+![image](/images/pages/deepviews/deepviews_editor_code.png)
 
 !!! failure "Javascript not allowed"
     Before rendering the template, we sanitize the markup of Javascript for security reasons. This includes script tags and event attributes on tags.

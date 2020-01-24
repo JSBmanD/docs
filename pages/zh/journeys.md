@@ -6,7 +6,7 @@ title: Journeys App Banners (路径图谱应用程序条幅广告)
 
 每天 Google 搜索都会推动 **更多应用程序安装** ，其安装数量要比所有 Facebook 付费安装产品总和还多。将您的移动网站访客转为原生应用程序用户是最有效的获取渠道之一，且利用 Branch 的 Journeys App Banners（路径图谱应用程序条幅广告）平台，您可以轻松实现此目标。
 
-![图像](/_assets/img/pages/journeys/journeys-examples.png)
+![图像](/images/pages/journeys/journeys-examples.png)
 
 * **可定制化展示。** 专门针对智能条幅广告或全页插屏广告的所见即所得 \(WYSIWYG\) 设计编辑器，以及更多即将推出的新功能。
 * **强大的定位规则。** 想要仅向尚未安装您的应用程序的访客显示您的路径？向所有日本的 iOS 用户显示？向只是查看了您的结帐页面的用户显示？向曾两次访问过您的网站并使用您的应用程序进行购买的 Android 用户显示？有无限种可能。
@@ -76,17 +76,17 @@ branch.setBranchViewData({
 1. 前往 Branch 控制面板上的 [Journeys（路径图谱）页面](http://dashboard.branch.io/journeys)。
 2. 单击 **Create New Journey（创建新路径）** 按钮即可开始。
 
-![图像](/_assets/img/pages/journeys/create-journey-button.png)
+![图像](/images/pages/journeys/create-journey-button.png)
 
 1. 在 **Journey Name:（路径名称:）** 字段中，输入要用于内部引用的名称（这永远不会向您的用户显示）。
 
-![图像](/_assets/img/pages/journeys/journeys-name.png)
+![图像](/images/pages/journeys/journeys-name.png)
 
 ### 选择受众
 
 您可以通过选择目标平台和设备类型以及添加其他目标规则，来自定义将看到您的 Journey的受众。
 
-![图像](/_assets/img/pages/journeys/journeys_select_audience.png)
+![图像](/images/pages/journeys/journeys_select_audience.png)
 
 |  选项   |                                    描述                                     |
 |-------|---------------------------------------------------------------------------|
@@ -96,12 +96,12 @@ branch.setBranchViewData({
 
 ### 选择条幅广告或插屏广告并为其设置样式
 
-1. 首先，单击 **Select a Template（选择模板）** 按钮。![图像](/_assets/img/pages/journeys/select-template.png)
+1. 首先，单击 **Select a Template（选择模板）** 按钮。![图像](/images/pages/journeys/select-template.png)
 2. 接下来，单击以选择要显示的模板类型。有三个模板选项：
    * 屏幕底部智能横幅广告。
    * 屏幕顶部智能横幅广告。
    * 全屏插播广告（对搜索引擎优化友好！）
-   * *显示的第四个选项是备选预配置的全屏插播广告* ![图像](/_assets/img/pages/journeys/select-template-type.png)
+   * *显示的第四个选项是备选预配置的全屏插播广告* ![图像](/images/pages/journeys/select-template-type.png)
 
 3. 单击 **Customize（自定义）** ，对模板进行更改。
 4. 在 **Customize Template（自定义模板）** 标题中，您可以编辑要用于内部引用的名称。
@@ -114,24 +114,24 @@ branch.setBranchViewData({
 
 使用此屏幕，您可以预览 Journey变量，并可在发布之前对您的 Journey执行最终验证和测试。
 
-![图像](/_assets/img/pages/journeys/validate-and-test.png)
+![图像](/images/pages/journeys/validate-and-test.png)
 
 #### 预览
 
 使用下拉菜单在 Journey变量之间进行切换。
 
-![图像](/_assets/img/pages/journeys/select-preview-variation.png)
+![图像](/images/pages/journeys/select-preview-variation.png)
 
 要预览您的在线产品网站中的路径，请在 **Test on your mobile device（测试移动设备）** 字段中输入您的网站 URL，然后按 Copy（复制）按钮。 **您输入的 URL 必须集成了 Branch 网站 SDK，并使用了 Branch 密钥。**
 
-![图像](/_assets/img/pages/journeys/test-on-device.png)
+![图像](/images/pages/journeys/test-on-device.png)
 
 \!\!\! 提示"操作过程是怎样的？"
 集成到网站中的 Branch SDK 可侦听由预览工具生成且唯一的一次性 URL 参数。它看起来有些像 `_branch_view_id=296449069883323397`。检测到此参数时，SDK 将加载特定路径的临时预览。此参数仅对您的 Branch 密钥有效，即使集成了 Branch SDK，也不适用于任何其他网站。
 
 #### 验证
 
-![图像](/_assets/img/pages/journeys/validation-messages.png)
+![图像](/images/pages/journeys/validation-messages.png)
 
 您可能会遇到许多错误和警告。
 
@@ -155,7 +155,7 @@ branch.setBranchViewData({
 
 [Journeys Manager（路径图谱管理器）](https://dashboard.branch.io/journeys)是一个主页，可用来打造所有个性化体验。您可以打开、关闭和克隆 Journeys（路径图谱），或查看其成效。
 
-![图像](/_assets/img/pages/journeys/journeys-manager.png)
+![图像](/images/pages/journeys/journeys-manager.png)
 
 Journey可能具有以下任意四种状态：
 
@@ -168,7 +168,7 @@ Journey可能具有以下任意四种状态：
 
 您可以直接从创建流激活路径，也可以从 Journeys Manager（路径图谱管理器）中"Actions（操作）"菜单的 **Start（开始）** 处进行激活。
 
-![图像](/_assets/img/pages/journeys/edit-journeys.png)
+![图像](/images/pages/journeys/edit-journeys.png)
 
 \!\!\! 提示"编辑实时 Journey（路径图谱）"
 
@@ -187,21 +187,21 @@ Journey可能具有以下任意四种状态：
 
 要确定 Journeys的优先级，请通过单击切换按钮来切换到 Priority View（优先级视图）。
 
-![图像](/_assets/img/pages/journeys/priority-view-toggle.png)
+![图像](/images/pages/journeys/priority-view-toggle.png)
 
 您现在位于 Priority View（优先级视图）。
 
 1. 按照您所想要的显示顺序来拖放 Journeys。数字越小意味着优先级越高（即优先级为 1 的 Journey将会显示在优先级为 2 的 Journey前面）。
 
-![图像](/_assets/img/pages/journeys/first-priority-view.png)
+![图像](/images/pages/journeys/first-priority-view.png)
 
 1. 单击 **Save（保存）** 按钮。
 
-![图像](/_assets/img/pages/journeys/save-priority.png)
+![图像](/images/pages/journeys/save-priority.png)
 
 1. 您的 Journeys现在已设置好优先级。
 
-![图像](/_assets/img/pages/journeys/final-priority-view.png)
+![图像](/images/pages/journeys/final-priority-view.png)
 
 \!\!\! 警告"注意"
 
@@ -221,13 +221,13 @@ Journeys（路径图谱）会映射到[标准 Branch 分析标签](/getting-star
 
 您可以通过从 Journeys Manager（路径图谱管理器）中的 actions（操作）菜单选择 **View Performance（查看成效）** ，来访问路径的成效。
 
-![图像](/_assets/img/pages/journeys/view-performance.png)
+![图像](/images/pages/journeys/view-performance.png)
 
 #### 使用源分析
 
 您还可以通过从 Branch 控制面板的 [Source Analytics（源分析）](http://dashboard.branch.io/analytics/source)页面中选择上述筛选器，来访问 Journeys（路径图谱）分析。
 
-![图像](/_assets/img/pages/journeys/view-source-analytics.png)
+![图像](/images/pages/journeys/view-source-analytics.png)
 
 ##### 比较您所有的 Journeys（路径图谱）
 
@@ -249,7 +249,7 @@ Journeys（路径图谱）会映射到[标准 Branch 分析标签](/getting-star
 
 您可以根据用户来自何处、他们是否已经安装了您的应用程序以及他们在您的网站或应用程序中所完成的操作等行为，在更精细的级别上定位用户。我们已在[下一个选项卡](/web/journeys/#examples)上创建了一系列极佳的示例。
 
-![图像](/_assets/img/pages/journeys/advanced-audience-rules.png)
+![图像](/images/pages/journeys/advanced-audience-rules.png)
 
 #### 已完成事件
 
@@ -329,9 +329,9 @@ branch.track('pageview',
 
 使用此功能，您可以通过设计多个模板并为每个模板分配一定比例的受众来运行 A/B 测试。
 
-1. 单击 **Add Variation（添加变量）** 按钮，可添加其他设计变量。![图像](/_assets/img/pages/journeys/add-variation.png)
-2. 要删除不需要的变量，请单击 `-` 按钮。![图像](/_assets/img/pages/journeys/remove-variation.png)
-3. 使用百分比字段来控制将看到每个变量的受众比例。![图像](/_assets/img/pages/journeys/multiple-templates.png)
+1. 单击 **Add Variation（添加变量）** 按钮，可添加其他设计变量。![图像](/images/pages/journeys/add-variation.png)
+2. 要删除不需要的变量，请单击 `-` 按钮。![图像](/images/pages/journeys/remove-variation.png)
+3. 使用百分比字段来控制将看到每个变量的受众比例。![图像](/images/pages/journeys/multiple-templates.png)
 
 \!\!\! 提示"变量显示限制"
 每个路径最多可以有三个变量。您的分配百分比总计不得大于等于 **100%** 。您的分配百分比总计可能 *小于* **100%** 。在这种情况下，将会向您的其余受众显示您的标准网站，但没有路径。这样，您可以根据您的非 Journeys（路径图谱）网站体验进行 A/B 测试。
@@ -340,11 +340,11 @@ branch.track('pageview',
 
 您可以为已经将 Journeys 与应用程序一起安装的用户自动打开该应用程序。可以通过在模板编辑器中选择 CTA 找到此设置：
 
-![图像](/_assets/img/pages/journeys/auto-open-find.png)
+![图像](/images/pages/journeys/auto-open-find.png)
 
 选中此框后，如果用户在您的网站上查看此 Journey变量，并且安装了应用程序，则无需单击，该应用程序即会自动打开。
 
-![图像](/_assets/img/pages/journeys/auto-open.png)
+![图像](/images/pages/journeys/auto-open.png)
 
 在大多数情况下，自动打开应用程序是最佳的用户体验，因此默认情况下会对所有新模板选中此框。
 
@@ -375,7 +375,7 @@ branch.track('pageview',
 
 或者，通过添加深度链数据 `$uri_redirect_mode:1`，为单个模板进行设置：
 
-![图像](/_assets/img/pages/journeys/uri-redirect-mode.png)
+![图像](/images/pages/journeys/uri-redirect-mode.png)
 
 [阅读我们的博客](https://blog.branch.io/making-uri-schemes-great-again-uri_redirect_mode/) \{:target="\_blank"\}，了解更多有关在 iOS 上实现 URI 方案的重重挑战和 URI 重定向模式功能的信息。
 
@@ -391,7 +391,7 @@ branch.track('pageview',
 
 首先，使用下拉列表选择 Journeys 应被解除的时长。接下来，要决定解除此 Journeys 的操作只会在所选择的解除期内解除该 Journey，还是期间内的所有 Journey均会被解除。
 
-![图像](/_assets/img/pages/journeys/dismissal_settings.png)
+![图像](/images/pages/journeys/dismissal_settings.png)
 
 ### 保留或放弃推荐链接数据
 
@@ -435,17 +435,17 @@ branch.init( 'BRANCH_KEY',
 
 您可以从 **Validate & Test（验证和测试）** 步骤或直接从 Journeys（路径图谱）管理器页面上的操作菜单访问此功能。
 
-![图像](/_assets/img/pages/journeys/schedule-action.png)
+![图像](/images/pages/journeys/schedule-action.png)
 
 \!\!\! 示例"示例：计划路径的时间"
 假设您希望在 11 月份向用户显示路径，如果用户下载了您的应用程序，将有 25% 的销售额要归因于广告。您可以将其设置为 11 月 1 日凌晨 12 点开始，在 12 月 1 日凌晨 12 点结束：
 
-    ![image](/_assets/img/pages/journeys/schedule-modal.png)
+    ![image](/images/pages/journeys/schedule-modal.png)
 
 \!\!\! 示例"示例：定期计划时间"
 假设您有一个节目要在每个星期日的晚上 9 点到 10 点播出，而您想鼓励用户在这段时间内在从应用程序中观看剧集。您可以将开始时间设置为在即将到来的星期日的晚上 9 点，将停止时间设置为当天晚上 10 点，然后将其设置为每周重复一次：
 
-    ![image](/_assets/img/pages/journeys/schedule-modal-recurring.png)
+    ![image](/images/pages/journeys/schedule-modal-recurring.png)
 
 #### 计划时间常见问题解答
 
@@ -480,13 +480,13 @@ branch.init( 'BRANCH_KEY',
 
     {{ fontSize | 12px }}
 
-![图像](/_assets/img/pages/journeys/custom-tags-1.png)
+![图像](/images/pages/journeys/custom-tags-1.png)
 
 如果要在模板文本中添加自定义流标记，则可以使用如下所示的标记：
 
     {{ adjective | best }}
 
-![图像](/_assets/img/pages/journeys/custom-tags-2.png)
+![图像](/images/pages/journeys/custom-tags-2.png)
 
 接下来，要动态更新"fontsize"和"adjective"变量的值，则可以使用 `setBranchViewData()` 为这些变量设置值：
 
@@ -628,7 +628,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 如果您有一个已升级的高级帐户，除了可以使用所见即所得视图编辑器 \(WYSIWYG View Editor\) 外，还可以直接修改 CSS 代码。要执行此操作，请转到 **Configure Views（配置视图）** 步骤，单击以编辑模板，然后选择 **Customize Template（自定义模板）** 屏幕上的 **CSS Editor（CSS 编辑器）** 选项卡。
 
-![图像](/_assets/img/pages/journeys/view-css-editor.png)
+![图像](/images/pages/journeys/view-css-editor.png)
 
 #### 添加第二行文本
 
@@ -650,11 +650,11 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 1. 转到 [Google Fonts（Google 字体）](https://fonts.google.com/)并选择字体。
 
-![图像](/_assets/img/pages/journeys/font_embedding.png)
+![图像](/images/pages/journeys/font_embedding.png)
 
 1. 将其添加到 Journeys（路径图谱）中的 CSS 编辑器。请注意：@import 行上的拖尾分号很重要。如果 Google 字体无法加载，使用回退 Web 字体总是有备无患。
 
-![图像](/_assets/img/pages/journeys/custom_font.png)
+![图像](/images/pages/journeys/custom_font.png)
 
 ### 模板自定义选项
 
@@ -671,7 +671,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 背景
 
-![图像](/_assets/img/pages/journeys/customize-banner-background.png)
+![图像](/images/pages/journeys/customize-banner-background.png)
 
 |  选项  |            用途             |
 |------|---------------------------|
@@ -680,7 +680,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 标题
 
-![图像](/_assets/img/pages/journeys/customize-banner-title.png)
+![图像](/images/pages/journeys/customize-banner-title.png)
 
 |  选项  |       用途        |
 |------|-----------------|
@@ -689,7 +689,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 描述
 
-![图像](/_assets/img/pages/journeys/customize-banner-description.png)
+![图像](/images/pages/journeys/customize-banner-description.png)
 
 |  选项  |           用途           |
 |------|------------------------|
@@ -698,7 +698,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 评级
 
-![图像](/_assets/img/pages/journeys/customize-banner-rating.png)
+![图像](/images/pages/journeys/customize-banner-rating.png)
 
 |   选项   |                      用途                      |
 |--------|----------------------------------------------|
@@ -707,7 +707,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 评论
 
-![图像](/_assets/img/pages/journeys/customize-banner-reviews.png)
+![图像](/images/pages/journeys/customize-banner-reviews.png)
 
 |  选项  |                    用途                     |
 |------|-------------------------------------------|
@@ -716,7 +716,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 按钮
 
-![图像](/_assets/img/pages/journeys/customize-banner-button.png)
+![图像](/images/pages/journeys/customize-banner-button.png)
 
 |  选项   |                                        用途                                         |
 |-------|-----------------------------------------------------------------------------------|
@@ -729,7 +729,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 解除
 
-![图像](/_assets/img/pages/journeys/dismissal_banner.png)
+![图像](/images/pages/journeys/dismissal_banner.png)
 
 |  选项  |      用途      |
 |------|--------------|
@@ -737,7 +737,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 应用程序图标
 
-![图像](/_assets/img/pages/journeys/customize-banner-icon.png)
+![图像](/images/pages/journeys/customize-banner-icon.png)
 
 |   选项   |         用途          |
 |--------|---------------------|
@@ -747,7 +747,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 背景
 
-![图像](/_assets/img/pages/journeys/customize-fullpage-background.png)
+![图像](/images/pages/journeys/customize-fullpage-background.png)
 
 |  选项  |            用途             |
 |------|---------------------------|
@@ -775,7 +775,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 标题
 
-![图像](/_assets/img/pages/journeys/customize-fullpage-title.png)
+![图像](/images/pages/journeys/customize-fullpage-title.png)
 
 |  选项  |           用途           |
 |------|------------------------|
@@ -784,7 +784,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 描述
 
-![图像](/_assets/img/pages/journeys/customize-fullpage-description.png)
+![图像](/images/pages/journeys/customize-fullpage-description.png)
 
 |  选项  |           用途           |
 |------|------------------------|
@@ -793,7 +793,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 按钮
 
-![图像](/_assets/img/pages/journeys/customize-fullpage-button.png)
+![图像](/images/pages/journeys/customize-fullpage-button.png)
 
 |  选项   |                                        用途                                         |
 |-------|-----------------------------------------------------------------------------------|
@@ -806,7 +806,7 @@ Journeys（路径图谱）现在有了一个完整的本地化框架服务器端
 
 ##### 解除
 
-![图像](/_assets/img/pages/journeys/dismissal_interstitial.png)
+![图像](/images/pages/journeys/dismissal_interstitial.png)
 
 |         选项         |                 用途                  |
 |--------------------|-------------------------------------|
@@ -916,7 +916,7 @@ branch.deepview(
   <div class="branch-journeys-top"></div>
   ```
 
-  ![图像](/_assets/img/pages/journeys/sticky.png)
+  ![图像](/images/pages/journeys/sticky.png)
 
 示例
 ---
@@ -933,21 +933,21 @@ Journeys（路径图谱）受众工具功能非常强大，但有时几个示例
 
 所有这些示例都要求您配置高级受众规则，这是一项高级功能。您可以使用以下按钮添加任何一组复杂的规则：
 
-![图像](/_assets/img/pages/journeys/examples/advanced_add_filter.png)
+![图像](/images/pages/journeys/examples/advanced_add_filter.png)
 
 #### 新用户
 
 在此示例中，您将配置受众，以定位历史记录中访问网站 **少于 3 次** 的用户。访问次数超过 3 次的任何用户都将被排除在外。首先，您将在"advanced（高级）"部分中为 `Has visted web（已访问网站）`添加一个新规则。
 
-![图像](/_assets/img/pages/journeys/examples/new_users_0.png)
+![图像](/images/pages/journeys/examples/new_users_0.png)
 
 接下来，您将选择中间部分的 `Less than or equal to（小于或等于）`：
 
-![图像](/_assets/img/pages/journeys/examples/new_users_1.png)
+![图像](/images/pages/journeys/examples/new_users_1.png)
 
 最后，您将在最后一部分输入 2，以表示您希望定位历史记录中访问少于 3 次的用户。
 
-![图像](/_assets/img/pages/journeys/examples/new_users_2.png)
+![图像](/images/pages/journeys/examples/new_users_2.png)
 
 保存并继续！
 
@@ -955,15 +955,15 @@ Journeys（路径图谱）受众工具功能非常强大，但有时几个示例
 
 在此示例中，您将配置受众，以定位历史记录中访问网站 **超过 4 次** 的用户。访问次数少于 4 次的任何用户都将被排除在外。首先，您将在"advanced（高级）"部分中为 `Has visted web（已访问网站）`添加一个新规则。
 
-![图像](/_assets/img/pages/journeys/examples/new_users_0.png)
+![图像](/images/pages/journeys/examples/new_users_0.png)
 
 接下来，您将选择中间部分的 `More than or equal to（大于或等于）`：
 
-![图像](/_assets/img/pages/journeys/examples/loyal_users_1.png)
+![图像](/images/pages/journeys/examples/loyal_users_1.png)
 
 最后，您将在最后一部分输入 5，以表示您希望定位历史记录中访问超过 4 次的用户。
 
-![图像](/_assets/img/pages/journeys/examples/loyal_users_2.png)
+![图像](/images/pages/journeys/examples/loyal_users_2.png)
 
 保存并继续！
 
@@ -971,19 +971,19 @@ Journeys（路径图谱）受众工具功能非常强大，但有时几个示例
 
 在此示例中，您将配置受众，以定位在过去或当前会话中在您的网站上完成某些操作的用户。例如，如果用户在购物车中添加了某些商品或之前已完成购买，您可以使用要下载的自定义行动号召来重新定位这些用户。我们将在示例中使用一个名为 `MyAction` 的常规事件。首先，您将在"advanced（高级）"部分中为 `Has completed event（已完成事件）`添加一个新规则。
 
-![图像](/_assets/img/pages/journeys/examples/retargeting_users_0.png)
+![图像](/images/pages/journeys/examples/retargeting_users_0.png)
 
 在下一个下拉列表中，您将选择要重新定位的自定义事件。我们将在此处使用一个名为 `MyAction` 的常规事件，但您将选择 `Purchase（购买）`或对您的使用案例更有意义的内容。
 
-![图像](/_assets/img/pages/journeys/examples/retargeting_users_1.png)
+![图像](/images/pages/journeys/examples/retargeting_users_1.png)
 
 接下来，您将选择中间部分的 `More than or equal to（大于或等于）`：
 
-![图像](/_assets/img/pages/journeys/examples/retargeting_users_2.png)
+![图像](/images/pages/journeys/examples/retargeting_users_2.png)
 
 最后，您将在最后一部分输入 3，以表示您希望定位历史记录中已完成 `MyAction` 超过 2 次的用户。
 
-![图像](/_assets/img/pages/journeys/examples/retargeting_users_3.png)
+![图像](/images/pages/journeys/examples/retargeting_users_3.png)
 
 保存并继续！
 
@@ -991,29 +991,29 @@ Journeys（路径图谱）受众工具功能非常强大，但有时几个示例
 
 Google 最近宣布，将开始惩罚那些从搜索中获得用户时显示全页插屏广告的网站。正因为如此，您可能需要以对待任何其他来源之外流量的不同方式来处理 Google 搜索流量。在此示例中，您将设置特定于来自 Google 用户的受众。首先，您将在"advanced（高级）"部分中为 `Came directly from a url（直接来自 URL）`添加一个新规则。
 
-![图像](/_assets/img/pages/journeys/examples/seo_friendly_0.png)
+![图像](/images/pages/journeys/examples/seo_friendly_0.png)
 
 接下来，您将选择中间部分的 `starts with（开头）`，以与子字符串匹配：
 
-![图像](/_assets/img/pages/journeys/examples/seo_friendly_1.png)
+![图像](/images/pages/journeys/examples/seo_friendly_1.png)
 
 最后，您将输入 `google.com` 以定位来自 Google 搜索的用户（其中，访问来源以 google.com 开头）：
 
-![图像](/_assets/img/pages/journeys/examples/seo_friendly_2.png)
+![图像](/images/pages/journeys/examples/seo_friendly_2.png)
 
 或者，您也可以定位并非来自 Google 搜索的用户（其中，访问来源不以 google.com 开头）：
 
-![图像](/_assets/img/pages/journeys/examples/seo_friendly_3.png)
+![图像](/images/pages/journeys/examples/seo_friendly_3.png)
 
 #### 示例：讲英语的 iOS 用户
 
 在此示例中，您将受众限制为以英语为母语的国家/地区中使用 iOS 操作系统的用户。请注意，这不是在高级受众部分，而是在顶部部分。首先，请选择移动操作系统复选框中的 `iOS`。
 
-![图像](/_assets/img/pages/journeys/examples/ios_english_0.png)
+![图像](/images/pages/journeys/examples/ios_english_0.png)
 
 接下来，浏览并选择以下国家/地区：`美国`、`加拿大`、`英国`和`澳大利亚`。
 
-![图像](/_assets/img/pages/journeys/examples/ios_english_1.png)
+![图像](/images/pages/journeys/examples/ios_english_1.png)
 
 保存并继续！
 

@@ -41,56 +41,56 @@ Conversion | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |  | ✔︎
 
 	1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management).
 
-	    ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
+	    ![Ads Partner Management](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
 
 	1. Search for <notranslate>**Facebook**</notranslate>.
 
 	1. Click <notranslate>**Connect With Facebook**</notranslate>
 
-	    ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
+	    ![Connect with Facebook](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
 
 	1. Login to Facebook if you are not logged in
 
-	    ![Login](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
+	    ![Login](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
 
 	1. Confirm that Branch can receive your public profile
 
-	    ![Public profile](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
+	    ![Public profile](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
 
 	1. Confirm that Branch can have permissions `ads_read`
 
-	    ![OAuth scopes](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
+	    ![OAuth scopes](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
 
 	 	`ads_read` is used to surface impressions and clicks on the Branch Dashboard.
 
 	1. Select the ad accounts for which you want to run app install ads or app engagement ads
 
-	    ![Choose ad accounts](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
+	    ![Choose ad accounts](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
 
 	    !!! Note
 	        If you are having trouble finding or selecting the ad account(s) for which you want to run ads, please visit our [FAQ](/deep-linked-ads/facebook-ads-faq/#im-having-problems-finding-or-choosing-the-correct-ad-accounts).
 
 	1. Click to select a Facebook app id for which you want to run Facebook ads
 
-	    ![enter app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
+	    ![enter app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
 
 	1. Copy the app id
 
-	    ![find app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
+	    ![find app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
 
 	1. Paste the app id and press `Save`
 
-	    ![paste app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
+	    ![paste app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
 
 	1. Facebook is now enabled as an ad partner!
 
 		Note that if you have different attribution windows between Facebook and Branch, those will be highlighted. The warning has a link to the docs on how to align these attribution windows.
 
-	    ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
+	    ![complete](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
 	1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
 
-	    ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
+	    ![Create Facebook Ad Link](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
 
 
 ## Setup
@@ -101,14 +101,14 @@ Conversion | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |  | ✔︎
 	This section is optional if you are running app-only ads. We will automatically pull in campaign, ad set, ad, and creative information from Facebook. However, if you want users to be deep linked, you should follow the instructions in this section.
 
 1. Create a Branch Ad link from the [Partner Management page](https://dashboard.branch.io/ads/partner-management){:target="_blank"}'s `Create Facebook Link` button under the Facebook Partner and select `Create Display Link`
-<img src="/_assets/img/pages/deep-linked-ads/reusable-images/create-link-display.png" alt="Link Creation" class="three-quarters center">
+<img src="/images/pages/deep-linked-ads/reusable-images/create-link-display.png" alt="Link Creation" class="three-quarters center">
 1. Under the Define Section, pick a Link Name for later reference.
 1. Configure the link with the Ad Partner set to <notranslate>**Facebook**</notranslate>, and the Ad Format set to <notranslate>**Cross-platform Display**</notranslate>.
-![Create Ad Link](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/link-setup.png)
+![Create Ad Link](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/link-setup.png)
 1. Under the Configure Options tab, navigate to the Redirects sub section and ensure that the iOS/Android and Desktop redirects are set to the desired destinations being promoted by the ad campaign.
-![Create Ad Link](/_assets/img/pages/deep-linked-ads/reusable-images/example-link-redirect.png)
+![Create Ad Link](/images/pages/deep-linked-ads/reusable-images/example-link-redirect.png)
 1. Under the Analytics Tags sub section additional tags can be set. It is recommended to fill in these fields as they can be used as filters in Branch's Ads Analytics view. To best connect your ad link with your Adwords Campaign, set the channel field to Facebook Ads and set the campaign field to the same ad campaign name used in Facebook Ads.
-![Analytics Tags](/_assets/img/pages/deep-linked-ads/reusable-images/facebook-analytics-tags.png)
+![Analytics Tags](/images/pages/deep-linked-ads/reusable-images/facebook-analytics-tags.png)
 
 !!! warning ""
 	In order for your campaign to run effectively, be sure to disable Deepviews. You can either [disable Deepviews](/web/deep-views/#setup) for your entire account or [disable Deepviews for one link](/web/deep-views/#disable-per-link-deepviews).
@@ -125,18 +125,18 @@ To set up a Facebook Traffic campaign, you will need to first create your campai
 #### Create Your Campaign
 1. Navigate to [https://www.facebook.com/ads/create](https://www.facebook.com/ads/create){:target="_blank"} while logged in to the account that owns your Facebook app.
 1. Select <notranslate>**Traffic**</notranslate> as the campaign marketing objective.
-![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/traffic/campaign-selection.png)
+![Campaign Selection](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/traffic/campaign-selection.png)
 1. Select either to drive traffic to your `Website` or your `App`
 1. Continue with campaign creation selecting the app to advertise, audience, placement, and budget. Then press continue to enter the Advert creation step.
 1. Now select an advertisement format and customize your ad
 1. Add your Branch Ad Link to your advertisement
 	- If you chose to drive traffic to an App, locate the <notranslate>**Deep Link**</notranslate> field and copy and paste your Branch link there.
 
-		![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/traffic/link-setup-app.png)
+		![Campaign Selection](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/traffic/link-setup-app.png)
 
 	- If you chose to drive traffic to a Website, paste your Branch Ad link into the <notranslate>**Website URL**</notranslate> field.
 
-		![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/traffic/link-setup-web.png)
+		![Campaign Selection](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/traffic/link-setup-web.png)
 
 	- If you chose to drive traffic to a Website and are using a full-screen Canvas, add your Branch Ad link as the <notranslate>**Destination URL**</notranslate> for your canvas advertisement components.
 1. Complete the rest of the ad campaign setup.
@@ -159,18 +159,18 @@ To set up a Facebook Conversions campaign, you will need to first create your ca
 #### Create Your Campaign
 1. Navigate to [https://www.facebook.com/ads/create](https://www.facebook.com/ads/create){:target="_blank"} while logged in to the account that owns your Facebook app.
 1. Select <notranslate>**Conversions**</notranslate> as the campaign marketing objective.
-![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/conversions/campaign-selection.png)
+![Campaign Selection](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/conversions/campaign-selection.png)
 1. Select either to have the goal of having conversions on a `Website` or in an `App`
 1. Continue with campaign creation selecting audience, placement, and budget. Then press continue to enter the Advert creation step.
 1. Now select an advertisement format and customize your ad
 1. Add your Branch Ad Link to your advertisement
 	- If you chose app conversions App, locate the <notranslate>**Deep Link**</notranslate> field and copy and paste your Branch link there.
 
-		![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/conversions/link-setup-app.png)
+		![Campaign Selection](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/conversions/link-setup-app.png)
 
 	- If you chose Website conversions, paste your Branch Ad link into the <notranslate>**Website URL**</notranslate> field.
 
-		![Campaign Selection](/_assets/img/pages/deep-linked-ads/facebook-traffic-conversion-ads/conversions/link-setup-web.png)
+		![Campaign Selection](/images/pages/deep-linked-ads/facebook-traffic-conversion-ads/conversions/link-setup-web.png)
 
 	- If you chose Website conversions and are using a full-screen Canvas, add your Branch Ad link as the <notranslate>**Destination URL**</notranslate> for your canvas advertisement components.
 1. Complete the rest of the ad campaign setup.
@@ -182,11 +182,11 @@ To set up a Facebook Conversions campaign, you will need to first create your ca
 
 The [Ads Analytics Page](https://dashboard.branch.io/ads/analytics) on the Branch dashboard provides an interactive time series graph and table to view the performance of your Ad campaigns.
 
-![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
+![Example Ads Analytics Graph](/images/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
 
 The table shows summary data on the performance of each Ad campaign. On the right top side of the table you can find a <notranslate>**download button**</notranslate> to retrieve the chart's content as a CSV file.
 
-![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
+![Example Ads Table](/images/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 
 !!! note "Interacting with your data"
 	Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by.

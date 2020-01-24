@@ -47,8 +47,8 @@ Please refer to the following screenshots below based on Android and iOS platfor
 
 **Android**
 
-![image](/_assets/img/pages/deep-linked-ads/vta-android.png)
+![image](/images/pages/deep-linked-ads/vta-android.png)
 
 **iOS**
 
-![image](/_assets/img/pages/deep-linked-ads/vta-ios.png)
+![image](/images/pages/deep-linked-ads/vta-ios.png)

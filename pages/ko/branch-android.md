@@ -8,7 +8,7 @@ title: Branch 연동 가이드 - Android
 
     - `Always try to open app` 와 `I have an Android App` 이 활성화되도록 합니다.
 
-        ![image](/_assets/img/pages/dashboard/android.png)
+        ![image](/images/pages/dashboard/android.png)
 
 - ### Branch 설치
 

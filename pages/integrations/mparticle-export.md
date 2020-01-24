@@ -25,7 +25,7 @@ Branch install events are mapped as follows:
 - mParticle Custom Event Type = attribution
 - mParticle Event Name = attribution
 
-![image](/_assets/img/pages/integrations/mparticle/mparticle-showing-branch-data.png)
+![image](/images/pages/integrations/mparticle/mparticle-showing-branch-data.png)
 
 For information on how to test your integration and see more detailed data, please review our [testing instructions below](#testing-your-integration).
 
@@ -44,17 +44,17 @@ Find your mParticle key & secret and enter it into the Branch Dashboard.
 1. Click the Branch tile, and click <notranslate>**Add Branch Metrics to Setup**</notranslate>
 1. Select the <notranslate>**Input Feed**</notranslate> Integration Type and click <notranslate>**Add to Setup**</notranslate>
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-add-feed-to-setup.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-add-feed-to-setup.png)
 
 1. Specify the following configuration parameters:
     - Configuration Name
     - Act as Application _(select the right platform here)_
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-configure-feed.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-configure-feed.png)
 
 1. Copy your server to server key and secret - you'll enter them into the Branch dashboard in a moment.
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-keys.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-keys.png)
 
 
 ### Configure Branch Dashboard
@@ -68,18 +68,18 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 1. Navigate to [Data Integrations](https://dashboard.branch.io/data-import-export/data-feeds/integrations) within Data Feeds.
 1. Find the integration you need by typing in the search box.
 
-    ![Ads Partner Management](/_assets/img/ingredients/data-integrations/search-for-integration.png)
+    ![Ads Partner Management](/images/ingredients/data-integrations/search-for-integration.png)
 
     !!! note "We've upgraded our Data Integrations!"
  		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
 
-        ![Ads Partner Management](/_assets/img/ingredients/data-integrations/legacy-data-integrations.png)
+        ![Ads Partner Management](/images/ingredients/data-integrations/legacy-data-integrations.png)
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Search for mParticle and click on the tile.
 1. Enter your mParticle key & secret and hit <notranslate>**Enable**</notranslate>.
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-export.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-export.png)
 
     !!! warning "Please test integration!"
         Branch is not responsible for inaccurate API keys.
@@ -111,11 +111,11 @@ To see the data being passed to mParticle in more detail, you can set up a webho
 1. Enable the Branch Data Integration above. Install your app from a Branch link to generate some data in mParticle. It can take up to an hour for the custom attributes to show in mParticle.
 1. Create a Branch link from the Quick Links section of the dashboard, with a campaign of *branch_test*.
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-test-link.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-test-link.png)
 
 1. In mParticle, navigate to the Directory in mParticle and add <notranslate>**Webhooks**</notranslate> as an option. Add a Requestbin URL generated from [https://requestb.in](https://requestbin.com/?).
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-add-webhooks.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-add-webhooks.png)
 
 1. To refine the data being sent to the webhook, navigate to <notranslate>**Connections > Connect**</notranslate>.
 1. Select the Branch Feed as the input, and <notranslate>**Webhooks**</notranslate> as the output.

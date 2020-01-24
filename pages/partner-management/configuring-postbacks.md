@@ -28,7 +28,7 @@ To add a postback:
 4. A modal will appear with Branch default events, as well as any commerce (reserved events like _PURCHASE)_ or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click <notranslate>**Save**</notranslate>. This will be the event that triggers your new postback.
     1. NOTE: If Branch does not already have a postback template for a partner, please provide a valid URL for your partner.
 
-![image](/_assets/img/pages/partner-management/postback-add.gif)
+![image](/images/pages/partner-management/postback-add.gif)
 
 ### Disabling
 
@@ -38,7 +38,7 @@ To disable any postback currently enabled for an ad partner:
 2. Click on the <notranslate>**Postback Config**</notranslate> tab on said partner’s page.
 3. Uncheck the box in the <notranslate>**Enable**</notranslate> column for the postback you want to disable.
 
-![image](/_assets/img/pages/partner-management/postback-disable.gif)
+![image](/images/pages/partner-management/postback-disable.gif)
 
 !!! info "Automated Postback Clean Up"
 	Branch runs weekly jobs to disable all non-functioning postbacks.  Any postback that has failed consistently over the last 7 days - throwing only 400/500s - will be automatically disabled.
@@ -52,7 +52,7 @@ To delete any postback currently enabled for an ad partner:
 3. Hover on the three dots icon to the right of the postback and click <notranslate>**Delete Postback**</notranslate>.
 4. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/partner-management/postback-delete.gif)
+![image](/images/pages/partner-management/postback-delete.gif)
 
 
 !!! info "Disable vs. Delete"
@@ -65,7 +65,7 @@ If you want to send <notranslate>**All Events**</notranslate> - whether attribut
 !!! warning "Privacy Implications"
 	As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/all-events.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/all-events.png)
 
 ## Advanced Configuration
 
@@ -116,7 +116,7 @@ To create a filter:
 6. Finally, set the value of the key that you'd like to filter in or out.
 7. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/partner-management/postback-add-filter.gif)
+![image](/images/pages/partner-management/postback-add-filter.gif)
 
 #### Basic Filters
 
@@ -162,7 +162,7 @@ Let’s say you’re interested in receiving a postback for every <notranslate>*
 3. Select <notranslate>"equals"</notranslate> on the equivalency dropdown
 4. Enter a value of <notranslate>**HOLIDAYS**</notranslate>
 
-![image](/_assets/img/pages/partner-management/postback-custom-filter.gif)
+![image](/images/pages/partner-management/postback-custom-filter.gif)
 
 ### Using POST HTTP Method
 
@@ -178,7 +178,7 @@ To change the HTTP method to POST:
     1. <notranslate>**Content-Type**</notranslate> : <notranslate>**application/json**</notranslate>
         1. Additional Content-Type values include <notranslate>**application/x-www-form**</notranslate> & <notranslate>**urlencoded**</notranslate>.
 
-![image](/_assets/img/pages/partner-management/postback-post.gif)
+![image](/images/pages/partner-management/postback-post.gif)
 
 ## Testing Postbacks
 
@@ -192,7 +192,7 @@ To test postbacks/webhooks in Liveview:
 4. Click the columns button to add both the <notranslate>**Webhook Response Code**</notranslate> and <notranslate>**Webhook Response Body**</notranslate> as columns.
 5. Click <notranslate>**Update Session**</notranslate> to view the filtered results.
 
-![image](/_assets/img/pages/partner-management/liveview-webhooks.png)
+![image](/images/pages/partner-management/liveview-webhooks.png)
 
 ### How to Find a Partner’s Webhook Key
 
@@ -203,7 +203,7 @@ To find the partner’s webhook key:
 1. Under Partner Management, select the partner for whom you want to add/edit their postback.
 2. On the Account Settings tab, under the partner’s Ad Account Information, copy and paste the Partner Identifier ($3p Value).
 
-![image](/_assets/img/pages/partner-management/webhook-key.png)
+![image](/images/pages/partner-management/webhook-key.png)
 
 ### What to Look For When Validating
 

@@ -17,11 +17,11 @@ Branch will send *referred* **installs** and **opens**, as well as any **custom 
 
 Branch events will appear alongside your other tracked events in Mixpanel. These events will automatically have `[Branch]` prepended.
 
-![image](/_assets/img/pages/integrations/mixpanel/branch-mixpanel.png)
+![image](/images/pages/integrations/mixpanel/branch-mixpanel.png)
 
 Additionally, individual events, such as those seen in Live View or visible when looking at People, will have Branch link data included. Here's an example:
 
-![image](/_assets/img/pages/integrations/mixpanel/mixpanel-live-view.png)
+![image](/images/pages/integrations/mixpanel/mixpanel-live-view.png)
 
 Branch events are similar to Mixpanel events in that they can be used in your existing funnels and tracked on the various pages and dashboards. However, unlike normal events, Branch events contain invaluable information about how users ended up in your app in the first place.
 
@@ -37,7 +37,7 @@ For the basic, codeless integration: find your Mixpanel Token and enter it into 
 
 1. Navigate to [https://mixpanel.com](https://mixpanel.com) and log into the Dashboard.
 1. Click on <notranslate>**Account**</notranslate> in the navigation bar at the top of the page.
-1. Choose <notranslate>**Projects**</notranslate> in the modal that appears, then copy your app’s Token: ![image](/_assets/img/pages/integrations/mixpanel/mixpanel-token.png)
+1. Choose <notranslate>**Projects**</notranslate> in the modal that appears, then copy your app’s Token: ![image](/images/pages/integrations/mixpanel/mixpanel-token.png)
 
 ### Configure Branch Dashboard
 
@@ -50,18 +50,18 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 1. Navigate to [Data Integrations](https://dashboard.branch.io/data-import-export/data-feeds/integrations) within Data Feeds.
 1. Find the integration you need by typing in the search box.
 
-    ![Ads Partner Management](/_assets/img/ingredients/data-integrations/search-for-integration.png)
+    ![Ads Partner Management](/images/ingredients/data-integrations/search-for-integration.png)
 
     !!! note "We've upgraded our Data Integrations!"
  		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
 
-        ![Ads Partner Management](/_assets/img/ingredients/data-integrations/legacy-data-integrations.png)
+        ![Ads Partner Management](/images/ingredients/data-integrations/legacy-data-integrations.png)
 
 1. On the Branch Dashboard (dashboard.branch.io), navigate to the [Integrations page](https://dashboard.branch.io/integrations).
 1. Search for Mixpanel and click on the tile.
 1. Enter your Mixpanel Token and hit <notranslate>**Enable**</notranslate>.
 
-![image](/_assets/img/pages/integrations/mixpanel/enable-mixpanel-integration.png)
+![image](/images/pages/integrations/mixpanel/enable-mixpanel-integration.png)
 
 !!! warning "Please test integration!"
     Branch is not responsible for inaccurate API keys.

@@ -82,7 +82,7 @@ To enable LATD:
 3. Within the <notranslate>**Advanced Settings**</notranslate> section, check the box next to <notranslate>**Enable retrieving Last Attributed Touch Data via SDKs**</notranslate>.
 4. Once checked, scroll down to the bottom of the page and click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/apps/latd-setting.png)
+![image](/images/pages/apps/latd-setting.png)
 
 ## Required SDK Methods
 

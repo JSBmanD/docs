@@ -3,7 +3,7 @@ title: Oppo
 ---
 ## Overview
 
-![Oppo](/_assets/img/pages/app-stores/oppo-logo.png)
+![Oppo](/images/pages/app-stores/oppo-logo.png)
 
 This guide will walk you through how to attribute pre-installed users to **[Oppo](https://www.oppo.com/)** using the Branch SDK.
 

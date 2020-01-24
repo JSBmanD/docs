@@ -53,27 +53,27 @@ Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_
 
 Branch turns the web URLs you put into your emails into Branch deep links, opening the app for users with your app installed to that same content in the app.
 
-![image](/_assets/img/pages/email/users-with-app.png)
+![image](/images/pages/email/users-with-app.png)
 
 To do this, it must be possible to map your web URL content (e.g. a page with brown loafers at `https://shop.com/shoes/brown-loafers`) into a working deep link that takes users to brown loafers in the app. The Universal Email [setup flow](https://dashboard.branch.io/email){:target="\_blank"} will attempt to automatically detect this mapping for you.
 
 If you do not want to set this up yet, you can select <notranslate>**No, just open to app homepage for now**</notranslate>.
 
-![image](/_assets/img/pages/email/app-homepage.png)
+![image](/images/pages/email/app-homepage.png)
 
 By default, email deep links will redirect users _without your app_ to the same content on the web instead.
 
-![image](/_assets/img/pages/email/users-without-app.png)
+![image](/images/pages/email/users-without-app.png)
 
 If you would like to send users to the App Store or another default you have specified in Link Settings, you can select <notranslate>**Open to default redirects**</notranslate>.
 
-![image](/_assets/img/pages/email/default-redirects.png)
+![image](/images/pages/email/default-redirects.png)
 
 #### Checking your deep linking setup
 
 If you chose **not** to set up deep linking to specific content within your app, then you can [skip this step](#next-steps).
 
-![image](/_assets/img/pages/email/responsys/enter-web-url.png)
+![image](/images/pages/email/responsys/enter-web-url.png)
 
 In this step, you will want to enter a web URL that corresponds to a specific screen within your app. In other words, the webpage should have content that also exists in your app. If you do not know whether your web content also exists in-app, try any URL other than your website homepage. Some examples:
 
@@ -87,7 +87,7 @@ Once you choose one and click <notranslate>**Submit**</notranslate>, [meta tags 
 
 If an app deep linking scheme that maps to your web content cannot be successfully detected, you can [configure your settings manually](#deep-linking-settings-for-email), or you can reach out to your Branch account manager or support for assistance.
 
-![image](/_assets/img/pages/email/failure-result.png)
+![image](/images/pages/email/failure-result.png)
 
 We will help you set up one of the following methods:
 
@@ -137,7 +137,7 @@ You can retrieve your click tracking domain from the <notranslate>**[Tracking Do
 
 You can send ESP configuration to your development team
 
-![image](/_assets/img/pages/email/send-email.png)
+![image](/images/pages/email/send-email.png)
 
 In this prompt, enter the email of someone on your team who is qualified to modify your iOS app, and then click <notranslate>**Send**</notranslate>. They will complete the [technical setup](#configure-your-mobile-app) steps below.
 
@@ -145,7 +145,7 @@ Click Next to proceed to Validate and test the integration
 
 ### Validate and Test
 
-![image](/_assets/img/pages/email/setup-verification.png)
+![image](/images/pages/email/setup-verification.png)
 
 The last step of the [Universal Email setup flow](https://dashboard.branch.io/email){:target="\_blank"} validates whether you have completed all necessary steps and whether an engineer on your team has completed the integration steps. You will also see recommendations for how to improve your email integration.
 
@@ -153,7 +153,7 @@ Once it's done the AASA file and SSL certificate - required for Universal Links 
 
 The conversion to Branch links will only work when your links are wrapped in your click tracking domain. To test links without wrapping, please generate a test link on the Verification step of email onboarding, also accessible by clicking the gear icon for your ESP on the [email page](https://dashboard.branch.io/email){:target="\_blank"}.
 
-![image](/_assets/img/pages/email/setup-test.png)
+![image](/images/pages/email/setup-test.png)
 
 !!! protip "What happens to your links behind the scenes?"
     This is what a link looks like within your email template:
@@ -189,12 +189,12 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 1. In Xcode, go to the `Capabilities` tab of your project file.
 1. Scroll down and enable <notranslate>**Associated Domains**</notranslate> if it is not already enabled.
 
-    ![image](/_assets/img/pages/email/enable-associated-domains.png)
+    ![image](/images/pages/email/enable-associated-domains.png)
 
 1. Copy your click tracking domain from the [email you received from Branch](#configure-your-app-for-your-click-tracking-domain), or retrieve it from your ESP's settings.
 1. In the `Domains` section, click the `+` icon and add your click tracking domain. For example, if your click tracking domain is `email.example.com`, add an entry for `applinks:email.example.com`.
 
-    ![image](/_assets/img/pages/email/add-domain.png)
+    ![image](/images/pages/email/add-domain.png)
 
 !!! protip "Having trouble or new to Universal Links?"
     Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode.

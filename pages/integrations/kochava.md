@@ -41,7 +41,7 @@ For each platform (iOS and Android) you should create campaign IDs. You will do 
 
 Once you've clicked <notranslate>**Submit**</notranslate> you should see a screen with the campaign ID.
 
-![image](/_assets/img/pages/integrations/kochava/kochava-dashboard.png)
+![image](/images/pages/integrations/kochava/kochava-dashboard.png)
 
 ### Configure the Branch Dashboard
 
@@ -50,7 +50,7 @@ Once you've clicked <notranslate>**Submit**</notranslate> you should see a scree
 1. Enter your Kochava campaign ID for the relevant platform
 1. Hit <notranslate>**Save**</notranslate>
 
-![image](/_assets/img/pages/integrations/kochava/enable-kochava-integration.png)
+![image](/images/pages/integrations/kochava/enable-kochava-integration.png)
 
 ## Advanced
 

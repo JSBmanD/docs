@@ -3,7 +3,7 @@ title: Branch Certified Partner Program
 ---
 ## Overview
 
-<img align="left" style="margin:0px 20px" src="/_assets/img/pages/deep-linked-ads/cpp/cpp-logo.png">
+<img align="left" style="margin:0px 20px" src="/images/pages/deep-linked-ads/cpp/cpp-logo.png">
 
 All Branch partners must meet stringent technical criteria, including performing end-to-end testing and following campaign best practices such as keeping data discrepancies to under 10%.
 

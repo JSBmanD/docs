@@ -12,31 +12,31 @@ In addition to supporting Android, iOS and Web natively, Branch offers support f
 <!-- native sdk -->
 <div class="nav-wrap flex-wrap">
   <a href="/apps/ios/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/apple-logo.png" alt="iOS SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/apple-logo.png" alt="iOS SDK"/>
     <p>iOS</p>
   </a>
   <a href="/apps/android/">
-  <img src="../../../_assets/img/pages/resources/sdk-resources/android-logo.png" alt="Android SDK"/>
+  <img src="../../../images/pages/resources/sdk-resources/android-logo.png" alt="Android SDK"/>
   <p>Android</p>
   </a>
   <a href="/web/integrate/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/website-logo.png" alt="Web SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/website-logo.png" alt="Web SDK"/>
     <p>Website</p>
   </a>
   <a href="/apps/mac-os/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/mac-osx-logo.png" alt="Mac OS SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/mac-osx-logo.png" alt="Mac OS SDK"/>
     <p>Mac OS</p>
   </a>
   <a href="/apps/windows-csharp/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/windows-logo.png" alt="Windows SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/windows-logo.png" alt="Windows SDK"/>
     <p>Windows</p>
   </a>
   <a href="/apps/windows-c++/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/c++logo.png" alt="C++ SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/c++logo.png" alt="C++ SDK"/>
     <p>C++</p>
   </a>
   <a href="/apps/deep-linking-api/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/api-logo.png" alt="API"/>
+    <img src="../../../images/pages/resources/sdk-resources/api-logo.png" alt="API"/>
     <p>Deep Linking</p>
   </a>
 </div>
@@ -45,27 +45,27 @@ In addition to supporting Android, iOS and Web natively, Branch offers support f
 <!--/ native sdk -->
 <div class="nav-wrap flex-wrap">
   <a href="/apps/cordova-phonegap-ionic/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/cordova-logo.png" alt="Cordova PhoneGap Ionic" />
+    <img src="../../../images/pages/resources/sdk-resources/cordova-logo.png" alt="Cordova PhoneGap Ionic" />
     <p>Cordova PhoneGap<br>Ionic</p>
   </a>
   <div>
-    <img src="../../../_assets/img/pages/resources/sdk-resources/mparticle.png" alt="mParticle Android" />
+    <img src="../../../images/pages/resources/sdk-resources/mparticle.png" alt="mParticle Android" />
     <p>mParticle<br/><a href="/apps/mparticle-android-v5/">Android</a> | <a href="/apps/mparticle-ios-v7/">iOS</a></p>
   </div>
   <a href="/apps/react-native/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/native-logo.png" alt="React Native" />
+    <img src="../../../images/pages/resources/sdk-resources/native-logo.png" alt="React Native" />
     <p>React Native</p>
   </a>
   <a href="/apps/titanium/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/titanium-logo.png" alt="Titanium" />
+    <img src="../../../images/pages/resources/sdk-resources/titanium-logo.png" alt="Titanium" />
     <p>Titanium</p>
   </a>
   <a href="/apps/unity/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/unity-b-logo.png" alt="Unity" />
+    <img src="../../../images/pages/resources/sdk-resources/unity-b-logo.png" alt="Unity" />
     <p>Unity</p>
   </a>
   <a href="/apps/xamarin/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/xamarin-logo.png" alt="Xamarin" />
+    <img src="../../../images/pages/resources/sdk-resources/xamarin-logo.png" alt="Xamarin" />
     <p>Xamarin</p>
   </a>
 </div>
@@ -74,11 +74,11 @@ In addition to supporting Android, iOS and Web natively, Branch offers support f
 <!-- SDK Integrations -->
 <div class="nav-wrap flex-wrap">
   <div>
-    <img src="../../../_assets/img/pages/resources/sdk-resources/adobe-launch.png" alt="Adobe Launch Android SDK" />
+    <img src="../../../images/pages/resources/sdk-resources/adobe-launch.png" alt="Adobe Launch Android SDK" />
     <p>Adobe Launch<br><a href="/apps/adobe-launch-android/">Android SDK</a> | <a href="/apps/adobe-launch-ios/">iOS SDK</a> | <a href="/apps/adobe-launch-web-plugin/">Web Plugin</a></p>
   </div>
   <div>
-    <img src="../../../_assets/img/pages/resources/sdk-resources/segment-logo.png" alt="Segment Android SDK" />
+    <img src="../../../images/pages/resources/sdk-resources/segment-logo.png" alt="Segment Android SDK" />
     <p>Segment<br><a href="/apps/segment-android/">Android</a> | <a href="/apps/segment-ios/">iOS</a></p>
   </div>
 </div>
@@ -108,23 +108,23 @@ In addition to supporting Android, iOS and Web natively, Branch offers support f
 ## Legacy TUNE SDKs and APIs
 <div class="nav-wrap flex-wrap">
   <a href="https://tune.docs.branch.io/sdk/ios-quick-start/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/apple-logo.png" alt="iOS SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/apple-logo.png" alt="iOS SDK"/>
     <p>iOS SDK</p>
   </a>
   <a href="https://tune.docs.branch.io/sdk/android-quick-start/">
-  <img src="../../../_assets/img/pages/resources/sdk-resources/android-logo.png" alt="Android SDK"/>
+  <img src="../../../images/pages/resources/sdk-resources/android-logo.png" alt="Android SDK"/>
   <p>Android SDK</p>
   </a>
   <a href="https://tune.docs.branch.io/reporting/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/api-logo.png" alt="Web SDK"/>
+    <img src="../../../images/pages/resources/sdk-resources/api-logo.png" alt="Web SDK"/>
     <p>Reporting API</p>
   </a>
   <a href="https://tune.docs.branch.io/measurement/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/api-logo.png" alt="API"/>
+    <img src="../../../images/pages/resources/sdk-resources/api-logo.png" alt="API"/>
     <p>Measurement API</p>
   </a>
   <a href="https://tune.docs.branch.io/management/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/api-logo.png" alt="API"/>
+    <img src="../../../images/pages/resources/sdk-resources/api-logo.png" alt="API"/>
     <p>Management API</p>
   </a>
 </div>

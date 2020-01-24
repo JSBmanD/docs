@@ -12,7 +12,7 @@ All accounts include the App view and any user regardless of access role type ca
 
 <table>
   <tr>
-    <th rowspan="7"><img src="/_assets/img/pages/dashboard/access-levels/app-level-nav.png"></th>
+    <th rowspan="7"><img src="/images/pages/dashboard/access-levels/app-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -69,11 +69,11 @@ When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Q
 
 - For ad links/Quick Links, `agency_id` is included as a key-value in deep linking setup.
 
-![image](/_assets/img/pages/dashboard/access-levels/app-view-link-agency-id.png)
+![image](/images/pages/dashboard/access-levels/app-view-link-agency-id.png)
 
 - For Journeys, `agency_id` is included as a key-value in template-level link data.
 
-![image](/_assets/img/pages/dashboard/access-levels/app-view-journeys-agency-id.png)
+![image](/images/pages/dashboard/access-levels/app-view-journeys-agency-id.png)
 
 ### Agency Association to Self Attributing Networks (SANs)
 

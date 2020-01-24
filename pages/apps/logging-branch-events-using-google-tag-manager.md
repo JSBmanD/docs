@@ -59,15 +59,15 @@ title: Logging Branch Events Using Google Tag Manager
 	1. Under iOS > Source, select Header File.
 	1. Click Next.
 	1. Enter the header file name `BridgingHeader.h`.
-	![image](/_assets/img/pages/apps/gtm/gtm1.png)
+	![image](/images/pages/apps/gtm/gtm1.png)
 	1. Click Create
 1. Add Objective-C bridging header on build settings
 	1. In Xcode, click your project.
-	![image](/_assets/img/pages/apps/gtm/gtm2.png)
+	![image](/images/pages/apps/gtm/gtm2.png)
 	1. Click Build Settings in the editor area.
 	1. Select All and Combined and search for bridging.
 	1. In the right column of the row containing Objective-C Bridging Header, enter `BridgingHeader.h`.
-	![image](/_assets/img/pages/apps/gtm/gtm3.png)
+	![image](/images/pages/apps/gtm/gtm3.png)
 1. Implement a custom class e.g CustomEventTagFunction
 	```
 	import Foundation
@@ -115,12 +115,12 @@ title: Logging Branch Events Using Google Tag Manager
 
 1. Set up triggers for your event.
 	1. Add in filters for when this trigger is fired.
-	![image](/_assets/img/pages/apps/gtm/gtm4.png)
+	![image](/images/pages/apps/gtm/gtm4.png)
 1. Add in relevant event variables of what to add in.
 	1. Create a new variable
 	1. Select ‘Event Parameter’
 	1. Work with your Branch Sales engineer or Solutions engineer to determine what variable to create.
-	![image](/_assets/img/pages/apps/gtm/gtm5.png)
+	![image](/images/pages/apps/gtm/gtm5.png)
 1. Create a new Tag under Tags section and provide a name.
 	1. Click on Tag Configuration and under Tag type select Function Call.
 	1. Provide the created classpath under the Class path section
@@ -128,5 +128,5 @@ title: Logging Branch Events Using Google Tag Manager
 		1. Android: Look at this section
 	1. Expand the “Add Argument” section and provide the key as "event_name" with event name macro. Add in other keys which you need.
 1. Click on Triggering section and choose your appropriate trigger on which this Tag should fire.
-![image](/_assets/img/pages/apps/gtm/gtm6.png)
+![image](/images/pages/apps/gtm/gtm6.png)
 1. Please ensure that you update the container on both iOS and Android respectively.

@@ -27,7 +27,7 @@ To link your Branch account with TrafficGuard, you will need the following:
 3. Select the property you want to link with Branch MMP.
 4. Click on Settings or Copy the Property ID.
 
-![image](/_assets/img/pages/integrations/trafficguard/trafficguard-property-id.png)
+![image](/images/pages/integrations/trafficguard/trafficguard-property-id.png)
 
 ### Finding Your Organization ID & Measurement API Key
 
@@ -35,7 +35,7 @@ To link your Branch account with TrafficGuard, you will need the following:
 2. Go to Settings in the Side Navigation.
 3. Copy the Identifier (i.e Organization ID) and the Measurement API key.
 
-![image](/_assets/img/pages/integrations/trafficguard/trafficguard-id-api-key.png)
+![image](/images/pages/integrations/trafficguard/trafficguard-id-api-key.png)
 
 ## Branch Setup
 
@@ -82,9 +82,9 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 
 1. Click the <notranslate>**Reset All Settings**</notranslate> button at the Account Settings tab..
 
-	![image](/_assets/img/ingredients/deep-linked-ads/reset-ad-settings/reset-ad-settings.png)
+	![image](/images/ingredients/deep-linked-ads/reset-ad-settings/reset-ad-settings.png)
 
 1. A confirmation modal will appear, just click <notranslate>**Yes, Reset Ad Partner**</notranslate> to conform the Reset.
 
-	![image](/_assets/img/ingredients/deep-linked-ads/reset-ad-settings/reset-ad-settings_confirmation.png)
+	![image](/images/ingredients/deep-linked-ads/reset-ad-settings/reset-ad-settings_confirmation.png)
 

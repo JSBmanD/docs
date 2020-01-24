@@ -45,7 +45,7 @@ To request an export:
   - Individually by clicking the respective <notranslate>**Download arrow**</notranslate>
   - En masse by clicking the <notranslate>**Export All**</notranslate> button.
 
-![image](/_assets/img/pages/exports/daily-exports.png)
+![image](/images/pages/exports/daily-exports.png)
 
 Upon request, you will receive a confirmation email verifying the details of your request. Once we finish processing your export, you will receive another email that includes as CSV attachment. Please keep in mind larger exports require more processing time.
 

@@ -3,7 +3,7 @@ title: Braze
 ---
 ## Overview
 
-![Braze](/_assets/img/pages/email/braze/braze.png)
+![Braze](/images/pages/email/braze/braze.png)
 
 This guide will walk you through how to setup your email campaigns with **[Braze](https://www.braze.com/){:target="\_blank"}** and Branch Universal Email to automatically convert your email links into **multi-platform deep links**
 

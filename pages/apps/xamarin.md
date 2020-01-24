@@ -18,8 +18,8 @@ title: Xamarin
 
     - Complete your [Branch Dashboard](https://dashboard.branch.io/settings/link)
 
-        ![image](/_assets/img/pages/apps/cordova-configure.png)
-        ![image](/_assets/img/pages/apps/cordova-link-domain.png)
+        ![image](/images/pages/apps/cordova-configure.png)
+        ![image](/images/pages/apps/cordova-link-domain.png)
 
 - ### Install Branch
 
@@ -75,7 +75,7 @@ title: Xamarin
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<notranslate>**URL Schemes:**</notranslate> {the app's URI Scheme - 'testiosapp', for example}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<notranslate>**Role:**</notranslate> Editor
 
-            ![image](/_assets/img/pages/apps/xamarin/ios_uri_scheme.png)
+            ![image](/images/pages/apps/xamarin/ios_uri_scheme.png)
 
         - **Configure the Xamarin project's Associated Domains entitlement**
 
@@ -84,7 +84,7 @@ title: Xamarin
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`applinks:testiosapp.app.link`
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`applinks:testiosapp-alternate.app.link`
 
-            ![image](/_assets/img/pages/apps/xamarin/ios_associated_domains.png)
+            ![image](/images/pages/apps/xamarin/ios_associated_domains.png)
 
 
         - **Update the project's Signing Identity and Provisioning Profile**
@@ -577,7 +577,7 @@ title: Xamarin
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<notranslate>**URL Schemes:**</notranslate> {the app's URI Scheme - 'testxamarinformsapp', for example}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<notranslate>**Role:**</notranslate> Editor
 
-            ![image](/_assets/img/pages/apps/xamarin/ios_uri_scheme.png)
+            ![image](/images/pages/apps/xamarin/ios_uri_scheme.png)
 
         - **Configure the Xamarin project's Associated Domains entitlement**
 
@@ -586,7 +586,7 @@ title: Xamarin
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`applinks:testxamarinformsapp.app.link`
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`applinks:testxamarinformsapp-alternate.app.link`
 
-            ![image](/_assets/img/pages/apps/xamarin/ios_associated_domains.png)
+            ![image](/images/pages/apps/xamarin/ios_associated_domains.png)
 
         - **Add Branch calls to the AppDelegate.cs file**
 
@@ -801,7 +801,7 @@ title: Xamarin
     - Paste deep link in <notranslate>**Apple Notes**</notranslate>
     - Long press on the deep link *(not 3D Touch)*
 
-    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/images/pages/apps/ios-notes.png))*
 
 - ### Test deep link Android
 

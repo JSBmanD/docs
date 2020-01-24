@@ -8,7 +8,7 @@ Branch 대시보드의 [광고 분석 페이지](https://dashboard.branch.io/ads
 
 그후 어트리뷰션 윈도우 내에 고객이 웹에서 아이템을 구매한 경우, Branch는 한 사용자가 취한 웹과 앱 활동을 연결지어 같은 광고 링크를 웹 구매에 대한 기여의 출처로 인정하며, 이를 통해 마케팅 채널 및 고객 행동에 대한 보다 정확한 인사이트를 제공합니다.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/install-by-secondary-pub.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/install-by-secondary-pub.png)
 
 [여기](/dashboard/people-based-attribution/)에서 에서 사용자 중심 어트리뷰션 대해 자세히 알아보십시오.
 

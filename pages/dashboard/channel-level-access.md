@@ -5,7 +5,7 @@ The <notranslate>"Channel"</notranslate> level of a Branch account is the fourth
 
 <table>
   <tr>
-    <th rowspan="10"><img src="/_assets/img/pages/dashboard/access-levels/app-level-nav.png"></th>
+    <th rowspan="10"><img src="/images/pages/dashboard/access-levels/app-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -73,7 +73,7 @@ If you are an Admin, you have edit access to the <notranslate>**Manager**</notra
 
 You can turn Journeys on and off, clone them, or view performance.
 
-![image](/_assets/img/pages/journeys/journeys-manager.png)
+![image](/images/pages/journeys/journeys-manager.png)
 
 A Journey can have one of four states:
 
@@ -86,7 +86,7 @@ A Journey can have one of four states:
 
 You can activate a journey directly from the creation flow, or from <notranslate>**Start**</notranslate> in the Actions menus in the Journeys Manager.
 
-![image](/_assets/img/pages/journeys/edit-journeys.png)
+![image](/images/pages/journeys/edit-journeys.png)
 
 !!! tip "Editing a live Journey"
 	You may edit Journeys in all states; if you do, however, your Journeys' performance and analytics may change. If you do decide to make a change, we recommend making a note of what you changed and when you made the change.
@@ -100,7 +100,7 @@ If you are an Admin, you have edit access to the <notranslate>**Deepviews**</not
 
 You can create new Deepview templates either by duplicating the default Branch Public Template, or by creating a new one from scratch. New Deepview templates are shared between all platforms (iOS, Android, and desktop), and cannot be deleted after creation.
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-deepviews.png)
+![image](/images/pages/dashboard/access-levels/channel-deepviews.png)
 
 !!! info "Creating a Deepview"
 	Please refer to the [Deepviews](/web/deep-views/) article for an in-depth tutorial on how to create a Deepview.
@@ -109,7 +109,7 @@ You can create new Deepview templates either by duplicating the default Branch P
 
 When users click your links on desktop, they have the option to text themselves a link to download your app. We provide this by default on every Branch link, but you can also create your own fully-branded Text Me The App page.
 
-![image](/_assets/img/pages/text-me-the-app/default-and-drafted.png)
+![image](/images/pages/text-me-the-app/default-and-drafted.png)
 
 Left: Branch default. Right: a customized version.
 
@@ -122,7 +122,7 @@ Left: Branch default. Right: a customized version.
 
 If you are an Admin, you have edit access to the <notranslate>**Partner Management**</notranslate> tab.
 
-![image](/_assets/img/pages/dashboard/access-levels/app-partner-management.gif)
+![image](/images/pages/dashboard/access-levels/app-partner-management.gif)
 
 Each Universal Ad Partner has the following settings:
 
@@ -146,7 +146,7 @@ If you are an Admin, you have edit access to the <notranslate>**Manager**</notra
 
 You can enable/disable Universal Email Partners and view integration information.
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-email-manager.gif)
+![image](/images/pages/dashboard/access-levels/channel-email-manager.gif)
 
 !!! info "Enabling an Universal Email Partner"
 	Please refer to Branch's [List of Universal Email Partners](/emails/email-partners-list/) article to view a complete list of our integrated Universal Email Partners and instructions on how to enable each partner.
@@ -158,7 +158,7 @@ You can enable/disable Universal Email Partners and view integration information
 
 Enable automatic sitemap generation by checking the <notranslate>**Automatic sitemap generation**</notranslate> checkbox.
 
-![image](/_assets/img/pages/organic-search/firebase/db-settings.png)
+![image](/images/pages/organic-search/firebase/db-settings.png)
 
 Once you enable this, your app will be included in our nightly job to automatically generate sitemaps. These sitemaps can be scraped by Google, and all of the included links can then be indexed.
 
@@ -171,7 +171,7 @@ After you've enabled App Indexing, this page will showcase the following data:
 
 Both the sitemap itself and statistics about Google scraping your links are updated via nightly map-reduce jobs.
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-organic-search.png)
+![image](/images/pages/dashboard/access-levels/channel-organic-search.png)
 
 !!! info "Google App Indexing & Apple Spotlight Search"
 	Please refer to the [Firebase App Indexing](/organic-search/firebase/) article for an in-depth tutorial on Google's Firebase App Indexing .
@@ -188,7 +188,7 @@ You can create new rules, edit existing rules and archive unwanted rules.
 
 You can automatically give awards based on events taken by users.
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-referral-rewards.gif)
+![image](/images/pages/dashboard/access-levels/channel-referral-rewards.gif)
 
 Properties you can define:
 
@@ -213,7 +213,7 @@ If you are an Admin, you have edit access to the sections below.
 !!! warning "Sensitive Data Access Required"
 	Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md).
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-data-feeds-manager.png)
+![image](/images/pages/dashboard/access-levels/channel-data-feeds-manager.png)
 
 - <notranslate>**Daily Export API**</notranslate> - Programmatically access Branch event data with granular details like timestamp, OS, and more.
 - <notranslate>**Query API**</notranslate> - Programmatically query for any of the pre-aggregated Branch event data that you can see on the dashboard.
@@ -223,7 +223,7 @@ If you are an Admin, you have edit access to the sections below.
 !!! warning "Sensitive Data Access Required"
 	Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md).
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-data-integrations.png)
+![image](/images/pages/dashboard/access-levels/channel-data-integrations.png)
 
 !!! info "Enabling a Data Integration"
 	Please refer to Branch's [List of Data Integrations](/integrations/data-integrations-list/) article to view a complete list of our Data Integrations and instructions on how to enable each integration.
@@ -235,7 +235,7 @@ If you are an Admin, you have edit access to the sections below.
 
 You can add new webhooks, edit existing webhooks and archive unwanted webhooks.
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-webhooks1.png)
+![image](/images/pages/dashboard/access-levels/channel-webhooks1.png)
 
 !!! info "Webhook Setup"
 	Please refer to the [Webhooks](/exports/ua-webhooks/) article for an in-depth tutorial on how to configure webhooks.

@@ -230,7 +230,7 @@ To include your Branch long link in the campaign's settings:
 2. On the <notranslate>**Settings**</notranslate> page, expand the <notranslate>**Campaign URL options**</notranslate> section.
 3. In the <notranslate>**Campaign URL options**</notranslate> section, place the Branch long link in the <notranslate>**Tracking Template**</notranslate> field.
 4. Click <notranslate>**Save**</notranslate>.
-![image](/_assets/img/pages/deep-linked-ads/google/tracking-template.png)
+![image](/images/pages/deep-linked-ads/google/tracking-template.png)
 
 ## Facebook Data Feeds
 

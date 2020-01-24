@@ -33,7 +33,7 @@ For checking the status of an export, the rate limit is 50 requests per minute a
 
 In order to access Custom Exports, a user will need to have both <notranslate>**Sensitive Data**</notranslate> and <notranslate>**Export**</notranslate> access.
 
-![image](/_assets/img/pages/dashboard/access-levels/export-access.png)
+![image](/images/pages/dashboard/access-levels/export-access.png)
 
 For more details on how to give a user the required access, please follow [Granting a User Export Access](/dashboard/export-access/#granting-a-user-export-access).
 
@@ -58,7 +58,7 @@ To provide an agency team member with access to the Custom Export API:
     1. Under <notranslate>**Data Filters**</notranslate>, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
 6. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/exports/agency-export-access.png)
+![image](/images/pages/exports/agency-export-access.png)
 
 !!! warning "Agency-Tagged Data"
 	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export sensitive data associated with all of your campaigns, regardless if they are associated with them or not.
@@ -85,7 +85,7 @@ To request an export:
 	- Any additional <notranslate>**Filters**</notranslate> you want included.
 	- The <notranslate>**Download Type**</notranslate> for the export.
 
-![image](/_assets/img/pages/exports/custom-exports.gif)
+![image](/images/pages/exports/custom-exports.gif)
 
 You can also view any requested export in the <notranslate>**Custom Exports Created**</notranslate> table which includes:
 

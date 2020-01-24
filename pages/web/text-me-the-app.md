@@ -5,7 +5,7 @@ title: Text Me the App
 
 When users click your links on desktop, they have the option to text themselves a link to download your app. We provide this by default on every Branch link, but you can also create your own fully-branded Text Me The App page.
 
-![image](/_assets/img/pages/text-me-the-app/default-and-drafted.png)
+![image](/images/pages/text-me-the-app/default-and-drafted.png)
 
 Left: Branch default. Right: a customized version.
 
@@ -28,7 +28,7 @@ If you don't want to use Branch's default Text Me The App Page or show a desktop
 1. Select `Custom Landing Page with SMS`, after you toggle to `On`.
 1. Enter the destination URL.
 
-![image](/_assets/img/pages/text-me-the-app/desktop-routing.png)
+![image](/images/pages/text-me-the-app/desktop-routing.png)
 
 !!! note "Make sure you can access this page"
     Because you will be making changes to this URL, be sure you have access to the page and can make changes to its HTML.
@@ -134,7 +134,7 @@ If you want to customize this, Branch allows you to set a default for all messag
 
 You can create your own custom default message that will be sent if the specific link someone clicks doesn't have a customized message itself. Navigate back to the Desktop SMS page on the [Branch dashboard](https://dashboard.branch.io/web/sms). You should see the following section below.
 
-![image](/_assets/img/pages/text-me-the-app/default-message.png)
+![image](/images/pages/text-me-the-app/default-message.png)
 
  Editing this field will modify **all** SMS messages sent.
 
@@ -142,7 +142,7 @@ You can create your own custom default message that will be sent if the specific
 
 If you don't want to edit the global SMS text, you can define a special SMS message for each individual link. Whether you want to switch the language of a message for a different region or include device specific date, you can specify the message in the *<notranslate>Deep Link Data</notranslate>* section at the bottom of the link editing screen.
 
-![image](/_assets/img/pages/text-me-the-app/deeplink-data.png)
+![image](/images/pages/text-me-the-app/deeplink-data.png)
 
 Use the <notranslate>**$custom_sms_text**</notranslate> parameter and then enter your custom message in the value section. Make sure to include the <notranslate>**{{ link }}**</notranslate> tag in your custom message! Read the following scenario below to see this in action.
 
@@ -171,7 +171,7 @@ Here's an example to illustrate this scenario.
 
 <notranslate>**{{ link.data.flower }}**</notranslate>s on the mind? Click here to buy some for your home! <notranslate>**{{ link }}**</notranslate>
 
-![image](/_assets/img/pages/text-me-the-app/key-value.png)
+![image](/images/pages/text-me-the-app/key-value.png)
 
 ## Glossary
 

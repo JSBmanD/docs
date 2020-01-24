@@ -3,7 +3,7 @@ title: 9Apps
 ---
 ## Overview
 
-![9Apps](/_assets/img/pages/app-stores/9apps-logo.jpg)
+![9Apps](/images/pages/app-stores/9apps-logo.jpg)
 
 This guide will walk you through how to attribute pre-installed users to **[9Apps](https://www.9apps.com/)** using the Branch SDK.
 

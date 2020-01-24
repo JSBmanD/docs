@@ -55,7 +55,7 @@ During the process of granting an agency/partner access to your Branch account, 
 !!! warning "Filter to Only Show Data from Specific Ad Networks"
   	When giving an ad partner access to your Branch account, please make sure you toggle the <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> to on and select the ad partner you are giving access to.
 
-![image](/_assets/img/pages/dashboard/agency-ad-partner-invite.png)
+![image](/images/pages/dashboard/agency-ad-partner-invite.png)
 
 - <notranslate>**Only Show Agency-tagged Data**</notranslate> - When toggled on, agency users can only see events tagged with their Agency ID.
 - <notranslate>**Restrict Access to Revenue Data**</notranslate> - When toggled on, agency users cannot view revenue data.

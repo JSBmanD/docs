@@ -3,7 +3,7 @@ title: Apple Search Ads
 ---
 ## Overview
 
-![Apple Search Ads](/_assets/img/pages/deep-linked-ads/apple-search/search-ads-reduced-logo.png)
+![Apple Search Ads](/images/pages/deep-linked-ads/apple-search/search-ads-reduced-logo.png)
 
 Branch can help track your **[Apple Search Ads](https://searchads.apple.com/)** campaigns by fetching the Apple Search Ads Attribution API.  You can then use the parameters you've set in the Apple Search Ads dashboard, parameters such as the campaign name, and take special action in your app after an install, or simply track the effectiveness of a campaign in the Branch dashboard, along with other your other Branch statistics, such as total installs, referrals, and app link statistics.
 
@@ -21,7 +21,7 @@ In order to check if the user came from an Apple Search Ads, you must make the a
 
 You must add Apple's <notranslate>**iAd.framework**</notranslate> and <notranslate>**AdSupport.framework**</notranslate> to your <notranslate>**Linked Frameworks**</notranslate> in your Xcode project to enable Apple Search Ads checking.
 
-![image](/_assets/img/pages/apps/ios-frameworks.png)
+![image](/images/pages/apps/ios-frameworks.png)
 
 !!! warning ""
   If using Cocoapods, the iAd framework is automatically added (in build phase) and the headers are imported. If not using Cocoapods, you will need to do this manually.
@@ -93,20 +93,20 @@ Please refer to Apple Search Ads developer documentation on how to [make request
 
 1. Navigate to the [Apple Search Ads UI > Settings > API](https://app.searchads.apple.com/cm/app/settings/apicertificates). *Verify you have selected the correct account by using the account selector in the top right hand corner.*
 
-    ![image](/_assets/img/pages/deep-linked-ads/apple-search/apple-api-screen.png)
+    ![image](/images/pages/deep-linked-ads/apple-search/apple-api-screen.png)
 
 1. Create an API certificate
 
-    ![image](/_assets/img/pages/deep-linked-ads/apple-search/apple-search-api.png)
+    ![image](/images/pages/deep-linked-ads/apple-search/apple-search-api.png)
 
 1. Download the API certificate to your computer. You'll unzip the folder and get one `.key` and one `.pem` file.
 
-    ![image](/_assets/img/pages/deep-linked-ads/apple-search/apple-download-certs.png)
+    ![image](/images/pages/deep-linked-ads/apple-search/apple-download-certs.png)
 
 1. Navigate to the [Apple Search Ads partner manager](https://dashboard.branch.io/ads/partner-management/a_apple?tab=settings) in the Branch dashboard.
 1. Upload the certificates there, selecting each file, and then clicking the blue upload arrow to upload the files. Click *Next* to continue.
 
-    ![image](/_assets/img/pages/deep-linked-ads/apple-search/apple-upload-certs.png)
+    ![image](/images/pages/deep-linked-ads/apple-search/apple-upload-certs.png)
 
 1. Select the organizations for which you would like to ingest data and click *Save* to enable Apple Search Ads with Cost Data.
 
@@ -243,7 +243,7 @@ Attribution windows can be specified at the global account level or on a per lin
 
 You can edit your attribution windows under Link Settings > Attribution Windows.
 
-   ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+   ![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 Learn more about account level attribution windows in [People-Based Attribution](/dashboard/people-based-attribution/#attribution-windows).
 
@@ -251,7 +251,7 @@ Learn more about account level attribution windows in [People-Based Attribution]
 
 You can edit your attribution windows at the ad network level, if your ad network requires it. This is recommended when you enable networks like Apple Search Ads, Facebook and Google, who may have different windows for installs. With this, you can preserve your Account Level Attribution Windows, as well.
 
-   ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+   ![image](/images/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
 
 ## Integration Support
 

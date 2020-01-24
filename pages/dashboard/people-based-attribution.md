@@ -56,7 +56,7 @@ To access your attribution settings, navigate to the [Link Settings](https://das
 !!! info "Default Attribution Window Settings"
 		Each attribution window has its own default measured in days.  Please refer to the image below for these defaults.
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 - <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
@@ -90,11 +90,11 @@ This section covers the changes found on the main page of the Branch [dashboard]
 
 This is the first chart found on the main page. This chart surfaces install counts for your app using the new People-Based Analytics.
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/installs-summary-old.png)
+![image](/images/pages/dashboard/people-based-attribution/installs-summary-old.png)
 
 *old*
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/installs-summary-new.png)
+![image](/images/pages/dashboard/people-based-attribution/installs-summary-new.png)
 
 *new*
 
@@ -162,7 +162,7 @@ If the difference in numbers is still concerning, reach out to your Branch accou
 
 When you filter by tags and compare on tags, you may see something a bit unexpected. Here's an example:
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/tags.png)
+![image](/images/pages/dashboard/people-based-attribution/tags.png)
 
 Here you'll see that even though we've filtered for only one tag, '201804082343', multiple tags are present on the graph. This is because links can have multiple tags. So in this example, there were 7 installs on 04/09 that were attributed to a link click with tag '201804082343'. Within those installs, 4 had tag 'Android' as well, and so on.
 

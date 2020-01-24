@@ -3,7 +3,7 @@ title: Adobe Campaign Standard
 ---
 ## Overview
 
-![Adobe-Campaign-Standard](/_assets/img/pages/email/adobe-campaign-standard/adobe-campaign-standard.png)
+![Adobe-Campaign-Standard](/images/pages/email/adobe-campaign-standard/adobe-campaign-standard.png)
 
 This guide will walk you through how to setup your email campaigns with **[Adobe Campaign Standard](https://www.adobe.com/marketing-cloud/campaign.html){:target="\_blank"}** using Branch Universal Email to automatically convert your email links into **multi-platform deep links**
 
@@ -38,27 +38,27 @@ Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_
 
 Branch turns the web URLs you put into your emails into Branch deep links, opening the app for users with your app installed to that same content in the app.
 
-![image](/_assets/img/pages/email/users-with-app.png)
+![image](/images/pages/email/users-with-app.png)
 
 To do this, it must be possible to map your web URL content (e.g. a page with brown loafers at `https://shop.com/shoes/brown-loafers`) into a working deep link that takes users to brown loafers in the app. The Universal Email [setup flow](https://dashboard.branch.io/email){:target="\_blank"} will attempt to automatically detect this mapping for you.
 
 If you do not want to set this up yet, you can select <notranslate>**No, just open to app homepage for now**</notranslate>.
 
-![image](/_assets/img/pages/email/app-homepage.png)
+![image](/images/pages/email/app-homepage.png)
 
 By default, email deep links will redirect users _without your app_ to the same content on the web instead.
 
-![image](/_assets/img/pages/email/users-without-app.png)
+![image](/images/pages/email/users-without-app.png)
 
 If you would like to send users to the App Store or another default you have specified in Link Settings, you can select <notranslate>**Open to default redirects**</notranslate>.
 
-![image](/_assets/img/pages/email/default-redirects.png)
+![image](/images/pages/email/default-redirects.png)
 
 #### Checking your deep linking setup
 
 If you chose **not** to set up deep linking to specific content within your app, then you can [skip this step](#next-steps).
 
-![image](/_assets/img/pages/email/responsys/enter-web-url.png)
+![image](/images/pages/email/responsys/enter-web-url.png)
 
 In this step, you will want to enter a web URL that corresponds to a specific screen within your app. In other words, the webpage should have content that also exists in your app. If you do not know whether your web content also exists in-app, try any URL other than your website homepage. Some examples:
 
@@ -72,7 +72,7 @@ Once you choose one and click <notranslate>**Submit**</notranslate>, [meta tags 
 
 If an app deep linking scheme that maps to your web content cannot be successfully detected, you can [configure your settings manually](#deep-linking-settings-for-email), or you can reach out to your Branch account manager or support for assistance.
 
-![image](/_assets/img/pages/email/failure-result.png)
+![image](/images/pages/email/failure-result.png)
 
 We will help you set up one of the following methods:
 
@@ -118,13 +118,13 @@ Open to default redirects | Route to defaults specified in [Link Settings](https
 
 You can retrieve your click tracking domain from the <notranslate>**Brand Configuration**</notranslate> page in the field called <notranslate>**External URL of the tracking server**</notranslate>. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
-![image](/_assets/img/pages/email/adobe-campaign-standard/setup-config.png)
+![image](/images/pages/email/adobe-campaign-standard/setup-config.png)
 
 ### Configure your app for your click tracking domain
 
 You can send ESP configuration to your development team
 
-![image](/_assets/img/pages/email/send-email.png)
+![image](/images/pages/email/send-email.png)
 
 In this prompt, enter the email of someone on your team who is qualified to modify your iOS app, and then click <notranslate>**Send**</notranslate>. They will complete the [technical setup](#configure-your-mobile-app) steps below.
 
@@ -132,7 +132,7 @@ Click Next to proceed to Validate and test the integration
 
 ### Validate and Test
 
-![image](/_assets/img/pages/email/setup-verification.png)
+![image](/images/pages/email/setup-verification.png)
 
 The last step of the [Universal Email setup flow](https://dashboard.branch.io/email){:target="\_blank"} validates whether you have completed all necessary steps and whether an engineer on your team has completed the integration steps. You will also see recommendations for how to improve your email integration.
 
@@ -140,7 +140,7 @@ Once it's done the AASA file and SSL certificate - required for Universal Links 
 
 The conversion to Branch links will only work when your links are wrapped in your click tracking domain. To test links without wrapping, please generate a test link on the Verification step of email onboarding, also accessible by clicking the gear icon for your ESP on the [email page](https://dashboard.branch.io/email){:target="\_blank"}.
 
-![image](/_assets/img/pages/email/setup-test.png)
+![image](/images/pages/email/setup-test.png)
 
 !!! protip "What happens to your links behind the scenes?"
     This is what a link looks like within your email template:
@@ -176,12 +176,12 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 1. In Xcode, go to the `Capabilities` tab of your project file.
 1. Scroll down and enable <notranslate>**Associated Domains**</notranslate> if it is not already enabled.
 
-    ![image](/_assets/img/pages/email/enable-associated-domains.png)
+    ![image](/images/pages/email/enable-associated-domains.png)
 
 1. Copy your click tracking domain from the [email you received from Branch](#configure-your-app-for-your-click-tracking-domain), or retrieve it from your ESP's settings.
 1. In the `Domains` section, click the `+` icon and add your click tracking domain. For example, if your click tracking domain is `email.example.com`, add an entry for `applinks:email.example.com`.
 
-    ![image](/_assets/img/pages/email/add-domain.png)
+    ![image](/images/pages/email/add-domain.png)
 
 !!! protip "Having trouble or new to Universal Links?"
     Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode.
@@ -215,11 +215,11 @@ When users enter your app via a Universal Link, we check to see to see if the li
 For most implementations this will never be an issue, since your deep links will be routed correctly either way. However, if you use a custom link domain *and* you rely on `handledByBranch` to return `YES` for every incoming Branch-generated Universal Link, you can inform the Branch SDK by following these steps:
 
 1. In your <notranslate>**Info.plist**</notranslate> file, create a new key called `branch_universal_link_domains`.
-1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
+1. Add your custom domain(s) as a string. ![image](/images/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 
 !!! tip "Multiple custom domains"
-	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)
+	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/images/pages/deep-linking/universal-links/branch-universal-link-domains.png)
 
 ## Configure your ESP
 
@@ -227,7 +227,7 @@ For most implementations this will never be an issue, since your deep links will
 
 Add a custom click tracking domain at the <notranslate>**Brand Configuration**</notranslate> page in the field called <notranslate>**External URL of the tracking server**</notranslate>.
 
-![image](/_assets/img/pages/email/adobe-campaign-standard/create-domain.png)
+![image](/images/pages/email/adobe-campaign-standard/create-domain.png)
 
 !!! tip "Adding a custom click-tracking domain"
     If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Adobe Campaign Standard.

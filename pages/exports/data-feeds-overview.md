@@ -9,31 +9,31 @@ Data Feeds is Branch’s premium suite of tools for exporting data. If you want 
 ## Data Feeds
 <div class="nav-wrap flex-wrap">
   <a href="/integrations/data-integrations-list/">
-    <img src="../../../_assets/img/pages/main-page/feeds-dot.png" />
+    <img src="../../../images/pages/main-page/feeds-dot.png" />
     <p>Data Integrations</p>
   </a>
   <a href="/exports/ua-webhooks/">
-    <img src="../../../_assets/img/pages/exports/webhook.png" />
+    <img src="../../../images/pages/exports/webhook.png" />
     <p>Webhooks</p>
   </a>
   <a href="/exports/custom-exports/">
-    <img src="../../../_assets/img/pages/exports/export-icon.png" />
+    <img src="../../../images/pages/exports/export-icon.png" />
     <p>Custom Exports</p>
   </a>
   <a href="/exports/aggregate-exports/">
-    <img src="../../../_assets/img/pages/exports/export-icon.png" />
+    <img src="../../../images/pages/exports/export-icon.png" />
     <p>Aggregate Exports</p>
   </a>
   <a href="/exports/cohort-exports/">
-    <img src="../../../_assets/img/pages/exports/export-icon.png" />
+    <img src="../../../images/pages/exports/export-icon.png" />
     <p>Cohort Exports</p>
   </a>
   <a href="/exports/daily-exports/">
-    <img src="../../../_assets/img/pages/exports/export-icon.png" />
+    <img src="../../../images/pages/exports/export-icon.png" />
     <p>Daily Exports</p>
   </a>
   <a href="/exports/query-api/">
-    <img src="../../../_assets/img/pages/resources/sdk-resources/api1.png" />
+    <img src="../../../images/pages/resources/sdk-resources/api1.png" />
     <p>Query API</p>
   </a>
 </div>

@@ -8,21 +8,21 @@ title: Link Level Analytics
 
 As long as your link contains unique tags, you can append `?stats=true` to the link and  see a breakdown of trends over any period of time.
 
-![image](/_assets/img/pages/analytics/link-level-analytics0.png)
+![image](/images/pages/analytics/link-level-analytics0.png)
 
 
 ### Click Flow
 
 You will also see a breakdown of clicks, installs, and re-opens by platform.
 
-![image](/_assets/img/pages/analytics/link-level-analytics1.png)
+![image](/images/pages/analytics/link-level-analytics1.png)
 
 
 ### Quick Links
 
 If you created a marketing link on the Quick Links page, you can see a breakdown of analytics for that specific link.
 
-![image](/_assets/img/pages/analytics/link-level-analytics2.png)
+![image](/images/pages/analytics/link-level-analytics2.png)
 
 
 ## API

@@ -41,27 +41,27 @@ Navigate to the [Universal Email](https://dashboard.branch.io/email){:target="\_
 
 Branch turns the web URLs you put into your emails into Branch deep links, opening the app for users with your app installed to that same content in the app.
 
-![image](/_assets/img/pages/email/users-with-app.png)
+![image](/images/pages/email/users-with-app.png)
 
 To do this, it must be possible to map your web URL content (e.g. a page with brown loafers at `https://shop.com/shoes/brown-loafers`) into a working deep link that takes users to brown loafers in the app. The Universal Email [setup flow](https://dashboard.branch.io/email){:target="\_blank"} will attempt to automatically detect this mapping for you.
 
 If you do not want to set this up yet, you can select <notranslate>**No, just open to app homepage for now**</notranslate>.
 
-![image](/_assets/img/pages/email/app-homepage.png)
+![image](/images/pages/email/app-homepage.png)
 
 By default, email deep links will redirect users _without your app_ to the same content on the web instead.
 
-![image](/_assets/img/pages/email/users-without-app.png)
+![image](/images/pages/email/users-without-app.png)
 
 If you would like to send users to the App Store or another default you have specified in Link Settings, you can select <notranslate>**Open to default redirects**</notranslate>.
 
-![image](/_assets/img/pages/email/default-redirects.png)
+![image](/images/pages/email/default-redirects.png)
 
 #### Checking your deep linking setup
 
 If you chose **not** to set up deep linking to specific content within your app, then you can [skip this step](#next-steps).
 
-![image](/_assets/img/pages/email/responsys/enter-web-url.png)
+![image](/images/pages/email/responsys/enter-web-url.png)
 
 In this step, you will want to enter a web URL that corresponds to a specific screen within your app. In other words, the webpage should have content that also exists in your app. If you do not know whether your web content also exists in-app, try any URL other than your website homepage. Some examples:
 
@@ -75,7 +75,7 @@ Once you choose one and click <notranslate>**Submit**</notranslate>, [meta tags 
 
 If an app deep linking scheme that maps to your web content cannot be successfully detected, you can [configure your settings manually](#deep-linking-settings-for-email), or you can reach out to your Branch account manager or support for assistance.
 
-![image](/_assets/img/pages/email/failure-result.png)
+![image](/images/pages/email/failure-result.png)
 
 We will help you set up one of the following methods:
 
@@ -121,13 +121,13 @@ Open to default redirects | Route to defaults specified in [Link Settings](https
 
 You can retrieve your click tracking domain from your Salesforce settings. If you have not added a custom click tracking domain yet, follow the instructions [here](#setup-a-custom-click-tracking-domain).
 
-![image](/_assets/img/pages/email/salesforce/setup-config.png)
+![image](/images/pages/email/salesforce/setup-config.png)
 
 ### Configure your app for your click tracking domain
 
 You can send ESP configuration to your development team
 
-![image](/_assets/img/pages/email/send-email.png)
+![image](/images/pages/email/send-email.png)
 
 In this prompt, enter the email of someone on your team who is qualified to modify your iOS app, and then click <notranslate>**Send**</notranslate>. They will complete the [technical setup](#configure-your-mobile-app) steps below.
 
@@ -135,7 +135,7 @@ Click Next to proceed to Validate and test the integration
 
 ### Validate and Test
 
-![image](/_assets/img/pages/email/setup-verification.png)
+![image](/images/pages/email/setup-verification.png)
 
 The last step of the [Universal Email setup flow](https://dashboard.branch.io/email){:target="\_blank"} validates whether you have completed all necessary steps and whether an engineer on your team has completed the integration steps. You will also see recommendations for how to improve your email integration.
 
@@ -143,7 +143,7 @@ Once it's done the AASA file and SSL certificate - required for Universal Links 
 
 The conversion to Branch links will only work when your links are wrapped in your click tracking domain. To test links without wrapping, please generate a test link on the Verification step of email onboarding, also accessible by clicking the gear icon for your ESP on the [email page](https://dashboard.branch.io/email){:target="\_blank"}.
 
-![image](/_assets/img/pages/email/setup-test.png)
+![image](/images/pages/email/setup-test.png)
 
 ## Configure your mobile app
 
@@ -164,12 +164,12 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 1. In Xcode, go to the `Capabilities` tab of your project file.
 1. Scroll down and enable <notranslate>**Associated Domains**</notranslate> if it is not already enabled.
 
-    ![image](/_assets/img/pages/email/enable-associated-domains.png)
+    ![image](/images/pages/email/enable-associated-domains.png)
 
 1. Copy your click tracking domain from the [email you received from Branch](#configure-your-app-for-your-click-tracking-domain), or retrieve it from your ESP's settings.
 1. In the `Domains` section, click the `+` icon and add your click tracking domain. For example, if your click tracking domain is `email.example.com`, add an entry for `applinks:email.example.com`.
 
-    ![image](/_assets/img/pages/email/add-domain.png)
+    ![image](/images/pages/email/add-domain.png)
 
 !!! protip "Having trouble or new to Universal Links?"
     Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode.
@@ -181,11 +181,11 @@ When users enter your app via a Universal Link, we check to see to see if the li
 For most implementations this will never be an issue, since your deep links will be routed correctly either way. However, if you use a custom link domain *and* you rely on `handledByBranch` to return `YES` for every incoming Branch-generated Universal Link, you can inform the Branch SDK by following these steps:
 
 1. In your <notranslate>**Info.plist**</notranslate> file, create a new key called `branch_universal_link_domains`.
-1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
+1. Add your custom domain(s) as a string. ![image](/images/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 
 !!! tip "Multiple custom domains"
-	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)
+	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/images/pages/deep-linking/universal-links/branch-universal-link-domains.png)
 
 ## Configure your ESP
 
@@ -207,7 +207,7 @@ Your Salesforce account must be configured to correctly handle Universal Links. 
 1. Click <notranslate>"Save"</notranslate> to save the configuration.
 1. Let Salesforce and Branch know that you've finished this step and your Technical Account Manager will verify that everything looks good.
 
-![image](/_assets/img/pages/email/salesforce/salesforce-aasa-form.png)
+![image](/images/pages/email/salesforce/salesforce-aasa-form.png)
 
 ## Using Universal email
 
@@ -238,39 +238,39 @@ Using Salesforce's AMPscript, we'll add a new Content Area in Salesforce that co
 
 1. After logging into Salesforce Marketing Cloud, click on <notranslate>**Email Studio**</notranslate> and then a sub-menu will appear. Click on <notranslate>**Email**</notranslate> in the dropdown menu:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-dropdown.png)
+    ![image](/images/pages/email/salesforce/salesforce-dropdown.png)
 
 1. This will take you to the landing page for the Email section. Click on <notranslate>**Content**</notranslate> in the menu bar to navigate to the Content section:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-menu-bar.png)
+    ![image](/images/pages/email/salesforce/salesforce-menu-bar.png)
 
 1. In the Content section, you will see a list of folders on the left side. Right click on the <notranslate>**My Contents**</notranslate> folder and choose <notranslate>**New Folder**</notranslate> in the context menu:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-folders.png)
+    ![image](/images/pages/email/salesforce/salesforce-folders.png)
 
 1. Name the folder `Branch`:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-name-folder.png)
+    ![image](/images/pages/email/salesforce/salesforce-name-folder.png)
 
 1. Once the folder is created, click on the <notranslate>**Branch**</notranslate> folder. On the right side, you will see a menu bar for the Branch folder. Click on <notranslate>**Create**</notranslate> and in the sub menu, click <notranslate>**Content**</notranslate> to create new content:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-new-content.png)
+    ![image](/images/pages/email/salesforce/salesforce-new-content.png)
 
 1. In the Create Content window that appears, enter `deeplink` in the text field named Content Name. Click on <notranslate>**Next**</notranslate> after you enter the text:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-deeplink.png)
+    ![image](/images/pages/email/salesforce/salesforce-deeplink.png)
 
 1. The next screen will ask you to select the format of the content. Choose <notranslate>**Free Form**</notranslate> and then click <notranslate>**Next**</notranslate>:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-format.png)
+    ![image](/images/pages/email/salesforce/salesforce-format.png)
 
 1. In the next screen, paste in the snippet you generated in <notranslate>**1**</notranslate>:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-snippet.png)
+    ![image](/images/pages/email/salesforce/salesforce-snippet.png)
 
 1. Click <notranslate>**Save**</notranslate>. You will now be back at your list of folders in the Content section with the file <notranslate>**deeplink**</notranslate> listed:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-saved.png)
+    ![image](/images/pages/email/salesforce/salesforce-saved.png)
 
 You have now successfully created the deep linking AMPscript.
 
@@ -301,15 +301,15 @@ The process to convert links into Branch links using AMPscript is as follows (th
 1. Log in to Salesforce Marketing Cloud
 2. Click on <notranslate>**Email Studio**</notranslate> and then a sub-menu will appear. Click on <notranslate>**Email**</notranslate> in the dropdown menu:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-dropdown.png)
+    ![image](/images/pages/email/salesforce/salesforce-dropdown.png)
 
 1. This will take you to the landing page for the Email section. Click on <notranslate>**Content**</notranslate> in the menu bar to navigate to the Content section:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-menu-bar.png)
+    ![image](/images/pages/email/salesforce/salesforce-menu-bar.png)
 
 1. Navigate to your folder containing your emails and open an existing email. Make sure the email is in HTML layout as shown below:
 
-    ![image](/_assets/img/pages/email/salesforce/salesforce-email-html.png)
+    ![image](/images/pages/email/salesforce/salesforce-email-html.png)
 
 1. Choose a link that you want to convert to a Branch deep link. Copy the text right after the `href=` in your email template, and paste it into a separate document. In the example, it is:
 

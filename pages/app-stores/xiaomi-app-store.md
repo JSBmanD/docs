@@ -3,7 +3,7 @@ title: Xiaomi
 ---
 ## Overview
 
-![Xiaomi](/_assets/img/pages/app-stores/xiaomi-logo.png)
+![Xiaomi](/images/pages/app-stores/xiaomi-logo.png)
 
 This guide will walk you through how to attribute pre-installed users to **[Xiaomi](https://www.mi.com/global)** using the Branch SDK.
 

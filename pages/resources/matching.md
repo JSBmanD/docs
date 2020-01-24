@@ -44,11 +44,11 @@ If you are concerned that users may potentially have the same fingerprint, you c
 
 On the Dashboard's [Link Settings](https://dashboard.branch.io/link-settings) page, under advanced options, you should set <notranslate>**Match Type**</notranslate> to `Unique`.
 
-![image](/_assets/img/pages/resources/matching/match-type-unique.png)
+![image](/images/pages/resources/matching/match-type-unique.png)
 
 You can also modify the 7200 second (2 hour) default expiration for all links,
 
-![image](/_assets/img/pages/resources/matching/fingerprint-matching-duration.png)
+![image](/images/pages/resources/matching/fingerprint-matching-duration.png)
 
 or [configure it for individual links](/links/integrate/#deep-linking) by using the `$match_duration` control parameter.
 
@@ -75,7 +75,7 @@ Because our Safari View Controller matching method works based on comparing the 
 
 Please set the `branch_app_domain` to `app.link` in your PLIST as shown below:
 
-![image](/_assets/img/pages/resources/matching/branch_app_domain.png)
+![image](/images/pages/resources/matching/branch_app_domain.png)
 
 ### Need to disable SafariViewController?
 

@@ -33,7 +33,7 @@ The Cohort Exports includes the following rate limits:
 
 In order to access the Cohort Exports, a user will need to have both <notranslate>**Aggregate Data**</notranslate> and <notranslate>**Export**</notranslate> access.
 
-![image](/_assets/img/pages/dashboard/access-levels/user-access-cohort.png)
+![image](/images/pages/dashboard/access-levels/user-access-cohort.png)
 
 For more details on how to give a user the required access, please follow [Granting a User Export Access](/dashboard/export-access/#granting-a-user-export-access).
 
@@ -53,7 +53,7 @@ To provide an agency team member with access to the Cohort Exports:
     1. Under <notranslate>**Data Filters**</notranslate>, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
 6. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/dashboard/agency-ad-partner-invite.png)
+![image](/images/pages/dashboard/agency-ad-partner-invite.png)
 
 !!! warning "Agency-Tagged Data"
 	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not.

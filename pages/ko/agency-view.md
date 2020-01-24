@@ -18,7 +18,7 @@ Branch 계정의 '에이전시' 보기는 미디어 구매를 대행해주는 �
 
 <table>
   <tr>
-    <th rowspan="5"><img src="/_assets/img/pages/dashboard/access-levels/agency-nav.png"></th>
+    <th rowspan="5"><img src="/images/pages/dashboard/access-levels/agency-nav.png"></th>
   </tr>
 	<tr>
 		<th><b>에이전시 엔터티 액세스</b></th>
@@ -57,7 +57,7 @@ Branch 계정의 '에이전시' 보기는 미디어 구매를 대행해주는 �
 
 에이전시 관리자인 경우 **Profile** (프로필) 탭을 편집할 수 있습니다.
 
-![이미지](/_assets/img/pages/dashboard/access-levels/agency-profile.png)
+![이미지](/images/pages/dashboard/access-levels/agency-profile.png)
 
 * **Agency Name** (에이전시 이름) - 여러분이 입력하는 항목으로, 편집이 가능합니다.
 * **Agency ID** (에이전시 ID) - Branch가 할당하는 항목으로, 편집이 불가능합니다.
@@ -66,7 +66,7 @@ Branch 계정의 '에이전시' 보기는 미디어 구매를 대행해주는 �
 
 에이전시 관리자, 에이전시 팀 구성원 등 모든 유형의 사용자가 **User** (사용자) 탭을 편집할 수 있습니다.
 
-![이미지](/_assets/img/pages/dashboard/access-levels/agency-user.png)
+![이미지](/images/pages/dashboard/access-levels/agency-user.png)
 
 * **Dashboard UID** (대시보드 UID) - Branch가 할당하는 항목으로, 편집이 불가능합니다.
 * **First and Last Names** (성 및 이름) - 여러분이 입력하는 항목으로, 편집이 가능합니다.
@@ -77,7 +77,7 @@ Branch 계정의 '에이전시' 보기는 미디어 구매를 대행해주는 �
 
 에이전시 관리자인 경우 **Agencies** (에이전시) 탭을 편집할 수 있습니다.
 
-![이미지](/_assets/img/pages/dashboard/access-levels/agency-team-add.gif)
+![이미지](/images/pages/dashboard/access-levels/agency-team-add.gif)
 
 #### 에이전시 사용자 추가
 

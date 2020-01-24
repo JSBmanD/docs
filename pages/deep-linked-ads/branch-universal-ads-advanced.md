@@ -56,7 +56,7 @@ To add a postback:
 4. A modal will appear with Branch default events, as well as any commerce (reserved events like _PURCHASE)_ or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click <notranslate>**Save**</notranslate>. This will be the event that triggers your new postback.
     1. NOTE: If Branch does not already have a postback template for a partner, please provide a valid URL for your partner.
 
-![image](/_assets/img/pages/partner-management/postback-add.gif)
+![image](/images/pages/partner-management/postback-add.gif)
 
 #### Sending All Events
 
@@ -65,7 +65,7 @@ If you want to send <notranslate>**All Events**</notranslate> - whether attribut
 !!! warning "Privacy Implications"
 	As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/all-events.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/all-events.png)
 
 
 #### Editing Templates
@@ -151,7 +151,7 @@ During the process of granting an agency access to your Branch account, you can 
 
 Branch Tracking links allow tracking many parameters about the performance of your ad campaigns and individual ads. You can see each partner's specific link Parameters under the <notranslate>**Link Parameters**</notranslate> tab:
 
-![image](/_assets/img/ingredients/deep-linked-ads/link-parameters.png)
+![image](/images/ingredients/deep-linked-ads/link-parameters.png)
 
 Additional parameters for advanced analysis may be added to the link after the '?' or '&' character, to trace extra information.
 
@@ -214,7 +214,7 @@ For customer experience and data accuracy, please do not set your deep linking w
 
 You can edit your attribution windows under Link Settings > Attribution Windows.
 
-   ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+   ![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 Learn more about account level attribution windows in [People-Based Attribution](/dashboard/people-based-attribution/#attribution-windows).
 
@@ -222,7 +222,7 @@ Learn more about account level attribution windows in [People-Based Attribution]
 
 You can edit your attribution windows at the ad network level, if your ad network requires it. This is recommended when you enable networks like Facebook and Google, who may have different windows for installs. With this, you can preserve your Account Level Attribution Windows, as well.
 
-   ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+   ![image](/images/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
 
 #### Link Level Attribution Windows
 
@@ -251,7 +251,7 @@ For example, if a customer clicks a Branch email link, and then clicks an ad, in
 
 If the customer then goes on to purchase an item on web within the attribution window, Branch will also attribute the web purchase to the same ad link, connecting the web and app actions taken by a single user for a more accurate view of your marketing channels and customer behavior.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/install-by-secondary-pub.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/install-by-secondary-pub.png)
 
 You can read more about [People-Based Attribution here](/dashboard/people-based-attribution/).
 

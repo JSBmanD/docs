@@ -154,7 +154,7 @@ If you have signed Facebook's ["Advanced Mobile Measurement" agreement (<notrans
 
 Here is the page where you can see which ad accounts have signed the AMM agreement:
 
-![AMM](/_assets/img/pages/deep-linked-ads/facebook-ads-faq/amm.png)
+![AMM](/images/pages/deep-linked-ads/facebook-ads-faq/amm.png)
 
 ## Troubleshooting
 

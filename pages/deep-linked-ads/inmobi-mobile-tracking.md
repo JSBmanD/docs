@@ -45,7 +45,7 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 3. Search for your <notranslate>**Universal Ads Partner**</notranslate>.
 4. Select Ad Partner Name and hit <notranslate>**Save & Enable**</notranslate>.
 
-![image](/_assets/img/pages/deep-linked-ads/inmobi/inmobi-enable.png)
+![image](/images/pages/deep-linked-ads/inmobi/inmobi-enable.png)
 
 #### Provide account credentials
 
@@ -57,7 +57,7 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 !!! tip "Enable postbacks"
     Basic postbacks will automatically be activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then [add additional postbacks](#adding-more-postbacks), for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_. You can also [edit postbacks](#advanced-editing-postbacks) if there's additional data you really need to pass along to your ad partner.
 
-![image](/_assets/img/pages/deep-linked-ads/inmobi/inmobi-postbacks.png)
+![image](/images/pages/deep-linked-ads/inmobi/inmobi-postbacks.png)
 
 ### Creating an ad link
 
@@ -65,15 +65,15 @@ Once you've enabled an integration it's time to create a tracking link.
 
 1. First, select an ad format. For App Install or App Engagement campaigns you'll want to select the <notranslate>**App Only**</notranslate> format. For Search or Display campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>. <notranslate>**Product Links**</notranslate> are for shopping or dynamic remarketing campaigns.
 
-    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
+    ![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 
 1. At this point you need to name your link. Select something that will make it easy to find if you need it later. Your Ad Format and Ad Partner should be selected already, but feel free to choose one if they aren't. It's important that you select the right Ad Partner for analytics later on. Click <notranslate>**Configure Options**</notranslate> to continue.
 
-    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-name.png)
+    ![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link-name.png)
 
 1. This is your chance to add deep link data and analytics tags. Analytics tags are important for later segmentation, so click the <notranslate>**Analytics**</notranslate> sub tab to add a Channel and Campaign value.
 
-    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-tags.png)
+    ![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link-tags.png)
 
     !!! tip "Set Analytics tags"
 
@@ -85,7 +85,7 @@ Once you've enabled an integration it's time to create a tracking link.
 
 1. Click <notranslate>**Create Link Now**</notranslate>, and you have your tracking link! Take this link and give it to your Ad Partner's Account Manager or paste it into the tracking section of your campaign yourself.
 
-    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-completed.png)
+    ![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link-completed.png)
 
 
 ### Viewing Your Data
@@ -97,11 +97,11 @@ The Ads Analytics Page on the Branch dashboard provides an interactive time seri
 
 The <notranslate>**TRENDS**</notranslate> table shows the chart and breakdown of last 7 days data on the campaign performance by ad partner.
 
-![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/trends-graph.png)
+![Example Ads Analytics Graph](/images/ingredients/deep-linked-ads/view-ad-link-data/trends-graph.png)
 
 The <notranslate>**EVENTS**</notranslate> table shows summary data on the performance of each Ad campaign.
 
-![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/events-table.png)
+![Example Ads Table](/images/ingredients/deep-linked-ads/view-ad-link-data/events-table.png)
 
 On the top right side of the table you can find a download button to retrieve the chart's content as a CSV file.  For more info about Ads Analytics refer [here](/activity-reports-analytics/paid-ads-analytics/).
 

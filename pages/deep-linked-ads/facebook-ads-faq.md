@@ -123,7 +123,7 @@ We cannot send device-level Facebook attribution data to third parties. Thus we 
 
 Here is the page where you can see which ad accounts have signed the AMM agreement:
 
-![AMM](/_assets/img/pages/deep-linked-ads/facebook-ads-faq/amm.png)
+![AMM](/images/pages/deep-linked-ads/facebook-ads-faq/amm.png)
 
 
 ### The data on Facebook and the data on Branch does not line up!
@@ -359,7 +359,7 @@ Second, make sure you're running ads that are resulting in installs, reinstalls,
 
 Third, on the Facebook Dashboard, locate a campaign with installs, reinstalls, or opens. Determine the ad account id for which you are running an app campaign. Then navigate to the [Facebook page under Partner Management](https://dashboard.branch.io/ads/partner-management/a_facebook?tab=settings){:target="\_blank"} and make sure that ad account id is listed as part of the completed signup process. It should appear here (two ad accounts are shown as enabled in the screenshot, though the ad account ids are blurred out):
 
-![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
+![complete](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
 Fourth, make sure you have installs, reinstalls, or opens that have occurred after you enabled the Branch + Facebook integration. We cannot pull historical device-level data, as that's not how the Facebook APIs are architected. You should enable Branch + Facebook, wait for new installs to occur, then check the [Ads Analytics](https://dashboard.branch.io/ads/analytics){:target="\_blank"} page.
 

@@ -19,7 +19,7 @@ Branch events will appear on the Adobe Analytics dashboard through `Reports > Cu
 
 You'll have the flexibility to analyze data as needed in the Adobe Analytics platform, as the data Branch sends maps in Adobe Analytics to a top level eVar. This eVar contains campaign, channel, target, event name, and action property, which are your analytics tags.
 
-![image](/_assets/img/pages/integrations/adobe-analytics/adobe-analytics-conversion.png)
+![image](/images/pages/integrations/adobe-analytics/adobe-analytics-conversion.png)
 
 Branch events are similar to Adobe Analytics events in that they can be used to build custom reports and are tracked on the various pages and dashboards. However, unlike normal events, Branch events contain valuable information about how users ended up in your app in the first place.
 
@@ -34,11 +34,11 @@ Branch events are similar to Adobe Analytics events in that they can be used to 
 
 In your Adobe Analytics dashboard, under the <notranslate>**Admin**</notranslate> tab, find <notranslate>**Data Connectors**</notranslate>.
 
-![image](/_assets/img/pages/integrations/adobe-analytics/select-data-connectors.png)
+![image](/images/pages/integrations/adobe-analytics/select-data-connectors.png)
 
 Click <notranslate>**+Add New**</notranslate>, search for "Branch," and click <notranslate>**Activate**</notranslate>.
 
-![image](/_assets/img/pages/integrations/adobe-analytics/activate-connector.png)
+![image](/images/pages/integrations/adobe-analytics/activate-connector.png)
 
 ### Configure the Branch Data Connector
 
@@ -50,7 +50,7 @@ These are automatically configured when you activate the Data Connector.
 
 Map your Branch events to your chosen eVar. In the example below, it will be mapped to `Custom eVar 1`, renamed to the SiteCatalyst metric `Branch`.
 
-![image](/_assets/img/pages/integrations/adobe-analytics/variable-mappings.png)
+![image](/images/pages/integrations/adobe-analytics/variable-mappings.png)
 
 #### Data Settings
 
@@ -64,13 +64,13 @@ Adobe Classification | Branch Analytics Tag | Example
 <notranslate>Action</notranslate> | <notranslate>Branch Event Name</notranslate> | Install
 <notranslate>Action Property</notranslate> | <notranslate>Branch Tags</notranslate> | tag=bar&tag2=1234
 
-![image](/_assets/img/pages/integrations/adobe-analytics/data-settings.png)
+![image](/images/pages/integrations/adobe-analytics/data-settings.png)
 
 #### Review Summary
 
 Finally, review the integration, scroll to the bottom of the screen and click <notranslate>**Activate Now**</notranslate> to enable the integration.
 
-![image](/_assets/img/pages/integrations/adobe-analytics/final-activation.png)
+![image](/images/pages/integrations/adobe-analytics/final-activation.png)
 
 ### Configure the Branch Dashboard
 

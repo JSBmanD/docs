@@ -12,7 +12,7 @@ title: Referral Programs
 Branch allows you to reward users with credits, track those credits, and redeem them when appropriate. It is a unit-less currency available to your users without you having to build a system from scratch.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=-qyR6y0wtCM"><img class="branch-image-override" src="/_assets/img/pages/viral/referral-programs/referral-video.png" /></a>
+  <a href="https://www.youtube.com/watch?v=-qyR6y0wtCM"><img class="branch-image-override" src="/images/pages/viral/referral-programs/referral-video.png" /></a>
 </p>
 
 ## Guide
@@ -60,7 +60,7 @@ Properties you can define:
 	1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
 	1. Which event triggers the reward: <notranslate>**install**</notranslate>
 
-	![image](/_assets/img/pages/viral/referral-programs/referred_rule.png)
+	![image](/images/pages/viral/referral-programs/referred_rule.png)
 
 	### Rule 2: rewarding the referring user 5 credits
 
@@ -70,7 +70,7 @@ Properties you can define:
 	1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
 	1. Which event triggers the reward: <notranslate>**install**</notranslate>
 
-	![image](/_assets/img/pages/viral/referral-programs/referring_rule.png)
+	![image](/images/pages/viral/referral-programs/referring_rule.png)
 
 ## Viewing Credits
 

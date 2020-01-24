@@ -10,7 +10,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### All Installs
 
-    ![image](/_assets/img/pages/exports/query-api/summary-installs-all.png)
+    ![image](/images/pages/exports/query-api/summary-installs-all.png)
 
     - *Request*
 
@@ -82,7 +82,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Attributed Installs
 
-    ![image](/_assets/img/pages/exports/query-api/summary-installs-attributed.png)
+    ![image](/images/pages/exports/query-api/summary-installs-attributed.png)
 
     - *Request*
 
@@ -157,7 +157,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Attributed Installs, Split by Campaign
 
-    ![image](/_assets/img/pages/exports/query-api/summary-installs-by-campaign.png)
+    ![image](/images/pages/exports/query-api/summary-installs-by-campaign.png)
 
     - *Request*
 
@@ -533,7 +533,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Attributed Installs, With Filter on Campaign
 
-    ![image](/_assets/img/pages/exports/query-api/summary-installs-with-filter.png)
+    ![image](/images/pages/exports/query-api/summary-installs-with-filter.png)
 
     - *Request*
 
@@ -590,7 +590,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Attributed Installs, Split by Campaign, With Filter on Campaign
 
-    ![image](/_assets/img/pages/exports/query-api/summary-installs-by-campaign-with-filter.png)
+    ![image](/images/pages/exports/query-api/summary-installs-by-campaign-with-filter.png)
 
     - *Request*
 
@@ -649,7 +649,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### No filters
 
-    ![image](/_assets/img/pages/exports/query-api/summary-click-flow.png)
+    ![image](/images/pages/exports/query-api/summary-click-flow.png)
 
     Pulling this data requires 6 requests. For ease of understanding, we show the requests and responses below that correspond exactly to the data above.
 
@@ -1003,7 +1003,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Filter on Campaign
 
-    ![image](/_assets/img/pages/exports/query-api/summary-click-flow-with-filter.png)
+    ![image](/images/pages/exports/query-api/summary-click-flow-with-filter.png)
 
     This example looks at feature: journeys. For a full list of dimensions that can be queried against, see our [Query API](/exports/query-api/) reference docs.
 
@@ -1069,7 +1069,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Filter for an individual Quick Link
 
-    ![image](/_assets/img/pages/exports/query-api/quick-link-click-flow.png)
+    ![image](/images/pages/exports/query-api/quick-link-click-flow.png)
 
     It’s also possible to pull Click Flow statistics for individual Quick Links. You simply need the id of the Quick Link, which can be found in the URL when viewing the individual link stats page. In the screenshot above, the Quick Link’s ID is 271026075193177506.
 
@@ -1132,7 +1132,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### No filters
 
-    ![image](/_assets/img/pages/exports/query-api/summary-journeys.png)
+    ![image](/images/pages/exports/query-api/summary-journeys.png)
 
     Pulling this data requires 6 requests. For ease of understanding, we show the requests and responses below that correspond exactly to the data above.
 
@@ -1437,7 +1437,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Filter on Tags
 
-    ![image](/_assets/img/pages/exports/query-api/summary-journeys-with-filter.png)
+    ![image](/images/pages/exports/query-api/summary-journeys-with-filter.png)
 
     This example looks at tags: tag1. For a full list of dimensions that can be queried against, see our [Query API](/exports/query-api/) reference docs.
 
@@ -1500,7 +1500,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### No filters
 
-    ![image](/_assets/img/pages/exports/query-api/summary-deepviews.png)
+    ![image](/images/pages/exports/query-api/summary-deepviews.png)
 
     Pulling this data requires 6 requests. For ease of understanding, we show the requests and responses below that correspond exactly to the data above.
 
@@ -1814,7 +1814,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Filter on Stage
 
-    ![image](/_assets/img/pages/exports/query-api/summary-deepviews-with-filter.png)
+    ![image](/images/pages/exports/query-api/summary-deepviews-with-filter.png)
 
     This example looks at stage: stage88. For a full list of dimensions that can be queried against, see our [Query API](/exports/query-api/) reference docs.
 
@@ -1877,7 +1877,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### No filters
 
-    ![image](/_assets/img/pages/exports/query-api/quick-links.png)
+    ![image](/images/pages/exports/query-api/quick-links.png)
 
     Pulling this data requires 6 requests. For ease of understanding, we show the requests and responses below that correspond exactly to the data above.
 
@@ -2156,7 +2156,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### No filters
 
-    ![image](/_assets/img/pages/exports/query-api/source-analytics.png)
+    ![image](/images/pages/exports/query-api/source-analytics.png)
 
     Pulling this data requires 6 requests. For ease of understanding, we show the requests and responses below that correspond exactly to the data above.
 
@@ -3403,7 +3403,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Filter on Ad Partner
 
-    ![image](/_assets/img/pages/exports/query-api/source-analytics-with-filter.png)
+    ![image](/images/pages/exports/query-api/source-analytics-with-filter.png)
 
     This example looks at ad partner name: Taptica. For a full list of dimensions that can be queried against, see our [Query API](/exports/query-api/) reference docs.
 
@@ -3461,7 +3461,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Installs, Split by Campaign
 
-    ![image](/_assets/img/pages/exports/query-api/ads-analytics-trends.png)
+    ![image](/images/pages/exports/query-api/ads-analytics-trends.png)
 
     *Install*
 
@@ -3624,7 +3624,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Installs, Split by Campaign, With Filter on Platform
 
-    ![image](/_assets/img/pages/exports/query-api/ads-analytics-trends-with-filter.png)
+    ![image](/images/pages/exports/query-api/ads-analytics-trends-with-filter.png)
 
     *Install*
 
@@ -3793,7 +3793,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Split by Ad Partner
 
-    ![image](/_assets/img/pages/exports/query-api/ads-analytics-events.png)
+    ![image](/images/pages/exports/query-api/ads-analytics-events.png)
 
     Pulling this data requires 7 requests. For ease of understanding, we show the requests and responses below that correspond exactly to the data above.
 
@@ -4264,7 +4264,7 @@ You can find your Branch Key and Branch Secret on the [Account Settings](https:/
 
 - ### Split by Ad Partner, With Filter on Ad Partner
 
-    ![image](/_assets/img/pages/exports/query-api/ads-analytics-events-with-filter.png)
+    ![image](/images/pages/exports/query-api/ads-analytics-events-with-filter.png)
 
     This example looks at ad partner name: Taptica. For a full list of dimensions that can be queried against, see our [Query API](/exports/query-api/) reference docs.
 

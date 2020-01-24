@@ -161,7 +161,7 @@ Below is the full list of fields:
 
 To debug the events and their metadata, you can enable the `DebugView` on Firebase to verify the setup. Please refer to Google's official instructions [here](https://firebase.google.com/docs/analytics/debugview).
 
-![image](/_assets/img/pages/integrations/google-analytics/firebase-debugview.png)
+![image](/images/pages/integrations/google-analytics/firebase-debugview.png)
 
 ## Common Discrepancies Between Firebase & Branch
 
