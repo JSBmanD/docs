@@ -69,8 +69,13 @@ From there, add the Branch universal object to the tracked event, and use the ri
 **A note on currency and exchange rates:**
 If you track commerce events without a currency, we assume they are USD. If you track commerce events with a currency other than USD, we will convert the `revenue` specified to USD, using a recent exchange rate.
 
-!!! warning "Third Party Integrations"
-    We strongly recommend settings a currency code as it is required for third party integrations, including Facebook and Google Ads.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Third Party Integrations",
+  "body": "We strongly recommend settings a currency code as it is required for third party integrations, including Facebook and Google Ads."
+}
+[/block]
 
 This allows you to easily visualize revenue on the Dashboard, across many countries and currencies, because all units are USD. The exchange rate is pulled from [openexchangerates.org](https://openexchangerates.org) regularly, and is generally within an hour of the realtime exchange rate. If you view raw Branch events via either Webhooks or Exports, you can see the exchange rate used.
 
@@ -755,8 +760,13 @@ See [full API docs here](https://github.com/BranchMetrics/branch-deep-linking-pu
 
 If you want to track an event that isn't a predefined event, simply do the following:
 
-!!! warning "Custom Event Names"
-    The name `custom event` is reserved by Branch. Please ensure you give your custom event an actual name.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Custom Event Names",
+  "body": "The name `custom event` is reserved by Branch. Please ensure you give your custom event an actual name."
+}
+[/block]
 
     We strongly recommend using custom event names that contain no more than 40 characters, contain only letters, numbers, hyphens, spaces and underscores, and do not start with a hyphen. Facebook will not accept events that violate these rules, and if you enable the Facebook integration, Branch may sanitize your event names to pass validation.
 

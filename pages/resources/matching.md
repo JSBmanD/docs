@@ -56,8 +56,13 @@ This means that if two users with the same fingerprint, on the same wifi, were t
 
 ## Configuring Your iOS App for 100% Match ( > iOS 10 only)
 
-!!! warning "Applies only to iOS 10 and below"
-    100% match is a bit of a misnomer, as it is only 100% match from when a user clicks from the Safari browser. According to our analysis, clicking through Safari happens about 50-75% of the time depending on the use case. For example, clicking from Facebook or Chrome won't trigger a 100% match here. However, it's still beneficial to the matching accuracy, so we recommend employing it.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Applies only to iOS 10 and below",
+  "body": "100% match is a bit of a misnomer, as it is only 100% match from when a user clicks from the Safari browser. According to our analysis, clicking through Safari happens about 50-75% of the time depending on the use case. For example, clicking from Facebook or Chrome won't trigger a 100% match here. However, it's still beneficial to the matching accuracy, so we recommend employing it."
+}
+[/block]
 
 ### Include SafariServices.framework
 

@@ -26,13 +26,23 @@ To avoid unnecessary discrepancies and ensure your existing users are not attrib
 ## Import File Format
 Before Branch can ingest your historical user data, please ensure your data conforms to the [JSON line text format](http://jsonlines.org/).
 
-!!! warning "JSON Line Text Format Required"
-		We are unable to translate or ingest data in other formats.
+[block:callout]
+{
+  "type": "warning",
+  "title": "JSON Line Text Format Required",
+  "body": "We are unable to translate or ingest data in other formats."
+}
+[/block]
 
 ### Device ID Based User Import
 
-!!! info "Device IDs Only"
-	Providing the following required fields ensures that Branch can create a Persona for each individual user based on the device ID you provide during import.  
+[block:callout]
+{
+  "type": "info",
+  "title": "Device IDs Only",
+  "body": "Providing the following required fields ensures that Branch can create a Persona for each individual user based on the device ID you provide during import.  "
+}
+[/block]
 
 Each individual log should be captured in single line json object including the following required fields:
 ```
@@ -48,8 +58,13 @@ Each individual log should be captured in single line json object including the 
 ```
 Optional supported fields:
 
-!!! info "Optional Fields"
-	While not required, we do recommend providing additional information to create a more robust user persona as well as fuel other Branch features such as Fraud rules.
+[block:callout]
+{
+  "type": "info",
+  "title": "Optional Fields",
+  "body": "While not required, we do recommend providing additional information to create a more robust user persona as well as fuel other Branch features such as Fraud rules."
+}
+[/block]
 
 ```
 "idfv": "<idfv string>",
@@ -64,8 +79,13 @@ Optional supported fields:
 
 ### Additional Attribution Data Import
 
-!!! info "Additional Touch Data"
-	Providing the following optional touch data fields ensures Branch can associate campaign details of the install event associated with the imported user. This enables downstream install cohorting analytics.
+[block:callout]
+{
+  "type": "info",
+  "title": "Additional Touch Data",
+  "body": "Providing the following optional touch data fields ensures Branch can associate campaign details of the install event associated with the imported user. This enables downstream install cohorting analytics."
+}
+[/block]
 
 ```
 "install": {

@@ -3,8 +3,13 @@ title: Fraud Rules
 ---
 ## Overview
 
-!!! warning "Viewing Fraud Data Permissions"
-	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission. Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Viewing Fraud Data Permissions",
+  "body": "The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission. Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/)."
+}
+[/block]
 
 Branch recommends creating fraud rules to block erroneous attribution credit in real-time. While Branch still performs last-click attribution, it will not send the ad network a postback when the attribution is flagged as fraudulent.
 
@@ -17,8 +22,13 @@ Blocked events are also separated from normal traffic in your Branch dashboard, 
 
 But not to worry, blocked events are still deep linked, so blocking would not affect the user experience of a real user.
 
-!!! warning "Enabling Fraud Rules"
-	This feature is not available via your dashboard. Please contact [Support](mailto:support@branch.io) if you want to enable fraud rules on your account.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Enabling Fraud Rules",
+  "body": "This feature is not available via your dashboard. Please contact [Support](mailto:support@branch.io) if you want to enable fraud rules on your account."
+}
+[/block]
 
 ## Recommended Fraud Rules
 

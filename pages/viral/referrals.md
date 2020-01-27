@@ -3,11 +3,21 @@ title: Referral Programs
 ---
 ## Overview
 
-!!! warning "ONLY USE V1 CUSTOM EVENTS"
-	Our referral system only supports our v1 custom event SDK method which is `userCompletedAction()` and `track()`. **The v2 events, `BranchEvent` and `logEvent()` used for installs and opens, are not supported.**
+[block:callout]
+{
+  "type": "warning",
+  "title": "ONLY USE V1 CUSTOM EVENTS",
+  "body": "Our referral system only supports our v1 custom event SDK method which is `userCompletedAction()` and `track()`. **The v2 events, `BranchEvent` and `logEvent()` used for installs and opens, are not supported.**"
+}
+[/block]
 
-!!! info "Not recommended for Enterprise Clients"
-    Due to the nature of this functionality, we do not recommend the use of referrals for Enterprise clients.
+[block:callout]
+{
+  "type": "info",
+  "title": "Not recommended for Enterprise Clients",
+  "body": "Due to the nature of this functionality, we do not recommend the use of referrals for Enterprise clients."
+}
+[/block]
 
 Branch allows you to reward users with credits, track those credits, and redeem them when appropriate. It is a unit-less currency available to your users without you having to build a system from scratch.
 
@@ -24,16 +34,31 @@ Branch allows you to reward users with credits, track those credits, and redeem 
 
 With every event that is recorded in Branch, we check automatically if that event is eligible for credits based on the rules that you configured, then deposit the credits if so. Reward rules can be based on both [automatic events and custom events](/dashboard/analytics/#user-value-attribution).
 
-!!! warning "Identify your users"
-	Because we do not merge identities, you *should set rewards on custom events* and *not use* the events we automatically track (`install` and `open`), and do so only *after* you have identified a user using our [identity methods](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users). This will help avoid duplicate rewards and missing credits.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Identify your users",
+  "body": "Because we do not merge identities, you *should set rewards on custom events* and *not use* the events we automatically track (`install` and `open`), and do so only *after* you have identified a user using our [identity methods](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users). This will help avoid duplicate rewards and missing credits."
+}
+[/block]
 
-!!! warning "Promo codes has been deprecated"
-	Our Promo codes feature on the dashboard has been deprecated. Please use reward rules to trigger referral rewards for your users.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Promo codes has been deprecated",
+  "body": "Our Promo codes feature on the dashboard has been deprecated. Please use reward rules to trigger referral rewards for your users."
+}
+[/block]
 
 ## Awarding credits
 
-!!! tip "Referral Fraud Protection"
-	Branch tracks the hardware ID and IDFA of every device we detect, and ties these to our concept of a user identity. However, this means that you may run into issues if you test repeatedly with the same devices. When testing referral programs and reward rules, you should [use debug mode](#dialog-code?ios=simulate-an-install&android=simulate-an-install&cordova=simulate-an-install&mparticleAndroid=simulate-an-install&mparticleIos=simulate-an-install&titanium=simulate-an-install&reactNative=simulate-an-install&unity=simulate-an-install&xamarin=simulate-an-install).
+[block:callout]
+{
+  "type": "tip",
+  "title": "Referral Fraud Protection",
+  "body": "Branch tracks the hardware ID and IDFA of every device we detect, and ties these to our concept of a user identity. However, this means that you may run into issues if you test repeatedly with the same devices. When testing referral programs and reward rules, you should [use debug mode](#dialog-code?ios=simulate-an-install&android=simulate-an-install&cordova=simulate-an-install&mparticleAndroid=simulate-an-install&mparticleIos=simulate-an-install&titanium=simulate-an-install&reactNative=simulate-an-install&unity=simulate-an-install&xamarin=simulate-an-install)."
+}
+[/block]
 
 To add a rule, go to the Dashboard Referrals page and click the [Rules tab](https://dashboard.branch.io/referrals/rules). Click the green "+ Add a new rule" button. Once there, you can add new rules to give rewards:
 
@@ -221,9 +246,13 @@ If you want to redeem credits in a custom bucket you've specified, such as `myBu
 	Branch.getInstance(getApplicationContext()).redeemRewards("myBucket", 5)
 	```
 
-!!! example "Example redemption flow"
-
-	This is a simple three-part process:
+[block:callout]
+{
+  "type": "example",
+  "title": "Example redemption flow",
+  "body": "This is a simple three-part process:"
+}
+[/block]
 
 	1. Ensure credits are loaded.
 	1. Call the `redeemRewards` method and show a progress dialog.

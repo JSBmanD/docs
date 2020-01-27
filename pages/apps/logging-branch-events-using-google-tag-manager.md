@@ -11,11 +11,16 @@ title: Logging Branch Events Using Google Tag Manager
 
 ## Setting up Custom Tags on Android
 
-!!! warning "Pre-requisite"
-	Please ensure that you have the Branch SDK installed on Android.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Pre-requisite",
+  "body": "Please ensure that you have the Branch SDK installed on Android."
+}
+[/block]
 
 1. Import your GTM container
-1. Implement a class that extends `com.google.android.gms.tagmanager.CustomTagProvider`. 	
+1. Implement a class that extends `com.google.android.gms.tagmanager.CustomTagProvider`.
 	Please see an example below :
 	```
 	import android.support.annotation.Keep;
@@ -49,8 +54,13 @@ title: Logging Branch Events Using Google Tag Manager
 
 ## Setting up custom tags on iOS
 
-!!! warning "Pre-requisite"
-	Please ensure that you have the Branch SDK installed on iOS.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Pre-requisite",
+  "body": "Please ensure that you have the Branch SDK installed on iOS."
+}
+[/block]
 
 1. Import your GTM container
 1. Ensure that you have a bridging header included (especially for codebase using both Swift and Objective-C)

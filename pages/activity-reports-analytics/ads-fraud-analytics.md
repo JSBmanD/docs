@@ -3,8 +3,13 @@ title: Fraud Analytics
 ---
 ## Overview
 
-!!! warning "Viewing Fraud Data Permissions"
-	The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission. Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Viewing Fraud Data Permissions",
+  "body": "The ability to view data related to Fraud in reporting and exports requires the user to have `VIEW` access to the <notranslate>**Fraud Settings & Data**</notranslate> permission. Learn more about Branch's [Access Levels & Permissions](/dashboard/access-level/)."
+}
+[/block]
 
 Branch’s Fraud Detection Platform uses an intelligent blacklist to block known bad actors in real time, ensuring customers don’t pay for fraudulent traffic. It includes core metrics that help identify forms of fraud such as install hijacking, click flooding and device reset fraud.
 
@@ -27,8 +32,13 @@ Branch recommends creating [fraud rules](/deep-linked-ads/leveraging-fraud-rules
 - <notranslate>**Custom**</notranslate>: Events matching your custom selection of fraud parameters.
 - <notranslate>**None**</notranslate>: Do not show blocked events based on Fraud Rules. Branch automatically selects `None` when you filter on Key Fraud Indicators instead.
 
-!!! info "Fraud Rules vs Fraud Indicators"
-	Fraud Rules are enabled by you based on your business criteria for what constitutes fraud.  Fraud Indicators are built into Branch and are auto-enabled to protect you from generic fraud methods.  **NOTE**: You cannot view blocked events based on both of these types of fraud simultaneously; please select one at a time.
+[block:callout]
+{
+  "type": "info",
+  "title": "Fraud Rules vs Fraud Indicators",
+  "body": "Fraud Rules are enabled by you based on your business criteria for what constitutes fraud.  Fraud Indicators are built into Branch and are auto-enabled to protect you from generic fraud methods.  **NOTE**: You cannot view blocked events based on both of these types of fraud simultaneously; please select one at a time."
+}
+[/block]
 
 ## Key Fraud Indicators
 

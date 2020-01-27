@@ -9,16 +9,31 @@ This guide will walk you through how to attribute pre-installed users to **[9App
 
 Learn more about [Pre-Install Attribution](/activity-reports-analytics/ads-pre-install-analytics/).
 
-!!! info "Android Only"
-	The following functionality is applicable to Android apps only.
+[block:callout]
+{
+  "type": "info",
+  "title": "Android Only",
+  "body": "The following functionality is applicable to Android apps only."
+}
+[/block]
 
-!!! info "Pre-Install Overrides Attribution"
-	If you include pre-install data via the SDK, it will always override any attribution info Branch receives from the Branch link itself.
+[block:callout]
+{
+  "type": "info",
+  "title": "Pre-Install Overrides Attribution",
+  "body": "If you include pre-install data via the SDK, it will always override any attribution info Branch receives from the Branch link itself."
+}
+[/block]
 
 ### Set Data in the Pre-Loaded APK
 
-!!! info "Pre-loaded Data in the APK"
-	If you set the preloaded data in the APK, it will override the system props data.
+[block:callout]
+{
+  "type": "info",
+  "title": "Pre-loaded Data in the APK",
+  "body": "If you set the preloaded data in the APK, it will override the system props data."
+}
+[/block]
 
 After initialization, call these setters to set the data in the APK:
 

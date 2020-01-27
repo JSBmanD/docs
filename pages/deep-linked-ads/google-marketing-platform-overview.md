@@ -5,8 +5,13 @@ title: Google Marketing Platform Overview
 
 Branch links can be used together with Google Marketing Platform app conversion ads, allowing you to track ad-driven app conversion (installs and in-app events) on the Branch dashboard.
 
-!!! info "Google Whitelisting Required"
-	You must request whitelisting from your Google rep for the new 'App Analytics' section of Floodlight Configuration in order to generate link ID's for this integration.
+[block:callout]
+{
+  "type": "info",
+  "title": "Google Whitelisting Required",
+  "body": "You must request whitelisting from your Google rep for the new 'App Analytics' section of Floodlight Configuration in order to generate link ID's for this integration."
+}
+[/block]
 
 The [Google Marketing Platform](https://support.google.com/dcm/answer/9015629?hl=en) includes the following products:
 

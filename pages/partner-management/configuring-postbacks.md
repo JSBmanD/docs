@@ -7,8 +7,13 @@ When Branch measures a conversion (install or other event), it determines which 
 
 Branch’s postback system is highly customizable; set up postbacks for specific events, as well as specific subsections of events, filtered by link data, user data or event properties.
 
-!!! info "Postbacks vs Webhooks"
-	Both the terms `Postbacks` and `Webhooks` are used to refer to the same process of sending data to other systems. In Branch’s case, we use the term `postback` when referring to the Universal Ads product and `webhook` when referring to the Data Feeds product; though functionality is the exact same.
+[block:callout]
+{
+  "type": "info",
+  "title": "Postbacks vs Webhooks",
+  "body": "Both the terms `Postbacks` and `Webhooks` are used to refer to the same process of sending data to other systems. In Branch’s case, we use the term `postback` when referring to the Universal Ads product and `webhook` when referring to the Data Feeds product; though functionality is the exact same."
+}
+[/block]
 
 
 ## Postback Templates
@@ -40,8 +45,13 @@ To disable any postback currently enabled for an ad partner:
 
 ![image](/_assets/img/pages/partner-management/postback-disable.gif)
 
-!!! info "Automated Postback Clean Up"
-	Branch runs weekly jobs to disable all non-functioning postbacks.  Any postback that has failed consistently over the last 7 days - throwing only 400/500s - will be automatically disabled.
+[block:callout]
+{
+  "type": "info",
+  "title": "Automated Postback Clean Up",
+  "body": "Branch runs weekly jobs to disable all non-functioning postbacks.  Any postback that has failed consistently over the last 7 days - throwing only 400/500s - will be automatically disabled."
+}
+[/block]
 
 ### Deleting
 
@@ -55,15 +65,25 @@ To delete any postback currently enabled for an ad partner:
 ![image](/_assets/img/pages/partner-management/postback-delete.gif)
 
 
-!!! info "Disable vs. Delete"
-	We recommend disabling postbacks versus fully deleting them.  However, you can re-add any postback you’ve previously deleted; you will need to re-add any customization you may have added originally.
+[block:callout]
+{
+  "type": "info",
+  "title": "Disable vs. Delete",
+  "body": "We recommend disabling postbacks versus fully deleting them.  However, you can re-add any postback you’ve previously deleted; you will need to re-add any customization you may have added originally."
+}
+[/block]
 
 ### Sending All Events
 
 If you want to send <notranslate>**All Events**</notranslate> - whether attributed to this partner or not  - you can enable this setting by checking the <notranslate>**All Events**</notranslate> box on a per postback basis.
 
-!!! warning "Privacy Implications"
-	As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Privacy Implications",
+  "body": "As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account."
+}
+[/block]
 
 ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/all-events.png)
 
@@ -75,8 +95,13 @@ In most cases, the default postback URL generated from your selections is suffic
 
 But sometimes you may need/want to edit or remove a parameter from the postback URL, or append a macro expression/variable to include additional information.
 
-!!! tip "Example"
-	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Example",
+  "body": "You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template."
+}
+[/block]
 
 Please refer to [Postback Macros & Functions](#postback-macros-functions) when looking to append additional macros.
 
@@ -102,8 +127,13 @@ By default, all postbacks include the following two filters:
     *   This filter ensures Branch is only sending postbacks for events attributed to the currently selected ad partner.
     *   NOTE: Removing this filter results in Branch sending all events regardless of the attributed ad partner. This is equivalent to checking the <notranslate>**All Events**</notranslate> box.
 
-!!! tip "Example"
-	Your partner requires separate postbacks for Android purchase events vs iOS purchase events.  To achieve this, you would need to add two Purchase postbacks and add a filter for <notranslate>**Operating System**</notranslate> - <notranslate>**user_data.os**</notranslate> - <notranslate>**equals**</notranslate> - <notranslate>**Android **</notranslate>to one and <notranslate>**Operating System**</notranslate> - <notranslate>**user_data.os**</notranslate> - <notranslate>**equals**</notranslate> - <notranslate>**iOS **</notranslate>to the other.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Example",
+  "body": "Your partner requires separate postbacks for Android purchase events vs iOS purchase events.  To achieve this, you would need to add two Purchase postbacks and add a filter for <notranslate>**Operating System**</notranslate> - <notranslate>**user_data.os**</notranslate> - <notranslate>**equals**</notranslate> - <notranslate>**Android **</notranslate>to one and <notranslate>**Operating System**</notranslate> - <notranslate>**user_data.os**</notranslate> - <notranslate>**equals**</notranslate> - <notranslate>**iOS **</notranslate>to the other."
+}
+[/block]
 
 To create a filter:
 

@@ -1,8 +1,13 @@
 ---
 title: Segment Android SDK
 ---
-!!! warning "Segment Branch SDK Integration in Maintenance Mode"
-    As of November 14, 2019 the Segment - Branch SDK integration is in maintenance mode.  
+[block:callout]
+{
+  "type": "warning",
+  "title": "Segment Branch SDK Integration in Maintenance Mode",
+  "body": "As of November 14, 2019 the Segment - Branch SDK integration is in maintenance mode.  "
+}
+[/block]
 
     What does this mean???
 

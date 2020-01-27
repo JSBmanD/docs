@@ -49,8 +49,13 @@ After you have set both Branch & Google Ads up, wait ~20 minutes, and go back to
 
 To import your app conversion data as measured by the Branch SDK, please follow Google's <notranslate>**[Track app conversion with third-party analytics providers](https://support.google.com/google-ads/answer/7382633)**</notranslate>.
 
-!!! warning "Include in Conversions"
-	For any **first open** event conversions, please ensure you've marked `Include in Conversions` to `YES`. Doing so includes the `first open` conversion action’s data in your `Conversions` reporting column in Google Ads. This is important as Branch reports `first open` events to Google Ads, whereas Google Ads reports on app installs.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Include in Conversions",
+  "body": "For any **first open** event conversions, please ensure you've marked `Include in Conversions` to `YES`. Doing so includes the `first open` conversion action’s data in your `Conversions` reporting column in Google Ads. This is important as Branch reports `first open` events to Google Ads, whereas Google Ads reports on app installs."
+}
+[/block]
 
 For more information, please refer to Google's [About the "Include in 'Conversions'" setting](https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer%3Dtrue&oco=0).
 
@@ -58,8 +63,13 @@ For more information, please refer to Google's [About the "Include in 'Conversio
 
 Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
 
-!!! error "Agency ID Required"
-	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+[block:callout]
+{
+  "type": "error",
+  "title": "Agency ID Required",
+  "body": "Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency."
+}
+[/block]
 
 ### Finding Your Agency ID
 
@@ -72,13 +82,23 @@ Your agency tag **must** adhere to the following format:
 	`agency_{YOUR AGENCY ID HERE}_`
 
 
-!!! info "Example Campaign with Agency tag"
- 	`agency_1234567890_My_SAN_Ad_Campaign`
+[block:callout]
+{
+  "type": "info",
+  "title": "Example Campaign with Agency tag",
+  "body": "`agency_1234567890_My_SAN_Ad_Campaign`"
+}
+[/block]
 
 	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
 
-!!! warning "Agency ID Removed When Exporting"
-	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Removed When Exporting",
+  "body": "The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign"."
+}
+[/block]
 
 
 ## Setup FAQs

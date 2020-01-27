@@ -9,8 +9,13 @@ The Branch partnership with [Braze](https://www.braze.com) provides a way to del
 
 We have built a custom integration to automatically send all Branch install data to Braze.
 
-!!! protip "How do we differentiate Braze and Branch installs?"
-    We rely on a Branch link being clicked, which leads to an install. This sets an internal boolean that an install came from Branch.
+[block:callout]
+{
+  "type": "protip",
+  "title": "How do we differentiate Braze and Branch installs?",
+  "body": "We rely on a Branch link being clicked, which leads to an install. This sets an internal boolean that an install came from Branch."
+}
+[/block]
 
 ## Setup
 

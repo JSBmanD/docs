@@ -35,8 +35,13 @@ When this setting is enabled, we will only attribute events for this partner bas
 
 Unlike the app-level setting, this impacts all analytics and postbacks, and can be configured on a per partner basis.
 
-!!! warning "Enabling Install Touch Setting"
-	Currently this setting is not available in your Branch dashboard.  If you are interested in having this setting available in your account, please contact [Support](mailto:support@branch.io).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Enabling Install Touch Setting",
+  "body": "Currently this setting is not available in your Branch dashboard.  If you are interested in having this setting available in your account, please contact [Support](mailto:support@branch.io)."
+}
+[/block]
 
 1. In the left-hand nav, click on <notranslate>**Ads**</notranslate> and then on <notranslate>**Partner Management**</notranslate>.
 2. Search for and select the partner you wish to enable install touch for.

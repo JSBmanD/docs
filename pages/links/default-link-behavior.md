@@ -35,8 +35,13 @@ title: Default Link Behavior Configuration
 
     - ##### Desktop
 
-        !!! note "We now support deep linking to Desktop apps via URI schemes"
-            Our beta Mac OS Desktop SDK is available for testing, so please contact your Branch Account Manager or integrations@branch.io for more information.
+        [block:callout]
+{
+  "type": "note",
+  "title": "We now support deep linking to Desktop apps via URI schemes",
+  "body": "Our beta Mac OS Desktop SDK is available for testing, so please contact your Branch Account Manager or integrations@branch.io for more information."
+}
+[/block]
 
         - Use these settings to control the default behavior of your deep links on Desktop browsers
 

@@ -9,8 +9,13 @@ We've partnered with Localytics to provide an easy way to deliver Branch install
 
 We have built a custom integration to automatically send all Branch install data to Localytics without any extra work on your side (besides integrating both SDKs). We just need some configuration information from your Localytics account, and we'll take care of the rest.
 
-!!! protip "How do we differentiate Localytics and Branch installs?"
-    We rely on a Branch link being clicked which leads to an install. This sets an internal boolean that an install came from Branch.
+[block:callout]
+{
+  "type": "protip",
+  "title": "How do we differentiate Localytics and Branch installs?",
+  "body": "We rely on a Branch link being clicked which leads to an install. This sets an internal boolean that an install came from Branch."
+}
+[/block]
 
 ## Setup
 
@@ -27,8 +32,13 @@ We have built a custom integration to automatically send all Branch install data
 1. Under the section <notranslate>**Ad Tracking Setup**</notranslate>, check the box labeled <notranslate>**Third-party Attribution**</notranslate>. This will enable an <notranslate>**Attribution ID**</notranslate> for you. Copy it, and have it handy for the next steps.
 ![image](/_assets/img/pages/integrations/localytics/localytics-attr-settings.png)
 
-!!! protip "What does this mean?"
-    Once you have selected to allow third-party attribution, Localytics will attribute non-Localytics installs to your dashboard. <notranslate>**This information is delayed by 10 minutes.**</notranslate>
+[block:callout]
+{
+  "type": "protip",
+  "title": "What does this mean?",
+  "body": "Once you have selected to allow third-party attribution, Localytics will attribute non-Localytics installs to your dashboard. <notranslate>**This information is delayed by 10 minutes.**</notranslate>"
+}
+[/block]
 
 
 
@@ -41,8 +51,13 @@ We have built a custom integration to automatically send all Branch install data
 
 ![image](/_assets/img/pages/integrations/localytics/enable-localytics-integration.png)
 
-!!! warning "Please test your integration!"
-    Branch is not responsible for inaccurate API keys.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Please test your integration!",
+  "body": "Branch is not responsible for inaccurate API keys."
+}
+[/block]
 
 ## Advanced
 

@@ -12,8 +12,13 @@ By connecting your Twitter Ads and Branch accounts, the following is enabled:
 - App conversion data collected by the Branch SDK sent to Twitter Ads for attribution.
 - `Read-only` access to install data (not cost/click/impression data) from Twitter Ads in your Branch account.
 
-!!! note "Deep Linking Not Supported"
-	Twitter Ads does not support the use of deep links at this time.  As such, this integration does not require the use of Branch links.
+[block:callout]
+{
+  "type": "note",
+  "title": "Deep Linking Not Supported",
+  "body": "Twitter Ads does not support the use of deep links at this time.  As such, this integration does not require the use of Branch links."
+}
+[/block]
 
 ## Prerequisites
 
@@ -78,8 +83,13 @@ Please follow Twitter's documentation on how to set up an [App Install Ad Campai
 
 Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
 
-!!! error "Agency ID Required"
-	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+[block:callout]
+{
+  "type": "error",
+  "title": "Agency ID Required",
+  "body": "Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency."
+}
+[/block]
 
 ### Finding Your Agency ID
 
@@ -92,13 +102,23 @@ Your agency tag **must** adhere to the following format:
 	`agency_{YOUR AGENCY ID HERE}_`
 
 
-!!! info "Example Campaign with Agency tag"
- 	`agency_1234567890_My_SAN_Ad_Campaign`
+[block:callout]
+{
+  "type": "info",
+  "title": "Example Campaign with Agency tag",
+  "body": "`agency_1234567890_My_SAN_Ad_Campaign`"
+}
+[/block]
 
 	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
 
-!!! warning "Agency ID Removed When Exporting"
-	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Removed When Exporting",
+  "body": "The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign"."
+}
+[/block]
 
 
 ## Data Mapping between Twitter Ads & Branch
@@ -156,8 +176,13 @@ Twitter has a data agreement with TUNE, and there are several layers of data tha
 
 <notranslate>**Campaign Level**</notranslate> > Campaign level includes campaign information such as Campaign (Twitter Campaign Name), Campaign ID (Twitter Campaign ID), Channel (Twitter or Twitter Audience Platform), Feature (hardcoded to "paid advertising"), Ad ID (Tweet ID), Partner Ad Set ID (Line Item ID).
 
-!!! warning "Whitelisting for Device IDs"
-	If you want to receive device IDs and campaign level information via Branch's data feeds, then you must contact your Twitter and Branch account manager. Please make use the email title of "CAMPAIGN LEVEL DATA EXPORT WHITELIST" when contacting your account manager to ensure proper handling.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Whitelisting for Device IDs",
+  "body": "If you want to receive device IDs and campaign level information via Branch's data feeds, then you must contact your Twitter and Branch account manager. Please make use the email title of "CAMPAIGN LEVEL DATA EXPORT WHITELIST" when contacting your account manager to ensure proper handling."
+}
+[/block]
 
 ### Accessible Data
 

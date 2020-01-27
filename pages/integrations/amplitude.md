@@ -58,8 +58,13 @@ Find your Amplitude Project Key and enter it into the Branch Dashboard.
 
 Ensure that you are capturing both the Google Advertising Identifier (GAID) on Android, and the IDFA on iOS.
 
-!!! warning "IDFA & GAID are required"
-    Amplitude requires the IDFA & Google Advertising ID to be sent. Android ID (the hardware ID) alone is not enough.
+[block:callout]
+{
+  "type": "warning",
+  "title": "IDFA & GAID are required",
+  "body": "Amplitude requires the IDFA & Google Advertising ID to be sent. Android ID (the hardware ID) alone is not enough."
+}
+[/block]
 
 ### Upgrade to the latest SDKs [if necessary]
 

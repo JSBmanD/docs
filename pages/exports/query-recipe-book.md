@@ -1,8 +1,13 @@
 ---
 title: Query Recipe Book
 ---
-!!! protip "Want to see a Query API reference?"
-    For an exhaustive list of options for this Query API, flip over to the [Query API](/exports/query-api/) reference page.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Want to see a Query API reference?",
+  "body": "For an exhaustive list of options for this Query API, flip over to the [Query API](/exports/query-api/) reference page."
+}
+[/block]
 
 You can find your Branch Key and Branch Secret on the [Account Settings](https://dashboard.branch.io/account-settings/app) page of the Branch Dashboard. Give the curls below a try from any terminal!
 

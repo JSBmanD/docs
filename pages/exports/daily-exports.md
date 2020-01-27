@@ -13,11 +13,21 @@ A few important notes:
 - The data will only be visible for your live key (not your test key).
 - Click data related to SANs (e.g. Google Ads) can be found at the campaign level rather than device level.
 
-!!! note "Data Feeds is a premium solution"
-    The Daily Export API is included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}.
+[block:callout]
+{
+  "type": "note",
+  "title": "Data Feeds is a premium solution",
+  "body": "The Daily Export API is included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}."
+}
+[/block]
 
-!!! warning "Third party access"
-	Any user with access to an account’s API keys will be able to access Branch’s Daily Export API (and thus unfiltered, log-level data). As a result, we would recommend against providing third parties (agencies and ad partners) with the permissions required to view API keys - Sensitive Data and App-Level Settings - during the invitation process.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Third party access",
+  "body": "Any user with access to an account’s API keys will be able to access Branch’s Daily Export API (and thus unfiltered, log-level data). As a result, we would recommend against providing third parties (agencies and ad partners) with the permissions required to view API keys - Sensitive Data and App-Level Settings - during the invitation process."
+}
+[/block]
 
 **If you are looking for the legacy Daily Export API**, please see [these docs](/exports/api/).
 
@@ -30,8 +40,13 @@ A few important notes:
 
 Rather than accessing the Daily Export API directly, you can use the Daily Exports section in your Branch dashboard to request the appropriate data via CSVs.
 
-!!! info "CSV Delivery"
-    Any data you export via the dashboard will be included in a CSV attachment in an email.  Please ensure your email address is up to date in `Account Settings`.
+[block:callout]
+{
+  "type": "info",
+  "title": "CSV Delivery",
+  "body": "Any data you export via the dashboard will be included in a CSV attachment in an email.  Please ensure your email address is up to date in `Account Settings`."
+}
+[/block]
 
 To request an export:
 
@@ -79,8 +94,13 @@ https://api2.branch.io/v3/export/
 curl -X POST api2.branch.io/v3/export -H 'content-type:application/json' -d '{"branch_key":"key_live_gcASshuadd7l39m36NhdsDPWRjmkdcgh12jsg1", "branch_secret": "secret_live_ztPsdKIjUtcjkUYF732nsl81HJ75BJqiv24J86", "export_date": "2017-10-01"}'
 ```
 
-!!! info "Windows Command Prompt Formatting"
-    Please note that if you are trying to run this curl command in Command Prompt on a machine running Windows, you will need to change `'` to `"` and escape the `"` in curly brackets with a `\`. Here is a final example: `curl -X POST api2.branch.io/v3/export -H "content-type:application/json" -d "{\"branch_key\":\"key_live_gcASshuadd7l39m36NhdsDPWRjmkdcgh12jsg1\", \"branch_secret\": \"secret_live_ztPsdKIjUtcjkUYF732nsl81HJ75BJqiv24J86\", \"export_date\": \"2017-10-01\"}"`
+[block:callout]
+{
+  "type": "info",
+  "title": "Windows Command Prompt Formatting",
+  "body": "Please note that if you are trying to run this curl command in Command Prompt on a machine running Windows, you will need to change `'` to `"` and escape the `"` in curly brackets with a `\`. Here is a final example: `curl -X POST api2.branch.io/v3/export -H "content-type:application/json" -d "{\"branch_key\":\"key_live_gcASshuadd7l39m36NhdsDPWRjmkdcgh12jsg1\", \"branch_secret\": \"secret_live_ztPsdKIjUtcjkUYF732nsl81HJ75BJqiv24J86\", \"export_date\": \"2017-10-01\"}"`"
+}
+[/block]
 
 ### Response
 
@@ -107,8 +127,13 @@ All exports via Data Feeds are powered by Branch's [People-Based Attribution](/d
 !!! tip
     A full day's files will be available on our S3 bucket at that location to download around 7:00pm UTC. It will return a blank array from S3 for any empty files until the UTC day is over and the data has been transfered to S3, therefore it is recommended you schedule any ETLs to fetch the data for the previous day around 7:00pm UTC (12pm PST).
 
-!!! warning "IP Discrepancies"
-	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+[block:callout]
+{
+  "type": "warning",
+  "title": "IP Discrepancies",
+  "body": "Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location."
+}
+[/block]
 
 ## Support
 

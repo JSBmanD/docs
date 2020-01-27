@@ -1,8 +1,13 @@
 ---
 title: Google Analytics
 ---
-!!! warning "Google Analytics vs. Google Firebase"
-  If you are a paying Google Analytics customer, please follow the guide below.  If you are a free customer, please refer to our [Google Firebase](/integrations/google-firebase/) data integration as Google Analytics is now deprecated for free customers.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Analytics vs. Google Firebase",
+  "body": "If you are a paying Google Analytics customer, please follow the guide below.  If you are a free customer, please refer to our [Google Firebase](/integrations/google-firebase/) data integration as Google Analytics is now deprecated for free customers."
+}
+[/block]
 
 ## Overview
 
@@ -48,13 +53,23 @@ For the basic, codeless integration: find your Google Analytics Tracking ID (tid
 
 ![image](/_assets/img/pages/integrations/google-analytics/enable-ga.png)
 
-!!! warning "Please test your integration!"
-    Branch is not responsible for inaccurate API keys.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Please test your integration!",
+  "body": "Branch is not responsible for inaccurate API keys."
+}
+[/block]
 
 ### Mandatory: pass Client ID to Branch
 
-!!! warning "Required for integration"
-    If you don't include the below code snippet, events will be sent to Google but Google Analytics will not ingest them and they will not be visible on the Google Analytics dashboard.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Required for integration",
+  "body": "If you don't include the below code snippet, events will be sent to Google but Google Analytics will not ingest them and they will not be visible on the Google Analytics dashboard."
+}
+[/block]
 
 Please specify `$google_analytics_client_id`. We will pass that to Google (as <notranslate>*cid*</notranslate>) so Google can match the events we send them to a specific user.
 
@@ -123,8 +138,13 @@ Branch.getInstance().setRequestMetadata("$google_analytics_user_id", "USER-ID-HE
 | `uip` | User’s IP Address | collected by Branch SDK | 111.111.111.111 | N
 | `z` | Cache buster | [unix time + random number] | 1461878903666 | N
 
-!!! protip "Anonymous Client ID"
-    If for some reason Branch does not receive an advertising identifier or hardware identifier, and you do not explicitly specify a `$google_analytics_client_id`, then Branch will send `anonymous` as the Client ID (`cid`). This is a required field by Google Analytics.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Anonymous Client ID",
+  "body": "If for some reason Branch does not receive an advertising identifier or hardware identifier, and you do not explicitly specify a `$google_analytics_client_id`, then Branch will send `anonymous` as the Client ID (`cid`). This is a required field by Google Analytics."
+}
+[/block]
 
 ## Troubleshooting
 

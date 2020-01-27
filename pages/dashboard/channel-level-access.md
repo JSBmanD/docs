@@ -88,11 +88,21 @@ You can activate a journey directly from the creation flow, or from <notranslate
 
 ![image](/_assets/img/pages/journeys/edit-journeys.png)
 
-!!! tip "Editing a live Journey"
-	You may edit Journeys in all states; if you do, however, your Journeys' performance and analytics may change. If you do decide to make a change, we recommend making a note of what you changed and when you made the change.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Editing a live Journey",
+  "body": "You may edit Journeys in all states; if you do, however, your Journeys' performance and analytics may change. If you do decide to make a change, we recommend making a note of what you changed and when you made the change."
+}
+[/block]
 
-!!! info "Creating a Journeys Banner"
-	Please refer to the [Journeys App Banners](/web/journeys/) article for an in-depth tutorial on how to create a Journeys Banner.
+[block:callout]
+{
+  "type": "info",
+  "title": "Creating a Journeys Banner",
+  "body": "Please refer to the [Journeys App Banners](/web/journeys/) article for an in-depth tutorial on how to create a Journeys Banner."
+}
+[/block]
 
 ### Deepviews
 
@@ -102,8 +112,13 @@ You can create new Deepview templates either by duplicating the default Branch P
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-deepviews.png)
 
-!!! info "Creating a Deepview"
-	Please refer to the [Deepviews](/web/deep-views/) article for an in-depth tutorial on how to create a Deepview.
+[block:callout]
+{
+  "type": "info",
+  "title": "Creating a Deepview",
+  "body": "Please refer to the [Deepviews](/web/deep-views/) article for an in-depth tutorial on how to create a Deepview."
+}
+[/block]
 
 ### Desktop SMS - Text Me the App
 
@@ -113,8 +128,13 @@ When users click your links on desktop, they have the option to text themselves 
 
 Left: Branch default. Right: a customized version.
 
-!!! info "Text Me the App"
-	Please refer to the [Text Me the App](/web/text-me-the-app/) article for an in-depth tutorial on how to create a Text Me the App page.
+[block:callout]
+{
+  "type": "info",
+  "title": "Text Me the App",
+  "body": "Please refer to the [Text Me the App](/web/text-me-the-app/) article for an in-depth tutorial on how to create a Text Me the App page."
+}
+[/block]
 
 ## Ads
 
@@ -135,8 +155,13 @@ Each Universal Ad Partner has the following settings:
 - <notranslate>**Attribution Windows**</notranslate>
     - Use a custom attribution window to match AdAction Engage's attribution windows. This overrides your app level attribution windows.
 
-!!! info "Enabling an Ad Partner"
-	Please refer to Branch's [List of Universal Ad Partners](/deep-linked-ads/ad-networks-list/) to view a complete list of our integrated Universal Ad Partners and instructions on how to enable each partner.
+[block:callout]
+{
+  "type": "info",
+  "title": "Enabling an Ad Partner",
+  "body": "Please refer to Branch's [List of Universal Ad Partners](/deep-linked-ads/ad-networks-list/) to view a complete list of our integrated Universal Ad Partners and instructions on how to enable each partner."
+}
+[/block]
 
 ## Email
 
@@ -148,13 +173,23 @@ You can enable/disable Universal Email Partners and view integration information
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-email-manager.gif)
 
-!!! info "Enabling an Universal Email Partner"
-	Please refer to Branch's [List of Universal Email Partners](/emails/email-partners-list/) article to view a complete list of our integrated Universal Email Partners and instructions on how to enable each partner.
+[block:callout]
+{
+  "type": "info",
+  "title": "Enabling an Universal Email Partner",
+  "body": "Please refer to Branch's [List of Universal Email Partners](/emails/email-partners-list/) article to view a complete list of our integrated Universal Email Partners and instructions on how to enable each partner."
+}
+[/block]
 
 ## Organic Search
 
-!!! warning "Aggregate Data Access Required"
-	Access to the Organic Search section also requires access to [Aggregate Data](aggregate-data-access.md)
+[block:callout]
+{
+  "type": "warning",
+  "title": "Aggregate Data Access Required",
+  "body": "Access to the Organic Search section also requires access to [Aggregate Data](aggregate-data-access.md)"
+}
+[/block]
 
 Enable automatic sitemap generation by checking the <notranslate>**Automatic sitemap generation**</notranslate> checkbox.
 
@@ -173,8 +208,13 @@ Both the sitemap itself and statistics about Google scraping your links are upda
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-organic-search.png)
 
-!!! info "Google App Indexing & Apple Spotlight Search"
-	Please refer to the [Firebase App Indexing](/organic-search/firebase/) article for an in-depth tutorial on Google's Firebase App Indexing .
+[block:callout]
+{
+  "type": "info",
+  "title": "Google App Indexing & Apple Spotlight Search",
+  "body": "Please refer to the [Firebase App Indexing](/organic-search/firebase/) article for an in-depth tutorial on Google's Firebase App Indexing ."
+}
+[/block]
 
 	Please refer to the [Spotlight Search](/organic-search/spotlight/) article for an in-depth tutorial on Apple's Spotlight Search.
 
@@ -198,11 +238,21 @@ Properties you can define:
 1. Whether the reward occurs the first time or every time
 1. Which event triggers the reward
 
-!!! warning "Promo codes has been deprecated"
-	Our Promo codes feature on the dashboard has been deprecated. Please use reward rules to trigger referral rewards for your users.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Promo codes has been deprecated",
+  "body": "Our Promo codes feature on the dashboard has been deprecated. Please use reward rules to trigger referral rewards for your users."
+}
+[/block]
 
-!!! info "Example Reward Rules"
-	Please refer to the [Referral Programs](/viral/referrals/) article for examples and a sample iOS app.
+[block:callout]
+{
+  "type": "info",
+  "title": "Example Reward Rules",
+  "body": "Please refer to the [Referral Programs](/viral/referrals/) article for examples and a sample iOS app."
+}
+[/block]
 
 ## Data Import & Export
 
@@ -210,8 +260,13 @@ If you are an Admin, you have edit access to the sections below.
 
 ### Data Feeds Manager
 
-!!! warning "Sensitive Data Access Required"
-	Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Sensitive Data Access Required",
+  "body": "Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md)."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-data-feeds-manager.png)
 
@@ -220,18 +275,33 @@ If you are an Admin, you have edit access to the sections below.
 
 ### Data Integrations
 
-!!! warning "Sensitive Data Access Required"
-	Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Sensitive Data Access Required",
+  "body": "Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md)."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-data-integrations.png)
 
-!!! info "Enabling a Data Integration"
-	Please refer to Branch's [List of Data Integrations](/integrations/data-integrations-list/) article to view a complete list of our Data Integrations and instructions on how to enable each integration.
+[block:callout]
+{
+  "type": "info",
+  "title": "Enabling a Data Integration",
+  "body": "Please refer to Branch's [List of Data Integrations](/integrations/data-integrations-list/) article to view a complete list of our Data Integrations and instructions on how to enable each integration."
+}
+[/block]
 
 ### Webhooks
 
-!!! warning "Sensitive Data Access Required"
-	Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Sensitive Data Access Required",
+  "body": "Access to the Data Feeds Manager tab also requires access to [Sensitive Data](sensitive-data-access.md)."
+}
+[/block]
 
 You can add new webhooks, edit existing webhooks and archive unwanted webhooks.
 

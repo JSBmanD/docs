@@ -26,14 +26,29 @@ OR
 
 ### Creating Branchified Ad Links
 
-!!! warning "Required for Web + App Routing Only"
-    If you want your ads to route to either web or app (if installed), you must complete this section.  If you want your ads to only route to the web, skip this section.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Required for Web + App Routing Only",
+  "body": "If you want your ads to route to either web or app (if installed), you must complete this section.  If you want your ads to only route to the web, skip this section."
+}
+[/block]
 
-!!! info "Not Necessary if Using Universal Links or App Links"
-    If your app supports universal links and/or app links, you do not need to create Branchified Ad links for your product feeds.  Please skip to the next step.
+[block:callout]
+{
+  "type": "info",
+  "title": "Not Necessary if Using Universal Links or App Links",
+  "body": "If your app supports universal links and/or app links, you do not need to create Branchified Ad links for your product feeds.  Please skip to the next step."
+}
+[/block]
 
-!!! info "No Cross-Domain Redirects"
-    Since your product feed items' landing pages must match your display URL and not contain any cross-domain redirects, you cannot put a Branch link directly in that box. However, you can append query parameters to the Final URL in order to pass the required data needed for Branch to route and attribute your users properly.
+[block:callout]
+{
+  "type": "info",
+  "title": "No Cross-Domain Redirects",
+  "body": "Since your product feed items' landing pages must match your display URL and not contain any cross-domain redirects, you cannot put a Branch link directly in that box. However, you can append query parameters to the Final URL in order to pass the required data needed for Branch to route and attribute your users properly."
+}
+[/block]
 
 As each product in your product feed is unique, each requires its own link to ensure the user is not only taken to the correct content, but for Branch to correctly attribute the event.
 
@@ -201,11 +216,21 @@ Please refer to Google’s [Create a feed for your responsive ads](https://suppo
 
 ### Placing your Link in the Product Feed
 
-!!! info "Universal Links and/or App Links"
-    If you are using Universal links and or App links, include these links in the `link` column instead.
+[block:callout]
+{
+  "type": "info",
+  "title": "Universal Links and/or App Links",
+  "body": "If you are using Universal links and or App links, include these links in the `link` column instead."
+}
+[/block]
 
-!!! info "Web Routing Only"
-    If you want your ads to only route to the web, use your normal product web landing page as usual.
+[block:callout]
+{
+  "type": "info",
+  "title": "Web Routing Only",
+  "body": "If you want your ads to only route to the web, use your normal product web landing page as usual."
+}
+[/block]
 
 Once you’ve created a Branchified link for each item in your product feed, you need to include these links in your product feed file before uploading it to Facebook or Google Ads.
 
@@ -221,8 +246,13 @@ To upload your product feed to Google Ads, please follow Google’s help documen
 
 If you're a retail business, use the [Google Merchant Center to upload your product feed](https://support.google.com/merchants/answer/188477).
 
-!!! warning "IMPORTANT - MUST COMPLETE"
-    You must include the Branch long link you created (before you encoded it) in the **Tracking Template** field of your campaign settings **AFTER** you created your campaign.
+[block:callout]
+{
+  "type": "warning",
+  "title": "IMPORTANT - MUST COMPLETE",
+  "body": "You must include the Branch long link you created (before you encoded it) in the **Tracking Template** field of your campaign settings **AFTER** you created your campaign."
+}
+[/block]
 
 To include your Branch long link in the campaign's settings:
 

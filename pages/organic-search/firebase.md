@@ -87,8 +87,13 @@ Both the sitemap itself and statistics about Google scraping your links are upda
 
 ![image](/_assets/img/pages/organic-search/firebase/db-summary.png)
 
-!!! note "Google does not scrape sitemaps for apps with custom domains"
-    If you're using a custom domain for your Branch links, Google will not scrape your auto-generated sitemap.
+[block:callout]
+{
+  "type": "note",
+  "title": "Google does not scrape sitemaps for apps with custom domains",
+  "body": "If you're using a custom domain for your Branch links, Google will not scrape your auto-generated sitemap."
+}
+[/block]
 
 ## Advanced
 
@@ -162,8 +167,13 @@ For debugging purposes, you can check that the method is correctly inserting the
 
 Analytics related to Google's attempts to index your App's content via these tags can be found from Source Analytics in Dashboard where `channel` is `Firebase App Indexing` and `feature` is `Auto App Indexing`.
 
-!!! note "Testing with webmaster tools"
-    We have read on Google's official blog that Googlebot renders javascript before it indexes webpages however, there are times where it may choose not to. The reasons why are unclear to us. Therefore, dynamically generated App Indexing meta tags created as part of this function may or may not appear in your tests with Webmaster Tools when you try to fetch and render as Googlebot.
+[block:callout]
+{
+  "type": "note",
+  "title": "Testing with webmaster tools",
+  "body": "We have read on Google's official blog that Googlebot renders javascript before it indexes webpages however, there are times where it may choose not to. The reasons why are unclear to us. Therefore, dynamically generated App Indexing meta tags created as part of this function may or may not appear in your tests with Webmaster Tools when you try to fetch and render as Googlebot."
+}
+[/block]
 
 ### Attribute app traffic to organic search
 

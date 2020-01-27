@@ -171,8 +171,13 @@ If you want to give a preview of the content to users who have not yet downloade
 
 The [Analytics page](https://dashboard.branch.io/content) on the Branch dashboard allows you to see data on content your users are sharing, and which pieces of content are the most popular. You can also use the dashboard's [Live View page](https://dashboard.branch.io/liveview/links) to see links and link clicks in real time.
 
-!!! tip "Measure influencers"
-    The [Influencers page](https://dashboard.branch.io/referrals/analytics) on the dashboard will show you who is driving the most new signups.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Measure influencers",
+  "body": "The [Influencers page](https://dashboard.branch.io/referrals/analytics) on the dashboard will show you who is driving the most new signups."
+}
+[/block]
 
 ## Advanced
 

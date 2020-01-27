@@ -81,8 +81,13 @@ By default, installs and events via Branch links will be attributed to Branch vi
 
 ![image](/_assets/img/pages/integrations/adjust/override-adjust.png)
 
-!!! info "Platform-specific Tracker IDs"
-    If you have different <notranslate>**Tracker IDs**</notranslate> for your Android and iOS apps, you can specify these by using the following keys:
+[block:callout]
+{
+  "type": "info",
+  "title": "Platform-specific Tracker IDs",
+  "body": "If you have different <notranslate>**Tracker IDs**</notranslate> for your Android and iOS apps, you can specify these by using the following keys:"
+}
+[/block]
 
     - <notranslate>**android_tracker_id**</notranslate>
     - <notranslate>**ios_tracker_id**</notranslate>

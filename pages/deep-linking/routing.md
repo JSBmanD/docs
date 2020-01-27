@@ -173,25 +173,38 @@ This returns the first set of deep link data that ever referred the user. Once i
 
 If your app already supports deep linking using URI paths, you can populate the `$deeplink_path`, `$ios_deeplink_path` or `$android_deeplink_path` link parameters with the URI path of the content to be displayed within the app. When the Branch SDK receives a link containing one of these parameters it will automatically load the specified URI path.
 
-!!! warning "Incomplete support on iOS"
-	[Universal Links](/deep-linking/universal-links/) and [Spotlight](/organic-search/spotlight/) do not support deep linking via URI paths. If you use `$deeplink_path` or `$ios_deeplink_path`, you will need to implement some custom logic. [Click here for more information](#how-to-handle-uri-paths-with-universal-links-or-app-links).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Incomplete support on iOS",
+  "body": "[Universal Links](/deep-linking/universal-links/) and [Spotlight](/organic-search/spotlight/) do not support deep linking via URI paths. If you use `$deeplink_path` or `$ios_deeplink_path`, you will need to implement some custom logic. [Click here for more information](#how-to-handle-uri-paths-with-universal-links-or-app-links)."
+}
+[/block]
 
 
 ### How to insert custom deep link routes into a Branch link
 
 All of the examples below create links that will cause Branch to display `myapp://content/1234` after launch. Please do not add the URI scheme on the `$deeplink_path` parameters; we automatically append the scheme specified in the Link Settings of dashboard.
 
-!!! example "When creating links dynamically"
-
-	If you're creating a link by appending query parameters, just append the control parameters to the URL. Please make sure to URL encode everything, lest the link will break.
+[block:callout]
+{
+  "type": "example",
+  "title": "When creating links dynamically",
+  "body": "If you're creating a link by appending query parameters, just append the control parameters to the URL. Please make sure to URL encode everything, lest the link will break."
+}
+[/block]
 
 	```js
 	"https://[branchsubdomain]?%24deeplink_path=content%2F1234"
 	```
 
-!!! example "When using a mobile SDK"
-
-	- *iOS - Objective C*
+[block:callout]
+{
+  "type": "example",
+  "title": "When using a mobile SDK",
+  "body": "- *iOS - Objective C*"
+}
+[/block]
 
 		```obj-c
 		BranchLinkProperties *linkProperties = [[BranchLinkProperties alloc] init];
@@ -218,9 +231,13 @@ All of the examples below create links that will cause Branch to display `myapp:
 		               .addControlParameter("$deeplink_path", "content/1234");
 		```
 
-!!! example "When creating Quick Links on the Branch dashboard"
-
-	You can specify the control parameters for individual Quick Links by inserting the keys and values into the _Deep Link Data (Advanced)_ section.
+[block:callout]
+{
+  "type": "example",
+  "title": "When creating Quick Links on the Branch dashboard",
+  "body": "You can specify the control parameters for individual Quick Links by inserting the keys and values into the _Deep Link Data (Advanced)_ section."
+}
+[/block]
 
 	![image](/_assets/img/pages/deep-linking/routing/deep-link_path.png)
 
@@ -298,8 +315,13 @@ Receive the delegate method that will be called when the view controller is load
 	}
 	```
 
-!!! tip "What is a link data key?"
-	The example key `product_picture` is a parameter from the [data dictionary](/links/integrate/#custom-data) of the link that was clicked, and would have been defined when the link [was created](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link).
+[block:callout]
+{
+  "type": "tip",
+  "title": "What is a link data key?",
+  "body": "The example key `product_picture` is a parameter from the [data dictionary](/links/integrate/#custom-data) of the link that was clicked, and would have been defined when the link [was created](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link)."
+}
+[/block]
 
 - *Objective C*
 
@@ -403,8 +425,13 @@ protected void onResume() {
 }
 ```
 
-!!! tip "What is a link data key?"
-	The example key `product_picture` is a parameter from the [data dictionary](/links/integrate/#custom-data) of the link that was clicked, and would have been defined when the link [was created](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link).
+[block:callout]
+{
+  "type": "tip",
+  "title": "What is a link data key?",
+  "body": "The example key `product_picture` is a parameter from the [data dictionary](/links/integrate/#custom-data) of the link that was clicked, and would have been defined when the link [was created](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link)."
+}
+[/block]
 
 #### Register Activity for deep link routing
 

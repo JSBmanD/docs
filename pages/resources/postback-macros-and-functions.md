@@ -7,8 +7,13 @@ The following list shows the macros and available functions that Branch supports
 
 We’ve grouped our macros into categories based the type of information being collected.
 
-!!! info "Using Functions to Modify Postback Macros"
-	All postback macros can be hashed/encrypted/modified using a variety of postback URL functions. For information about the available postback URL functions applicable to the following postback macros, see the URL Function Macros section below.
+[block:callout]
+{
+  "type": "info",
+  "title": "Using Functions to Modify Postback Macros",
+  "body": "All postback macros can be hashed/encrypted/modified using a variety of postback URL functions. For information about the available postback URL functions applicable to the following postback macros, see the URL Function Macros section below."
+}
+[/block]
 
 ### Postback Data
 
@@ -334,8 +339,13 @@ The following macros represent the data points associated with the custom data p
 
 The following macros represent the data points associated with TUNE specific parameters converted to Branch formatting for continued used.
 
-!!! info "Created vs Pre-existing"
-	This table contains only macros that had to be **created** in order to map TUNE data to Branch.  For TUNE data points that could be mapped directly to pre-existing Branch data points, please refer to the tables above.
+[block:callout]
+{
+  "type": "info",
+  "title": "Created vs Pre-existing",
+  "body": "This table contains only macros that had to be **created** in order to map TUNE data to Branch.  For TUNE data points that could be mapped directly to pre-existing Branch data points, please refer to the tables above."
+}
+[/block]
 
 | **Branch Macro**                                                                                                                                                                                                                            | **TUNE Macro**                            | **Definition / Returned Values**                                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|

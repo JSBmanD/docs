@@ -1,8 +1,13 @@
 title: Supporting Chinese Ad Attribution
 ---
 
-!!! warning "DO NOT USE OUTSIDE CHINA"
-	This guide is specific to China and cannot be used for the attribution of Android devices outside of China.  
+[block:callout]
+{
+  "type": "warning",
+  "title": "DO NOT USE OUTSIDE CHINA",
+  "body": "This guide is specific to China and cannot be used for the attribution of Android devices outside of China.  "
+}
+[/block]
 
 ## Overview
 
@@ -12,8 +17,13 @@ As attribution providers mainly rely on Google's advertising identifier (GAID) f
 
 To this end, Branch built an Android plugin specifically to capture the IMEI (International Mobile Equipment Identity) of Open Source Android devices.
 
-!!! warning "NOT COMPATIBLE WITH GOOGLE PLAY"
-	Using this module in apps that are listed on the Play Store can cause the app to be removed from the store.
+[block:callout]
+{
+  "type": "warning",
+  "title": "NOT COMPATIBLE WITH GOOGLE PLAY",
+  "body": "Using this module in apps that are listed on the Play Store can cause the app to be removed from the store."
+}
+[/block]
 
 ## Enabling China Features
 
@@ -21,15 +31,25 @@ Please contact your Account Manager to enable this feature.  Once enabled, you w
 
 ## SDK Implementation
 
-!!! warning "GITHUB REPO ACCESS RESTRICTED"
-	Before you can implement the Branch Android IMEI module, you must contact your account manager and accept the Terms of Service for using this feature.
+[block:callout]
+{
+  "type": "warning",
+  "title": "GITHUB REPO ACCESS RESTRICTED",
+  "body": "Before you can implement the Branch Android IMEI module, you must contact your account manager and accept the Terms of Service for using this feature."
+}
+[/block]
 
 The Android IMEI module is used by the main [Branch Android SDK](/apps/android) to inject IMEI data of the device in the requests.
 
 The module checks whether Google Play Services is linked to the app. If yes, then it will not fetch the IMEI. Otherwise, it will pass the IMEI in the requests.
 
-!!! info "NOTE"
-	If Google Play Services is present, but not linked, the request for IMEI will result in an error.
+[block:callout]
+{
+  "type": "info",
+  "title": "NOTE",
+  "body": "If Google Play Services is present, but not linked, the request for IMEI will result in an error."
+}
+[/block]
 
 1. To build the `.jar` file, run the task `makeJar`.
 2. To read the IMEI of the device, you need to add the following permission in the Manifest file:

@@ -47,8 +47,13 @@ Each attribution window has its own default measured in days. Please refer to th
     *   <notranslate>**Note**</notranslate>: This setting also covers the maximum length of time allowed for fingerprint matching. Hence changing this value will also change the length of time allowed to use a fingerprint for attribution.
 *   <notranslate>**Re-engagement Inactivity**</notranslate> defines the period between two events that a user must be inactive in order to define the later event as a re-engagement. Used in re-engagement cohort analysis but not activity analysis.
 
-!!! info "Changing Attribution Window Settings"
-	Once you change an attribution window setting, please allow up to several minutes for the change to persist through our system.  New attribution window settings will apply to future attributions **only**.
+[block:callout]
+{
+  "type": "info",
+  "title": "Changing Attribution Window Settings",
+  "body": "Once you change an attribution window setting, please allow up to several minutes for the change to persist through our system.  New attribution window settings will apply to future attributions **only**."
+}
+[/block]
 
 
 ### Org-level vs. App-level vs. Ad Network-level Settings
@@ -74,8 +79,13 @@ To access ad partner attribution settings, navigate to the [Partner Management](
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/ad-partner-attribution-window.png)
 
-!!! tip "Using Ad Partner Attribution Windows"
-	When you enable Use Ad Partner Attribution Windows, the defaults from the app-level are auto-loaded. Please contact your Ad Partner if they require different settings to ensure you input the correct attribution window lengths.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Using Ad Partner Attribution Windows",
+  "body": "When you enable Use Ad Partner Attribution Windows, the defaults from the app-level are auto-loaded. Please contact your Ad Partner if they require different settings to ensure you input the correct attribution window lengths."
+}
+[/block]
 
 ## Attribution Logic Nomenclature
 

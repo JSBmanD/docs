@@ -43,8 +43,13 @@ title: 웹 기반 광고(비 UAC)
 
 ## 설정
 
-!!! warning " **활성화 필요** "
-	Branch와 Google Ads를 연동하려면 먼저 Branch 대시보드에서 **[Google Ads 연동을 활성화](/deep-linked-ads/google-ads-enable/)** 해야 합니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": " **활성화 필요** ",
+  "body": "Branch와 Google Ads를 연동하려면 먼저 Branch 대시보드에서 **[Google Ads 연동을 활성화](/deep-linked-ads/google-ads-enable/)** 해야 합니다."
+}
+[/block]
 
 ### Branch 광고 링크 생성
 
@@ -61,16 +66,31 @@ title: 웹 기반 광고(비 UAC)
 	1. Google Ads의 동일 캠페인 ID에 새 태그 `~campaign_id`를 추가합니다.
 ![분석 태그](/_assets/img/pages/deep-linked-ads/reusable-images/adwords-analytics-tags.png)
 
-!!! warning "분석 태그"
-	*임프레션* , *클릭* , *비용* 을 모든 다운스트림 이벤트와 함께 나열하려면 분석 태그가 링크에 반드시 존재해야 하며 그 값은 광고 네트워크 대시보드에 있는 값과 *정확히* 일치해야 합니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "분석 태그",
+  "body": "*임프레션* , *클릭* , *비용* 을 모든 다운스트림 이벤트와 함께 나열하려면 분석 태그가 링크에 반드시 존재해야 하며 그 값은 광고 네트워크 대시보드에 있는 값과 *정확히* 일치해야 합니다."
+}
+[/block]
 
-!!! note ";선택 사항: 딥링크 데이터"
-	이 설정 섹션을 사용하여 인스톨 이후 앱에 딥링킹될 커스텀 링크 매개변수를 설정할 수 있습니다. 쿠폰 코드 또는 페이지 식별자를 포함하여 사용자를 라우팅할 수 있습니다. 자세한 사항은 [Deep Link Routing](/deep-linking/routing/)(딥링크 라우팅) 페이지에서 확인하실 수 있습니다.
+[block:callout]
+{
+  "type": "note",
+  "title": ";선택 사항: 딥링크 데이터",
+  "body": "이 설정 섹션을 사용하여 인스톨 이후 앱에 딥링킹될 커스텀 링크 매개변수를 설정할 수 있습니다. 쿠폰 코드 또는 페이지 식별자를 포함하여 사용자를 라우팅할 수 있습니다. 자세한 사항은 [Deep Link Routing](/deep-linking/routing/)(딥링크 라우팅) 페이지에서 확인하실 수 있습니다."
+}
+[/block]
 
 #### 최종 URL을 변경하여 Branch 링크를 쿼리 매개변수로 포함
 
-!!! note "앱으로의 Branch 딥링킹에만 해당하는 경우"
-	캠페인의 **최종 URL** 은 반드시 디스플레이 URL과 일치해야 하고 어떠한 크로스 도메인 리디렉션도 포함하지 않아야 하기 때문에, Branch 링크를 이 상자에 직접 넣을 수 없습니다. 하지만 최종 URL에 쿼리 매개변수를 추가하여 Branch가 사용자들을 적절하게 라우팅 및 어트리뷰션하는 데 필요한 데이터를 전송할 수 있습니다.
+[block:callout]
+{
+  "type": "note",
+  "title": "앱으로의 Branch 딥링킹에만 해당하는 경우",
+  "body": "캠페인의 **최종 URL** 은 반드시 디스플레이 URL과 일치해야 하고 어떠한 크로스 도메인 리디렉션도 포함하지 않아야 하기 때문에, Branch 링크를 이 상자에 직접 넣을 수 없습니다. 하지만 최종 URL에 쿼리 매개변수를 추가하여 Branch가 사용자들을 적절하게 라우팅 및 어트리뷰션하는 데 필요한 데이터를 전송할 수 있습니다."
+}
+[/block]
 
 1. 마지막 섹션에서 Branch 광고 링크를 복사합니다. 이때 복사된 링크는 적절한 추가 매개변수(~campaign_id, ~ad_set_id, lpurl 등)를 포함해야 합니다. 이러한 매개변수들은 Branch 대시보드에 자동으로 생성됩니다.
 2. URL은 생성 및 복사된 Branch 광고 링크를 인코딩합니다.
@@ -78,21 +98,36 @@ title: 웹 기반 광고(비 UAC)
 
 ### 캠페인 생성
 
-!!! warning "지원되는 캠페인 유형"
-	지원되는 모든 웹 기반 캠페인 유형은 [부록](/deep-linked-ads/google-ads-non-uac/#appendix)을 참조하세요.
+[block:callout]
+{
+  "type": "warning",
+  "title": "지원되는 캠페인 유형",
+  "body": "지원되는 모든 웹 기반 캠페인 유형은 [부록](/deep-linked-ads/google-ads-non-uac/#appendix)을 참조하세요."
+}
+[/block]
 
 새 [Google Ads 캠페인](https://support.google.com/google-ads/answer/6324971?co=ADWORDS.IsAWNCustomer%3Dtrue&oco=0) 생성 방법에 관한 Google Ads 도움말 문서를 참조하세요.
 
-!!! tip "Google Ads 캠페인 내 Branch 링크 배치"
-	캠페인 생성 시에는 원하는 사용자 결과에 맞는 정확한 위치에 Branch 링크를 배치해야 합니다.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Google Ads 캠페인 내 Branch 링크 배치",
+  "body": "캠페인 생성 시에는 원하는 사용자 결과에 맞는 정확한 위치에 Branch 링크를 배치해야 합니다."
+}
+[/block]
 
     - **웹 라우팅만 사용하는 경우** - Google Ads 캠페인 설정 시 Branch 링크를 `Tracking Template` 필드에 배치하세요.
     - **앱 인스톨 시 앱으로의 딥링킹 또는 웹으로의 라우팅을 사용하는 경우** - Google Ads 캠페인 설정 시 변경된 Branch 링크를 `Final URL` 필드에 배치하세요.
 
 Google Ads 캠페인에 관한 자세한 내용은 [광고 및 캠페인 생성](https://support.google.com/google-ads/topic/3119116?hl=en&ref_topic=311907)을 참조하세요.
 
-!!! tip "어트리뷰션 윈도우 설정"
-	계정 전체 수준으로 또는 링크 수준별로 링크의 어트리뷰션 윈도우를 지정할 수 있습니다. 이 윈도우를 이용해 Branch 링크의 어트리뷰션 데이터를 정확히 측정할 수 있습니다. 관련 지침은 [어트리뷰션 윈도우 변경](/deep-linked-ads/branch-universal-ads/#change-attribution-windows)을 참조하세요.
+[block:callout]
+{
+  "type": "tip",
+  "title": "어트리뷰션 윈도우 설정",
+  "body": "계정 전체 수준으로 또는 링크 수준별로 링크의 어트리뷰션 윈도우를 지정할 수 있습니다. 이 윈도우를 이용해 Branch 링크의 어트리뷰션 데이터를 정확히 측정할 수 있습니다. 관련 지침은 [어트리뷰션 윈도우 변경](/deep-linked-ads/branch-universal-ads/#change-attribution-windows)을 참조하세요."
+}
+[/block]
 
 {! ingredients/deep-linked-ads/ko/view-ad-link-data.md !}
 
@@ -177,8 +212,13 @@ Google Ads 캠페인에 관한 자세한 내용은 [광고 및 캠페인 생성]
 
 #### 피드 활용
 
-!!! warning "전제 조건"
-	* [x] Google 애드워즈 계정과 Google 판매자 센터 계정을 모두 보유해야 하며 두 계정이 서로 연결되어 있어야 합니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "전제 조건",
+  "body": "* [x] Google 애드워즈 계정과 Google 판매자 센터 계정을 모두 보유해야 하며 두 계정이 서로 연결되어 있어야 합니다."
+}
+[/block]
 
 ##### Google 판매자 센터에 업로드
 

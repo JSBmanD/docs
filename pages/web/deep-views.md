@@ -10,8 +10,13 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 
 ![image](/_assets/img/pages/deepviews/deepviews_allthecooks.gif)
 
-!!! note "Intended for apps without a mobile website"
-    If you already have a mobile website with content, [Journeys](/web/journeys/) is better suited.
+[block:callout]
+{
+  "type": "note",
+  "title": "Intended for apps without a mobile website",
+  "body": "If you already have a mobile website with content, [Journeys](/web/journeys/) is better suited."
+}
+[/block]
 
 ## Setup
 
@@ -29,8 +34,13 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 
     Note that this will override any [Text-Me-The-App](/web/text-me-the-app/) page you have configured.
 
-!!! note "Changing the app icon"
-    If we pulled the wrong app icon, you can upload a new one in the _Social Media Display Customization_ section of the [dashboard Settings](https://dashboard.branch.io/link-settings).
+[block:callout]
+{
+  "type": "note",
+  "title": "Changing the app icon",
+  "body": "If we pulled the wrong app icon, you can upload a new one in the _Social Media Display Customization_ section of the [dashboard Settings](https://dashboard.branch.io/link-settings)."
+}
+[/block]
 
 ### View Analytics
 
@@ -62,8 +72,13 @@ The default Deepview template simply displays the content from three of the link
 | <notranslate>**$og_description**</notranslate> | The description you'd like to appear on the deepview
 | <notranslate>**$og_image_url**</notranslate> | The URL for the image you'd like to appear on the deepview
 
-!!! tip "Hosting your own OG tags"
-    If you want to use OG tags you host elsewhere, leave these parameters empty and specify a <notranslate>**$desktop_url**</notranslate> control parameter when you create the link. Branch will perform a one-time scrape to populate the Deepview using the OG tags from the URL you specify.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Hosting your own OG tags",
+  "body": "If you want to use OG tags you host elsewhere, leave these parameters empty and specify a <notranslate>**$desktop_url**</notranslate> control parameter when you create the link. Branch will perform a one-time scrape to populate the Deepview using the OG tags from the URL you specify."
+}
+[/block]
 
 If you're creating a link by appending query parameters, just append the parameters to the URL. Please make sure to URL encode everything, lest the link will break.
 
@@ -224,8 +239,13 @@ You can use the Deepview editor to edit created templates. You cannot edit pre-c
 
 ![image](/_assets/img/pages/deepviews/deepviews_editor_code.png)
 
-!!! failure "Javascript not allowed"
-    Before rendering the template, we sanitize the markup of Javascript for security reasons. This includes script tags and event attributes on tags.
+[block:callout]
+{
+  "type": "failure",
+  "title": "Javascript not allowed",
+  "body": "Before rendering the template, we sanitize the markup of Javascript for security reasons. This includes script tags and event attributes on tags."
+}
+[/block]
 
 ## Glossary
 

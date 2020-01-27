@@ -78,15 +78,25 @@ To use Branch links in your <notranslate>**Drive Traffic to App**</notranslate> 
   ![image](/_assets/img/pages/deep-linked-ads/snap/build-your-ad.png)
 1. Finish building your Snap campaign.
 
-!!! warning "Web Site as Fallback Required for Deferred Deep Linking"
-    Please ensure you choose <notranslate>**Web Site**</notranslate> as the <notranslate>**FALLBACK TYPE**</notranslate> and inserting the same Branch link into the provided field.  If you choose <notranslate>**App Install**</notranslate> as the `FALLBACK TYPE`, users not properly routed will be sent to the App Store without the Branch link and deferred deep linking will not occur.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Web Site as Fallback Required for Deferred Deep Linking",
+  "body": "Please ensure you choose <notranslate>**Web Site**</notranslate> as the <notranslate>**FALLBACK TYPE**</notranslate> and inserting the same Branch link into the provided field.  If you choose <notranslate>**App Install**</notranslate> as the `FALLBACK TYPE`, users not properly routed will be sent to the App Store without the Branch link and deferred deep linking will not occur."
+}
+[/block]
 
     ## Adding the Agency Tag to Campaign Name
 
     Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
 
-    !!! error "Agency ID Required"
-    	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+    [block:callout]
+{
+  "type": "error",
+  "title": "Agency ID Required",
+  "body": "Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency."
+}
+[/block]
 
     ### Finding Your Agency ID
 
@@ -99,13 +109,23 @@ To use Branch links in your <notranslate>**Drive Traffic to App**</notranslate> 
     	`agency_{YOUR AGENCY ID HERE}_`
 
 
-    !!! info "Example Campaign with Agency tag"
-     	`agency_1234567890_My_SAN_Ad_Campaign`
+    [block:callout]
+{
+  "type": "info",
+  "title": "Example Campaign with Agency tag",
+  "body": "`agency_1234567890_My_SAN_Ad_Campaign`"
+}
+[/block]
 
     	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
 
-    !!! warning "Agency ID Removed When Exporting"
-    	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+    [block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Removed When Exporting",
+  "body": "The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign"."
+}
+[/block]
 
 
 ## View Attribution on Dashboard
@@ -114,8 +134,13 @@ All attribution can be visible on the [Branch dashboard summary page](https://da
 
 Note that these stats are **limited to the date range** at the top of the page. You can expand the range if you'd like.
 
-!!! info "Available Compare By Dimensions for SANs"
-    Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions.
+[block:callout]
+{
+  "type": "info",
+  "title": "Available Compare By Dimensions for SANs",
+  "body": "Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions."
+}
+[/block]
 
     |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
     |---------------------|-------------|-------------|------------------|-------------|

@@ -617,8 +617,13 @@ title: Deep Linking API
         | `bucket` | `string` | The category where the credits are save to | `type` = `credit`
         | `filter` | `json` | This is the set of keys and values that must be contained in the event metadata for this reward to be issued |
 
-    !!! note "Please take note of the `type` parameter"
-        `type` = `credit` will create a reward rule on your dashboard. To see the structure of the webhook callback, please test this with [RequestBin](https://requestbin.com/) or a similar service.
+    [block:callout]
+{
+  "type": "note",
+  "title": "Please take note of the `type` parameter",
+  "body": "`type` = `credit` will create a reward rule on your dashboard. To see the structure of the webhook callback, please test this with [RequestBin](https://requestbin.com/) or a similar service."
+}
+[/block]
 
 - ### Referral troubleshooting
 

@@ -1,21 +1,41 @@
 ---
 title: Android SDK
 ---
-!!! info "Current SDK Version 4.3.1"
-    Please see the [Android Version History](/version-histories/android-version-history) to view change log.
+[block:callout]
+{
+  "type": "info",
+  "title": "Current SDK Version 4.3.1",
+  "body": "Please see the [Android Version History](/version-histories/android-version-history) to view change log."
+}
+[/block]
 
-!!! warning "Android Studio Version"
-    We always recommend using the latest stable version of Android Studio. If you update to AndroidX, any library imports with the namespace `com.android.support` can be safely replaced with AndroidX equivalents.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Android Studio Version",
+  "body": "We always recommend using the latest stable version of Android Studio. If you update to AndroidX, any library imports with the namespace `com.android.support` can be safely replaced with AndroidX equivalents."
+}
+[/block]
 
-!!! warning "Google Play Services version 17+"
-    If you reference Google Play Services version 17 or higher, you **MUST** complete Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Play Services version 17+",
+  "body": "If you reference Google Play Services version 17 or higher, you **MUST** complete Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019)."
+}
+[/block]
 
     Due to a major Google Play Services change made in June 2019, not completing the update steps will cause Branch's Android SDK (and various other cross-platform SDKs, e.g. Unity) to stop collecting Android AID which we use to ensure accurate deep linking and attribution.
 
     If you are running Google Play Services versions below 17, no update is necessary.
 
-!!! info "Amazon Fire Device Support"
-    The Branch Android SDK 4.1.1+ includes support for Amazon Fire devices.
+[block:callout]
+{
+  "type": "info",
+  "title": "Amazon Fire Device Support",
+  "body": "The Branch Android SDK 4.1.1+ includes support for Amazon Fire devices."
+}
+[/block]
 
     Please follow the guide below **except do not include the following two lines in the app level `build.gradle` file**:
     ```
@@ -83,11 +103,21 @@ title: Android SDK
         }
         ```
 
-!!! warning "Using Branch Android SDK versions below 4.3.0"
-    As of version 4.3.0, Google's Play Install Referrer Library is bundled into Branch Android SDK.  If you are using a version below 4.3.0, you must update your [app's dependencies to include the Play Install Referrer Library](https://developer.android.com/google/play/installreferrer/library#dependencies).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Using Branch Android SDK versions below 4.3.0",
+  "body": "As of version 4.3.0, Google's Play Install Referrer Library is bundled into Branch Android SDK.  If you are using a version below 4.3.0, you must update your [app's dependencies to include the Play Install Referrer Library](https://developer.android.com/google/play/installreferrer/library#dependencies)."
+}
+[/block]
 
-!!! warning "Google Mobile Ads SDK 17+"
-    If you decide to implement the Google Mobile Ads SDK version 17+, you have to declare your app is an Ad Manager app. See [Google Developer Docs](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml) on how to do so. Failure to add this <meta-data> tag results in a crash with the message: "The Google Mobile Ads SDK was initialized incorrectly."
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Mobile Ads SDK 17+",
+  "body": "If you decide to implement the Google Mobile Ads SDK version 17+, you have to declare your app is an Ad Manager app. See [Google Developer Docs](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml) on how to do so. Failure to add this <meta-data> tag results in a crash with the message: "The Google Mobile Ads SDK was initialized incorrectly.""
+}
+[/block]
 
 - ### Configure app
 
@@ -156,16 +186,25 @@ title: Android SDK
         - `key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Sw`
         - `key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr`
 
-    !!! warning "Single Task launch mode required"
-        If there is no singleTask Activity instance in the system yet, a new one would be created and simply placed on top of the stack in the same Task. If you are using the Single Task mode as is, it should not restart your entire app. The Single Task mode instantiates the Main/Splash Activity only if it does not exist in the Activity Stack. If the Activity exists in the background, every subsequent intent to the Activity just brings it to the foreground. You can read more about Single Task mode [here](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html#TaskLaunchModes).
+    [block:callout]
+{
+  "type": "warning",
+  "title": "Single Task launch mode required",
+  "body": "If there is no singleTask Activity instance in the system yet, a new one would be created and simply placed on top of the stack in the same Task. If you are using the Single Task mode as is, it should not restart your entire app. The Single Task mode instantiates the Main/Splash Activity only if it does not exist in the Activity Stack. If the Activity exists in the background, every subsequent intent to the Activity just brings it to the foreground. You can read more about Single Task mode [here](https://developer.android.com/guide/components/activities/tasks-and-back-stack.html#TaskLaunchModes)."
+}
+[/block]
 
 - ### Initialize Branch
 
     - Add Branch to your `LauncherActivity.java`
 
-    !!! warning "`initSession` is required as of v4.2.0."
-
-    - *Java*
+    [block:callout]
+{
+  "type": "warning",
+  "title": "`initSession` is required as of v4.2.0.",
+  "body": "- *Java*"
+}
+[/block]
 
         ```java hl_lines="16 17 31 32 33 34 35 36 37 38 39 40 41 42 43 46 47 48 49"
         package com.eneff.branch.example.android;
@@ -254,11 +293,21 @@ title: Android SDK
                 }
         ```
 
-    !!! warning "Only initialize Branch in the Launcher activity"
-        The app will open through the Launcher activity, where Branch will initialize and retrieve the deep link data from the link click.
+    [block:callout]
+{
+  "type": "warning",
+  "title": "Only initialize Branch in the Launcher activity",
+  "body": "The app will open through the Launcher activity, where Branch will initialize and retrieve the deep link data from the link click."
+}
+[/block]
 
-    !!! warning "Always intialize Branch in `onStart()`"
-        Initializing Branch in other Android lifecyle methods, like `onResume()`, will lead to unintended behavior. `onStart()` is what makes the activity visible to the user, as the app prepares for the activity to enter the foreground and become interactive. Learn more [here](https://developer.android.com/guide/components/activities/activity-lifecycle.html).
+    [block:callout]
+{
+  "type": "warning",
+  "title": "Always intialize Branch in `onStart()`",
+  "body": "Initializing Branch in other Android lifecyle methods, like `onResume()`, will lead to unintended behavior. `onStart()` is what makes the activity visible to the user, as the app prepares for the activity to enter the foreground and become interactive. Learn more [here](https://developer.android.com/guide/components/activities/activity-lifecycle.html)."
+}
+[/block]
 
 - ### Load Branch
 
@@ -319,8 +368,13 @@ title: Android SDK
 
     - Click on the deep link to open your app
 
-    !!! tip "Testing deferred deep linking"
-    	Deferred deep linking is simply deep linking into an app that is not yet installed. Once the app is installed, the context is preserved and the user's first app-open will have the deep link data from the original Branch link. To test this, uninstall the app from your device, click the Branch link, and manually launch the app from Android Studio. You should be routed to the correct content within your app.
+    [block:callout]
+{
+  "type": "tip",
+  "title": "Testing deferred deep linking",
+  "body": "Deferred deep linking is simply deep linking into an app that is not yet installed. Once the app is installed, the context is preserved and the user's first app-open will have the deep link data from the original Branch link. To test this, uninstall the app from your device, click the Branch link, and manually launch the app from Android Studio. You should be routed to the correct content within your app."
+}
+[/block]
 
 ## Implement features
 
@@ -1198,7 +1252,7 @@ title: Android SDK
 - ### Using the default application class
 
     - If your app does not have an application class
-    
+
         ```xml
         <application android:name="io.branch.referral.BranchApp">
         ```

@@ -5,9 +5,13 @@ title: Windows C ++
 
 ### SDK Details
 
-!!! info "Current SDK Version 1.1.0"
-
-### Branch-integrated Demo Apps
+[block:callout]
+{
+  "type": "info",
+  "title": "Current SDK Version 1.1.0",
+  "body": "### Branch-integrated Demo Apps"
+}
+[/block]
 
 There are several demo apps embedded in this repository, which you can find in the *<notranslate>**BranchSDK-Samples**</notranslate>* folder.
 Please use these as a reference.

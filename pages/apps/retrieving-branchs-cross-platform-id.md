@@ -8,8 +8,13 @@ Branch Cross-Platform ID exposes a series of fields representing app-scoped, ano
 Cross-Platform ID will be consistent across Branch touchpoints if we think those touchpoints are emitted by the same user.
 
 
-!!! warning "Paid Feature"
-    Cross-Platform ID is a paid product that is currently only available to Branch’s Enterprise customers. The methods described below are only available as part of the paid Cross-Platform ID product.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Paid Feature",
+  "body": "Cross-Platform ID is a paid product that is currently only available to Branch’s Enterprise customers. The methods described below are only available as part of the paid Cross-Platform ID product."
+}
+[/block]
 
 
 ## Fields

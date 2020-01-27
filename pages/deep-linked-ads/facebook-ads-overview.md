@@ -30,8 +30,13 @@ Conversion | Product Catalogue Sales | Web or App | **[link](/deep-linked-ads/fa
 
 ### Event Names
 
-!!! info "Standard vs Custom Events"
-	Please follow the [Tracking Commerce, Content, Lifecycle and Custom Events](/apps/v2event/) guide when implementing event tracking in the Branch SDK.  When tracking any of the Facebook events that are mapped to the Branch `custom` event, use the event name from the table below; e.g. `branch.logevent('AdClick')`.
+[block:callout]
+{
+  "type": "info",
+  "title": "Standard vs Custom Events",
+  "body": "Please follow the [Tracking Commerce, Content, Lifecycle and Custom Events](/apps/v2event/) guide when implementing event tracking in the Branch SDK.  When tracking any of the Facebook events that are mapped to the Branch `custom` event, use the event name from the table below; e.g. `branch.logevent('AdClick')`."
+}
+[/block]
 
 
 | **Facebook MMP _eventName**         | **Branch Event Name**     |
@@ -98,8 +103,13 @@ Currently Facebook appears to only support sending one fb_content_id (etc) per e
 
 ## Viewing Facebook Data
 
-!!! info "Available Compare By Dimensions for SANs"
-    Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions.
+[block:callout]
+{
+  "type": "info",
+  "title": "Available Compare By Dimensions for SANs",
+  "body": "Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions."
+}
+[/block]
 
     |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
     |---------------------|-------------|-------------|------------------|-------------|
@@ -131,8 +141,13 @@ If you have signed Facebook's ["Advanced Mobile Measurement" agreement (<notrans
 - [Daily Export API](/exports/api-v3/)
 - [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports)
 
-!!! warning " Agreement not Signed"
-	If you have not signed this agreement, any event attributed to a Facebook ad will look like an organic event when accessed via Webhooks, the Daily Export API, and CSV Exports.
+[block:callout]
+{
+  "type": "warning",
+  "title": " Agreement not Signed",
+  "body": "If you have not signed this agreement, any event attributed to a Facebook ad will look like an organic event when accessed via Webhooks, the Daily Export API, and CSV Exports."
+}
+[/block]
 
 ### Data Limitations
 

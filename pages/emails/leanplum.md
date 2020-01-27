@@ -86,8 +86,13 @@ If you use your web URL as a deep link value:
 1. <notranslate>**URL path:**</notranslate> If you use the path of your web URL as your  `$deeplink_path` value, or any other deep link value, then the configuration will automatically take the path of the URL and put it in deep link data.
 1. <notranslate>**Full URL:**</notranslate> If you use the full web URL as your `$deeplink_path` value, or any other deep link value, then the configuration will take the entire URL and put it in deep link data.
 
-!!! protip "Host deep link data for more than just emails"
-    The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Host deep link data for more than just emails",
+  "body": "The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future."
+}
+[/block]
 
 #### Deep linking settings for email
 
@@ -142,8 +147,13 @@ The conversion to Branch links will only work when your links are wrapped in you
 
 ![image](/_assets/img/pages/email/setup-test.png)
 
-!!! protip "What happens to your links behind the scenes?"
-    This is what a link looks like within your email template:
+[block:callout]
+{
+  "type": "protip",
+  "title": "What happens to your links behind the scenes?",
+  "body": "This is what a link looks like within your email template:"
+}
+[/block]
 
     ```html
     http://example.com/?foo=bar
@@ -165,8 +175,13 @@ The following app changes ensure that your email integration supports [Universal
 
 You should have [received an email from Branch](#configure-your-app-for-your-click-tracking-domain) with your ESP's click tracking domain. If not, likely you or someone on your team still needs to complete the [Universal Email setup flow](#set-up-email-link-behavior).
 
-!!! protip "How does it work?"
-    Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information.
+[block:callout]
+{
+  "type": "protip",
+  "title": "How does it work?",
+  "body": "Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information."
+}
+[/block]
 
 
 ### Add your click tracking domain to your Associated Domains
@@ -183,8 +198,13 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 
     ![image](/_assets/img/pages/email/add-domain.png)
 
-!!! protip "Having trouble or new to Universal Links?"
-    Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Having trouble or new to Universal Links?",
+  "body": "Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode."
+}
+[/block]
 
 ### Return YES to continueUserActivity
 
@@ -196,8 +216,13 @@ For most implementations this will never be an issue, since your deep links will
 1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 
-!!! tip "Multiple custom domains"
-	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)
+[block:callout]
+{
+  "type": "tip",
+  "title": "Multiple custom domains",
+  "body": "If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)"
+}
+[/block]
 
 ## Configure your ESP
 
@@ -207,15 +232,25 @@ For most implementations this will never be an issue, since your deep links will
 
 For more information on how to set up your domain, please visit Leanplum's [documentation](https://docs.leanplum.com/docs/setup-email-messaging){:target="\_blank"}.
 
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Leanplum.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Adding a custom click-tracking domain",
+  "body": "If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Leanplum."
+}
+[/block]
 
 ### Set up your click tracking domain
 
 After you added and verified a click tracking domain you have to update DNS CNAME for it and point it to **`thirdparty.bnc.lt`**. Once the CNAME record is added, please allow up to an hour for Branch to generate SSL and AASA files for your click tracking domain.
 
-!!! warning "SSL Changes"
-	Please be aware that it may take up to an hour to resolve SSL errors once you change the CNAME. During this time, link redirects on the click tracking domain will redirect to `branch.io`. If you are making this change to a live domain that has email click traffic from your users, it’s best to schedule time with your Branch account manager to expedite the changes during a time of low click traffic.
+[block:callout]
+{
+  "type": "warning",
+  "title": "SSL Changes",
+  "body": "Please be aware that it may take up to an hour to resolve SSL errors once you change the CNAME. During this time, link redirects on the click tracking domain will redirect to `branch.io`. If you are making this change to a live domain that has email click traffic from your users, it’s best to schedule time with your Branch account manager to expedite the changes during a time of low click traffic."
+}
+[/block]
 
 ## Using Universal email
 

@@ -20,8 +20,13 @@ When a link is clicked by a user without the app, it will route that user to the
 
 ## Setup
 
-!!! tip "SFMC Pre-requisite"
-	You must have the <notranslate>**[Salesforce Marketing Cloud Sender Authentication Package (SAP)](https://help.salesforce.com/articleView?id=mc_es_sender_authentication_package.htm&type=5){:target="\_blank"}**</notranslate> in order to benefit from Universal Links + click tracking functionality.
+[block:callout]
+{
+  "type": "tip",
+  "title": "SFMC Pre-requisite",
+  "body": "You must have the <notranslate>**[Salesforce Marketing Cloud Sender Authentication Package (SAP)](https://help.salesforce.com/articleView?id=mc_es_sender_authentication_package.htm&type=5){:target="\_blank"}**</notranslate> in order to benefit from Universal Links + click tracking functionality."
+}
+[/block]
 
 ### Prerequisites
 
@@ -89,8 +94,13 @@ If you use your web URL as a deep link value:
 1. <notranslate>**URL path:**</notranslate> If you use the path of your web URL as your  `$deeplink_path` value, or any other deep link value, then the configuration will automatically take the path of the URL and put it in deep link data.
 1. <notranslate>**Full URL:**</notranslate> If you use the full web URL as your `$deeplink_path` value, or any other deep link value, then the configuration will take the entire URL and put it in deep link data.
 
-!!! protip "Host deep link data for more than just emails"
-    The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Host deep link data for more than just emails",
+  "body": "The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future."
+}
+[/block]
 
 #### Deep linking settings for email
 
@@ -153,8 +163,13 @@ The following app changes ensure that your email integration supports [Universal
 
 You should have [received an email from Branch](#configure-your-app-for-your-click-tracking-domain) with your ESP's click tracking domain. If not, likely you or someone on your team still needs to complete the [Universal Email setup flow](#set-up-email-link-behavior).
 
-!!! protip "How does it work?"
-    Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information.
+[block:callout]
+{
+  "type": "protip",
+  "title": "How does it work?",
+  "body": "Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information."
+}
+[/block]
 
 
 ### Add your click tracking domain to your Associated Domains
@@ -171,8 +186,13 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 
     ![image](/_assets/img/pages/email/add-domain.png)
 
-!!! protip "Having trouble or new to Universal Links?"
-    Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Having trouble or new to Universal Links?",
+  "body": "Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode."
+}
+[/block]
 
 ### Return YES to continueUserActivity
 
@@ -184,8 +204,13 @@ For most implementations this will never be an issue, since your deep links will
 1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 
-!!! tip "Multiple custom domains"
-	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)
+[block:callout]
+{
+  "type": "tip",
+  "title": "Multiple custom domains",
+  "body": "If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)"
+}
+[/block]
 
 ## Configure your ESP
 
@@ -193,8 +218,13 @@ For most implementations this will never be an issue, since your deep links will
 
 You can retrieve your click tracking domain from your Salesforce settings. We **highly** recommend using a new click tracking domain for this implementation to ensure that the user experience for pre-Branch links on the original click tracking domain doesn't break.
 
-!!! tip "Adding a custom click-tracking domain"
-    If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Salesforce.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Adding a custom click-tracking domain",
+  "body": "If you need help with setting up a custom click-tracking domain - please ask your account manager or request support at Salesforce."
+}
+[/block]
 
 #### Configure your AASA file in Salesforce Marketing Cloud
 
@@ -352,8 +382,13 @@ The process to convert links into Branch links using AMPscript is as follows (th
     `%%[ SET @link_to_be_wrapped = "https://branch.io/product/1234" ContentAreaByName("My Contents\deeplink") ]%%`
     `<a href="%%=RedirectTo(@deeplink)=%%">Example link</a>`
 
-!!! caution "Content Area folder"
-    Make sure your `deeplink` Content Area [is in the right folder](#add-a-new-content-area-for-easy-deep-linking). Either change the folder to "My Contents" or change the path used by "ContentAreaByName" in the Branch script.
+[block:callout]
+{
+  "type": "caution",
+  "title": "Content Area folder",
+  "body": "Make sure your `deeplink` Content Area [is in the right folder](#add-a-new-content-area-for-easy-deep-linking). Either change the folder to "My Contents" or change the path used by "ContentAreaByName" in the Branch script."
+}
+[/block]
 
 #### Making regular Branch links compatible with email
 

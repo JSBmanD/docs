@@ -2,8 +2,13 @@
 
 Branch 트래킹 링크를 통해 광고 캠페인 및 개별 광고의 성과에 대한 다양한 매개변수를 트래킹할 수 있습니다. 심층 분석을 위해 '?' 또는 '&' 문자 뒤에 별도의 매개변수를 링크에 덧붙여 추가적인 정보를 트래킹할 수도 있습니다.
 
-!!! info "추가 매개변수를 포함한 트래킹 링크 예시"
-	에이전시 및 하위 퍼블리셔 정보 전송을 위해 추가적인 매개변수를 포함한 Branch 링크 예시:`https://tracking.app.link?%243p=a_partner&~agency=myAgency&~secondary_publisher=best_publisher`
+[block:callout]
+{
+  "type": "info",
+  "title": "추가 매개변수를 포함한 트래킹 링크 예시",
+  "body": "에이전시 및 하위 퍼블리셔 정보 전송을 위해 추가적인 매개변수를 포함한 Branch 링크 예시:`https://tracking.app.link?%243p=a_partner&~agency=myAgency&~secondary_publisher=best_publisher`"
+}
+[/block]
 
 사전 생성된 트래킹 링크에는 다음의 매개변수를 사용할 수 있습니다.
 
@@ -39,8 +44,13 @@ Branch 트래킹 링크를 통해 광고 캠페인 및 개별 광고의 성과�
 
 #### 지출 측정
 
-!!! info "비용 데이터 활용"
-	이러한 매크로를 통해 전달받은 비용 데이터는 내보내기는 가능하지만, Branch 대시보드에서는 조회되지 않습니다.
+[block:callout]
+{
+  "type": "info",
+  "title": "비용 데이터 활용",
+  "body": "이러한 매크로를 통해 전달받은 비용 데이터는 내보내기는 가능하지만, Branch 대시보드에서는 조회되지 않습니다."
+}
+[/block]
 
 |   Branch 매개변수    |  설명   |
 |------------------|-------|

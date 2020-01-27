@@ -1,8 +1,13 @@
 ---
 title: Agency View
 ---
-!!! warning "Invite Required"
-	For any Agency to access a customer Branch account, an invitation from an Admin user at the [Organization](/dashboard/organization-view/#adding-an-agency) or [App](/dashboard/app-view/#adding-an-agency) entity level of access is required. All Agency Admins on the agency account will receive an invitation email, and any of those Agency Admins can accept the invitation on behalf of their agency.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Invite Required",
+  "body": "For any Agency to access a customer Branch account, an invitation from an Admin user at the [Organization](/dashboard/organization-view/#adding-an-agency) or [App](/dashboard/app-view/#adding-an-agency) entity level of access is required. All Agency Admins on the agency account will receive an invitation email, and any of those Agency Admins can accept the invitation on behalf of their agency."
+}
+[/block]
 
 	Within a customer account, an Agency does not have access to change their own permissions, access billing or SSO.
 
@@ -10,8 +15,13 @@ The "Agency" view of a Branch account is another additional level of entity acce
 
 **The Agency view is for managing account-level functionality; e.g. managing agency team members and access.  Toggle to the [App view](app-view.md) to access the majority of your day-to-day needs for creating links and viewing reporting.**
 
-!!! info "Agencies in App View"
-	Due to the nature of allowing third parties access to your data, we've included certain restrictions for Agency users when in App View.  For more detail, please see [Agencies in App View](/dashboard/app-view/#agencies-in-app-view)
+[block:callout]
+{
+  "type": "info",
+  "title": "Agencies in App View",
+  "body": "Due to the nature of allowing third parties access to your data, we've included certain restrictions for Agency users when in App View.  For more detail, please see [Agencies in App View](/dashboard/app-view/#agencies-in-app-view)"
+}
+[/block]
 
 ## Agency View Overview
 

@@ -5,8 +5,13 @@ title: Enable Single Sign On
 
 Branch offers Security Assertion Markup Language (SAML) / Single Sign-on (SSO) support for the dashboard. This allows you to use your identity provider (IdP) to centralize access to various services for your team and leverage existing directory systems and security groups.
 
-!!! warning "Chrome Security bug"
-    Due to Google's plans to deprecate support for the Symantec certificate authority (including Symantec-owned brands like Thawte, VeriSign, Equifax, GeoTrust, and RapidSSL), SSL/TLS certificate from the Legacy Symantec PKI will stop functioning on Chrome 66+. If connecting to your site displays a certificate error or a warning in DevTools, you’ll need to replace your certificate. View details of the issue on the [Google Bug report](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Chrome Security bug",
+  "body": "Due to Google's plans to deprecate support for the Symantec certificate authority (including Symantec-owned brands like Thawte, VeriSign, Equifax, GeoTrust, and RapidSSL), SSL/TLS certificate from the Legacy Symantec PKI will stop functioning on Chrome 66+. If connecting to your site displays a certificate error or a warning in DevTools, you’ll need to replace your certificate. View details of the issue on the [Google Bug report](https://security.googleblog.com/2018/03/distrust-of-symantec-pki-immediate.html)."
+}
+[/block]
 
 ### Prerequisites
 

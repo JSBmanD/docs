@@ -18,8 +18,13 @@ Calls to the Cohort Exports require an _api_key_ query string parameter to be pa
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
-!!! warning "Organization Level Access Required"
-	In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Organization Level Access Required",
+  "body": "In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level."
+}
+[/block]
 
 ## Rate Limits
 
@@ -55,8 +60,13 @@ To provide an agency team member with access to the Cohort Exports:
 
 ![image](/_assets/img/pages/dashboard/agency-ad-partner-invite.png)
 
-!!! warning "Agency-Tagged Data"
-	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency-Tagged Data",
+  "body": "If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not."
+}
+[/block]
 
 ## Export Request
 

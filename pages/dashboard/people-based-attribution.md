@@ -11,8 +11,13 @@ Also and from now on, anytime you analyze data in the Branch dashboard, or expor
 
 This document highlights each of the section where you can expect to see differences between our old analytics and new People-Based Attribution.
 
-!!! protip "No changes required"
-    We've changed the entire back-end of analytics without requiring any code or implementation changes on your end.
+[block:callout]
+{
+  "type": "protip",
+  "title": "No changes required",
+  "body": "We've changed the entire back-end of analytics without requiring any code or implementation changes on your end."
+}
+[/block]
 
 ## Data Mapping
 
@@ -53,8 +58,13 @@ Now that deep linking and attribution analytics are separate, we have attributio
 
 To access your attribution settings, navigate to the [Link Settings](https://dashboard.branch.io/link-settings) page, and click on the <notranslate>**Attribution Windows**</notranslate> tab.
 
-!!! info "Default Attribution Window Settings"
-		Each attribution window has its own default measured in days.  Please refer to the image below for these defaults.
+[block:callout]
+{
+  "type": "info",
+  "title": "Default Attribution Window Settings",
+  "body": "Each attribution window has its own default measured in days.  Please refer to the image below for these defaults."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 

@@ -150,8 +150,13 @@ Use the <notranslate>"Product events"</notranslate> tab in your Product Catalog 
 1. Select the targeting, bid, budget and placements that you'd like.
 1. Select your desired ad format and launch your campaign. The Branch deep linked feed will be automatically set up in your Facebook product catalogue ads.
 
-!!! note "Driving Installs with Dynamic Ads"
-	By default, Facebook sends customers without the app to your mobile website. To drive installs, you can send customers without your app the app store by adding a `web_should_fallback` column to your Feed Source and setting each row to `false`. Then, after you've created your campaign, edit the ad within your ad set. Under "Creative," set your "App link destination" to "Deep link, app store backup."
+[block:callout]
+{
+  "type": "note",
+  "title": "Driving Installs with Dynamic Ads",
+  "body": "By default, Facebook sends customers without the app to your mobile website. To drive installs, you can send customers without your app the app store by adding a `web_should_fallback` column to your Feed Source and setting each row to `false`. Then, after you've created your campaign, edit the ad within your ad set. Under "Creative," set your "App link destination" to "Deep link, app store backup.""
+}
+[/block]
 
 ### View Your Data
 
@@ -163,8 +168,13 @@ The table shows summary data on the performance of each Ad campaign. On the righ
 
 ![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 
-!!! note "Interacting with your data"
-	Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by.
+[block:callout]
+{
+  "type": "note",
+  "title": "Interacting with your data",
+  "body": "Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by."
+}
+[/block]
 
 	Then use the `and +` button to refine the data displayed to gain deeper insight into the performance of your Ad campaigns.
 

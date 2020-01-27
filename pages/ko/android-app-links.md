@@ -22,8 +22,13 @@ Branch 항상 딥링크 링크 관련 기술을 향상시켜오면서 Android Ap
 1. 위에서 복사한 fingerprint 값을 **SHA256 Cert Fingerprints** 필드에 붙여넣습니다. ![image](/_assets/img/pages/deep-linking/universal-links/enable_app_links.png)
 1. `Save` 를 눌러서 저장합니다.
 
-!!! tip "여러 개의 Fingerprint 를 사용하기"
-	테스트를 위해 Debug 와 Production fingerprint 모두를 입력할 수 있습니다. 컴마(,) 로 서로 다른 fingerprint 를 나누어 구분하면 됩니다.
+[block:callout]
+{
+  "type": "tip",
+  "title": "여러 개의 Fingerprint 를 사용하기",
+  "body": "테스트를 위해 Debug 와 Production fingerprint 모두를 입력할 수 있습니다. 컴마(,) 로 서로 다른 fingerprint 를 나누어 구분하면 됩니다."
+}
+[/block]
 
 ### Intent Filter 를 AndroidManifest 에 추가합니다.
 
@@ -46,8 +51,13 @@ Branch 항상 딥링크 링크 관련 기술을 향상시켜오면서 Android Ap
 </intent-filter>
 ```
 
-!!! tip "커스텀 도메인 또는 서브 도메인을 사용하기"
-	만약 귀사에서 Branch Link 를 위해 [커스텀 도메인 또는 서브 도메인을 사](/dashboard/integrate/#change-link-domain)용하고 있다면 아래 코드도 추가해야 합니다.
+[block:callout]
+{
+  "type": "tip",
+  "title": "커스텀 도메인 또는 서브 도메인을 사용하기",
+  "body": "만약 귀사에서 Branch Link 를 위해 [커스텀 도메인 또는 서브 도메인을 사](/dashboard/integrate/#change-link-domain)용하고 있다면 아래 코드도 추가해야 합니다."
+}
+[/block]
 
 	```xml
 	<data android:scheme="https" android:host="mycustomdomainorsubdomain" />

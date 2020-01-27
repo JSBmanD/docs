@@ -9,14 +9,29 @@ Branch solves this problem by allowing you to set all of the relevant partner/pu
 
 For example, you have agreed with a wireless carrier (such as AT&T) to pre-install your mobile app on their devices. Because AT&T is the advertising partner who promotes your mobile app (by having it pre-installed), AT&T is the party who gets credit for the attribution. Therefore, you can set the AT&T partner info in your app so that the Branch SDK can collect it on first app open. Branch then uses this info to attribute the app install to AT&T.
 
-!!! info "Android Only"
-	The following functionality is applicable to Android apps only.
+[block:callout]
+{
+  "type": "info",
+  "title": "Android Only",
+  "body": "The following functionality is applicable to Android apps only."
+}
+[/block]
 
-!!! info "Minimum Android SDK Version"
-	The following functionality is only available for Android SDK v4.0.0 or above.
+[block:callout]
+{
+  "type": "info",
+  "title": "Minimum Android SDK Version",
+  "body": "The following functionality is only available for Android SDK v4.0.0 or above."
+}
+[/block]
 
-!!! info "Pre-Install Overrides Attribution"
-	If you include pre-install data via the SDK, it will always override any attribution info Branch receives from the Branch link itself.
+[block:callout]
+{
+  "type": "info",
+  "title": "Pre-Install Overrides Attribution",
+  "body": "If you include pre-install data via the SDK, it will always override any attribution info Branch receives from the Branch link itself."
+}
+[/block]
 
 ## SDK Implementation
 
@@ -25,13 +40,23 @@ Branch provides the following two methods to set the relevant information in the
 - Set the Data in the Pre-loaded APK
 - Read the Pre-loaded Data from the Android System properties
 
-!!! warning "Only for the First App Open"
-	Make sure you use the setter ONLY for the first app open event, and not subsequent events/requests. If you include the hard-coded attribution parameters for all measure sessions or other requests, then all requests are attributed accordingly (to the same hard-coded partner, such as AT&T).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Only for the First App Open",
+  "body": "Make sure you use the setter ONLY for the first app open event, and not subsequent events/requests. If you include the hard-coded attribution parameters for all measure sessions or other requests, then all requests are attributed accordingly (to the same hard-coded partner, such as AT&T)."
+}
+[/block]
 
 ### Set Data in the Pre-Loaded APK
 
-!!! info "Pre-loaded Data in the APK"
-	If you set the preloaded data in the APK, it will override the system props data.
+[block:callout]
+{
+  "type": "info",
+  "title": "Pre-loaded Data in the APK",
+  "body": "If you set the preloaded data in the APK, it will override the system props data."
+}
+[/block]
 
 After loading the Branch SDK in the Application class as per the docs [here](https://docs.branch.io/apps/android/#load-branch), call the below setters to set the data in the APK. This is how the final implementation should look like:
 
@@ -42,8 +67,13 @@ Branch.setPreinstallCampaign(“My Campaign Name”)
 Branch.setPreinstallPartner(“Branch $3p Parameter Value”)
 ```
 
-!!! warning "Must use Branch $3p Parameter Value"
-	When setting the `setPreinstallPartner` value, you must use Branch's $3p value as the partner's name.  Learn how to [find a partner's $3p value](https://docs.branch.io/resources/testing-universal-ads-campaign-setup/#how-to-find-a-partners-webhook-key).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Must use Branch $3p Parameter Value",
+  "body": "When setting the `setPreinstallPartner` value, you must use Branch's $3p value as the partner's name.  Learn how to [find a partner's $3p value](https://docs.branch.io/resources/testing-universal-ads-campaign-setup/#how-to-find-a-partners-webhook-key)."
+}
+[/block]
 
 If those values are non-null and this is a first time open for the device, the request should look like this:
 
@@ -56,8 +86,13 @@ If those values are non-null and this is a first time open for the device, the r
 }
 ```
 
-!!! info "Multiple Partners Pre-Installing Your App"
-	If multiple partners are pre-installing your mobile app, then you can create a partner-specific build of your app for distribution to each publishing partner (where each build includes different partner settings, respective to the particular partner). The partner-specific build is what the partner pre-installs onto the desired devices.
+[block:callout]
+{
+  "type": "info",
+  "title": "Multiple Partners Pre-Installing Your App",
+  "body": "If multiple partners are pre-installing your mobile app, then you can create a partner-specific build of your app for distribution to each publishing partner (where each build includes different partner settings, respective to the particular partner). The partner-specific build is what the partner pre-installs onto the desired devices."
+}
+[/block]
 
 ### Read Pre-loaded Data from the Android system properties
 

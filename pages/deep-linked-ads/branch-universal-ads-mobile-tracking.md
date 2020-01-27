@@ -3,11 +3,21 @@ title: Universal Ads Basics
 ---
 This guide will walk you through how to setup your campaigns using Branch Universal Ads and track ad conversions across **every device, platform, and channel**.
 
-!!! note "Paid Product"
-    Ads is a premium product priced on Monthly Active Users. [Sign up](https://branch.io/universal-ads/) for the Ads product to enable this functionality.
+[block:callout]
+{
+  "type": "note",
+  "title": "Paid Product",
+  "body": "Ads is a premium product priced on Monthly Active Users. [Sign up](https://branch.io/universal-ads/) for the Ads product to enable this functionality."
+}
+[/block]
 
-!!! warning "Branch SDK Required"
-    Before enabling the partner integration, please make sure you've implemented the [Branch SDK](/resources/native-sdks-and-plugins/) in your application.  This is required to ensure deep linking and attribution. We also highly recommend implementing [event measurement](/apps/v2event/#overview) and passing event metadata to your partner.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Branch SDK Required",
+  "body": "Before enabling the partner integration, please make sure you've implemented the [Branch SDK](/resources/native-sdks-and-plugins/) in your application.  This is required to ensure deep linking and attribution. We also highly recommend implementing [event measurement](/apps/v2event/#overview) and passing event metadata to your partner."
+}
+[/block]
 
 ### Enabling the Integration
 
@@ -18,8 +28,13 @@ This guide will walk you through how to setup your campaigns using Branch Univer
 
 ![image](/_assets/img/pages/deep-linked-ads/noname-enable.png)
 
-!!! note "Providing Account Credentials"
-	Not all integrations require providing account credentials. When prompted to, enter any credentials that may be required, and click <notranslate>**Save and Enable**</notranslate> in the bottom right hand corner. If you do not know your account credentials for said partner, please ask your ad partner for this information.
+[block:callout]
+{
+  "type": "note",
+  "title": "Providing Account Credentials",
+  "body": "Not all integrations require providing account credentials. When prompted to, enter any credentials that may be required, and click <notranslate>**Save and Enable**</notranslate> in the bottom right hand corner. If you do not know your account credentials for said partner, please ask your ad partner for this information."
+}
+[/block]
 
 ![image](/_assets/img/pages/deep-linked-ads/noname-credentials.png)
 
@@ -45,12 +60,21 @@ Once you've enabled an integration it's time to create a tracking link.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-tags.png)
 
-    !!! tip "Set Analytics tags"
+    [block:callout]
+{
+  "type": "tip",
+  "title": "Set Analytics tags",
+  "body": "It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "YouTube", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts.""
+}
+[/block]
 
-        It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "YouTube", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts."
-
-    !!! info "Links Created by Agency Users"
-        When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup.
+    [block:callout]
+{
+  "type": "info",
+  "title": "Links Created by Agency Users",
+  "body": "When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup."
+}
+[/block]
 
 
 1. Click <notranslate>**Create Link Now**</notranslate>, and you have your tracking link! Take this link and give it to your Ad Partner's Account Manager or paste it into the tracking section of your campaign yourself.

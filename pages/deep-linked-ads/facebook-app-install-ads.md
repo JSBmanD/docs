@@ -118,8 +118,13 @@ n/a | `~feature` | "Paid Advertising"
 
 Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
 
-!!! error "Agency ID Required"
-	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+[block:callout]
+{
+  "type": "error",
+  "title": "Agency ID Required",
+  "body": "Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency."
+}
+[/block]
 
 ### Finding Your Agency ID
 
@@ -132,13 +137,23 @@ Your agency tag **must** adhere to the following format:
 	`agency_{YOUR AGENCY ID HERE}_`
 
 
-!!! info "Example Campaign with Agency tag"
- 	`agency_1234567890_My_SAN_Ad_Campaign`
+[block:callout]
+{
+  "type": "info",
+  "title": "Example Campaign with Agency tag",
+  "body": "`agency_1234567890_My_SAN_Ad_Campaign`"
+}
+[/block]
 
 	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
 
-!!! warning "Agency ID Removed When Exporting"
-	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Removed When Exporting",
+  "body": "The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign"."
+}
+[/block]
 
 
 ### Cost Data
@@ -168,8 +183,13 @@ The table shows summary data on the performance of each Ad campaign. On the righ
 
 ![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 
-!!! note "Interacting with your data"
-	Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by.
+[block:callout]
+{
+  "type": "note",
+  "title": "Interacting with your data",
+  "body": "Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by."
+}
+[/block]
 
 	Then use the `and +` button to refine the data displayed to gain deeper insight into the performance of your Ad campaigns.
 
@@ -241,8 +261,13 @@ This section is **not required for measurement** if you are running app-only ads
 
 Your Facebook Ad Campaign is now setup to use Branch Links to handle App Installs!
 
-!!! note "Optional: Ad formats with Multiple Links"
-	Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products.
+[block:callout]
+{
+  "type": "note",
+  "title": "Optional: Ad formats with Multiple Links",
+  "body": "Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products."
+}
+[/block]
 
 ### Testing Deep Linking from Ads
 

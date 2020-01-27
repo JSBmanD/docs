@@ -22,8 +22,13 @@ Start by generating a SHA256 fingerprint of your app's signing certificate.
 1. Paste the copied fingerprint value into the <notranslate>**SHA256 Cert Fingerprints**</notranslate> field that appears. ![image](/_assets/img/pages/deep-linking/universal-links/enable_app_links.png)
 1. Scroll down and click `Save`.
 
-!!! tip "Using multiple fingerprints"
-	You can insert both your debug and production fingerprints for testing. Simply separate them with a comma.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Using multiple fingerprints",
+  "body": "You can insert both your debug and production fingerprints for testing. Simply separate them with a comma."
+}
+[/block]
 
 ### Add Intent Filter to Manifest
 
@@ -34,8 +39,13 @@ Start by generating a SHA256 fingerprint of your app's signing certificate.
 1. Inside your `AndroidManifest.xml`, locate where the selected `Activity` is defined.
 1. Within the `Activity` definition, insert the intent filter provided below (making sure that `xxxx` matches the subdomain prefix you've been assigned or selected for yourself). Be sure to add this as its own separate intent filter.
 
-!!! tip "Using a custom domain or subdomain?"
-	If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should also add an entry for:
+[block:callout]
+{
+  "type": "tip",
+  "title": "Using a custom domain or subdomain?",
+  "body": "If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should also add an entry for:"
+}
+[/block]
 
 	```xml
 	<data android:scheme="https" android:host="mycustomdomainorsubdomain" />
@@ -53,8 +63,13 @@ Start by generating a SHA256 fingerprint of your app's signing certificate.
 </intent-filter>
 ```
 
-!!! warning "Domain Validation"
-	The system must be able to verify every host specified in the app’s URL intent filters’ data elements against the Digital Asset Links files hosted on all the respective web domains. If any verification fails, the app is not verified to be a default handler for any of the URL patterns defined in the app's intent filters. You can use Google's [Statement List Asset Generator](https://developers.google.com/digital-asset-links/tools/generator) to test your existing statement file.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Domain Validation",
+  "body": "The system must be able to verify every host specified in the app’s URL intent filters’ data elements against the Digital Asset Links files hosted on all the respective web domains. If any verification fails, the app is not verified to be a default handler for any of the URL patterns defined in the app's intent filters. You can use Google's [Statement List Asset Generator](https://developers.google.com/digital-asset-links/tools/generator) to test your existing statement file."
+}
+[/block]
 
 ### Get APK SHA256 Fingerprints
 

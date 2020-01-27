@@ -1,8 +1,13 @@
 ---
 title: Legacy Export API
 ---
-!!! warning "Legacy Functionality"
-	Please use the [Export API Migration Guide](/exports/export-api-migration-guide/) to upgrade to the current version.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Legacy Functionality",
+  "body": "Please use the [Export API Migration Guide](/exports/export-api-migration-guide/) to upgrade to the current version."
+}
+[/block]
 
 ## Overview
 

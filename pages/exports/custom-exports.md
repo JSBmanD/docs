@@ -3,8 +3,13 @@ title: Custom Exports
 ---
 ## Overview
 
-!!! info "Branch & TUNE Export Functionality"
-	Custom exports are available for both Branch data points and TUNE data points.  Please make sure to view the correct tab - Branch or TUNE - when referencing the below documentation.
+[block:callout]
+{
+  "type": "info",
+  "title": "Branch & TUNE Export Functionality",
+  "body": "Custom exports are available for both Branch data points and TUNE data points.  Please make sure to view the correct tab - Branch or TUNE - when referencing the below documentation."
+}
+[/block]
 
 The Branch Custom Exports find and queue log records that match your search criteria for export. You can do so either via the <notranslate>**Custom Exports**</notranslate> section in your Branch dashboard OR via API.
 
@@ -18,8 +23,13 @@ Calls to the Custom Export API require an <notranslate>**api_key**</notranslate>
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
-!!! warning "Organization Level Access Required"
-	In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Organization Level Access Required",
+  "body": "In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level."
+}
+[/block]
 
 ##Rate Limits
 
@@ -60,8 +70,13 @@ To provide an agency team member with access to the Custom Export API:
 
 ![image](/_assets/img/pages/exports/agency-export-access.png)
 
-!!! warning "Agency-Tagged Data"
-	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export sensitive data associated with all of your campaigns, regardless if they are associated with them or not.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency-Tagged Data",
+  "body": "If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export sensitive data associated with all of your campaigns, regardless if they are associated with them or not."
+}
+[/block]
 
 ## Available Topics to Export
 
@@ -400,8 +415,13 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 ### Branch Available Fields
 
-!!! warning "IP Discrepancies"
-	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+[block:callout]
+{
+  "type": "warning",
+  "title": "IP Discrepancies",
+  "body": "Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location."
+}
+[/block]
 
 
 | EO field                                                      | Human Readable                              | Type            |
@@ -591,14 +611,29 @@ Finds and exports requested queue (by handle) and provides URL location for down
 
 ### TUNE Available Fields
 
-!!! warning "IP Discrepancies"
-	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+[block:callout]
+{
+  "type": "warning",
+  "title": "IP Discrepancies",
+  "body": "Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location."
+}
+[/block]
 
-!!! warning "Discontinued Fields"
-	Some fields have very limited value to our customers and as such have been discontinued. Discontinued fields will not be available via the Custom Export API. Please work with your CSM or our Support team if you have questions or concerns.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Discontinued Fields",
+  "body": "Some fields have very limited value to our customers and as such have been discontinued. Discontinued fields will not be available via the Custom Export API. Please work with your CSM or our Support team if you have questions or concerns."
+}
+[/block]
 
-!!! info "Info"
-	Branch does not support exports of the infrequently-used update and postbacks TUNE topics.
+[block:callout]
+{
+  "type": "info",
+  "title": "Info",
+  "body": "Branch does not support exports of the infrequently-used update and postbacks TUNE topics."
+}
+[/block]
 
 
 | TUNE Field                                                     | TUNE Human Readable                        |

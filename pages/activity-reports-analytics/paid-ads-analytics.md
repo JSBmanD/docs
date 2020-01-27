@@ -30,8 +30,13 @@ To see which ad networks lead to the most in-app iOS purchases:
 
 ![image](/_assets/img/pages/analytics/paid-ads3.png)
 
-!!! info "Available Compare By Dimensions for SANs"
-    Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions.
+[block:callout]
+{
+  "type": "info",
+  "title": "Available Compare By Dimensions for SANs",
+  "body": "Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions."
+}
+[/block]
 
     |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
     |---------------------|-------------|-------------|------------------|-------------|

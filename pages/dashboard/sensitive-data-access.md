@@ -50,8 +50,13 @@ If you are an Admin, you have edit access to the sections below.
 
 ### Data Feeds Manager
 
-!!! warning "Channel Level Access Required"
-	Access to the Data Feeds Manager tab also requires [Channel Level Access](channel-level-access.md).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Channel Level Access Required",
+  "body": "Access to the Data Feeds Manager tab also requires [Channel Level Access](channel-level-access.md)."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-data-feeds-manager.png)
 
@@ -60,25 +65,45 @@ If you are an Admin, you have edit access to the sections below.
 
 ### Data Integrations
 
-!!! warning "Channel Level Access Required"
-	Access to the Data Feeds Manager tab also requires [Channel Level Access](channel-level-access.md).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Channel Level Access Required",
+  "body": "Access to the Data Feeds Manager tab also requires [Channel Level Access](channel-level-access.md)."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-data-integrations.png)
 
-!!! info "Enabling a Data Integration"
-	Please refer to Branch's [List of Data Integrations](/integrations/data-integrations-list/) article to view a complete list of our Data Integrations and instructions on how to enable each integration.
+[block:callout]
+{
+  "type": "info",
+  "title": "Enabling a Data Integration",
+  "body": "Please refer to Branch's [List of Data Integrations](/integrations/data-integrations-list/) article to view a complete list of our Data Integrations and instructions on how to enable each integration."
+}
+[/block]
 
 ### Webhooks
 
-!!! warning "Channel Level Access Required"
-	Access to the Data Feeds Manager tab also requires [Channel Level Access](channel-level-access.md).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Channel Level Access Required",
+  "body": "Access to the Data Feeds Manager tab also requires [Channel Level Access](channel-level-access.md)."
+}
+[/block]
 
 You can add new webhooks, edit existing webhooks and archive unwanted webhooks.
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-webhooks1.png)
 
-!!! info "Webhook Setup"
-	Please refer to the [Webhooks](/exports/ua-webhooks/) article for an in-depth tutorial on how to configure webhooks.
+[block:callout]
+{
+  "type": "info",
+  "title": "Webhook Setup",
+  "body": "Please refer to the [Webhooks](/exports/ua-webhooks/) article for an in-depth tutorial on how to configure webhooks."
+}
+[/block]
 
 ## Account Settings
 
@@ -109,8 +134,13 @@ To add a new App Team User:
 
 Each access level - as defined above - comes with predefined permissions which you can edit if you choose.
 
-!!! tip "Modifying Permissions"
-	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Modifying Permissions",
+  "body": "If you want to modify a predefined access level, click the pencil icon to (de)select the available options."
+}
+[/block]
 
 - <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
 - <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
@@ -150,8 +180,13 @@ Links
 Webhook records
 Credits
 
-!!! info "Getting Started with Liveview"
-	Please refer to the [Liveview](/exports/pba-liveview/) article for an in-depth tutorial on how use Liveview.
+[block:callout]
+{
+  "type": "info",
+  "title": "Getting Started with Liveview",
+  "body": "Please refer to the [Liveview](/exports/pba-liveview/) article for an in-depth tutorial on how use Liveview."
+}
+[/block]
 
 ### Set up SDK
 

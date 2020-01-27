@@ -1,8 +1,13 @@
 ---
 title: Legacy Webhooks
 ---
-!!! warning "Legacy Functionality"
-	Please use the [Webhooks Migration Guide](/exports/webhooks-migration-guide/) to upgrade to the current version.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Legacy Functionality",
+  "body": "Please use the [Webhooks Migration Guide](/exports/webhooks-migration-guide/) to upgrade to the current version."
+}
+[/block]
 
 ## Overview
 
@@ -183,21 +188,41 @@ Content-Type: application/json
 
 Filters allow you to specify when a webhook gets sent to your URL based off criteria matches. You can configure your filters to use any webhook keyword value by using liquid tags following this convention: `{{ param.name }}`.
 
-!!! tip "Wildcard Filtering"
-	If you want to filter on just a key being present, you can put a `*` in the value box.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Wildcard Filtering",
+  "body": "If you want to filter on just a key being present, you can put a `*` in the value box."
+}
+[/block]
 
-!!! note "Example: Filtering installs by referring link campaign"
-	Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~campaign**</notranslate> is equal to <notranslate>**App Install Campaign**</notranslate>. The key would equal <notranslate>**session.link_data.~campaign**</notranslate> and the value would equal <notranslate>**App Install Campaign**</notranslate>.
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Filtering installs by referring link campaign",
+  "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~campaign**</notranslate> is equal to <notranslate>**App Install Campaign**</notranslate>. The key would equal <notranslate>**session.link_data.~campaign**</notranslate> and the value would equal <notranslate>**App Install Campaign**</notranslate>."
+}
+[/block]
 
 	![image](/_assets/img/pages/exports/session-filter.png)
 
-!!! note "Example: Filtering clicks by link channel"
-	Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. The key would equal <notranslate>**click.link_data.~channel**</notranslate> and the value would equal <notranslate>**AppLovin**</notranslate>.
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Filtering clicks by link channel",
+  "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. The key would equal <notranslate>**click.link_data.~channel**</notranslate> and the value would equal <notranslate>**AppLovin**</notranslate>."
+}
+[/block]
 
 	![image](/_assets/img/pages/exports/click-filter.png)
 
-!!! note "Example: Filtering custom signup event by location"
-	Let’s say you’re interested in receiving a webhook for every <notranslate>**sign_up**</notranslate> event that is triggered via the <notranslate>**userCompletedAction**</notranslate> method in the SDKs, but only in a specific market, like Chicago. Your event metadata will look something like the following:
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Filtering custom signup event by location",
+  "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**sign_up**</notranslate> event that is triggered via the <notranslate>**userCompletedAction**</notranslate> method in the SDKs, but only in a specific market, like Chicago. Your event metadata will look something like the following:"
+}
+[/block]
 
 	```javascript
 	event: {
@@ -217,8 +242,13 @@ Filters allow you to specify when a webhook gets sent to your URL based off crit
 
 If you plan on sending click or install data to a third party, you’ll likely need to create one of our templated Postback URLs along side the aforementioned filters. These work very similarly to filters and use the same liquid tags structure: `{{ param.name }}`. Once the webhook is eligible, the correct value will be filled in to the slot.
 
-!!! note "Example: Creating a dynamic conversion postback for an ad agency"
-    Let’s say you have created a Branch link in the Ads tab specifically for SEM campaigns and you’re going to give the link to an advertising agency. This ad agency wants to receive install conversion events from Branch by tracking your Branch link with specific query parameters. Your Branch link might potentially look something like this: `http://branch.app.link/my-sf-campaign?clickId=12345`.
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Creating a dynamic conversion postback for an ad agency",
+  "body": "Let’s say you have created a Branch link in the Ads tab specifically for SEM campaigns and you’re going to give the link to an advertising agency. This ad agency wants to receive install conversion events from Branch by tracking your Branch link with specific query parameters. Your Branch link might potentially look something like this: `http://branch.app.link/my-sf-campaign?clickId=12345`."
+}
+[/block]
 
     Now, you want to report conversions back to the agency or your backend, and you know the structure of the desired Postback URL. For example, lets say you want to send a Postback to `http://myagency.com/tracking?event=install&clickId=12345&idfa=`.
 
@@ -294,8 +324,13 @@ When a user triggers an event inside your app, either one [created by you](/apps
 - Identity properties of the user who triggered the event.
 - Session properties of the user who triggered the event.
 
-!!! Note "Identity vs. Session"
-    <notranslate>**Identity properties**</notranslate> are _set once_, the very first time Branch sees a user. Once set for each user, these are never changed. <notranslate>**Session properties**</notranslate> are the data of the _most recent_ record Branch has for a user.
+[block:callout]
+{
+  "type": "Note",
+  "title": "Identity vs. Session",
+  "body": "<notranslate>**Identity properties**</notranslate> are _set once_, the very first time Branch sees a user. Once set for each user, these are never changed. <notranslate>**Session properties**</notranslate> are the data of the _most recent_ record Branch has for a user."
+}
+[/block]
 
     For an initial <notranslate>**install**</notranslate> event, identity and session properties will be the same. For <notranslate>**open**</notranslate> events, session properties will be different if the user has subsequently opened another Branch link.
 

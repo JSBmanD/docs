@@ -5,8 +5,13 @@ title: Query API
 
 The Query API is an HTTP API that can be used for programmatically querying pre-aggregated analytics. It can be used to fetch the same data displayed in your Branch dashboard, without having to access the Dashboard itself.
 
-!!! warning "Self Attributing Network Click/Impression Data Not Available"
-    The Query API does not return click/impression data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Self Attributing Network Click/Impression Data Not Available",
+  "body": "The Query API does not return click/impression data associated with SANs; i.e. Google Ads, Snap, Twitter, Facebook Ads and Apple Search Ads."
+}
+[/block]
 
 An individual query is constructed from three types of parameters:
 
@@ -14,8 +19,13 @@ An individual query is constructed from three types of parameters:
 - Data selection keys which define which events are eligible to be counted in the results (eg, filters)
 - Result format specifiers that define which results are included in the HTTP response, and how the result is returned (eg, sorting)
 
-!!! tip "Getting started"
-    For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Getting started",
+  "body": "For newcomers to this API, we strongly suggest you check out our [Query Recipe Book](/exports/query-recipe-book/). It has screenshots of Dashboard visualizations, accompanied by what queries you need to make to pull the same data. It's a quick way to get up and running with this API."
+}
+[/block]
 
 ## Endpoint Definition
 ```

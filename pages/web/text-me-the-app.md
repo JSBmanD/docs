@@ -17,8 +17,13 @@ Branch reserves the right to limit your use of the Text Me The App service and c
 
 ## Setup
 
-!!! warning "This setting overrides the default desktop redirect behavior for all links"
-    Do not enable the <notranslate>**Custom Landing Page with SMS**</notranslate> toggle unless this is the desired behavior.
+[block:callout]
+{
+  "type": "warning",
+  "title": "This setting overrides the default desktop redirect behavior for all links",
+  "body": "Do not enable the <notranslate>**Custom Landing Page with SMS**</notranslate> toggle unless this is the desired behavior."
+}
+[/block]
 
 If you don't want to use Branch's default Text Me The App Page or show a desktop deepview, follow these instructions. This will let you customize a Text Me The App page using Branch.
 
@@ -30,8 +35,13 @@ If you don't want to use Branch's default Text Me The App Page or show a desktop
 
 ![image](/_assets/img/pages/text-me-the-app/desktop-routing.png)
 
-!!! note "Make sure you can access this page"
-    Because you will be making changes to this URL, be sure you have access to the page and can make changes to its HTML.
+[block:callout]
+{
+  "type": "note",
+  "title": "Make sure you can access this page",
+  "body": "Because you will be making changes to this URL, be sure you have access to the page and can make changes to its HTML."
+}
+[/block]
 
 ### Insert SendSMS() snippet into your page
 
@@ -96,8 +106,13 @@ In order to get set up with your Twilio account, Branch needs the following info
 
 Please reach out to support@branch.io or your CSM with the above information to enable the Twilio integration.
 
-!!! note "Phone number retention policy"
-    Phone numbers are redacted from Branch's Twilio instance, but if you use your own SMS provider, phone numbers may be stored either temporarily or indefinitely by that provider.
+[block:callout]
+{
+  "type": "note",
+  "title": "Phone number retention policy",
+  "body": "Phone numbers are redacted from Branch's Twilio instance, but if you use your own SMS provider, phone numbers may be stored either temporarily or indefinitely by that provider."
+}
+[/block]
 
 ### Use a custom form with SendSMS()
 

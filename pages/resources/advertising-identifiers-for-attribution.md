@@ -13,8 +13,13 @@ Branch supports the following advertising identifiers in Branch links on click, 
 
 #### iOS IFA
 
-!!! info "IMPORTANT"
-	With the release of the iOS 10 public beta, Apple has updated iOS to redact Advertising Identifier (IDFA) for users with the ‘Limit Ad Tracking’ setting enabled on their device. In these cases – as in any case where the device IDFA is not available – TUNE Attribution Analytics still attributes new and re-engaged installs.
+[block:callout]
+{
+  "type": "info",
+  "title": "IMPORTANT",
+  "body": "With the release of the iOS 10 public beta, Apple has updated iOS to redact Advertising Identifier (IDFA) for users with the ‘Limit Ad Tracking’ setting enabled on their device. In these cases – as in any case where the device IDFA is not available – TUNE Attribution Analytics still attributes new and re-engaged installs."
+}
+[/block]
 
 	In the absence of a valid IDFA, Branch automatically falls back to device fingerprinting to perform attribution (see next section), and automatically assigns its own install-level identifier for future tracking of these installs. This is existing behavior, however it does require that partners pass the Device IP and User Agent to be used for Device Fingerprinting.
 

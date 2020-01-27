@@ -86,13 +86,23 @@ To enable LATD:
 
 ## Required SDK Methods
 
-!!! warning "LATD for Self-Attributing Networks"
-    This endpoint reads last attributed touch data from our Persona store. If you invoke it immediately after session start, it may not contain the most recent attribution data. Requests to self-attributing networks (SANs) like Facebook and Google are processed asynchronously and take time to finish.
+[block:callout]
+{
+  "type": "warning",
+  "title": "LATD for Self-Attributing Networks",
+  "body": "This endpoint reads last attributed touch data from our Persona store. If you invoke it immediately after session start, it may not contain the most recent attribution data. Requests to self-attributing networks (SANs) like Facebook and Google are processed asynchronously and take time to finish."
+}
+[/block]
 
 ### Android
 
-!!! info "Attribution Window Logic"
-    When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
+[block:callout]
+{
+  "type": "info",
+  "title": "Attribution Window Logic",
+  "body": "When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard."
+}
+[/block]
 
 ```
 // init the LATD call from inside the initSession
@@ -107,8 +117,13 @@ Branch.getInstance().getLastAttributedTouchData(
 
 ### iOS
 
-!!! info "Attribution Window Logic"
-    When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
+[block:callout]
+{
+  "type": "info",
+  "title": "Attribution Window Logic",
+  "body": "When calling the LATD method, you can also provide a value for the `attributionWindow` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard."
+}
+[/block]
 
 ```
 [[[Branch getInstance] lastAttributedTouchDataWithAttributionWindow:0 completion:^(BranchLastAttributedTouchData * _Nullable latd) {
@@ -119,8 +134,13 @@ Branch.getInstance().getLastAttributedTouchData(
 
 ### Web
 
-!!! info "Attribution Window Logic"
-    When calling the LATD method, you can also provide a value for the `attribution_window` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard.
+[block:callout]
+{
+  "type": "info",
+  "title": "Attribution Window Logic",
+  "body": "When calling the LATD method, you can also provide a value for the `attribution_window` you want applied to the data.  If you do not provide a value within the SDK, Branch will use the attribution window setting value in your Branch dashboard."
+}
+[/block]
 
 ```
 branch.lastAttributedTouchData(

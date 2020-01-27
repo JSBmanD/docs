@@ -3,8 +3,13 @@ title: Aggregate Exports
 ---
 ## Overview
 
-!!! info "For ex-TUNE Clients Only"
-	This feature is currently only available for ex-TUNE clients and replicates the TUNE endpoints available via `https://api.mobileapptracking.com/v2/advertiser/stats/actuals/export`.
+[block:callout]
+{
+  "type": "info",
+  "title": "For ex-TUNE Clients Only",
+  "body": "This feature is currently only available for ex-TUNE clients and replicates the TUNE endpoints available via `https://api.mobileapptracking.com/v2/advertiser/stats/actuals/export`."
+}
+[/block]
 
 The Branch Aggregate Exports find and queue aggregate data that match your search criteria for export. Unlike the Custom Exports which contains individual logs for each attribution related to your mobile app, the Aggregate Exports include customizable visualizations of your data of interest.
 
@@ -16,8 +21,13 @@ Calls to the Aggregate Export API require an _api_key_ query string parameter to
 
 Learn how to [retrieve your API key (a.k.a. `Access Token`)](/dashboard/organization-view/#managing-your-user-profile)
 
-!!! warning "Organization Level Access Required"
-	In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Organization Level Access Required",
+  "body": "In order to retrieve or reset your API Key/Access Token, you must have access to the Organization level of the account.  This functionality is not present at the app level."
+}
+[/block]
 
 ##Rate Limits
 
@@ -56,8 +66,13 @@ To provide an agency team member with access to the Custom Export API:
 
 ![image](/_assets/img/pages/dashboard/access-levels/agency-aggregate-export.png)
 
-!!! warning "Agency-Tagged Data"
-	If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency-Tagged Data",
+  "body": "If you do not enable the Only Show Agency-Tagged Data data filter, the Agency Team Member will be able to export aggregate data associated with all of your campaigns, regardless if they are associated with them or not."
+}
+[/block]
 
 
 ## Available Topics to Export
@@ -71,11 +86,21 @@ The following log topics are available via the Aggregate Export API:
 *   <notranslate>**Opens**</notranslate>
 *   <notranslate>**Revenue USD**</notranslate>
 
-!!! info "Info"
-	Branch does not support exports of the infrequently-used update and postbacks TUNE topics.
+[block:callout]
+{
+  "type": "info",
+  "title": "Info",
+  "body": "Branch does not support exports of the infrequently-used update and postbacks TUNE topics."
+}
+[/block]
 
-	!!! warning "IP Discrepancies"
-		Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+	[block:callout]
+{
+  "type": "warning",
+  "title": "IP Discrepancies",
+  "body": "Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location."
+}
+[/block]
 
 
 ## Available Fields
@@ -118,8 +143,13 @@ The following log topics are available via the Aggregate Export API:
 | `wurfl_model_name`              | <notranslate>Model Name</notranslate>                   |
 
 
-!!! warning "Discontinued Fields"
-	Some fields have very limited value to our customers and as such have been discontinued. Discontinued fields will not be available via the Custom Export API. Please work with your CSM or our Support team if you have questions or concerns.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Discontinued Fields",
+  "body": "Some fields have very limited value to our customers and as such have been discontinued. Discontinued fields will not be available via the Custom Export API. Please work with your CSM or our Support team if you have questions or concerns."
+}
+[/block]
 
 ### Including Fields from Related Data Objects
 

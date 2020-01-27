@@ -1,8 +1,13 @@
 ---
 title: Configuring Events for Self-Attributing Networks
 ---
-!!! info "BETA ACCESS ONLY"
-	The ability to configure event mappings for Self Attributing Networks is currently in BETA.  
+[block:callout]
+{
+  "type": "info",
+  "title": "BETA ACCESS ONLY",
+  "body": "The ability to configure event mappings for Self Attributing Networks is currently in BETA.  "
+}
+[/block]
 
 ## Overview
 
@@ -12,8 +17,13 @@ However, Self-Attributing Networks (SANs) such as Facebook do not allow customer
 
 ## Supported SANs
 
-!!! info "Event Mapping Support"
-	The ability to configure event mappings is available only for integrations with SANs.  For all other ad partners, Branch uses standard event mappings for postbacks.
+[block:callout]
+{
+  "type": "info",
+  "title": "Event Mapping Support",
+  "body": "The ability to configure event mappings is available only for integrations with SANs.  For all other ad partners, Branch uses standard event mappings for postbacks."
+}
+[/block]
 
 You can configure event mappings for the following Self-Attributing Networks:
 
@@ -24,8 +34,13 @@ You can configure event mappings for the following Self-Attributing Networks:
 *   **Snap**
 *   **Twitter**
 
-!!! info "Apple Search Ads Not Supported"
-	Configuring event mappings for Apple Search Ads - although a SAN - is not supported due to the inability to send events server side.
+[block:callout]
+{
+  "type": "info",
+  "title": "Apple Search Ads Not Supported",
+  "body": "Configuring event mappings for Apple Search Ads - although a SAN - is not supported due to the inability to send events server side."
+}
+[/block]
 
 ## Default Event Mappings
 

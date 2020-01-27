@@ -24,8 +24,13 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 1. Go to the `Capabilities` tab of your project file.
 1. Scroll down and enable `Associated Domains`. ![image](/_assets/img/pages/deep-linking/universal-links/enable_ass_domains.png)
 
-!!! tip "If you see an error after this step"
-	![image](/_assets/img/pages/deep-linking/universal-links/enable_ass_domains_error.png)
+[block:callout]
+{
+  "type": "tip",
+  "title": "If you see an error after this step",
+  "body": "![image](/_assets/img/pages/deep-linking/universal-links/enable_ass_domains_error.png)"
+}
+[/block]
 
 	Please ensure...
 
@@ -45,11 +50,21 @@ Branch makes it simple to enable Universal Links all while greatly improving on 
 
 ![image](/_assets/img/pages/deep-linking/universal-links/add_domain.png)
 
-!!! warning "Support for legacy links"
-	If the <notranslate>**Default domain name**</notranslate> box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`
+[block:callout]
+{
+  "type": "warning",
+  "title": "Support for legacy links",
+  "body": "If the <notranslate>**Default domain name**</notranslate> box shows the legacy `bnc.lt` domain, you should use the following entry instead: `applinks:bnc.lt`"
+}
+[/block]
 
-!!! tip "Using a custom domain or subdomain?"
-	If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should instead add entries for `applinks:[mycustomdomainorsubdomain]`, `XXXX.app.link` and `XXXX-alternate.app.link`. If you're unsure of your Branch-assigned app.link subdomain, contact integrations@branch.io, and we can provide it.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Using a custom domain or subdomain?",
+  "body": "If you use a [custom domain or subdomain for your Branch links](/dashboard/integrate/#change-link-domain), you should instead add entries for `applinks:[mycustomdomainorsubdomain]`, `XXXX.app.link` and `XXXX-alternate.app.link`. If you're unsure of your Branch-assigned app.link subdomain, contact integrations@branch.io, and we can provide it."
+}
+[/block]
 
 ## Advanced
 
@@ -116,8 +131,13 @@ To work around this limitation, your links must have [deepviews](/web/deep-views
 
 ### Common issues that cause Universal Links to fail
 
-!!! tip "Automated Validation for Your Xcode Project"
-	You can check if your Xcode project is correctly configured by using our [Universal Links Validator](/resources/validation-tools/#universal-link-validator).
+[block:callout]
+{
+  "type": "tip",
+  "title": "Automated Validation for Your Xcode Project",
+  "body": "You can check if your Xcode project is correctly configured by using our [Universal Links Validator](/resources/validation-tools/#universal-link-validator)."
+}
+[/block]
 
 ##### Are you testing by manually entering into Safari?
 Universal Links don't work properly when entered into Safari. Use Notes or iMessage for testing.

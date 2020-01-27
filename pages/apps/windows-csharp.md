@@ -11,8 +11,13 @@ Branch links consist of an app-specific base domain (*testbed-windows.app.link*,
 
 Note that when using the 'app.link' default link domain there is a second, alternate, form of the link domain that comes into play when displaying Branch Deepviews - the *alternate link domain*. This *alternate link domain* sees the domain's '.app.link' string replaced by '-alternate.app.link'. If you are using a default app.link link domain, both the regular and alternate domains will be needed when configuring a project to support deep linking.
 
-!!! info "Working Example"
-	Please refer to our [TestBed-Windows](https://github.com/BranchMetrics/windows-branch-deep-linking) project for a working example the uses Branch.
+[block:callout]
+{
+  "type": "info",
+  "title": "Working Example",
+  "body": "Please refer to our [TestBed-Windows](https://github.com/BranchMetrics/windows-branch-deep-linking) project for a working example the uses Branch."
+}
+[/block]
 
 A Branch-integrated app called TestBed-Windows and assigned the default Branch link domain *testbed-windows.app.link* has the following Branch links:
 

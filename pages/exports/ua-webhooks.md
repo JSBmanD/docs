@@ -11,8 +11,13 @@ The webhook system is highly customizable. You can register to only receive noti
 
 Our new webhook infrastructure supports for all Branch events. The data is formatted according to our updated event naming and metadata format which will get you through implementation and onto analysis in no time.
 
-!!! note "Data Feeds is a premium solution"
-    The Webhooks are included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}.
+[block:callout]
+{
+  "type": "note",
+  "title": "Data Feeds is a premium solution",
+  "body": "The Webhooks are included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}."
+}
+[/block]
 
     **If you are looking for legacy webhooks**, please see [these docs](/exports/webhooks/).
 
@@ -49,8 +54,13 @@ As you fill out the configuration, you'll see the following options:
 
 For an exhaustive list of events and more detailed definitions of each event, please see the [Event Ontology Data Schema](/exports/event_ontology_data_schema/).
 
-!!! warning "Warning"
-    Event frequency is not yet supported. At this time webhooks can only be sent every time an event occurs.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Warning",
+  "body": "Event frequency is not yet supported. At this time webhooks can only be sent every time an event occurs."
+}
+[/block]
 
 #### Basic filtering
 
@@ -71,13 +81,23 @@ This should be your final view before saving:
 
 ![image](/_assets/img/pages/exports/ua-webhooks/basic-filtering.png)
 
-!!! note "Example: Filtering installs by attributed link campaign"
-    Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Campaign**</notranslate> is equal to <notranslate>**"App Install Campaign"**</notranslate>. You would select <notranslate>**Campaign**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~campaign**</notranslate>. Finally, you'd set the value equal to <notranslate>**App Install Campaign**</notranslate>.
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Filtering installs by attributed link campaign",
+  "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Campaign**</notranslate> is equal to <notranslate>**"App Install Campaign"**</notranslate>. You would select <notranslate>**Campaign**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~campaign**</notranslate>. Finally, you'd set the value equal to <notranslate>**App Install Campaign**</notranslate>."
+}
+[/block]
 
     ![image](/_assets/img/pages/exports/ua-webhooks/campaign-install-filter.png)
 
-!!! note "Example: Filtering clicks by link channel"
-    Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. You would select <notranslate>**Channel**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~channel**</notranslate>. Finally, you'd set the value equal to <notranslate>**AppLovin**</notranslate>.
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Filtering clicks by link channel",
+  "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. You would select <notranslate>**Channel**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~channel**</notranslate>. Finally, you'd set the value equal to <notranslate>**AppLovin**</notranslate>."
+}
+[/block]
 
     ![image](/_assets/img/pages/exports/ua-webhooks/channel-click-filter.png)
 
@@ -121,11 +141,21 @@ Setting up Advanced Filters or Freemarker macros requires an understanding of th
 - Journeys or Deepviews view data (e.g. Journey banners loads, not clicks) is <notranslate>"Last CTA View Data"</notranslate>
 - Client-specified custom data (e.g. internal fields your company requires on specific events) is nested in <notranslate>"Custom Data"</notranslate>
 
-!!! info "Full List of Available Postback Macros"
-    To find a complete list of Branch supported postback macros, please see [Postback Macros & Functions](/resources/postback-macros-and-functions/).
+[block:callout]
+{
+  "type": "info",
+  "title": "Full List of Available Postback Macros",
+  "body": "To find a complete list of Branch supported postback macros, please see [Postback Macros & Functions](/resources/postback-macros-and-functions/)."
+}
+[/block]
 
-!!! warning "IP Discrepancies"
-	Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location.
+[block:callout]
+{
+  "type": "warning",
+  "title": "IP Discrepancies",
+  "body": "Geographic data, such as country and city, may not be available for a very small percentage of events where the IP cannot be resolved to a location."
+}
+[/block]
 
 ### Sample webhook POST body syntax
 
@@ -230,8 +260,13 @@ To create a filter:
 1. Type in the key that you'd like to filter on. To find the key you'd like to filter on, reference our quick introduction to the [People-Based Attribution's data format](#data-format) to figure out where your key is likely nested. Another foolproof way to find your key is looking at your data in full before setting up your filter. You can do this by doing a [CSV export](https://dashboard.branch.io/data-import-export/csv-exports), [API export](/exports/api-v3/) or send a single webhook with a POST body, and locate your key in that POST body.
 1. Unless your key is part of the top level data (e.g. <notranslate>**timestamp**</notranslate> or <notranslate>**id**</notranslate>), it will likely be nested one level deep. Most keys will be of the format <notranslate>**object_name.key**</notranslate>. For example, if you want to filter for a custom key in deep link data called <notranslate>"product_deeplink_id"</notranslate>, that would take the form <notranslate>**last_attributed_touch_data.product_deeplink_id**</notranslate>.
 
-!!! note "Example: Filtering purchases for a specific coupon"
-	Let’s say you’re interested in receiving a webhook for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a webhook only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**SUMMERDEALS10**</notranslate> you will:
+[block:callout]
+{
+  "type": "note",
+  "title": "Example: Filtering purchases for a specific coupon",
+  "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a webhook only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**SUMMERDEALS10**</notranslate> you will:"
+}
+[/block]
 
     1. Select "Custom" from the filter key dropdown
     1. Make the key <notranslate>**event_data.coupon**</notranslate>
@@ -240,8 +275,13 @@ To create a filter:
 
 	![image](/_assets/img/pages/exports/ua-webhooks/coupon-filter-purchase.png)
 
-!!! caution "Array filtering not yet available"
-	Currently, webhooks do not support filtering on values inside arrays. Example arrays that cannot be filtered by value are <notranslate>**tags**</notranslate>, <notranslate>**+via_features**</notranslate> and <notranslate>**content_items**</notranslate>.
+[block:callout]
+{
+  "type": "caution",
+  "title": "Array filtering not yet available",
+  "body": "Currently, webhooks do not support filtering on values inside arrays. Example arrays that cannot be filtered by value are <notranslate>**tags**</notranslate>, <notranslate>**+via_features**</notranslate> and <notranslate>**content_items**</notranslate>."
+}
+[/block]
 
 ### Templating your Postback URL
 
@@ -276,8 +316,13 @@ Here is some more example Freemarker for common templates:
 | User Data | IDFV | `${(user_data.idfv)!}` |
 | User Data | Android Advertising ID | `${(user_data.aaid)!}` |
 
-!!! info "Full List of Available Postback Macros"
-    To find a complete list of Branch supported postback macros, please see [Postback Macros & Functions](/resources/postback-macros-and-functions/).
+[block:callout]
+{
+  "type": "info",
+  "title": "Full List of Available Postback Macros",
+  "body": "To find a complete list of Branch supported postback macros, please see [Postback Macros & Functions](/resources/postback-macros-and-functions/)."
+}
+[/block]
 
 #### Freemarker expressions
 

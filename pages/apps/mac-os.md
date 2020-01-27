@@ -16,8 +16,13 @@ your app, which is intercepted by the Branch SDK. The SDK takes the link and mak
 translate and expand the parameters in the link to something meaningful for your app. The SDK then notifies your app that a link
 was opened with the expanded data.
 
-!!! info "Working Example"
-	Please refer to our [TestBed-Mac](https://github.com/BranchMetrics/Branch-SDK-Mac/tree/master/Examples/TestBed-Mac) project for a working example the uses Branch.
+[block:callout]
+{
+  "type": "info",
+  "title": "Working Example",
+  "body": "Please refer to our [TestBed-Mac](https://github.com/BranchMetrics/Branch-SDK-Mac/tree/master/Examples/TestBed-Mac) project for a working example the uses Branch."
+}
+[/block]
 
 ## Integrate Branch
 

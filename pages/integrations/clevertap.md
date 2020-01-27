@@ -54,15 +54,25 @@ Find your CleverTap Account Credentials. Later, you'll enter them into the Branc
 
 Enter any credentials that may be required, and click Save and Enable in the bottom right hand corner.
 
-!!! note "Account credentials"
-	Please ask your ad partner where you can find your credentials.
+[block:callout]
+{
+  "type": "note",
+  "title": "Account credentials",
+  "body": "Please ask your ad partner where you can find your credentials."
+}
+[/block]
 
 ### Capture IDFA/GAID
 
 Ensure that you are capturing both the Google Advertising Identifier (GAID) on Android, and the IDFA on iOS.
 
-!!! warning "Google Advertising ID is required"
-    CleverTap requires the Google Advertising ID to be sent. Android ID (the hardware ID) alone is not enough.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Advertising ID is required",
+  "body": "CleverTap requires the Google Advertising ID to be sent. Android ID (the hardware ID) alone is not enough."
+}
+[/block]
 
 ### CleverTap identity support
 

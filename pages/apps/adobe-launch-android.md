@@ -3,8 +3,13 @@ title: Adobe Launch Android SDK
 ---
 Add the power of Branch deep linking and attribute to your Adobe Marketing Cloud app. With Branch's linking platform, mobile developers and marketers can grow their mobile business with world class deep linking and attribution.
 
-!!! warning "Google Play Services version 17+"
-    A major Google Play Services change made in June 2019 has caused Branch's Android SDK (and various other cross-platform SDKs, e.g. Unity) to stop collecting Android AID.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Play Services version 17+",
+  "body": "A major Google Play Services change made in June 2019 has caused Branch's Android SDK (and various other cross-platform SDKs, e.g. Unity) to stop collecting Android AID."
+}
+[/block]
 
     To ensure Branch deep linking and attribution continue to work, you must follow Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019).
 
@@ -18,8 +23,13 @@ Add the power of Branch deep linking and attribute to your Adobe Marketing Cloud
 - Android API level 16 or higher
 - Adobe Core Platform
 
-!!! warning "Branch SDK not Required"
-    As the Adobe Branch extension is a wrapper that auto includes a sub-dependency for the Branch SDK, you do not need to - nor do we recommend to - implement the Branch SDK separately in your app.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Branch SDK not Required",
+  "body": "As the Adobe Branch extension is a wrapper that auto includes a sub-dependency for the Branch SDK, you do not need to - nor do we recommend to - implement the Branch SDK separately in your app."
+}
+[/block]
 
 ## Example
 
@@ -73,7 +83,7 @@ Here's a brief outline of how to use the AdobeBranchExtension in your app:
             @Override
             public void onInitFinished(JSONObject referringParams, BranchError error) {
                 try {
-                    // Retrieve deep link params and route to content appropriately 
+                    // Retrieve deep link params and route to content appropriately
                     if (referringParams.has("+clicked_branch_link") && referringParams.getBoolean("+clicked_branch_link")) {
                         // Handle your Branch deep link routing in the callback
                     }

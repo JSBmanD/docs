@@ -297,8 +297,13 @@ Rest assured, however, that we are treating the data properly. Though we do not 
 
 #### Discrepancies with Impressions and Clicks
 
-!!! warning "Clicks vs Link Clicks"
-	Please be aware that Branch receives **Link Clicks** from Facebook via API.  This click count differs from the click count found in Facebook which includes other sources of clicks.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Clicks vs Link Clicks",
+  "body": "Please be aware that Branch receives **Link Clicks** from Facebook via API.  This click count differs from the click count found in Facebook which includes other sources of clicks."
+}
+[/block]
 
 ##### 1. I don't see any clicks or installs on the Branch Dashboard
 

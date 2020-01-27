@@ -1,9 +1,13 @@
 ---
 title: Website SDK
 ---
-!!! info "Current SDK Version 2.52.2"
-
-## Overview
+[block:callout]
+{
+  "type": "info",
+  "title": "Current SDK Version 2.52.2",
+  "body": "## Overview"
+}
+[/block]
 
 The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share deep links with a banner, over SMS, or your own methods. It also offers event tracking, access to referrals, and management of credits. The SDK is only ~13K gzipped.
 
@@ -312,8 +316,13 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
     - Validate with the [Branch Dashboard](https://dashboard.branch.io/liveview/events)
 
-    !!! warning "Custom Event Name"
-        The name `custom event` is reserved by Branch. Please ensure you give your custom event an actual name.
+    [block:callout]
+{
+  "type": "warning",
+  "title": "Custom Event Name",
+  "body": "The name `custom event` is reserved by Branch. Please ensure you give your custom event an actual name."
+}
+[/block]
 
         We strongly recommend using custom event names that contain no more than 40 characters, contain only letters, numbers, hyphens, spaces and underscores, and do not start with a hyphen.
 

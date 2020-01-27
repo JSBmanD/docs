@@ -7,8 +7,13 @@ title: Reporting & Discrepancies
 		- **Reporting & Discrepancies (this page)**
 		- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
 
-		!!! info "Available Compare By Dimensions for SANs"
-		    Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions.
+		[block:callout]
+{
+  "type": "info",
+  "title": "Available Compare By Dimensions for SANs",
+  "body": "Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions."
+}
+[/block]
 
 		    |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
 		    |---------------------|-------------|-------------|------------------|-------------|
@@ -34,8 +39,13 @@ title: Reporting & Discrepancies
 
 By default, Google Ads includes View-Through Conversion counts in a separate column in reporting. If you have impression windows enabled in Branch, we can also attribute VTC installs and events (when there is not a matching click from another partner). Those will be grouped into the install and event counts, and can be segmented using the 'last attributed touch type' compare by in Branch reporting. You can manage settings to enable this attribution within the attribution settings tab of the Google AdWords partner management or by reaching out to support@branch.io
 
-!!! warning "Not Yet Supported"
-	Viewing click/impression/cost data in your Branch dashboard is not yet supported for App Engagement campaigns.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Not Yet Supported",
+  "body": "Viewing click/impression/cost data in your Branch dashboard is not yet supported for App Engagement campaigns."
+}
+[/block]
 
 
 ## Cost Data

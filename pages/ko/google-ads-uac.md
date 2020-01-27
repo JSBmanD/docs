@@ -15,16 +15,26 @@ title: 앱 인스톨 캠페인
 
 ## 전제 조건
 
-!!! info "앱 인스톨 캠페인 전용"
-	Branch의 Google Ads 연동은 Branch 링크를 사용하지 않는 앱 인스톨 캠페인의 링킹 및 어트리뷰션을 지원합니다. 모든 앱 인스톨 캠페인은 사용자를 해당 앱 스토어로 연결하므로 다음을 완료해야 합니다.
+[block:callout]
+{
+  "type": "info",
+  "title": "앱 인스톨 캠페인 전용",
+  "body": "Branch의 Google Ads 연동은 Branch 링크를 사용하지 않는 앱 인스톨 캠페인의 링킹 및 어트리뷰션을 지원합니다. 모든 앱 인스톨 캠페인은 사용자를 해당 앱 스토어로 연결하므로 다음을 완료해야 합니다."
+}
+[/block]
 
 * [x]  Branch SDK가 앱과 연동되어 있어야 합니다.
 * [x]  iOS의 IDFA 또는 Android의 AAID를 수집합니다. 각 운영 체제에 관한 구체적인 정보는 [iOS](/apps/ios/#install-branch) 및 [Android](/apps/android/#install-branch)의 설정 가이드를 각각 참조하세요.
 * [x]  SDK를 통해 모든 필수 이벤트를 트래킹합니다. 지침은 [여기](#forwarding-events-to-google-ads)에서 참조하세요.
 * [x]  Google Ads 계정에 대한 관리자 액세스 권한이 있어야 합니다. 이는 Google Ads에서 링크 ID를 생성하는 데 필요합니다.
 
-!!! warning " **활성화 필요** "
-	Branch와 Google Ads를 연동하려면 먼저 Branch 대시보드에서 **[Google Ads 연동을 활성화](/deep-linked-ads/google-ads-enable/)** 해야 합니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": " **활성화 필요** ",
+  "body": "Branch와 Google Ads를 연동하려면 먼저 Branch 대시보드에서 **[Google Ads 연동을 활성화](/deep-linked-ads/google-ads-enable/)** 해야 합니다."
+}
+[/block]
 
 ## 앱 인스톨 캠페인 생성
 

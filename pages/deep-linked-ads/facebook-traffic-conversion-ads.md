@@ -113,8 +113,13 @@ Conversion | ✔︎ | ✔︎ | ✔︎ | ✔︎ |  |  | ✔︎
 !!! warning ""
 	In order for your campaign to run effectively, be sure to disable Deepviews. You can either [disable Deepviews](/web/deep-views/#setup) for your entire account or [disable Deepviews for one link](/web/deep-views/#disable-per-link-deepviews).
 
-!!! note "Optional: Deep Link Data"
-	You can use this configuration section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing](/deep-linking/routing/) page to learn more.
+[block:callout]
+{
+  "type": "note",
+  "title": "Optional: Deep Link Data",
+  "body": "You can use this configuration section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing](/deep-linking/routing/) page to learn more."
+}
+[/block]
 
 ### Traffic Campaign Setup
 
@@ -141,8 +146,13 @@ To set up a Facebook Traffic campaign, you will need to first create your campai
 	- If you chose to drive traffic to a Website and are using a full-screen Canvas, add your Branch Ad link as the <notranslate>**Destination URL**</notranslate> for your canvas advertisement components.
 1. Complete the rest of the ad campaign setup.
 
-!!! note "Optional: Ad formats with Multiple Links"
-	Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products.
+[block:callout]
+{
+  "type": "note",
+  "title": "Optional: Ad formats with Multiple Links",
+  "body": "Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products."
+}
+[/block]
 
 ### Conversions Campaign Setup
 
@@ -150,8 +160,13 @@ To set up a Facebook Traffic campaign, you will need to first create your campai
 
 To set up a Facebook Conversions campaign, you will need to first create your campaign and use a Branch link as the Deep Link URL for the advertisements. Facebook Conversions Campaign information is available **[here](https://www.facebook.com/business/ads-guide/conversions){:target="_blank"}**.
 
-!!! warning "Prerequisites"
-	As a prerequisite, Facebook requires you to report events about your users interacting with your content, for example: viewing, adding to cart, and purchasing. To add the Facebook Pixel to your website, and event tracking using the Branch SDK (which forwards to Facebook) to your app, follow these instructions:
+[block:callout]
+{
+  "type": "warning",
+  "title": "Prerequisites",
+  "body": "As a prerequisite, Facebook requires you to report events about your users interacting with your content, for example: viewing, adding to cart, and purchasing. To add the Facebook Pixel to your website, and event tracking using the Branch SDK (which forwards to Facebook) to your app, follow these instructions:"
+}
+[/block]
 
 	- [Sending App Events with the Branch SDK](/deep-linked-ads/facebook-ads-faq/#tracking-other-conversion-events)
 	- [Sending Web Events with the Facebook Pixel](https://developers.facebook.com/docs/marketing-api/facebook-pixel/v2.8){:target="_blank"}
@@ -175,8 +190,13 @@ To set up a Facebook Conversions campaign, you will need to first create your ca
 	- If you chose Website conversions and are using a full-screen Canvas, add your Branch Ad link as the <notranslate>**Destination URL**</notranslate> for your canvas advertisement components.
 1. Complete the rest of the ad campaign setup.
 
-!!! note "Optional: Ad formats with Multiple Links"
-	Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products.
+[block:callout]
+{
+  "type": "note",
+  "title": "Optional: Ad formats with Multiple Links",
+  "body": "Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products."
+}
+[/block]
 
 ### View Your Data
 
@@ -188,8 +208,13 @@ The table shows summary data on the performance of each Ad campaign. On the righ
 
 ![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 
-!!! note "Interacting with your data"
-	Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by.
+[block:callout]
+{
+  "type": "note",
+  "title": "Interacting with your data",
+  "body": "Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by."
+}
+[/block]
 
 	Then use the `and +` button to refine the data displayed to gain deeper insight into the performance of your Ad campaigns.
 

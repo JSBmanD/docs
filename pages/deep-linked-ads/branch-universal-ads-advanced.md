@@ -1,8 +1,13 @@
 ---
 title: Universal Ads Advanced
 ---
-!!! warning "Universal Ads Basics Guide"
-	Please refer to our [Universal Ads Basics](/deep-linked-ads/branch-universal-ads-mobile-tracking/) guide before using any the advanced options below.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Universal Ads Basics Guide",
+  "body": "Please refer to our [Universal Ads Basics](/deep-linked-ads/branch-universal-ads-mobile-tracking/) guide before using any the advanced options below."
+}
+[/block]
 
 ### Setup
 
@@ -41,8 +46,13 @@ If you have a server to server integration you must provide specific requirement
     - HTTP header `User-Agent: {USER_AGENT}`
     - Click macro URL parameter: `user_agent={USER_AGENT}`
 
-!!! warning "Update Partner-specific URL macros"
-    Please make sure that you are using your macros instead of {IDFA}. {AAID}, {IP_ADDRESS}, {USER_AGENT}
+[block:callout]
+{
+  "type": "warning",
+  "title": "Update Partner-specific URL macros",
+  "body": "Please make sure that you are using your macros instead of {IDFA}. {AAID}, {IP_ADDRESS}, {USER_AGENT}"
+}
+[/block]
 
 #### Adding/Enabling More Postbacks
 
@@ -62,8 +72,13 @@ To add a postback:
 
 If you want to send <notranslate>**All Events**</notranslate> - whether attributed to this partner or not  - you can enable this setting by checking the <notranslate>**All Events**</notranslate> box on a per postback basis.
 
-!!! warning "Privacy Implications"
-	As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Privacy Implications",
+  "body": "As this setting will send <notranslate>**All Events**</notranslate> - with the name and customer event alias listed in this row, whether attributed to this partner or not - we recommend using caution when/if enabling, especially if you have enabled agencies to access your account."
+}
+[/block]
 
 ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/all-events.png)
 
@@ -74,8 +89,13 @@ In most cases, the default postback URL generated from your selections is suffic
 
 But sometimes you may need/want to edit or remove a parameter from the postback URL, or append a macro expression/variable to include additional information.
 
-!!! tip "Example"
-	You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Example",
+  "body": "You want to send your partner the actual items a user adds to their cart so they can optimize based off those items.  Their current <notranslate>**Add to Cart**</notranslate> postback template does not include this information.  Therefore, you need to add [Content Items](https://docs.branch.io/resources/postback-macros-and-functions/#content-items-data) macros to their URL. To do so, you’ll first need to get the correct field from the partner in which to pass this data; e.g. `cart_items`.  Finally, you’d append `&cart_item=${(content_items[0].$product_name)!}` to the postback template."
+}
+[/block]
 
 Please refer to [Postback Macros & Functions](#postback-macros-functions) when looking to append additional macros.
 
@@ -91,8 +111,13 @@ To edit the postback template:
     2. You must include a `&` before each key-value pairs you append.
 7. Click <notranslate>**Save**</notranslate>.
 
-!!! tip "Reset Postbacks"
-    We all make mistakes from time to time. If you need to reset your postbacks and your credentials, navigate to the <notranslate>**Account Settings**</notranslate> tab and look for the <notranslate>**Reset all settings**</notranslate> button. Be careful though! This will disable the ad partner, clear out all credentials and postbacks that you've set up, and return the ad partner to its basic configuration. You can then start afresh.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Reset Postbacks",
+  "body": "We all make mistakes from time to time. If you need to reset your postbacks and your credentials, navigate to the <notranslate>**Account Settings**</notranslate> tab and look for the <notranslate>**Reset all settings**</notranslate> button. Be careful though! This will disable the ad partner, clear out all credentials and postbacks that you've set up, and return the ad partner to its basic configuration. You can then start afresh."
+}
+[/block]
 
 
 ### Granting Agency Access
@@ -115,15 +140,25 @@ To grant an Ad Partner access to your App's data, you need to add them as an `ag
 	1. Click "Invite".
 	1. All Agency Admins on the agency account will receive an invitation email, and any of those Agency Admins can accept the invitation on behalf of their agency.
 
-!!! warning "Granting agencies Sensitive Data & App-Level Settings permissions"
-	Agencies with Sensitive Data & App-Level Settings permissions to an Org or App will have access to that Org/App's API keys, which can be used to access Branch's [HTTP](https://docs.branch.io/apps/deep-linking-api/) and [Data Export](https://docs.branch.io/exports/api-v3/#__search) APIs. Agency data filters (e.g. Only Show Agency-tagged Data) will not apply to data accessed via the Daily Export API, so we recommend against granting agencies these permissions and providing them with API keys.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Granting agencies Sensitive Data & App-Level Settings permissions",
+  "body": "Agencies with Sensitive Data & App-Level Settings permissions to an Org or App will have access to that Org/App's API keys, which can be used to access Branch's [HTTP](https://docs.branch.io/apps/deep-linking-api/) and [Data Export](https://docs.branch.io/exports/api-v3/#__search) APIs. Agency data filters (e.g. Only Show Agency-tagged Data) will not apply to data accessed via the Daily Export API, so we recommend against granting agencies these permissions and providing them with API keys."
+}
+[/block]
 
 #### Defining Permissions
 
 Each access level - as defined above - comes with predefined permissions which you can edit if you choose.
 
-!!! tip "Modifying Permissions"
-	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Modifying Permissions",
+  "body": "If you want to modify a predefined access level, click the pencil icon to (de)select the available options."
+}
+[/block]
 
 - <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
 - <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
@@ -135,16 +170,26 @@ Each access level - as defined above - comes with predefined permissions which y
 
 During the process of granting an agency access to your Branch account, you can also impose limitations around what data is available to the agency at any given time.
 
-!!! warning "Filter to Only Show Data from Specific Ad Networks"
-  	When giving an ad partner access to your Branch account, please make sure you toggle the <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> to on and select the ad partner you are giving access to.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Filter to Only Show Data from Specific Ad Networks",
+  "body": "When giving an ad partner access to your Branch account, please make sure you toggle the <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> to on and select the ad partner you are giving access to."
+}
+[/block]
 
 - <notranslate>**Only Show Agency-tagged Data**</notranslate> - When toggled on, agency users can only see events tagged with their Agency ID.
 - <notranslate>**Restrict Access to Revenue Data**</notranslate> - When toggled on, agency users cannot view revenue data.
 - <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> - When toggled on, agency users can only view events from a specific list of ad networks.
 - <notranslate>**Only Show Data from Specific Locations**</notranslate> - When toggled on, agency users can only view events that have taken place in a specific list of countries.
 
-!!! warning "Agency Invitation"
-	Once you've defined the appropriate levels of access for your Agency, you must <notranslate>**Invite**</notranslate> them to access the Branch dashboard. Only Organization Admins can invite an Agency to access the Branch dashboard.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency Invitation",
+  "body": "Once you've defined the appropriate levels of access for your Agency, you must <notranslate>**Invite**</notranslate> them to access the Branch dashboard. Only Organization Admins can invite an Agency to access the Branch dashboard."
+}
+[/block]
 
 
 ### Tracking Link Parameters
@@ -155,8 +200,13 @@ Branch Tracking links allow tracking many parameters about the performance of yo
 
 Additional parameters for advanced analysis may be added to the link after the '?' or '&' character, to trace extra information.
 
-!!! tip "Example Tracking Link with Additional Parameters"
-    Example Branch link including additional parameters to pass Agency and Sub Publisher information:`https://tracking.app.link?$3p=a_partner&~agency=myAgency&~secondary_publisher=best_publisher`
+[block:callout]
+{
+  "type": "tip",
+  "title": "Example Tracking Link with Additional Parameters",
+  "body": "Example Branch link including additional parameters to pass Agency and Sub Publisher information:`https://tracking.app.link?$3p=a_partner&~agency=myAgency&~secondary_publisher=best_publisher`"
+}
+[/block]
 
 The following parameters are available to use within the pre-generated tracking link:
 
@@ -192,8 +242,13 @@ Branch Parameter | Description
 
 #### Spend Calculation
 
-!!! info "Cost Data Availability"
-    Cost data passed via these macros is available in exports but is not visible in the Branch dashboard.
+[block:callout]
+{
+  "type": "info",
+  "title": "Cost Data Availability",
+  "body": "Cost data passed via these macros is available in exports but is not visible in the Branch dashboard."
+}
+[/block]
 
 Branch Parameter | Description
 --- | ---
@@ -237,8 +292,13 @@ Key | Example Link
 `$impression_session_start_window_days` | https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=1
 `$impression_conversion_window_days` | https://branchster.app.link/hpNVE52gxE?$impression_session_start_window_days=7
 
-!!! warning "Link Level Attribution Support for Standard Branch links"
-    As of July 2017, link level attribution window setting is only available on standard Branch links. Special Branch links such as the ones used for Google's Universal App Campaign or Play Store links with Branch link id parameters are currently not supported.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Link Level Attribution Support for Standard Branch links",
+  "body": "As of July 2017, link level attribution window setting is only available on standard Branch links. Special Branch links such as the ones used for Google's Universal App Campaign or Play Store links with Branch link id parameters are currently not supported."
+}
+[/block]
 
 
 #### View your data with People-Based Attribution

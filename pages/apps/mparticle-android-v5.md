@@ -3,11 +3,21 @@ title: mParticle Android
 ---
 This documentation explains how to send **mParticle events to your Branch dashboard**. If you'd like to send Branch installs to your mParticle dashboard, please review the [Branch/mParticle Data Integration](/integrations/mparticle).
 
-!!! info "These instructions apply to the mParticle SDK version 5+ integration"
-    mParticle introduced a new attribution & deep linking API in v5 of their SDK (http://docs.mparticle.com/developers/sdk/android/getting-started/#upgrade-to-version-5-of-the-sdk), so please contact your Branch or mParticle Account Managers for more details, if you have mParticle SDK <v5 installed in your app.
+[block:callout]
+{
+  "type": "info",
+  "title": "These instructions apply to the mParticle SDK version 5+ integration",
+  "body": "mParticle introduced a new attribution & deep linking API in v5 of their SDK (http://docs.mparticle.com/developers/sdk/android/getting-started/#upgrade-to-version-5-of-the-sdk), so please contact your Branch or mParticle Account Managers for more details, if you have mParticle SDK <v5 installed in your app."
+}
+[/block]
 
-!!! warning "Google Play Services version 17+"
-    A major Google Play Services change made in June 2019 has caused Branch's Android SDK (and various other cross-platform SDKs, e.g. Unity) to stop collecting Android AID.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Play Services version 17+",
+  "body": "A major Google Play Services change made in June 2019 has caused Branch's Android SDK (and various other cross-platform SDKs, e.g. Unity) to stop collecting Android AID."
+}
+[/block]
 
     To ensure Branch deep linking and attribution continue to work, you must follow Google's update instructions [here](https://developers.google.com/android/guides/releases#june_17_2019).
 
@@ -93,8 +103,13 @@ As with any kit, mParticle will automatically handle initializing Branch session
 
 At this point you should start seeing your Branch session data - including installs, re-opens, and any custom events - in your Branch dashboard.
 
-!!! warning "Requirements"
-	* [x] As with any attribution-related integration, be sure that you have added the mParticle `ReferrerReceiver` to your app’s `AndroidManifest.xml`
+[block:callout]
+{
+  "type": "warning",
+  "title": "Requirements",
+  "body": "* [x] As with any attribution-related integration, be sure that you have added the mParticle `ReferrerReceiver` to your app’s `AndroidManifest.xml`"
+}
+[/block]
 
 ### Retrieve Deep Link Data via mParticle
 
@@ -102,8 +117,13 @@ Our integration with mParticle supports the creation and attribution of deep lin
 
 Please ensure you've followed [mParticle's documentation](http://docs.mparticle.com/developers/sdk/android/kits#deep-linking) to ensure your deep link data is being retrieved.
 
-!!! info "mParticle in React Native"
-    If you integrate mParticle in React Native, you will still integrate the Branch kit as a Native module and follow the setup steps above.  However, instead of retrieving deep link data in the the native layer, you'll retrieve deep link data via [mParticle's React Native function found here](https://github.com/mParticle/react-native-mparticle/blob/master/README.md#attribution).
+[block:callout]
+{
+  "type": "info",
+  "title": "mParticle in React Native",
+  "body": "If you integrate mParticle in React Native, you will still integrate the Branch kit as a Native module and follow the setup steps above.  However, instead of retrieving deep link data in the the native layer, you'll retrieve deep link data via [mParticle's React Native function found here](https://github.com/mParticle/react-native-mparticle/blob/master/README.md#attribution)."
+}
+[/block]
 
 ### Test deep link
 

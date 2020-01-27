@@ -23,8 +23,13 @@ Many third-party providers add redirects to your URLs. This facilitates click tr
 
 - [MailChimp](http://kb.mailchimp.com/reports/enable-and-view-click-tracking#Turn-Click-Tracking-On-or-Off){:target="\_blank"}
 
-!!! proptip "Want to deep link your emails without sacrificing click tracking?"
-    To keep click tracking *and* deep link on all devices, try one of our [Universal Email integrations](https://dashboard.branch.io/email){:target="\_blank"}. If you do not see your ESP there, let us know [here](https://dashboard.branch.io/email){:target="\_blank"}:
+[block:callout]
+{
+  "type": "proptip",
+  "title": "Want to deep link your emails without sacrificing click tracking?",
+  "body": "To keep click tracking *and* deep link on all devices, try one of our [Universal Email integrations](https://dashboard.branch.io/email){:target="\_blank"}. If you do not see your ESP there, let us know [here](https://dashboard.branch.io/email){:target="\_blank"}:"
+}
+[/block]
 
     ![image](/_assets/img/pages/email/no-esp.png)
 
@@ -41,8 +46,13 @@ Many third-party providers add redirects to your URLs. This facilitates click tr
 
 Repeat this for each URL in your email template that you would like to deep link.
 
-!!! protip "Optional: Deep Link Routing (Advanced)"
-    You can use the <notranslate>**Configure Options**</notranslate> > <notranslate>**Deep Linking**</notranslate> section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing]({{base.url}}/getting-started/deep-link-routing) page to learn more.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Optional: Deep Link Routing (Advanced)",
+  "body": "You can use the <notranslate>**Configure Options**</notranslate> > <notranslate>**Deep Linking**</notranslate> section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing]({{base.url}}/getting-started/deep-link-routing) page to learn more."
+}
+[/block]
 
 ### Conclusion
 

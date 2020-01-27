@@ -1,8 +1,13 @@
 ---
 title: Google Firebase
 ---
-!!! warning "Google Analytics vs. Google Firebase"
-  	If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Analytics vs. Google Firebase",
+  "body": "If you are a free customer, please as follow the guide below as Google Analytics has been deprecated for free users. If you are a paying Google Analytics customer, please refer to our data integration for [Google Analytics](/integrations/google-analytics/)."
+}
+[/block]
 
 ## Overview
 
@@ -154,8 +159,13 @@ Below is the full list of fields:
 	}
 ```
 
-!!! warning "mParticle for Android and/or iOS"
-    If you use the mParticle plugins alongside the Branch SDK, you must **ensure Firebase authenticates before the Branch session is initialized with mParticle**. When the Branch session is initialized with mParticle prior to Firebase authentication, the deep link data is not returned.
+[block:callout]
+{
+  "type": "warning",
+  "title": "mParticle for Android and/or iOS",
+  "body": "If you use the mParticle plugins alongside the Branch SDK, you must **ensure Firebase authenticates before the Branch session is initialized with mParticle**. When the Branch session is initialized with mParticle prior to Firebase authentication, the deep link data is not returned."
+}
+[/block]
 
 ## Using Firebase DebugView
 
@@ -171,7 +181,12 @@ To debug the events and their metadata, you can enable the `DebugView` on Fireba
 
 - SAN attribution support, for Google UAC (no deep linking) and Facebook App Install (not so reliable deferred deep links), the Firebase installs would miss the attribution data.
 
-	!!! warning "NOTE"
-		Please ensure you’ve reviewed your agreements with any ad network (for example Facebook, Snap and Twitter) to ensure your handling of attribution data and use of third party analytics tools is in compliance.
+	[block:callout]
+{
+  "type": "warning",
+  "title": "NOTE",
+  "body": "Please ensure you’ve reviewed your agreements with any ad network (for example Facebook, Snap and Twitter) to ensure your handling of attribution data and use of third party analytics tools is in compliance."
+}
+[/block]
 
 - As per your account settings, it may be the case where the Fingerprinting attribution is disabled. This means that the deep link will return the link data, but no attribution data will be recorded at Branch’s end. If this is the case (ensure to check with your Account Manager or support@branch.io).

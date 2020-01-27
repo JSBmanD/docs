@@ -128,8 +128,13 @@ title: Branch 연동 가이드 - Android
         - `key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Sw`
         - `key_test_hlxrWC5Zx16DkYmWu4AHiimdqugRYMr`
 
-    !!! warning "Single Task launch mode required"
-        만약 아직 시스템에 Single task Activity 인스턴스가 없다면 새로 생성하고 동일 Task 의 stack 의 최상위에 위치시킵니다. 만약 Single Task 모드를 사용하고 있다면 앱 전체를 다시 시작하지 말아야 합니다. Single Task 모드는 오직 Main/Splash Activity 가 Actiivty Stack에 존재하지 않을 때만 인스턴스화합니다. 만약 Activity가 백그라운드에서 존재하고 있다면 해당 Activity를 향한 Intent가 있을 때마다 이는 다시 포그라운드로 돌아옵니다. Single Task 모드에 관한 더 상세한 내용은 본 [링크]https://developer.android.com/guide/components/activities/tasks-and-back-stack.html#TaskLaunchModes)를 참고하시기 바랍니다.
+    [block:callout]
+{
+  "type": "warning",
+  "title": "Single Task launch mode required",
+  "body": "만약 아직 시스템에 Single task Activity 인스턴스가 없다면 새로 생성하고 동일 Task 의 stack 의 최상위에 위치시킵니다. 만약 Single Task 모드를 사용하고 있다면 앱 전체를 다시 시작하지 말아야 합니다. Single Task 모드는 오직 Main/Splash Activity 가 Actiivty Stack에 존재하지 않을 때만 인스턴스화합니다. 만약 Activity가 백그라운드에서 존재하고 있다면 해당 Activity를 향한 Intent가 있을 때마다 이는 다시 포그라운드로 돌아옵니다. Single Task 모드에 관한 더 상세한 내용은 본 [링크]https://developer.android.com/guide/components/activities/tasks-and-back-stack.html#TaskLaunchModes)를 참고하시기 바랍니다."
+}
+[/block]
 
 - ### Branch SDK 초기화
 
@@ -237,11 +242,21 @@ title: Branch 연동 가이드 - Android
         }
         ```
 
-    !!! warning "오직 Launcher Activity 에서 Branch를 초기화합니다."
-        앱은 Launcher Activity 를 통해 실행될 것이고 그곳에서 Branch 가 초기화되고 클릭된 링크에 포함된 딥링크 데이터를 가져올 것입니다.
+    [block:callout]
+{
+  "type": "warning",
+  "title": "오직 Launcher Activity 에서 Branch를 초기화합니다.",
+  "body": "앱은 Launcher Activity 를 통해 실행될 것이고 그곳에서 Branch 가 초기화되고 클릭된 링크에 포함된 딥링크 데이터를 가져올 것입니다."
+}
+[/block]
 
-    !!! warning "항상 `onStart()` 에서 Branch 를 초기화합니다."
-        Branch 를 다른 Android 라이프사이클에서 초기화(예. `onResume()`하면 의도치 않은 액션이 발생할 수 있습니다. `onStart()` 는 Activity 가 사용자에게 보이게 하고 앱이 Activity 를 포그라운드에 진입시키도록 준비하는 단계입니다. 상세한 정보는 본 [링크](https://developer.android.com/guide/components/activities/activity-lifecycle.html)를 참고하시기 바랍니다.
+    [block:callout]
+{
+  "type": "warning",
+  "title": "항상 `onStart()` 에서 Branch 를 초기화합니다.",
+  "body": "Branch 를 다른 Android 라이프사이클에서 초기화(예. `onResume()`하면 의도치 않은 액션이 발생할 수 있습니다. `onStart()` 는 Activity 가 사용자에게 보이게 하고 앱이 Activity 를 포그라운드에 진입시키도록 준비하는 단계입니다. 상세한 정보는 본 [링크](https://developer.android.com/guide/components/activities/activity-lifecycle.html)를 참고하시기 바랍니다."
+}
+[/block]
 
 - ### Branch 로딩
 
@@ -302,8 +317,13 @@ title: Branch 연동 가이드 - Android
 
 		- 딥링크를 클릭하여 앱을 실행합니다.
 
-    !!! tip "디퍼드 딥링킹 테스트(Deferred Deep Linking)"
-    	디퍼드 딥링킹은 디바이스에 설처되지 않은 앱으로 딥링킹하는 간편한 방법입니다. 앱이 설치되면 사용자의 최초 앱 실행 때 클릭한 Branch Link 로부터 딥링크 데이터를 얻을 수 있습니다. 이것을 테스트하려면 앱을 디바이스에서 제거하고 Branch Link 를 클릭해야 하며 AndroidStudio 를 통해 앱을 수동으로 설치합니다. 정확히 구현되었다면 앱을 실행할 때 앱 내에서 정확한 컨텐츠로 라우팅 될 것입니다.
+    [block:callout]
+{
+  "type": "tip",
+  "title": "디퍼드 딥링킹 테스트(Deferred Deep Linking)",
+  "body": "디퍼드 딥링킹은 디바이스에 설처되지 않은 앱으로 딥링킹하는 간편한 방법입니다. 앱이 설치되면 사용자의 최초 앱 실행 때 클릭한 Branch Link 로부터 딥링크 데이터를 얻을 수 있습니다. 이것을 테스트하려면 앱을 디바이스에서 제거하고 Branch Link 를 클릭해야 하며 AndroidStudio 를 통해 앱을 수동으로 설치합니다. 정확히 구현되었다면 앱을 실행할 때 앱 내에서 정확한 컨텐츠로 라우팅 될 것입니다."
+}
+[/block]
 
 ## 기능구현
 

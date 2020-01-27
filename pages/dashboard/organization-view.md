@@ -3,8 +3,13 @@ title: Organization View
 ---
 The <notranslate>"Organization"</notranslate> view of a Branch account is an additional level of entity access and is intended for Branch accounts with a portfolio of distinctly managed apps tied to a single organizational entity. Organization view allows companies to manage separate teams associated with their distinct apps and maintain autonomy. Organization team members can switch between the Organization view and the App view at any time.
 
-!!! info "INFO"
-    Depending on your business and how you manage your apps, you may elect to add the Organization Entity to your Branch account.
+[block:callout]
+{
+  "type": "info",
+  "title": "INFO",
+  "body": "Depending on your business and how you manage your apps, you may elect to add the Organization Entity to your Branch account."
+}
+[/block]
 
     All TUNE migrated accounts include the Organization entity in their Branch account.
 
@@ -64,15 +69,25 @@ When viewing your Branch account via the Organization entity, you can access (ei
 
 ### Partner Management
 
-!!! info "COMING SOON"
-	Allow enabling and editing of ad networks at the org level.
+[block:callout]
+{
+  "type": "info",
+  "title": "COMING SOON",
+  "body": "Allow enabling and editing of ad networks at the org level."
+}
+[/block]
 
 ## Link Settings
 
 ### Attribution Windows
 
-!!! info "Default Attribution Window Settings"
-		Each attribution window has its own default measured in days.  Please refer to the image below for these defaults.
+[block:callout]
+{
+  "type": "info",
+  "title": "Default Attribution Window Settings",
+  "body": "Each attribution window has its own default measured in days.  Please refer to the image below for these defaults."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 
@@ -140,8 +155,13 @@ To add a new Organization User:
 
 Each access level - as defined above - comes with predefined permissions which you can edit if you choose.
 
-!!! tip "Modifying Permissions"
-	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Modifying Permissions",
+  "body": "If you want to modify a predefined access level, click the pencil icon to (de)select the available options."
+}
+[/block]
 
 - <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
 - <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
@@ -173,8 +193,13 @@ To modify an existing Organization Team Member:
 
 If you are an Organization Admin, you have full edit access to all of the Account Settings mentioned above including the ability to add an Agency - both a Full Access and/or Limited Access Agency - to your Branch account.
 
-!!! info "Additional Info"
-	You can only add agencies via the <notranslate>**Agencies**</notranslate> tab. Trying to add agencies via the <notranslate>**Team**</notranslate> tab will throw an error as only non-agency users should be added via the Team Tab.
+[block:callout]
+{
+  "type": "info",
+  "title": "Additional Info",
+  "body": "You can only add agencies via the <notranslate>**Agencies**</notranslate> tab. Trying to add agencies via the <notranslate>**Team**</notranslate> tab will throw an error as only non-agency users should be added via the Team Tab."
+}
+[/block]
 
 #### Adding an Agency
 
@@ -194,15 +219,25 @@ To add an Agency:
 	1. Click "Invite".
 	1. All Agency Admins on the agency account will receive an invitation email, and any of those Agency Admins can accept the invitation on behalf of their agency.
 
-!!! warning "Granting agencies Sensitive Data & App-Level Settings permissions"
-	Agencies with Sensitive Data & App-Level Settings permissions to an Org or App will have access to that Org/App's API keys, which can be used to access Branch's [HTTP](https://docs.branch.io/apps/deep-linking-api/) and [Data Export](https://docs.branch.io/exports/api-v3/#__search) APIs. Agency data filters (e.g. Only Show Agency-tagged Data) will not apply to data accessed via the Daily Export API, so we recommend against granting agencies these permissions and providing them with API keys.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Granting agencies Sensitive Data & App-Level Settings permissions",
+  "body": "Agencies with Sensitive Data & App-Level Settings permissions to an Org or App will have access to that Org/App's API keys, which can be used to access Branch's [HTTP](https://docs.branch.io/apps/deep-linking-api/) and [Data Export](https://docs.branch.io/exports/api-v3/#__search) APIs. Agency data filters (e.g. Only Show Agency-tagged Data) will not apply to data accessed via the Daily Export API, so we recommend against granting agencies these permissions and providing them with API keys."
+}
+[/block]
 
 #### Defining Permissions
 
 Each access level - as defined above - comes with predefined permissions which you can edit if you choose.
 
-!!! tip "Modifying Permissions"
-	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Modifying Permissions",
+  "body": "If you want to modify a predefined access level, click the pencil icon to (de)select the available options."
+}
+[/block]
 
 - <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
 - <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
@@ -220,8 +255,13 @@ During the process of granting an agency access to your Branch account, you can 
 - <notranslate>**Only Show Data from Specific Ad Networks**</notranslate> - When toggled on, agency users can only view events from a specific list of ad networks.
 - <notranslate>**Only Show Data from Specific Locations**</notranslate> - When toggled on, agency users can only view events that have taken place in a specific list of countries.
 
-!!! warning "Agency Invitation"
-	Once you've defined the appropriate levels of access for your Agency, you must <notranslate>**Invite**</notranslate> them to access the Branch dashboard. Only Organization Admins can invite an Agency to access the Branch dashboard.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency Invitation",
+  "body": "Once you've defined the appropriate levels of access for your Agency, you must <notranslate>**Invite**</notranslate> them to access the Branch dashboard. Only Organization Admins can invite an Agency to access the Branch dashboard."
+}
+[/block]
 
 #### Modifying an Agency Team Member
 

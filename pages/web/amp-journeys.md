@@ -35,8 +35,13 @@ Finally, if you do not already have the following AMP scripts on your page, add 
 <script async src="https://cdn.ampproject.org/v0/amp-list-0.1.js" custom-element="amp-list"></script><script async src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js" custom-template="amp-mustache"></script><script async src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js" custom-element="amp-iframe"></script>
 ```
 
-!!! protip "Include canonical URL for SEO and deep linking"
-    [Google recommends](https://www.ampproject.org/docs/guides/discovery){:target="\_blank"} that on your AMP page, you include a reference to the canonical URL of the non-AMP page with the same content. For example, you should include a tag like this in the `<head></head>` section of your AMP page: `<link rel="canonical" href="https://example.com/article.html">`. This helps make your AMP page discoverable, and likely helps ensure that SEO information is shared between these two pages. Additionally, Branch automatically embeds the canonical URL in the Journey link data, leading to better identification of content and the ability to use this key for deep linking.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Include canonical URL for SEO and deep linking",
+  "body": "[Google recommends](https://www.ampproject.org/docs/guides/discovery){:target="\_blank"} that on your AMP page, you include a reference to the canonical URL of the non-AMP page with the same content. For example, you should include a tag like this in the `<head></head>` section of your AMP page: `<link rel="canonical" href="https://example.com/article.html">`. This helps make your AMP page discoverable, and likely helps ensure that SEO information is shared between these two pages. Additionally, Branch automatically embeds the canonical URL in the Journey link data, leading to better identification of content and the ability to use this key for deep linking."
+}
+[/block]
 
 
 ### Target AMP Web in your audience
@@ -86,8 +91,13 @@ You can [configure links] with deep link data on AMP in two ways:
 1. Add query parameters to your Branch link in the AMP SDK
 1. Add deep link data to a Journey in the dashboard
 
-!!! protip "Use $canonical_url for deep linking"
-    AMP Journeys, along with regular Journeys and the Quick Link Creator, automatically embeds `$canonical_url` in your link data based on meta tags on your web or AMP page. If you use this key to route to specific content in your app, you do not have to add anything extra for AMP.
+[block:callout]
+{
+  "type": "protip",
+  "title": "Use $canonical_url for deep linking",
+  "body": "AMP Journeys, along with regular Journeys and the Quick Link Creator, automatically embeds `$canonical_url` in your link data based on meta tags on your web or AMP page. If you use this key to route to specific content in your app, you do not have to add anything extra for AMP."
+}
+[/block]
 
 
 #### Add query parameters in the AMP SDK

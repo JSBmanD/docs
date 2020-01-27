@@ -24,8 +24,13 @@ Branch는 Universal Link를 쉽게 활성화할 수 있게 하고 동시에 이�
 1. 프로젝트 파일에서 `Capabilities` 탭으로 이동합니다.
 1. 마우스 스크롤 다운하여 `Associated Domains` 를 활성화 합니다. ![image](/_assets/img/pages/deep-linking/universal-links/enable_ass_domains.png)
 
-!!! tip "If you see an error after this step"
-	![image](/_assets/img/pages/deep-linking/universal-links/enable_ass_domains_error.png)
+[block:callout]
+{
+  "type": "tip",
+  "title": "If you see an error after this step",
+  "body": "![image](/_assets/img/pages/deep-linking/universal-links/enable_ass_domains_error.png)"
+}
+[/block]
 
 	만약 진행과정에 에러가 발생한다면 다음과 같이 처리합니다.
 
@@ -45,11 +50,21 @@ Branch는 Universal Link를 쉽게 활성화할 수 있게 하고 동시에 이�
 
 ![image](/_assets/img/pages/deep-linking/universal-links/add_domain.png)
 
-!!! warning "구 버전 링크에 대한 지원"
-	만약 Default domain name 박스에 구 버전인 bnc.lt 도메인이 표시된다면 다음 내용을 바꿔야 합니다: `applinks:bnc.lt`
+[block:callout]
+{
+  "type": "warning",
+  "title": "구 버전 링크에 대한 지원",
+  "body": "만약 Default domain name 박스에 구 버전인 bnc.lt 도메인이 표시된다면 다음 내용을 바꿔야 합니다: `applinks:bnc.lt`"
+}
+[/block]
 
-!!! tip "커스텀 도메인 또는 서브 도메인의 사용"
-	만약 귀사에서 [Branch Link 에게 커스텀 도메인 또는 서브 도메인](/dashboard/integrate/#change-link-domain)을 사용한다면 `applinks: 뒤의 값을 [mycustomdomainorsubdomain]`와 `XXXX-alternate.app.link`로 추가해야 합니다. 만약 Branch로부터 부여받은 app.link 서브 도메인에 확실하지 않다면 integrations@branch.io 로 연락주시기 바랍니다.
+[block:callout]
+{
+  "type": "tip",
+  "title": "커스텀 도메인 또는 서브 도메인의 사용",
+  "body": "만약 귀사에서 [Branch Link 에게 커스텀 도메인 또는 서브 도메인](/dashboard/integrate/#change-link-domain)을 사용한다면 `applinks: 뒤의 값을 [mycustomdomainorsubdomain]`와 `XXXX-alternate.app.link`로 추가해야 합니다. 만약 Branch로부터 부여받은 app.link 서브 도메인에 확실하지 않다면 integrations@branch.io 로 연락주시기 바랍니다."
+}
+[/block]
 
 ## Advanced
 
@@ -116,8 +131,13 @@ Web View 가 빌드되어 있는 앱 (Google, Twitter, Facebook, Facebook Messen
 
 ### Universal Links 를 실패하게 하는 일반적인 이슈
 
-!!! tip "XCode 프로젝트를 위한 자동화된 검증"
-	[Universal Links Validator](/resources/validation-tools/#universal-link-validator). 를 이용하여 XCode 프로젝트가 정확하게 설정되었는지 확인할 수 있습니다.
+[block:callout]
+{
+  "type": "tip",
+  "title": "XCode 프로젝트를 위한 자동화된 검증",
+  "body": "[Universal Links Validator](/resources/validation-tools/#universal-link-validator). 를 이용하여 XCode 프로젝트가 정확하게 설정되었는지 확인할 수 있습니다."
+}
+[/block]
 
 ##### Universal Link 를 수동으로 Safari 브라우저에 입력하여 테스트하셨나요?
 Universal Links 는 Safari 에 입력했을 때 적절하게 작동하지 않습니다. Notes 또는 iMessage 앱을 사용하여 테스트하시기 바랍니다.

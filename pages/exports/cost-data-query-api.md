@@ -6,8 +6,13 @@ Please refer to the [Query API](/query-api) for full reference documentation.
 
 ## Cost Data
 
-!!! info "BETA ACCESS ONLY"
-    Cost data is now available! This feature is in BETA, please submit issues or feedback to [Support](mailto:support@branch.io).
+[block:callout]
+{
+  "type": "info",
+  "title": "BETA ACCESS ONLY",
+  "body": "Cost data is now available! This feature is in BETA, please submit issues or feedback to [Support](mailto:support@branch.io)."
+}
+[/block]
 
 The recommended use of pulling cost data via API is "pull all the cost by partner and campaign". You can attempt to drill down to things like keyword and OS, but you should definitely plan to handle nulls, as the breakdowns provided by partner APIs are not be consistent from partner to partner. If the dashboard returns you zeros for certain cost breakdowns, so will the API.
 
@@ -39,7 +44,7 @@ curl -X POST 'http://api.branch.io/v1/query/analytics' -H 'content-type: applica
   "dimensions": [
     "last_attributed_touch_data_tilde_advertising_partner_name",
     "last_attributed_touch_data_tilde_campaign"
-  ],                      
+  ],
   "ordered": "descending",
   "aggregation": "cost"
 }'

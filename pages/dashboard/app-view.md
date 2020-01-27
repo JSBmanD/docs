@@ -58,8 +58,13 @@ All accounts include the App view and any user regardless of access role type ca
   </tr>
 </table>
 
-!!! info "App Entity Access vs App-level Settings"
-	Despite the similar nomenclature, App Entity Access (this page) should not be confused with [App-level Settings](/dashboard/app-level-access/) that control functionality once viewing the dashboard via the app entity.
+[block:callout]
+{
+  "type": "info",
+  "title": "App Entity Access vs App-level Settings",
+  "body": "Despite the similar nomenclature, App Entity Access (this page) should not be confused with [App-level Settings](/dashboard/app-level-access/) that control functionality once viewing the dashboard via the app entity."
+}
+[/block]
 
 ## Agencies in App View
 
@@ -77,15 +82,25 @@ When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Q
 
 ### Agency Association to Self Attributing Networks (SANs)
 
-!!! warning "Agency ID Prefix Required"
-	If the Agency user does not prepend their Agency ID to the campaign name when setting up the campaign in the partner's dashboard, Branch cannot associate any resulting conversions to the agency.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Prefix Required",
+  "body": "If the Agency user does not prepend their Agency ID to the campaign name when setting up the campaign in the partner's dashboard, Branch cannot associate any resulting conversions to the agency."
+}
+[/block]
 
 While most partners rely on a Branch link for the measuring and attributing of ad clicks/impressions for your mobile app, a handful of partners don’t use links at all. Instead they rely on sending and receiving attribution data via a server-to-server integration. This means that, for these partners, agency-managed campaigns don’t inherently include these partners’ conversion statistics.
 
 In order to associate an Agency with campaigns run on SANs, Agency users must prepend campaign names with their Agency ID - `agency_{agency_id}_` - within the partner platform; e.g. `agency_1234_My_SAN_Campaign`.
 
-!!! info "Finding Your Agency ID"
-	You can find your Agency ID under Account Settings in the [Agency view](/dashboard/agency-view/#managing-your-agency-profile).
+[block:callout]
+{
+  "type": "info",
+  "title": "Finding Your Agency ID",
+  "body": "You can find your Agency ID under Account Settings in the [Agency view](/dashboard/agency-view/#managing-your-agency-profile)."
+}
+[/block]
 
 ### Filtering by Agency
 
@@ -95,8 +110,13 @@ When viewing analytics, data is filterable by `Agency` via:
 - An advanced filter in Webhooks
 - An `agency_name` column in exported CSVs (Daily Export API, dashboard CSV exports)
 
-!!! note "Viewing other Agencies Data"
-	Only Agencies given the ability to view other Agencies data will be able to filter analytics by Agency.
+[block:callout]
+{
+  "type": "note",
+  "title": "Viewing other Agencies Data",
+  "body": "Only Agencies given the ability to view other Agencies data will be able to filter analytics by Agency."
+}
+[/block]
 
 ### Agency Access to Export Sensitive Data via API
 

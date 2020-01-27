@@ -21,21 +21,36 @@ If you haven't already integrated Branch SDK into your application, please follo
 
 1. Documentation for [iOS](/apps/ios/)
 
-!!! warning "Limitations with setDebug and seeing data in Branch"
-	When integrating the SDKs, it's often useful to use setDebug to verify that your app is able to communicate with Branch servers, and is receiving deep link data. However, our upstream systems don't register test events sent using setDebug, so events will not appear in Liveview or Analytics, nor will they fire postbacks. You should disable setDebug when looking at Liveview or testing postbacks.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Limitations with setDebug and seeing data in Branch",
+  "body": "When integrating the SDKs, it's often useful to use setDebug to verify that your app is able to communicate with Branch servers, and is receiving deep link data. However, our upstream systems don't register test events sent using setDebug, so events will not appear in Liveview or Analytics, nor will they fire postbacks. You should disable setDebug when looking at Liveview or testing postbacks."
+}
+[/block]
 
 #### Track conversion events
 
 Install and open events are automatically tracked using just the Branch SDK integration. However, to track custom events, such as registration or purchase, you will need to integrate them into your application.
 
-!!! warning "Sending event metadata from your application"
-	Please make sure that you setup and pass event metadata from the application to the ad partner. Follow up with your ad partner to get the list of required parameters.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Sending event metadata from your application",
+  "body": "Please make sure that you setup and pass event metadata from the application to the ad partner. Follow up with your ad partner to get the list of required parameters."
+}
+[/block]
 
 Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview). This will help ensure that you've integrated the right Branch events with the correct metadata.
 
 
-!!! note "Testing your events with Liveview"
-	You can test your integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter with the event name to verify that the Branch SDK is recording each event.
+[block:callout]
+{
+  "type": "note",
+  "title": "Testing your events with Liveview",
+  "body": "You can test your integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter with the event name to verify that the Branch SDK is recording each event."
+}
+[/block]
 
 
 ### Enabling the Integration
@@ -47,8 +62,13 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 
 ![image](/_assets/img/pages/deep-linked-ads/moloco/moloco-enable.png)
 
-!!! tip "Enable postbacks"
-    Basic postbacks will automatically be activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then [add additional postbacks](#adding-more-postbacks), for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_. You can also [edit postbacks](#advanced-editing-postbacks) if there's additional data you really need to pass along to your ad partner.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Enable postbacks",
+  "body": "Basic postbacks will automatically be activated for events like _Install_ and _Purchase_ when you enable your ad partner. You can then [add additional postbacks](#adding-more-postbacks), for example, if you wanted to add postbacks for custom events that are specific to your app like _Account Created_. You can also [edit postbacks](#advanced-editing-postbacks) if there's additional data you really need to pass along to your ad partner."
+}
+[/block]
 
 ![image](/_assets/img/pages/deep-linked-ads/moloco/moloco-postbacks.png)
 
@@ -68,12 +88,21 @@ Once you've enabled an integration it's time to create a tracking link.
 
     ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-tags.png)
 
-    !!! tip "Set Analytics tags"
+    [block:callout]
+{
+  "type": "tip",
+  "title": "Set Analytics tags",
+  "body": "It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "YouTube", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts.""
+}
+[/block]
 
-        It's easier to slice your data in our analytics platform if you properly assign analytics parameters to your link. <notranslate>_Channels_</notranslate> generally correspond to ad networks, and <notranslate>_Campaigns_</notranslate> correspond to marketing initiatives that you're launching. For example: <notranslate>_Channel_</notranslate>: "YouTube", <notranslate>_Campaign_</notranslate>: "Summer 2017 Shoe Discounts."
-
-    !!! info "Links Created by Agency Users"
-        When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup.
+    [block:callout]
+{
+  "type": "info",
+  "title": "Links Created by Agency Users",
+  "body": "When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Quick Link is associated with that Agency via a unique agency_id that is included as a key-value in deep linking setup."
+}
+[/block]
 
 
 1. Click <notranslate>**Create Link Now**</notranslate>, and you have your tracking link! Take this link and give it to your Ad Partner's Account Manager or paste it into the tracking section of your campaign yourself.

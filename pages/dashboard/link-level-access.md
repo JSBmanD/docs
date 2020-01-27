@@ -49,15 +49,25 @@ You can create new ad links, as well as edit/duplicate/archive current ad links.
 
 ![image](/_assets/img/pages/dashboard/access-levels/link-ad-links.png)
 
-!!! info "Creating an Ad Link"
-	Please refer to any [Universal Ads Partner Integration](/deep-linked-ads/1plusads-mobile-tracking/#create-an-ad-link) article for an in-depth tutorial on how to create an ad link.
+[block:callout]
+{
+  "type": "info",
+  "title": "Creating an Ad Link",
+  "body": "Please refer to any [Universal Ads Partner Integration](/deep-linked-ads/1plusads-mobile-tracking/#create-an-ad-link) article for an in-depth tutorial on how to create an ad link."
+}
+[/block]
 
 ## Channels & Links
 
 ### Quick Links
 
-!!! warning "Aggregate Data Access Required"
-	Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)
+[block:callout]
+{
+  "type": "warning",
+  "title": "Aggregate Data Access Required",
+  "body": "Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)"
+}
+[/block]
 
 If you are an Admin, you have edit access to the <notranslate>**Quick Links**</notranslate> section.
 
@@ -65,13 +75,23 @@ If you are an Admin, you have edit access to the <notranslate>**Quick Links**</n
 
 You can create new Quick Links, as well as edit/view stats/debug/duplicate/archive existing quick links.
 
-!!! info "Creating a Quick Link"
-	Please refer to the [Creating Quick Links](/links/quick-links/) article for an in-depth tutorial on how to create quick links.
+[block:callout]
+{
+  "type": "info",
+  "title": "Creating a Quick Link",
+  "body": "Please refer to the [Creating Quick Links](/links/quick-links/) article for an in-depth tutorial on how to create quick links."
+}
+[/block]
 
 #### Bulk Create Links
 
-!!! warning "Aggregate Data Access Required"
-	Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)
+[block:callout]
+{
+  "type": "warning",
+  "title": "Aggregate Data Access Required",
+  "body": "Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)"
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/link-bulk-create.png)
 
@@ -92,8 +112,13 @@ To create quick links in bulk:
 
 #### Export
 
-!!! warning "Aggregate Data Access Required"
-	Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)
+[block:callout]
+{
+  "type": "warning",
+  "title": "Aggregate Data Access Required",
+  "body": "Access to the Quick Link Export functionality also requires access to [Aggregate Data](aggregate-data-access.md)"
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/link-export-csv.png)
 

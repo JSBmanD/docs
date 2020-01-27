@@ -25,8 +25,13 @@ If you haven't already integrated Branch SDK into your application, please follo
 
 1. Documentation for [iOS](/apps/ios/)
 
-!!! warning "Limitations with setDebug and seeing data in Branch"
-	When integrating the SDKs, it's often useful to use setDebug to verify that your app is able to communicate with Branch servers, and is receiving deep link data. However, our upstream systems don't register test events sent using setDebug, so events will not appear in Liveview or Analytics, nor will they fire postbacks. You should disable setDebug when looking at Liveview or testing postbacks.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Limitations with setDebug and seeing data in Branch",
+  "body": "When integrating the SDKs, it's often useful to use setDebug to verify that your app is able to communicate with Branch servers, and is receiving deep link data. However, our upstream systems don't register test events sent using setDebug, so events will not appear in Liveview or Analytics, nor will they fire postbacks. You should disable setDebug when looking at Liveview or testing postbacks."
+}
+[/block]
 
 ### Enable the integration
 
@@ -41,8 +46,13 @@ If you haven't already integrated Branch SDK into your application, please follo
 
 Enter any credentials that may be required, and click Save and Enable in the bottom right hand corner.
 
-!!! note "Account credentials"
-	Please ask your ad partner where you can find your credentials.
+[block:callout]
+{
+  "type": "note",
+  "title": "Account credentials",
+  "body": "Please ask your ad partner where you can find your credentials."
+}
+[/block]
 
 #### Retrieve your WebEngage API Key
 

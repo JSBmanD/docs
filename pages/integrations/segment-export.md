@@ -15,8 +15,13 @@ Once the Branch SDK is integrated into an app, Branch can detect which links are
 
 Branch will send *attributed* **installs** and **opens**, as well as any **custom events** and **commerce events** you track with Branch. Non-referred events, clicks, web session starts, and pageviews will be excluded. Branch also sends all the data that is attached to the link that drove the referred event. This will allow you to analyze which campaigns, channels, etc. are helping you acquire and engage users. You can see the list of fields that we send to Segment [here](#what-branch-sends-to-segment).
 
-!!! warning "WebSDK events not supported"
-    We do not support Segment export for Branch WebSDK events.
+[block:callout]
+{
+  "type": "warning",
+  "title": "WebSDK events not supported",
+  "body": "We do not support Segment export for Branch WebSDK events."
+}
+[/block]
 
 ### What does it look like?
 
@@ -63,8 +68,13 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 
     ![Ads Partner Management](/_assets/img/ingredients/data-integrations/search-for-integration.png)
 
-    !!! note "We've upgraded our Data Integrations!"
- 		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
+    [block:callout]
+{
+  "type": "note",
+  "title": "We've upgraded our Data Integrations!",
+  "body": "We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018."
+}
+[/block]
 
         ![Ads Partner Management](/_assets/img/ingredients/data-integrations/legacy-data-integrations.png)
 
@@ -74,8 +84,13 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 
     ![image](/_assets/img/pages/integrations/segment/enable-segment.png)
 
-!!! warning "Please test integration!"
-    Branch is not responsible for inaccurate API keys.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Please test integration!",
+  "body": "Branch is not responsible for inaccurate API keys."
+}
+[/block]
 
 ### Pass Segment Anonymous ID
 

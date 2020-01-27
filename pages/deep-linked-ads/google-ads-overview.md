@@ -13,8 +13,13 @@ With Branch, you can integrate with **[Google Ads](https://ads.google.com/home/)
 
 ![image](/_assets/img/pages/deep-linked-ads/google/google-ads-overview.png)
 
-!!! warning "Branch Linking Supported but Not Recommended"
-	You can use Branch links in non-app campaigns.  However, they are not required and we recommend their usage only in custom edge cases.  Learn more about [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/) for using Branch links.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Branch Linking Supported but Not Recommended",
+  "body": "You can use Branch links in non-app campaigns.  However, they are not required and we recommend their usage only in custom edge cases.  Learn more about [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/) for using Branch links."
+}
+[/block]
 
 ## Campaign Support
 
@@ -59,15 +64,25 @@ Please follow Google Ads' documentation on how to [set up an App Engagement Camp
 * [x] Use an [audience list](https://support.google.com/google-ads/answer/9234182) of app users.
 * [x] Have [mobile app conversion tracking](https://support.google.com/google-ads/answer/6100665) set up and [a supported third party](https://support.google.com/google-ads/answer/7382633) (Branch) to track conversions.
 
-!!! warning "Dynamic Remarketing Campaigns for Apps"
-	App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a <notranslate>**Web-based Ad**</notranslate> using the <notranslate>**Display Network**</notranslate>.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Dynamic Remarketing Campaigns for Apps",
+  "body": "App Engagement Campaigns do not include dynamic remarketing campaigns for apps.  If you want to set up dynamic remarketing campaigns for people who have previously engaged with your app, you must create a <notranslate>**Web-based Ad**</notranslate> using the <notranslate>**Display Network**</notranslate>."
+}
+[/block]
 
 For more detailed information, please see [Google Ads' help documentation](https://support.google.com/google-ads/answer/9234180).
 
 ### Web-based Ads (non-App Campaigns)
 
-!!! info "Non-App Campaigns"
-	The integration is mostly designed to strongly support app install campaigns and app engagement campaigns. However, you can also still run non-app campaigns and Google will confirm when a supported app conversion occurs.
+[block:callout]
+{
+  "type": "info",
+  "title": "Non-App Campaigns",
+  "body": "The integration is mostly designed to strongly support app install campaigns and app engagement campaigns. However, you can also still run non-app campaigns and Google will confirm when a supported app conversion occurs."
+}
+[/block]
 
 - Includes <notranslate>**Search**</notranslate>, <notranslate>**Display**</notranslate>, <notranslate>**Shopping**</notranslate> and <notranslate>**Video**</notranslate> Campaign types
 	- Dynamic Remarketing campaigns for Apps
@@ -94,8 +109,13 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 
 Please follow Google Ads' documentation on how to [set up a Campaign](https://support.google.com/google-ads/answer/6324971?hl=en&ref_topic=3121941).
 
-!!! warning "Web Ads Routing to Your App"
-	If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the full power of Branch's routing capabilities for **desktop/mobile web conversions AND deep linking into apps via Branch links**, please use [Branch's custom deep linking solution](/deep-linked-ads/google-ads-customization/).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Web Ads Routing to Your App",
+  "body": "If you are running any Web-based (non-UAC) Google Ads campaigns and want to leverage the full power of Branch's routing capabilities for **desktop/mobile web conversions AND deep linking into apps via Branch links**, please use [Branch's custom deep linking solution](/deep-linked-ads/google-ads-customization/)."
+}
+[/block]
 
 ## Data Mapping between Google Ads & Branch
 
@@ -137,9 +157,13 @@ In order to track these events, please refer to this document for further [infor
 
 ### What is Parallel Tracking?
 
-!!! warning "Since October 30, 2018, parallel tracking is required for all Google Ads accounts."
-
-In the past, Google Ads' non-UAC campaign clicks were tracked through “sequential tracking” (i.e. a client-side redirect). When an ad was clicked, the customer’s browser would go to the tracking URL, and then the tracking URL was responsible for forwarding the browser on to the Final URL.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Since October 30, 2018, parallel tracking is required for all Google Ads accounts.",
+  "body": "In the past, Google Ads' non-UAC campaign clicks were tracked through “sequential tracking” (i.e. a client-side redirect). When an ad was clicked, the customer’s browser would go to the tracking URL, and then the tracking URL was responsible for forwarding the browser on to the Final URL."
+}
+[/block]
 
 ![image](/_assets/img/pages/deep-linked-ads/google/legacy-sequential-tracking.png)
 

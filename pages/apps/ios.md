@@ -1,13 +1,23 @@
 ---
 title: iOS SDK
 ---
-!!! info "Current SDK Version 0.31.3"
-    Please see the [iOS Version History](/version-histories/ios-version-history) to view change log.
+[block:callout]
+{
+  "type": "info",
+  "title": "Current SDK Version 0.31.3",
+  "body": "Please see the [iOS Version History](/version-histories/ios-version-history) to view change log."
+}
+[/block]
 
 ## Integrate Branch
 
-!!! warning "Inconsistent Universal links behavior on iOS 11.2+"
-    After updating a device to iOS 11.2+, we found that the app's AASA file is no longer downloaded reliably onto your user’s device after an app install. As a result, clicking on Universal Links will no longer open the app consistently. You can set [forced uri redirect mode](/links/integrate/#forced-redirections) on your Branch links to open the app with URI schemes. View details of the issue on the [Apple Bug report](http://www.openradar.me/radar?id=4999496467480576).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Inconsistent Universal links behavior on iOS 11.2+",
+  "body": "After updating a device to iOS 11.2+, we found that the app's AASA file is no longer downloaded reliably onto your user’s device after an app install. As a result, clicking on Universal Links will no longer open the app consistently. You can set [forced uri redirect mode](/links/integrate/#forced-redirections) on your Branch links to open the app with URI schemes. View details of the issue on the [Apple Bug report](http://www.openradar.me/radar?id=4999496467480576)."
+}
+[/block]
 
 - ### Configure Branch
 
@@ -72,8 +82,13 @@ title: iOS SDK
         ```sh
         pod install && pod update
         ```
-        !!! info "iAd Support Included by Default"
-            With the release of v0.28.0, the Branch SDK for iOS now includes all of the necessary dependencies for iAD when installed via CocoaPods.
+        [block:callout]
+{
+  "type": "info",
+  "title": "iAd Support Included by Default",
+  "body": "With the release of v0.28.0, the Branch SDK for iOS now includes all of the necessary dependencies for iAD when installed via CocoaPods."
+}
+[/block]
 
     - Option 2: [Carthage](https://github.com/Carthage/Carthage)
 
@@ -499,8 +514,13 @@ title: iOS SDK
     - Long press on the deep link (not 3D Touch)
     - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app ([example](/_assets/img/pages/apps/ios-notes.png))
 
-    !!! tip "Testing deferred deep linking"
-        Deferred deep linking is simply deep linking into an app that is not yet installed. Once the app is installed, the context is preserved and the user's first app-open will have the deep link data from the original Branch link. To test this, uninstall the app from your device, click the Branch link, and manually launch the app from Xcode. You should be routed to the correct content within your app.
+    [block:callout]
+{
+  "type": "tip",
+  "title": "Testing deferred deep linking",
+  "body": "Deferred deep linking is simply deep linking into an app that is not yet installed. Once the app is installed, the context is preserved and the user's first app-open will have the deep link data from the original Branch link. To test this, uninstall the app from your device, click the Branch link, and manually launch the app from Xcode. You should be routed to the correct content within your app."
+}
+[/block]
 
 ## Implement features
 

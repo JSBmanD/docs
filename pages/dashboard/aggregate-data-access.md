@@ -70,8 +70,13 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-ads-analytics.gif)
 
-!!! info "Viewing Ads Analytics"
-    Please refer to the [Paid Ads Analytics](/activity-reports-analytics/paid-ads-analytics/) article for an in-depth tutorial on using viewing your Paid Ads Analytics.
+[block:callout]
+{
+  "type": "info",
+  "title": "Viewing Ads Analytics",
+  "body": "Please refer to the [Paid Ads Analytics](/activity-reports-analytics/paid-ads-analytics/) article for an in-depth tutorial on using viewing your Paid Ads Analytics."
+}
+[/block]
 
 ### Journeys Banners Analytics
 
@@ -79,8 +84,13 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-journeys-analytics.gif)
 
-!!! info "Viewing Journeys Analytics"
-    Please refer to the [Paid Ads Analytics](/activity-reports-analytics/journeys-analytics/) article for an in-depth tutorial on using viewing your Journeys Analytics.
+[block:callout]
+{
+  "type": "info",
+  "title": "Viewing Journeys Analytics",
+  "body": "Please refer to the [Paid Ads Analytics](/activity-reports-analytics/journeys-analytics/) article for an in-depth tutorial on using viewing your Journeys Analytics."
+}
+[/block]
 
 ### Email Analytics
 
@@ -92,8 +102,13 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 All access roles - Admin/Team Member/Full Read - except Limited Read have view access to the <notranslate>**Organic Search**</notranslate> page.
 
-!!! warning "Channel-level Access also Required"
-    Due to the ability to impact functionality, the Organic Search page also requires the user have Channel-level access.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Channel-level Access also Required",
+  "body": "Due to the ability to impact functionality, the Organic Search page also requires the user have Channel-level access."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-organic-search.png)
 

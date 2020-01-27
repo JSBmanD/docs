@@ -52,8 +52,13 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 
     ![Ads Partner Management](/_assets/img/ingredients/data-integrations/search-for-integration.png)
 
-    !!! note "We've upgraded our Data Integrations!"
- 		    We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018.
+    [block:callout]
+{
+  "type": "note",
+  "title": "We've upgraded our Data Integrations!",
+  "body": "We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018."
+}
+[/block]
 
         ![Ads Partner Management](/_assets/img/ingredients/data-integrations/legacy-data-integrations.png)
 
@@ -63,8 +68,13 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 
 ![image](/_assets/img/pages/integrations/mixpanel/enable-mixpanel-integration.png)
 
-!!! warning "Please test integration!"
-    Branch is not responsible for inaccurate API keys.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Please test integration!",
+  "body": "Branch is not responsible for inaccurate API keys."
+}
+[/block]
 
 ### Pass Mixpanel Distinct ID
 
@@ -91,8 +101,13 @@ Branch.getInstance().setRequestMetadata("$mixpanel_distinct_id", mp.getDistinctI
 
 For more information, see [Why We Recommend Passing Mixpanel Distinct ID](#what-branch-sends-to-mixpanel).
 
-!!! warning "Changes in Mixpanel Distinct ID"
-    If you at any point change the Mixpanel Distinct ID for a user as she’s using your app, you should invoke the same one line of code as above. This way, future calls from Branch to Mixpanel use the updated distinct id.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Changes in Mixpanel Distinct ID",
+  "body": "If you at any point change the Mixpanel Distinct ID for a user as she’s using your app, you should invoke the same one line of code as above. This way, future calls from Branch to Mixpanel use the updated distinct id."
+}
+[/block]
 
     Example for iOS:
 

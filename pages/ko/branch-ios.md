@@ -1,8 +1,13 @@
 ---
 title: Branch 연동 가이드 - iOS
 ---
-!!! warning "iOS 11.2+ 에서 Universal Link의 액션이 일치하지 않은 이슈에 대한 설명"
-    일반적으로 Universal Link 가 정상적으로 작동하려면 사용자가 앱을 설치한 이후 iOS에서 해당 앱의 AASA 파일을 다운로드합니다. 하지만 iOS 11.2+ 로 업데이트되면서 Branch 에서는 AASA 파일이 사용자의 디바이스에 확실하게 다운로드되지 않을 때가 있는 것을 발견했습니다. 그 결과로, iOS 11.2+ 에서 Universal Link 를 클릭할 때 항상 앱이 실행되는 것은 아닙니다. 그러므로 광고주께서는 Branch 링크 생성 때 forced uri redirect mode 를 설정하여 URI 스키마로 앱을 실행할 수 있습니다. 해당 이슈에 대한 상세내용은 Apple Bug report 를 참고하기 바랍니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "iOS 11.2+ 에서 Universal Link의 액션이 일치하지 않은 이슈에 대한 설명",
+  "body": "일반적으로 Universal Link 가 정상적으로 작동하려면 사용자가 앱을 설치한 이후 iOS에서 해당 앱의 AASA 파일을 다운로드합니다. 하지만 iOS 11.2+ 로 업데이트되면서 Branch 에서는 AASA 파일이 사용자의 디바이스에 확실하게 다운로드되지 않을 때가 있는 것을 발견했습니다. 그 결과로, iOS 11.2+ 에서 Universal Link 를 클릭할 때 항상 앱이 실행되는 것은 아닙니다. 그러므로 광고주께서는 Branch 링크 생성 때 forced uri redirect mode 를 설정하여 URI 스키마로 앱을 실행할 수 있습니다. 해당 이슈에 대한 상세내용은 Apple Bug report 를 참고하기 바랍니다."
+}
+[/block]
 
 - ### Branch 설정
 
@@ -173,8 +178,13 @@ title: Branch 연동 가이드 - iOS
     - 딥링크를 길게 누릅니다. (3D Touch 아님)
     - `Open in "APP_NAME"` 을 클릭하여 앱을 실행합니다.([예시](/_assets/img/pages/apps/ios-notes.png))
 
-    !!! tip "디퍼드 딥링크 테스트"
-        디퍼드 딥링킹은 앱을 설치하지 않은 사용자의 딥링킹을 지원해주는 기능입니다. 사용자가 링크를 클릭하고 앱을 설치하는 동시에 링크에 대한 컨텍스트가 보존했다가 앱을 최초 실행할 때 클릭했던 Branch Link 의 데이터를 전달 받아서 딥링크에 사용하는 것을 가리킵니다. 이것을 테스트하려면 디바이스에서 앱을 제거한 다음 Branch Link 를 클릭하고 XCode 에서 수동으로 앱을 설치하고 실행합니다. 정확하게 구현했다면 앱 내의 해당 컨텐츠로 정확하게 라우팅 될 것입니다.
+    [block:callout]
+{
+  "type": "tip",
+  "title": "디퍼드 딥링크 테스트",
+  "body": "디퍼드 딥링킹은 앱을 설치하지 않은 사용자의 딥링킹을 지원해주는 기능입니다. 사용자가 링크를 클릭하고 앱을 설치하는 동시에 링크에 대한 컨텍스트가 보존했다가 앱을 최초 실행할 때 클릭했던 Branch Link 의 데이터를 전달 받아서 딥링크에 사용하는 것을 가리킵니다. 이것을 테스트하려면 디바이스에서 앱을 제거한 다음 Branch Link 를 클릭하고 XCode 에서 수동으로 앱을 설치하고 실행합니다. 정확하게 구현했다면 앱 내의 해당 컨텐츠로 정확하게 라우팅 될 것입니다."
+}
+[/block]
 
 
 ## 기능 구현

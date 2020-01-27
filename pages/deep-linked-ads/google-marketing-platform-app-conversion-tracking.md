@@ -7,8 +7,13 @@ title: Google Marketing Platform
 
 Branch links can be used together with Google Marketing Platform app conversion ads, allowing you to track ad-driven app conversion (installs and in-app events) on the Branch dashboard.
 
-!!! warning "Google Marketing Platform"
-	The [Google Marketing Platform](https://support.google.com/dcm/answer/9015629?hl=en) includes the following products: Display & Video 360 (Formerly DoubleClick Bid Manager) and Campaign Manager (Formerly DoubleClick Campaign Manager).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Google Marketing Platform",
+  "body": "The [Google Marketing Platform](https://support.google.com/dcm/answer/9015629?hl=en) includes the following products: Display & Video 360 (Formerly DoubleClick Bid Manager) and Campaign Manager (Formerly DoubleClick Campaign Manager)."
+}
+[/block]
 
 	Please make sure to use `Google Marketing Platform` in your Branch dashboard and not `Doubleclick` which is the legacy integration and does not include server-side attribution responses.
 
@@ -17,8 +22,13 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 - App conversion data collected by the Branch SDK sent to Google Marketing Platform for attribution.
 - `Read-only` access to app conversion data (not cost/click/impression data) from Google Marketing Platform Ads in your Branch account.
 
-!!! warning "Working with Google Marketing Platform & Google Ads"
-	Please keep the following in mind when working with both Google Marketing Platform and Google Ads:
+[block:callout]
+{
+  "type": "warning",
+  "title": "Working with Google Marketing Platform & Google Ads",
+  "body": "Please keep the following in mind when working with both Google Marketing Platform and Google Ads:"
+}
+[/block]
 
 	If your Google Marketing Platform and Google Ads accounts are **not linked**:
 
@@ -36,8 +46,13 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 
 ## Configure Branch as App Analytics Partner in Google Marketing Platform
 
-!!! warning "Required Before Enabling Integration in Branch"
-	After your Google representative has confirmed whitelisting, use the guide provided by their team to configure Branch as an App Analytics Partner and generate a link ID for the iOS and Android versions of your app.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Required Before Enabling Integration in Branch",
+  "body": "After your Google representative has confirmed whitelisting, use the guide provided by their team to configure Branch as an App Analytics Partner and generate a link ID for the iOS and Android versions of your app."
+}
+[/block]
 
 ## Enable Google Marketing Platform in Branch
 
@@ -60,8 +75,13 @@ Please follow Google's documentation on how to set up a [Campaign](https://suppo
 
 Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
 
-!!! error "Agency ID Required"
-	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+[block:callout]
+{
+  "type": "error",
+  "title": "Agency ID Required",
+  "body": "Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency."
+}
+[/block]
 
 ### Finding Your Agency ID
 
@@ -74,13 +94,23 @@ Your agency tag **must** adhere to the following format:
 	`agency_{YOUR AGENCY ID HERE}_`
 
 
-!!! info "Example Campaign with Agency tag"
- 	`agency_1234567890_My_SAN_Ad_Campaign`
+[block:callout]
+{
+  "type": "info",
+  "title": "Example Campaign with Agency tag",
+  "body": "`agency_1234567890_My_SAN_Ad_Campaign`"
+}
+[/block]
 
 	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
 
-!!! warning "Agency ID Removed When Exporting"
-	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Removed When Exporting",
+  "body": "The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign"."
+}
+[/block]
 
 
 ## Data Mapping between Google Marketing Platform & Branch

@@ -3,11 +3,21 @@ title: mParticle iOS
 ---
 This documentation explains how to send **mParticle events to your Branch dashboard**. If you'd like to send Branch installs to your mParticle dashboard, please review the [Branch/mParticle Data Integration](/integrations/mparticle).
 
-!!! info "These instructions apply to the mParticle SDK version 7+ integration"
-    mParticle introduced a new attribution & deep linking API in v7 of their SDK (http://docs.mparticle.com/developers/sdk/ios/getting-started/#upgrade-to-version-7-of-the-sdk), so please contact your Branch or mParticle Account Managers for more details, if you have mParticle SDK < v7 installed in your app.
+[block:callout]
+{
+  "type": "info",
+  "title": "These instructions apply to the mParticle SDK version 7+ integration",
+  "body": "mParticle introduced a new attribution & deep linking API in v7 of their SDK (http://docs.mparticle.com/developers/sdk/ios/getting-started/#upgrade-to-version-7-of-the-sdk), so please contact your Branch or mParticle Account Managers for more details, if you have mParticle SDK < v7 installed in your app."
+}
+[/block]
 
-!!! warning "Inconsistent Universal links behavior on iOS 11.2"
-    After updating a device to iOS 11.2, we found that the app's AASA file is no longer downloaded reliably onto your user’s device after an app install. As a result, clicking on Universal links will no longer open the app consistenly. You can set [forced uri redirect mode](/links/integrate/#forced-redirections) on your Branch links to open the app with URI schemes. View details of the issue on the [Apple Bug report](http://www.openradar.me/radar?id=4999496467480576).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Inconsistent Universal links behavior on iOS 11.2",
+  "body": "After updating a device to iOS 11.2, we found that the app's AASA file is no longer downloaded reliably onto your user’s device after an app install. As a result, clicking on Universal links will no longer open the app consistenly. You can set [forced uri redirect mode](/links/integrate/#forced-redirections) on your Branch links to open the app with URI schemes. View details of the issue on the [Apple Bug report](http://www.openradar.me/radar?id=4999496467480576)."
+}
+[/block]
 
 ## Technical Requirements
 
@@ -111,8 +121,13 @@ The mParticle iOS SDK (version 5.4.1 and later) will automatically call the foll
 
 This means mParticle will automatically handle initializing Branch sessions. However, please ensure `.onAttributionComplete` is enabled in the `mParticleOptions` object.
 
-!!! warning "mParticle appDelegate proxy not enabled"
-    If the mParticle appDelegate proxy is not enabled, you must add mParticle's [URI & Domain relays](https://docs.mparticle.com/developers/sdk/ios/getting-started/#uiapplication-delegate-proxy) to the appDelegate.
+[block:callout]
+{
+  "type": "warning",
+  "title": "mParticle appDelegate proxy not enabled",
+  "body": "If the mParticle appDelegate proxy is not enabled, you must add mParticle's [URI & Domain relays](https://docs.mparticle.com/developers/sdk/ios/getting-started/#uiapplication-delegate-proxy) to the appDelegate."
+}
+[/block]
 
 At this point you should start seeing your Branch session data - including installs, re-opens, and any custom events - in your Branch dashboard.
 
@@ -122,8 +137,13 @@ Our integration with mParticle supports the creation and attribution of deep lin
 
 Please ensure you've followed [mParticle's documentation](http://docs.mparticle.com/developers/sdk/ios/kits#deep-linking) to ensure your deep link data is being retrieved.
 
-!!! info "mParticle in React Native"
-    If you integrate mParticle in React Native, you will still integrate the Branch kit as a Native module and follow the setup steps above.  However, instead of retrieving deep link data in the the native layer, you'll retrieve deep link data via [mParticle's React Native function found here](https://github.com/mParticle/react-native-mparticle/blob/master/README.md#attribution).
+[block:callout]
+{
+  "type": "info",
+  "title": "mParticle in React Native",
+  "body": "If you integrate mParticle in React Native, you will still integrate the Branch kit as a Native module and follow the setup steps above.  However, instead of retrieving deep link data in the the native layer, you'll retrieve deep link data via [mParticle's React Native function found here](https://github.com/mParticle/react-native-mparticle/blob/master/README.md#attribution)."
+}
+[/block]
 
 ### Test deep link
 

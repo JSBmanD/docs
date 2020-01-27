@@ -31,8 +31,13 @@ As you are testing the link yourself - rather than it being used by your Ad Part
 In order to test your Branch link for both routing and attribution, you must ensure you've supplied
 **real Device IDs - AAID for Android devices and IDFA for Apple devices**. If you don't supply the device IDs from your testing devices, Branch will use fingerprinting for probabilistic attribution.
 
-!!! info "How Do I Find my Device IDs?"
-	Learn how to find your Android and/or iOS device IDs [here](https://support.branch.io/support/solutions/articles/6000217459-how-to-find-and-reset-your-mobile-device-identifier).
+[block:callout]
+{
+  "type": "info",
+  "title": "How Do I Find my Device IDs?",
+  "body": "Learn how to find your Android and/or iOS device IDs [here](https://support.branch.io/support/solutions/articles/6000217459-how-to-find-and-reset-your-mobile-device-identifier)."
+}
+[/block]
 
 Using the sample Branch Ad Link above, filling in the macros would result in the following link:
 
@@ -40,8 +45,13 @@ Using the sample Branch Ad Link above, filling in the macros would result in the
 
 For a complete list of the macros that Branch supports in postbacks, please see [Postback Macros & Functions](https://docs.branch.io/resources/postback-macros-and-functions/).
 
-!!! warning "Not Passing Data"
- 	Leaving the macros in the link - e.g. `<IDFA>` -  will result in broken links and therefore will not work. You can pass in empty values for the link to work, but the subsequent postbacks will return empty values to your partner.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Not Passing Data",
+  "body": "Leaving the macros in the link - e.g. `<IDFA>` -  will result in broken links and therefore will not work. You can pass in empty values for the link to work, but the subsequent postbacks will return empty values to your partner."
+}
+[/block]
 
 
 ### Common Ad Link Status Scenarios

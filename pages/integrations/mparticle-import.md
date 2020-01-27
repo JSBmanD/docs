@@ -25,8 +25,13 @@ Branch will import events that are not auto-tracked with the Branch SDKs. This i
     1. Enter your Branch Key. This can be found in the [Account Settings > App](https://dashboard.branch.io/account-settings/app){:target="\_blank"} section of the Branch dashboard.
     1. Enter your Branch Secret. This can be found in the [Account Settings > App](https://dashboard.branch.io/account-settings/app){:target="\_blank"} section of the Branch dashboard.
 
-!!! warning "Avoid duplicate data"
-    To avoid duplicate data, you should either [track conversion events directly with Branch](/apps/v2event) or track events with mParticle and then enable import to Branch, not both. Branch will warn you if you try to import events to Branch that you are already tracking.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Avoid duplicate data",
+  "body": "To avoid duplicate data, you should either [track conversion events directly with Branch](/apps/v2event) or track events with mParticle and then enable import to Branch, not both. Branch will warn you if you try to import events to Branch that you are already tracking."
+}
+[/block]
 
 
 ### Supported events

@@ -65,8 +65,13 @@ If you are an Admin, you have edit access to the <notranslate>**Profile**</notra
 - <notranslate>**App ID**</notranslate> - assigned by Branch; not editable.
 - <notranslate>**Time Zone**</notranslate> - Your time zone affects your dashboard analytics and how your Branch data matches up with external data sources. Use the drop-down to select the appropriate time zone.
 
-!!! info "Resetting your Branch Key/Secret"
-	If you need to reset your Branch Key/Secret, click <notranslate>**Reset Key**</notranslate> or <notranslate>**Reset Secret**</notranslate> respectively.  Doing so automatically generates a new Branch Key/Secret.
+[block:callout]
+{
+  "type": "info",
+  "title": "Resetting your Branch Key/Secret",
+  "body": "If you need to reset your Branch Key/Secret, click <notranslate>**Reset Key**</notranslate> or <notranslate>**Reset Secret**</notranslate> respectively.  Doing so automatically generates a new Branch Key/Secret."
+}
+[/block]
 
 ### Managing your User Profile
 
@@ -108,8 +113,13 @@ To add a new App Team User:
 
 Each access level - as defined above - comes with predefined permissions which you can edit if you choose.
 
-!!! tip "Modifying Permissions"
-	If you want to modify a predefined access level, click the pencil icon to (de)select the available options.
+[block:callout]
+{
+  "type": "tip",
+  "title": "Modifying Permissions",
+  "body": "If you want to modify a predefined access level, click the pencil icon to (de)select the available options."
+}
+[/block]
 
 - <notranslate>**Link-level Settings**</notranslate> - Settings or features that can impact functionality for single links.
 - <notranslate>**Channel-level Settings**</notranslate> - Settings or features that can impact functionality across a marketing channel.
@@ -191,8 +201,13 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 ![image](/_assets/img/pages/dashboard/access-levels/desktop-redirects.png)
 
-!!! note "We now support deep linking to Desktop apps such as Spotify and Slack, via URI schemes"
-    Our beta Mac OS Desktop SDK is available for testing, so please contact your Branch Account Manager or integrations@branch.io for more information.
+[block:callout]
+{
+  "type": "note",
+  "title": "We now support deep linking to Desktop apps such as Spotify and Slack, via URI schemes",
+  "body": "Our beta Mac OS Desktop SDK is available for testing, so please contact your Branch Account Manager or integrations@branch.io for more information."
+}
+[/block]
 
 - Use these settings to control the default behavior of your deep links on Desktop browsers
 
@@ -246,8 +261,13 @@ This selector allows you to control how and when Branch uses URI schemes to open
         - e.g. https://example.app.link/VZsTctoINF
         - e.g. https://example.app.link/custom-alias
 
-!!! info "Changing Link Domains"
-    Please view our in-depth article on [changing your link domains](/dashboard/changing-link-domains/), including how to use certain domains as well as troubleshooting.
+[block:callout]
+{
+  "type": "info",
+  "title": "Changing Link Domains",
+  "body": "Please view our in-depth article on [changing your link domains](/dashboard/changing-link-domains/), including how to use certain domains as well as troubleshooting."
+}
+[/block]
 
 #### App Deletion
 
@@ -261,8 +281,13 @@ If you choose to delete your app, this will be a permanent change. Note the foll
 
 ### Attribution Windows
 
-!!! info "Default Attribution Window Settings"
-		Each attribution window has its own default measured in days.  Please refer to the image below for these defaults.
+[block:callout]
+{
+  "type": "info",
+  "title": "Default Attribution Window Settings",
+  "body": "Each attribution window has its own default measured in days.  Please refer to the image below for these defaults."
+}
+[/block]
 
 ![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
 

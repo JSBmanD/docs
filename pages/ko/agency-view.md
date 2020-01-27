@@ -1,8 +1,13 @@
 ---
 title: 에이전시 보기 관련
 ---
-!!! warning "경고 초대 필요"
-	에이전시가 Branch 계정에 액세스하려면 [조직](/dashboard/organization-view/#adding-an-agency) 또는 [앱](/dashboard/app-view/#adding-an-agency) 엔터티 수준의 액세스 권한을 보유한 관리자로부터 초대를 받아야 합니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "경고 초대 필요",
+  "body": "에이전시가 Branch 계정에 액세스하려면 [조직](/dashboard/organization-view/#adding-an-agency) 또는 [앱](/dashboard/app-view/#adding-an-agency) 엔터티 수준의 액세스 권한을 보유한 관리자로부터 초대를 받아야 합니다."
+}
+[/block]
 
   에이전시는 자체 권한을 변경할 수 없으며, 청구 또는 SSO 섹션에 액세스할 수 없습니다.
 
@@ -10,8 +15,13 @@ Branch 계정의 '에이전시' 보기는 미디어 구매를 대행해주는 �
 
 **에이전시 보기는 에이전시 팀 구성원 및 액세스 관리와 같은 계정 수준의 기능을 관리하는 데 사용할 수 있습니다.  [앱 보기](/dashobard/app-view.md)로 토글하여 링크 생성 및 보고서 확인에 필요한 대부분의 기능을 사용할 수 있습니다.**
 
-!!! info "앱 보기를 사용하는 에이전시"
-	데이터에 대한 서드 파티의 액세스가 허용되기 때문에, 앱 보기를 사용할 때는 에이전시 사용자에 대한 일부 제한 사항이 적용됩니다.  더 자세한 내용은 [앱 보기를 사용하는 에이전시](/dashboard/app-view/#agencies-in-app-view)를 참조하세요.
+[block:callout]
+{
+  "type": "info",
+  "title": "앱 보기를 사용하는 에이전시",
+  "body": "데이터에 대한 서드 파티의 액세스가 허용되기 때문에, 앱 보기를 사용할 때는 에이전시 사용자에 대한 일부 제한 사항이 적용됩니다.  더 자세한 내용은 [앱 보기를 사용하는 에이전시](/dashboard/app-view/#agencies-in-app-view)를 참조하세요."
+}
+[/block]
 
 에이전시 보기 개요
 ----------

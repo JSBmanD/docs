@@ -98,8 +98,13 @@ Branch 링크를 Facebook 광고에 삽입하면 해당 링크가 앱에 반환�
 
 ### 데이터를 가져올 수 있나요?
 
-!!! warning "경고"
-	데이터 통합에는 Facebook을 통해 발생한 이벤트가 포함되지 않습니다. 디바이스 레벨의 Facebook 어트리뷰션 데이터를 서드 파티와 공유할 수 없기 때문입니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "경고",
+  "body": "데이터 통합에는 Facebook을 통해 발생한 이벤트가 포함되지 않습니다. 디바이스 레벨의 Facebook 어트리뷰션 데이터를 서드 파티와 공유할 수 없기 때문입니다."
+}
+[/block]
 
 Facebook 관련 데이터에 액세스하는 방법은 다양합니다.
 
@@ -133,8 +138,13 @@ Branch는 디바이스 레의 Facebook 어트리뷰션 데이터를 서드 파�
 
 ### Facebook MMP 이벤트 옵션
 
-!!! info "팁"
-	아래의 옵션을 Branch 대시보드에서 보려면 [여기를 클릭](https://dashboard.branch.io/ads/partner-management/a_facebook?tab=events){:target="\_blank"}하세요.
+[block:callout]
+{
+  "type": "info",
+  "title": "팁",
+  "body": "아래의 옵션을 Branch 대시보드에서 보려면 [여기를 클릭](https://dashboard.branch.io/ads/partner-management/a_facebook?tab=events){:target="\_blank"}하세요."
+}
+[/block]
 
 Branch와 Facebook MMP를 사용하면 이벤트가 Facebook 광고 캠페인을 통해 발생하는지 측정할 수 있습니다. Branch가 Facebook에 광고 ID를 포함한 메타데이터와 이벤트를 보내면, Facebook은 사용자가 마지막으로 보거나 클릭한 광고에 대한 데이터를 반환합니다. 그런 다음 Branch 대시보드에 이 데이터가 표시되며, 조건에 따라* 이 데이터를 Branch의 [데이터 피드](/exports/data-feeds/) 상품에서 사용할 수 있습니다.
 
@@ -148,8 +158,13 @@ Branch가 모든 인스톨 데이터를 Facebook으로 보내면, Facebook은 �
 
 #### 리인스톨과 오픈 추적
 
-!!! warning "경고"
-	Facebook은 백엔드에서 중복되는 커스텀 앱 이벤트를 제거하지 않습니다. 따라서 Facebook SDK가 통합되어 있거나 다른 MMP 추적 앱이 열려 있는 경우 아래의 옵션 1을 선택하시기 바랍니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "경고",
+  "body": "Facebook은 백엔드에서 중복되는 커스텀 앱 이벤트를 제거하지 않습니다. 따라서 Facebook SDK가 통합되어 있거나 다른 MMP 추적 앱이 열려 있는 경우 아래의 옵션 1을 선택하시기 바랍니다."
+}
+[/block]
 
 재설치와 실행을 트래킹할 경우 다음과 같은 3가지 옵션을 선택할 수 있습니다.
 
@@ -159,8 +174,13 @@ Branch가 모든 인스톨 데이터를 Facebook으로 보내면, Facebook은 �
 
 #### 다른 전환 이벤트 추적
 
-!!! warning "경고"
-	Facebook은 백엔드에서 중복되는 커스텀 앱 이벤트를 제거하지 않습니다. 따라서 Facebook SDK가 통합되어 있거나 다른 MMP 추적 앱이 열려 있는 경우 아래의 옵션 1을 선택하시기 바랍니다.
+[block:callout]
+{
+  "type": "warning",
+  "title": "경고",
+  "body": "Facebook은 백엔드에서 중복되는 커스텀 앱 이벤트를 제거하지 않습니다. 따라서 Facebook SDK가 통합되어 있거나 다른 MMP 추적 앱이 열려 있는 경우 아래의 옵션 1을 선택하시기 바랍니다."
+}
+[/block]
 
 Branch만으로도 [앱 이벤트를 추적](/apps/v2event/#v2-event)할 수 있습니다. Branch를 통해 한 번 추적하면 Branch에서 해당 이벤트를 Facebook과 기타 분석 시스템으로 전송합니다. 여기에 간략히 나와 있는 [v2/이벤트 로깅 방법](/apps/v2event/#v2-event)을 사용하시기 바랍니다.
 
@@ -219,8 +239,13 @@ Branch만으로도 [앱 이벤트를 추적](/apps/v2event/#v2-event)할 수 있
 
 ### 기존 Facebook 연동에서 MMP로 마이그레이션
 
-!!! info "참고"
-	Facebook의 앱 비밀번호를 복사하여 붙여 넣어야 하는 기존 Facebook 온보딩 절차가 더 이상 표시되지 않습니다. 대신 'Facebook으로 인증' 옵션을 사용할 수 있습니다.
+[block:callout]
+{
+  "type": "info",
+  "title": "참고",
+  "body": "Facebook의 앱 비밀번호를 복사하여 붙여 넣어야 하는 기존 Facebook 온보딩 절차가 더 이상 표시되지 않습니다. 대신 'Facebook으로 인증' 옵션을 사용할 수 있습니다."
+}
+[/block]
 
 2018년 2월 14일 이전에 Facebook과 Branch의 통합을 사용한 경우 MMP를 포함하는 새로운 Branch 통합으로 업그레이드하는 것이 좋습니다.
 
@@ -342,8 +367,13 @@ Branch 대시보드에서 설치, 재설치 또는 실행을 확인할 수 없�
 
 ##### 2. Facebook 대시보드에 설치 데이터만 표시되고 클릭 데이터는 표시되지 않는 경우
 
-!!! tip "참고"
-	Branch는 설치, 재설치 또는 실행 캠페인에 대한 노출과 클릭 데이터만 표시합니다. 이러한 앱 기반 결과로 이어지지 않은 캠페인이 있을 경우 Branch는 이를 숨김 처리합니다. 이를 통해 관련성이 없는 데이터를 사용하여 Branch 대시보드에서 과도하게 확대 분석을 수행하는 것을 방지할 수 있습니다. 관련 의견이 있다면 제목에 'Facebook MMP + 클릭'을 기재하여 [문의](https://support.branch.io/support/tickets/new){:target="\_blank"}해 주세요.
+[block:callout]
+{
+  "type": "tip",
+  "title": "참고",
+  "body": "Branch는 설치, 재설치 또는 실행 캠페인에 대한 노출과 클릭 데이터만 표시합니다. 이러한 앱 기반 결과로 이어지지 않은 캠페인이 있을 경우 Branch는 이를 숨김 처리합니다. 이를 통해 관련성이 없는 데이터를 사용하여 Branch 대시보드에서 과도하게 확대 분석을 수행하는 것을 방지할 수 있습니다. 관련 의견이 있다면 제목에 'Facebook MMP + 클릭'을 기재하여 [문의](https://support.branch.io/support/tickets/new){:target="\_blank"}해 주세요."
+}
+[/block]
 
 최근 1시간 이내에 통합 기능을 사용하도록 설정한 경우 Branch 대시보드를 새로 고침하여 클릭 데이터를 확인해야 할 수 있습니다. Facebook을 사용하도록 설정한 후 [광고 분석](https://dashboard.branch.io/ads/analytics){:target="\_blank"} 페이지에 처음 방문하면 Branch에서 자동으로 백그라운드 작업을 시작하여 Facebook의 노출과 클릭 데이터를 가져옵니다.
 
@@ -426,8 +456,13 @@ Facebook 연동을 처음 설정한 경우 [Ads Analytics](https://dashboard.bra
 * 날짜 범위에 해당하는 Facebook 대시보드에서 확인되는 설치 수(테이블과 스크린샷 모두 포함)
 * 날짜 범위에 해당하는 Branch 대시보드에서 확인되는 설치 수(테이블과 스크린샷 모두 포함)
 
-!!! note "참고"
-	드문 경우지만 광고주 측에서 동일한 이름의 복수의 Facebook 캠페인을 진행하는 경우가 있었습니다. 이 경우 Branch 대시보드는 동일한 이름으로 모든 캠페인에 대한 통계 수치를 합산하여 보여주지만 Facebook 캠페인 ID가 다르므로 해당 데이터는 백엔드에서 별도로 보관됩니다. Branch 대시보드에 이 데이터를 표시하지는 않지만, 캠페인 ID를 기준으로 [Query API](/exports/query-api)를 통해 통계 자료를 가져올 수 있습니다.
+[block:callout]
+{
+  "type": "note",
+  "title": "참고",
+  "body": "드문 경우지만 광고주 측에서 동일한 이름의 복수의 Facebook 캠페인을 진행하는 경우가 있었습니다. 이 경우 Branch 대시보드는 동일한 이름으로 모든 캠페인에 대한 통계 수치를 합산하여 보여주지만 Facebook 캠페인 ID가 다르므로 해당 데이터는 백엔드에서 별도로 보관됩니다. Branch 대시보드에 이 데이터를 표시하지는 않지만, 캠페인 ID를 기준으로 [Query API](/exports/query-api)를 통해 통계 자료를 가져올 수 있습니다."
+}
+[/block]
 
 ##### 3. Branch 대시보드에 전환 이벤트가 표시되지 않는 경우
 

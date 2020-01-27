@@ -14,8 +14,13 @@ Branch can help track your **[Apple Search Ads](https://searchads.apple.com/)** 
 
 In order to check if the user came from an Apple Search Ads, you must make the attribution call before Branch initializes. As a warning, Apple's Search Ads Attribution API may take more than 1 second round trip. This means that your call to Branch's initSession to the execution of the callback block may be delayed by this additional 1 second.
 
-!!! info "React Native Support"
-    If you are using React Native in your app, please make sure to follow the [Track Apple Search Ads](/apps/react-native/#track-apple-search-ads) section of the React Native integration in addition to the below.
+[block:callout]
+{
+  "type": "info",
+  "title": "React Native Support",
+  "body": "If you are using React Native in your app, please make sure to follow the [Track Apple Search Ads](/apps/react-native/#track-apple-search-ads) section of the React Native integration in addition to the below."
+}
+[/block]
 
 ### Import iAd and AdSupport
 
@@ -28,8 +33,13 @@ You must add Apple's <notranslate>**iAd.framework**</notranslate> and <notransla
 
 #### Enable Apple Search Ads Check
 
-!!! info "Branch iOS SDK v0.30.0"
-    As of v0.30.0, the Branch iOS SDK supports new logic that increases wait time for Apple Search Ads to respond with the payload, as well as ignore Apple's test data.
+[block:callout]
+{
+  "type": "info",
+  "title": "Branch iOS SDK v0.30.0",
+  "body": "As of v0.30.0, the Branch iOS SDK supports new logic that increases wait time for Apple Search Ads to respond with the payload, as well as ignore Apple's test data."
+}
+[/block]
 
 To enable this check, add a `delayInitToCheckForSearchAds` call to your <notranslate>**AppDelegate.m**</notranslate> (or <notranslate>**AppDelegate.swift**</notranslate>) file after you create the Branch singleton, but *before* you call `initSession`. Your code will end up looking something like this:
 
@@ -71,11 +81,21 @@ branch.initSession(launchOptions: launchOptions, andRegisterDeepLinkHandler: { (
 
 If you're concerned about the additional 1 second latency, the call to `delayInitToCheckForSearchAds` can be called conditionally at run time. So, if you want to only check on first install, or the like, then just don't call this method.
 
-!!! warning "Testing Apple Search Ads"
-    If you test using a non-production app and do not use the `ignoreAppleSearchAdsTestData()` method, the iAd framework will return fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Testing Apple Search Ads",
+  "body": "If you test using a non-production app and do not use the `ignoreAppleSearchAdsTestData()` method, the iAd framework will return fake Apple Search Ads payloads to simulate the install being claimed by Apple Search Ads. Subsequently, you will see these claims in your reporting."
+}
+[/block]
 
-!!! warning "Impact on Deferred Deep Linking"
-    If you use deferred deep linking, do not use the `useLongerWaitForAppleSearchAds()` method as it will negatively impact the end user's experience by creating longer wait times for the deferred deep linking to occur.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Impact on Deferred Deep Linking",
+  "body": "If you use deferred deep linking, do not use the `useLongerWaitForAppleSearchAds()` method as it will negatively impact the end user's experience by creating longer wait times for the deferred deep linking to occur."
+}
+[/block]
 
 ## Server to Server Setup
 
@@ -135,8 +155,13 @@ Please ensure you've both selected the correct files *and* pressed the blue uplo
 
 #### Cost, click and impression data not appearing
 
-!!! info "Available Compare By Dimensions for SANs"
-    Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions.
+[block:callout]
+{
+  "type": "info",
+  "title": "Available Compare By Dimensions for SANs",
+  "body": "Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions."
+}
+[/block]
 
     |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
     |---------------------|-------------|-------------|------------------|-------------|
@@ -191,8 +216,13 @@ Downstream events, such as _installs_, should always have the full range of comp
 
 Only agencies managing advertising campaigns on behalf of a client must prepend their <notranslate>**Agency ID**</notranslate> to the campaign name when creating advertising campaigns for Self-Attributing Networks (SANs).
 
-!!! error "Agency ID Required"
-	Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency.
+[block:callout]
+{
+  "type": "error",
+  "title": "Agency ID Required",
+  "body": "Failure to append the campaign name with the <notranslate>**Agency ID**</notranslate> will result in any subsequent conversion not being properly attributed to the responsible agency."
+}
+[/block]
 
 ### Finding Your Agency ID
 
@@ -205,13 +235,23 @@ Your agency tag **must** adhere to the following format:
 	`agency_{YOUR AGENCY ID HERE}_`
 
 
-!!! info "Example Campaign with Agency tag"
- 	`agency_1234567890_My_SAN_Ad_Campaign`
+[block:callout]
+{
+  "type": "info",
+  "title": "Example Campaign with Agency tag",
+  "body": "`agency_1234567890_My_SAN_Ad_Campaign`"
+}
+[/block]
 
 	You can append the Agency Tag to either the **beginning** or the **end** of the campaign name.
 
-!!! warning "Agency ID Removed When Exporting"
-	The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign".
+[block:callout]
+{
+  "type": "warning",
+  "title": "Agency ID Removed When Exporting",
+  "body": "The "~campaign" value displayed in exports/analytics will not include the agency_id. If you set up a campaign called `test_campaign_agency_1234` in Facebook, and for any installs that came from that campaign, the "~campaign" value will be "test campaign"."
+}
+[/block]
 
 
 ## Apple Search Ads Data Mapped to Branch
