@@ -895,8 +895,13 @@ title: Android SDK
             }
             ```
 
-!!! warning ""
-    Handling a new deep link via `reInitSession` will clear the current session data, if there is any, and a new referred "open" will be attributed.
+[block:callout]
+{
+  "type": "warning",
+  "title": "reInitSession",
+  "body": "Handling a new deep link via `reInitSession` will clear the current session data, if there is any, and a new referred "open" will be attributed."
+}
+[/block]
 
 - ### Handle links in your own app
 
@@ -922,11 +927,13 @@ title: Android SDK
 
     - Replace "http://xxxx.app.link/testlink" with your own link URL
 
-!!! warning ""
-    Handling a new deep link in your app will clear the current session data and a new referred "open" will be attributed.
-
-!!! warning ""
-    Similarly to handling push notifications [ttps://docs.branch.io/apps/android/#handle-push-notification], linking to the currently open activity or an activity that's in the backstack and partially visible, must be handled via reInitSession.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Linking to the currently open activity",
+  "body": "Similarly to handling push notifications [https://docs.branch.io/apps/android/#handle-push-notification], linking to the currently open activity or an activity that's in the backstack and partially visible, must be handled via reInitSession."
+}
+[/block]
 
 - ### Enable 100% matching
 

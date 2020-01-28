@@ -11,8 +11,13 @@ This guide will walk you through how to send your Branch data to **[TrafficGuard
 
 ## TrafficGuard Setup
 
-!!! info ""
-	You need to be a TrafficGuard customer & must have set up your [Properties within TrafficGuard](https://support.trafficguard.ai/docs/managing-your-properties).
+[block:callout]
+{
+  "type": "info",
+  "title": "Requirements",
+  "body": "You need to be a TrafficGuard customer & must have set up your [Properties within TrafficGuard](https://support.trafficguard.ai/docs/managing-your-properties)."
+}
+[/block]
 
 To link your Branch account with TrafficGuard, you will need the following:
 
@@ -72,7 +77,7 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Account credentials",
   "body": "Please ask your ad partner where you can find your credentials."
 }
@@ -97,4 +102,3 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 1. A confirmation modal will appear, just click <notranslate>**Yes, Reset Ad Partner**</notranslate> to conform the Reset.
 
 	![image](/_assets/img/ingredients/deep-linked-ads/reset-ad-settings/reset-ad-settings_confirmation.png)
-

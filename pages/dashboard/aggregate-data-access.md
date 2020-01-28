@@ -132,5 +132,10 @@ All access roles - Admin/Team Member/Full Read/Limited Read - have view access t
 
 ![image](/_assets/img/pages/dashboard/access-levels/aggregate-content-analytics.png)
 
-!!! info "Viewing Content Analytics"
-    Please refer to the [Paid Ads Analytics](/activity-reports-analytics/content-analytics/) article for an in-depth tutorial on using viewing your Content Analytics.
+[block:callout]
+{
+  "type": "info",
+  "title": "Viewing Content Analytics",
+  "body": "Please refer to the [Paid Ads Analytics](/activity-reports-analytics/content-analytics/) article for an in-depth tutorial on using viewing your Content Analytics."
+}
+[/block]

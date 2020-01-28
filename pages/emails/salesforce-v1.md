@@ -96,7 +96,7 @@ If you use your web URL as a deep link value:
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Host deep link data for more than just emails",
   "body": "The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future."
 }
@@ -124,8 +124,7 @@ Translate query parameters on URLs into Branch link data from parameter ______ t
 Setting | Description
 --- | ---
 Open to specific web content | Route to the original URL specified in the email.
-Open to default redirects | Route to defaults specified in [Link Settings](https://dashboard.branch.io/link-settings){:target="_blank"}.
-
+Open to default redirects | Route to defaults specified in [Link Settings](https://dashboard.branch.io/link-settings).
 
 ### Tell us your click tracking domain
 
@@ -165,7 +164,7 @@ You should have [received an email from Branch](#configure-your-app-for-your-cli
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "How does it work?",
   "body": "Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information."
 }
@@ -188,7 +187,7 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Having trouble or new to Universal Links?",
   "body": "Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode."
 }
@@ -304,12 +303,18 @@ Using Salesforce's AMPscript, we'll add a new Content Area in Salesforce that co
 
 You have now successfully created the deep linking AMPscript.
 
-!!! example "Code snippet"
-    The snippet will follow this format:
-    ```
-    %%[ VAR @deeplink, @branch_base_url SET @branch_base_url = "BASE URL FROM BRANCH" SET @deeplink = CONCAT(@branch_base_url, CONCAT("&%24original_url=", URLEncode(@link_to_be_wrapped, 1, 1))) ]%%
-    ```
-    The code above has a placeholder for `@branch_base_url`. Replace it with yours.
+[block:callout]
+{
+  "type": "info",
+  "title": "Code snippet",
+  "body": "
+  The snippet will follow this format:
+  ```
+  %%[ VAR @deeplink, @branch_base_url SET @branch_base_url = "BASE URL FROM BRANCH" SET @deeplink = CONCAT(@branch_base_url, CONCAT("&%24original_url=", URLEncode(@link_to_be_wrapped, 1, 1))) ]%%
+  ```
+  The code above has a placeholder for `@branch_base_url`. Replace it with yours."
+}
+[/block]
 
 ##### Configure your Salesforce email templates
 
@@ -369,22 +374,28 @@ The process to convert links into Branch links using AMPscript is as follows (th
 
 1. Repeat this for all your links in your email template that you want to convert to Branch deep links.
 
-
-!!! example "Link Conversion Summary"
-    Wherever you use `<a>` tags in your email templates, replace those with AMPscript to convert the web URLs into Branch links.  The AMPscript references the [Content Area](#add-a-new-content-area-for-easy-deep-linking) setup earlier.
-    ```
-    %%[SET @link_to_be_wrapped = "ADD YOUR LINK HERE" ContentAreaByName("My Contents\deeplink")]%%
-    <a href="%%=RedirectTo(@deeplink)=%%">Click Me</a>
-    ```
-    For example, **before:**
-    `<a href="https://branch.io/product/1234">Example link</a>`
-    **After:**
-    `%%[ SET @link_to_be_wrapped = "https://branch.io/product/1234" ContentAreaByName("My Contents\deeplink") ]%%`
-    `<a href="%%=RedirectTo(@deeplink)=%%">Example link</a>`
+[block:callout]
+{
+  "type": "info",
+  "title": "Link Conversion Summary",
+  "body": "
+  Wherever you use `<a>` tags in your email templates, replace those with AMPscript to convert the web URLs into Branch links.  The AMPscript references the [Content Area](#add-a-new-content-area-for-easy-deep-linking) setup earlier.
+  ```
+  %%[SET @link_to_be_wrapped = "ADD YOUR LINK HERE" ContentAreaByName("My Contents\deeplink")]%%
+  <a href="%%=RedirectTo(@deeplink)=%%">Click Me</a>
+  ```
+  For example, **before:**
+  `<a href="https://branch.io/product/1234">Example link</a>`
+  **After:**
+  `%%[ SET @link_to_be_wrapped = "https://branch.io/product/1234" ContentAreaByName("My Contents\deeplink") ]%%`
+  `<a href="%%=RedirectTo(@deeplink)=%%">Example link</a>`
+  "
+}
+[/block]
 
 [block:callout]
 {
-  "type": "caution",
+  "type": "warning",
   "title": "Content Area folder",
   "body": "Make sure your `deeplink` Content Area [is in the right folder](#add-a-new-content-area-for-easy-deep-linking). Either change the folder to "My Contents" or change the path used by "ContentAreaByName" in the Branch script."
 }

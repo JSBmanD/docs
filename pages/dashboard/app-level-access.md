@@ -203,7 +203,7 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "We now support deep linking to Desktop apps such as Spotify and Slack, via URI schemes",
   "body": "Our beta Mac OS Desktop SDK is available for testing, so please contact your Branch Account Manager or integrations@branch.io for more information."
 }

@@ -140,7 +140,7 @@ Branch.getInstance().setRequestMetadata("$google_analytics_user_id", "USER-ID-HE
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Anonymous Client ID",
   "body": "If for some reason Branch does not receive an advertising identifier or hardware identifier, and you do not explicitly specify a `$google_analytics_client_id`, then Branch will send `anonymous` as the Client ID (`cid`). This is a required field by Google Analytics."
 }

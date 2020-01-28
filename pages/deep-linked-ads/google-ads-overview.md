@@ -1,11 +1,11 @@
 ---
 title: Google Ads Overview
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads Resources"
-		- **Overview (this page)**
-		- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)
-		- [Reporting & Discrepancies](/deep-linked-ads/google-ads-reporting/)
-		- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
+##  Google Ads Resources
+	- **Overview (this page)**
+	- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)
+	- [Reporting & Discrepancies](/deep-linked-ads/google-ads-reporting/)
+	- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
 
 ## Overview
 

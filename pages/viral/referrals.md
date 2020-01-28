@@ -21,16 +21,20 @@ title: Referral Programs
 
 Branch allows you to reward users with credits, track those credits, and redeem them when appropriate. It is a unit-less currency available to your users without you having to build a system from scratch.
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=-qyR6y0wtCM"><img class="branch-image-override" src="/_assets/img/pages/viral/referral-programs/referral-video.png" /></a>
-</p>
+[Branch Referral Video](https://www.youtube.com/watch?v=-qyR6y0wtCM)
 
 ## Guide
 
-!!! Prerequisites
-	- You need to [integrate the Branch SDK]({#dialog-code) into your app.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Prerequisites",
+  "body": "
+  - You need to [integrate the Branch SDK]({#dialog-code) into your app.
 	- You should [identify your users](#dialog-code?ios=track-users&android=track-users&adobe=track-users&cordova=track-users&mparticleAndroid=track-users&mparticleIos=track-users&titanium=track-users&reactNative=track-users&unity=track-users&xamarin=track-users) on both log in and log out.
-	- Your users should be able to [create links in your app](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link) so we can track referred-referring relationships.
+	- Your users should be able to [create links in your app](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link) so we can track referred-referring relationships."
+}
+[/block]
 
 With every event that is recorded in Branch, we check automatically if that event is eligible for credits based on the rules that you configured, then deposit the credits if so. Reward rules can be based on both [automatic events and custom events](/dashboard/analytics/#user-value-attribution).
 
@@ -74,28 +78,35 @@ Properties you can define:
 1. Whether the reward occurs the first time or every time
 1. Which event triggers the reward
 
-!!! example
-	Let's say you want to give 10 credits to each new user who signs up through a friend, and 5 credits to the friend who referred him or her. That can be done through a combination of two rules:
+[block:callout]
+{
+  "type": "info",
+  "title": "Example",
+  "body": "
+  Let's say you want to give 10 credits to each new user who signs up through a friend, and 5 credits to the friend who referred him or her. That can be done through a combination of two rules:
 
-	### Rule 1: rewarding the referred user 10 credits
+  ### Rule 1: rewarding the referred user 10 credits
 
-	1. Who gets a reward: <notranslate>**"Referred acting users"**</notranslate>
-	1. How many credits the reward is: <notranslate>**10**</notranslate>
-	1. Which bucket the credits go to: <notranslate>**default**</notranslate>
-	1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
-	1. Which event triggers the reward: <notranslate>**install**</notranslate>
+  1. Who gets a reward: <notranslate>**"Referred acting users"**</notranslate>
+  1. How many credits the reward is: <notranslate>**10**</notranslate>
+  1. Which bucket the credits go to: <notranslate>**default**</notranslate>
+  1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
+  1. Which event triggers the reward: <notranslate>**install**</notranslate>
 
-	![image](/_assets/img/pages/viral/referral-programs/referred_rule.png)
+  ![image](/_assets/img/pages/viral/referral-programs/referred_rule.png)
 
-	### Rule 2: rewarding the referring user 5 credits
+  ### Rule 2: rewarding the referring user 5 credits
 
-	1. Who gets a reward: <notranslate>**"Referring users"**</notranslate>
-	1. How many credits the reward is: <notranslate>**5**</notranslate>
-	1. Which bucket the credits go to: <notranslate>**default**</notranslate>
-	1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
-	1. Which event triggers the reward: <notranslate>**install**</notranslate>
+  1. Who gets a reward: <notranslate>**"Referring users"**</notranslate>
+  1. How many credits the reward is: <notranslate>**5**</notranslate>
+  1. Which bucket the credits go to: <notranslate>**default**</notranslate>
+  1. Whether the reward occurs the first time or every time: <notranslate>**the first time**</notranslate>
+  1. Which event triggers the reward: <notranslate>**install**</notranslate>
 
-	![image](/_assets/img/pages/viral/referral-programs/referring_rule.png)
+  ![image](/_assets/img/pages/viral/referral-programs/referring_rule.png)
+  "
+}
+[/block]
 
 ## Viewing Credits
 
@@ -248,7 +259,7 @@ If you want to redeem credits in a custom bucket you've specified, such as `myBu
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "Example redemption flow",
   "body": "This is a simple three-part process:"
 }

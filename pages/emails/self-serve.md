@@ -48,7 +48,7 @@ Repeat this for each URL in your email template that you would like to deep link
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Optional: Deep Link Routing (Advanced)",
   "body": "You can use the <notranslate>**Configure Options**</notranslate> > <notranslate>**Deep Linking**</notranslate> section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing]({{base.url}}/getting-started/deep-link-routing) page to learn more."
 }
@@ -58,5 +58,10 @@ Repeat this for each URL in your email template that you would like to deep link
 
 It's that simple! The [Branch dashboard](https://dashboard.branch.io/sources){:target="\_blank"} will track clicks for this link based on the channel, campaign and any other tags you created. Users who have the app will be linked straight to the app, and users who don't will be taken to the App/Play Store to download it, depending on your [settings](https://dashboard.branch.io/link-settings){:target="\_blank"}.
 
-!!! protip "Creating links dynamically"
-    If you need more flexibility, you might also be interested in building links by [appending query parameters](/links/integrate/#custom-link-behavior).
+[block:callout]
+{
+  "type": "info",
+  "title": "Creating links dynamically",
+  "body": "If you need more flexibility, you might also be interested in building links by [appending query parameters](/links/integrate/#custom-link-behavior)."
+}
+[/block]

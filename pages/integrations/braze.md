@@ -11,7 +11,7 @@ We have built a custom integration to automatically send all Branch install data
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "How do we differentiate Braze and Branch installs?",
   "body": "We rely on a Branch link being clicked, which leads to an install. This sets an internal boolean that an install came from Branch."
 }

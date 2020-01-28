@@ -46,7 +46,7 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Testing your events with Liveview",
   "body": "You can test your integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter with the event name to verify that the Branch SDK is recording each event."
 }
@@ -74,7 +74,7 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 
 [block:callout]
 {
-  "type": "caution",
+  "type": "warning",
   "title": "OS specific Event IDs",
   "body": "You must replace <notranslate>**Android_Event_ID**</notranslate> and <notranslate>**iOS_Event_ID**</notranslate> with real values from your Manage dashboard."
 }

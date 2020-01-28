@@ -13,7 +13,7 @@ This document highlights each of the section where you can expect to see differe
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "No changes required",
   "body": "We've changed the entire back-end of analytics without requiring any code or implementation changes on your end."
 }

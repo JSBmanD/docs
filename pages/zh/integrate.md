@@ -46,7 +46,7 @@ title: 配置控制面板
 
 		[block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "我们现在支持通过 URI Scheme 深度链接到 Desktop 桌面系统应用程序（如 Spotify 和 Slack)",
   "body": "我们的测试版 Mac OS Desktop SDK 可供测试，详情请咨询您的 Branch 客户经理，或发送邮件至 integrations@branch.io."
 }

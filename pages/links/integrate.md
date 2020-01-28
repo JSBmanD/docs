@@ -121,9 +121,16 @@ title: Creating Deep Links
 
 - ### UTM Behavior
 
-!!! warning "Enabled by Default"
-    To disable this functionality, go to <notranslate>**Link Settings**</notranslate> -> <notranslate>**Advance Settings**</notranslate> -> <notranslate>**Analytics mapping with UTM**</notranslate>.
-    ![image](/_assets/img/pages/links/utm-mapping.png)
+[block:callout]
+{
+  "type": "warning",
+  "title": "Enabled by Default",
+  "body": "
+  To disable this functionality, go to <notranslate>**Link Settings**</notranslate> -> <notranslate>**Advance Settings**</notranslate> -> <notranslate>**Analytics mapping with UTM**</notranslate>.
+
+  ![image](/_assets/img/pages/links/utm-mapping.png)"
+}
+[/block]
 
   - When redirecting to a web URL, Branch automatically passes through any values from the following Branch link analytics tags as UTM parameters:
 

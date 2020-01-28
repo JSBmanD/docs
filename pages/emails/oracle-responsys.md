@@ -90,7 +90,7 @@ If you use your web URL as a deep link value:
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Host deep link data for more than just emails",
   "body": "The Branch [Quick Link creator](/getting-started/creating-links/dashboard/) also scrapes your web URL for deep link data to make link creation even easier. [Hosting Deep Link Data](/getting-started/hosted-deep-link-data/guide/) on your website will make using Branch products easier in future."
 }
@@ -165,7 +165,7 @@ You should have [received an email from Branch](#configure-your-app-for-your-cli
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "How does it work?",
   "body": "Apple recognizes the click tracking domain as a Universal Link, and opens the app immediately without the browser opening. Once the app has opened, Branch will collect the referring URL that opened the app (at this time, it will be the click tracking url). Inside the app, Branch will robotically “click” the link, registering the click with the ESP, and returning the Branch link information to the Branch SDK inside the app. This information is then used to deep link the user to the correct in-app content. See the [Support](#support) section for more information."
 }
@@ -188,7 +188,7 @@ To enable Universal Links on your click tracking domain, you'll need to add the 
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Having trouble or new to Universal Links?",
   "body": "Follow [these instructions](/deep-linking/universal-links/) for more details on enabling Universal Links in the Branch dashboard and in Xcode."
 }
@@ -259,7 +259,7 @@ In this step, we'll upload an SDK that makes it very easy to create deep links i
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Watch how to do this instead",
   "body": "There is also a [tutorial video](https://www.youtube.com/watch?v=u8h8KlqFvo4){:target="\_blank"} that walks through these steps."
 }

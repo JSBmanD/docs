@@ -187,7 +187,7 @@ Link Data Dictionary 에 정의한 커스텀 Key/value 외에 Branch에서는 �
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "링크를 다이나믹하게 생성할 때",
   "body": "쿼리 파라미터를 추가하는 방식으로 링크를 생성하고 있다면 제어 파라미터를 URL에 직접 추가하시면 됩니다. 그리고 모든 것을 인코딩하여 URL 에 추가해야 합니다."
 }
@@ -199,7 +199,7 @@ Link Data Dictionary 에 정의한 커스텀 Key/value 외에 Branch에서는 �
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "모바일 SDK를 사용할 때",
   "body": "- *iOS - Objective C*"
 }
@@ -232,7 +232,7 @@ Link Data Dictionary 에 정의한 커스텀 Key/value 외에 Branch에서는 �
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "Branch Dashboard에서 Quick Link를 생성할 때",
   "body": "Branch Dashboard 에서 Quick Link 를 생성할 때 _Deep Link Data(Advanced)_ 섹션에서 제어 파라미터를 Key/Value 형식으로 입력함으로써 특정 딥링크 URI 를 Branch Link 에 추가할 수 있습니다."
 }

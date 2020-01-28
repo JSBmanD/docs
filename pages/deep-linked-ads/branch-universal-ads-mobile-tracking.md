@@ -5,7 +5,7 @@ This guide will walk you through how to setup your campaigns using Branch Univer
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Paid Product",
   "body": "Ads is a premium product priced on Monthly Active Users. [Sign up](https://branch.io/universal-ads/) for the Ads product to enable this functionality."
 }
@@ -30,7 +30,7 @@ This guide will walk you through how to setup your campaigns using Branch Univer
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Providing Account Credentials",
   "body": "Not all integrations require providing account credentials. When prompted to, enter any credentials that may be required, and click <notranslate>**Save and Enable**</notranslate> in the bottom right hand corner. If you do not know your account credentials for said partner, please ask your ad partner for this information."
 }
@@ -99,5 +99,10 @@ The <notranslate>**EVENTS**</notranslate> table shows summary data on the perfor
 
 On the top right side of the table you can find a download button to retrieve the chart's content as a CSV file.  For more info about Ads Analytics refer [here](/activity-reports-analytics/paid-ads-analytics/).
 
-!!! info "Advanced Setup"
-    Please refer to our [Advanced Universal Ads](/deep-linked-ads/branch-universal-ads-advanced/) guide for advanced options when enabling a Universal Ads partner.
+[block:callout]
+{
+  "type": "info",
+  "title": "Advanced Setup",
+  "body": "Please refer to our [Advanced Universal Ads](/deep-linked-ads/branch-universal-ads-advanced/) guide for advanced options when enabling a Universal Ads partner."
+}
+[/block]

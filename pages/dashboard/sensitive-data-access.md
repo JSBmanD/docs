@@ -194,5 +194,10 @@ If you are an Admin, you have view access to the <notranslate>**Set Up SDK**</no
 
 ![image](/_assets/img/pages/dashboard/access-levels/sensitive-set-up-sdk.gif)
 
-!!! info "Full Integration Guides"
-	Please refer to Branch's [SDK Integration](/resources/native-sdks-and-plugins/) guides for in-depth tutorials on how to integrate any of the native Branch SDKs as well as supported plugins.
+[block:callout]
+{
+  "type": "info",
+  "title": "Full Integration Guides",
+  "body": "Please refer to Branch's [SDK Integration](/resources/native-sdks-and-plugins/) guides for in-depth tutorials on how to integrate any of the native Branch SDKs as well as supported plugins."
+}
+[/block]

@@ -277,8 +277,13 @@ title: iOS SDK
 
   - #### Apps Using Scenes
 
-!!! info ""
-    If your app uses iOS [Scenes](https://developer.apple.com/documentation/uikit/app_and_environment/scenes), please use the code samples below.
+[block:callout]
+{
+  "type": "info",
+  "title": "iOS Scenes",
+  "body": "If your app uses iOS [Scenes](https://developer.apple.com/documentation/uikit/app_and_environment/scenes), please use the code samples below."
+}
+  [/block]
 
   - In your app's `AppDelegate file`:
 
@@ -986,9 +991,13 @@ title: iOS SDK
         ```objc
         [[Branch getInstance] handleDeepLinkWithNewSession:[NSURL URLWithString:@"https://example.app.link/u3fzDwyyjF"]];
         ```
-
-!!! warning
-    Handling a new deep link in your app will clear the current session data and a new referred "open" will be attributed.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Handling a new deep link in your app",
+  "body": "Handling a new deep link in your app will clear the current session data and a new referred "open" will be attributed."
+}
+[/block]
 
 - ### Track Apple Search Ads
 

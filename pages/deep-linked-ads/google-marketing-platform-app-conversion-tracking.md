@@ -40,9 +40,15 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 
 ## Prerequisites
 
-!!! warning "Prerequisites"
-	* [x] To track conversions from Google Marketing Platform Ads you should [integrate the Branch SDK](https://docs.branch.io/resources/native-sdks-and-plugins/) into your app, and/or if you are using S2S, ensure that advertising ID's are being passed to Branch.
-	* [x] You must request whitelisting from your Google rep for the new 'App Analytics' section of Floodlight Configuration in order to generate link ID's for this integration
+[block:callout]
+{
+  "type": "warning",
+  "title": "Prerequisites",
+  "body": "
+  * [x] To track conversions from Google Marketing Platform Ads you should [integrate the Branch SDK](https://docs.branch.io/resources/native-sdks-and-plugins/) into your app, and/or if you are using S2S, ensure that advertising ID's are being passed to Branch.
+	* [x] You must request whitelisting from your Google rep for the new 'App Analytics' section of Floodlight Configuration in order to generate link ID's for this integration"
+}
+[/block]
 
 ## Configure Branch as App Analytics Partner in Google Marketing Platform
 
@@ -56,8 +62,13 @@ By connecting your Google Marketing Platform and Branch accounts, the following 
 
 ## Enable Google Marketing Platform in Branch
 
-!!! note ""
-	Completing this section will result in Branch sending app conversion to Google in order to attribute them back to Google Marketing Platform campaigns.
+[block:callout]
+{
+  "type": "info",
+  "title": "Sending App Conversions",
+  "body": "Completing this section will result in Branch sending app conversion to Google in order to attribute them back to Google Marketing Platform campaigns."
+}
+[/block]
 
 1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for <notranslate>**Google Marketing Platform**</notranslate>.
 

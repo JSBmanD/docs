@@ -7,11 +7,16 @@ title: WebEngage
 
 This guide will walk you through how to send your Branch data to **[WebEngage](https://webengage.com/)** using Branch Data Integration.
 
-!!! info "Prerequisites"
+[block:callout]
+{
+  "type": "info",
+  "title": "Prerequisites",
+  "body": "
 	* [x] You must be a WebEngage customer
 	* [x] Have the [WebEngage SDK](https://docs.webengage.com/docs/overview) integrated in your mobile apps.
-
-
+	"
+}
+[/block]
 
 ## Setup
 
@@ -48,7 +53,7 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Account credentials",
   "body": "Please ask your ad partner where you can find your credentials."
 }
@@ -79,4 +84,3 @@ On the WebEngage dashboard:
 1. A confirmation modal will appear, just click <notranslate>**Yes, Reset Ad Partner**</notranslate> to conform the Reset.
 
 	![image](/_assets/img/ingredients/deep-linked-ads/reset-ad-settings/reset-ad-settings_confirmation.png)
-

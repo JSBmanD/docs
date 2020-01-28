@@ -19,13 +19,21 @@ Facebook Campaign Type | Photo | Video | Carousel | Slideshow | Collection | Dyn
 --- | --- | --- | --- | --- | --- | --- | ---
 App Installs | ✔︎ | ✔︎ | ✔︎ | ✔︎ | - | - | ✔︎
 
-!!! note ""
-	Looking for other Facebook Ad campaign types? Please check out our [Facebook Ads Overview guide](/deep-linked-ads/facebook-ads-overview).
+[block:callout]
+{
+  "type": "info",
+  "title": "Facebook Campaign Types",
+  "body": "Looking for other Facebook Ad campaign types? Please check out our [Facebook Ads Overview guide](/deep-linked-ads/facebook-ads-overview)."
+}
+[/block]
 
 ## Setup
 
-!!! warning "Prerequisites"
-	* [x] To track installs from Facebook Ads you should [integrate the Branch SDK](/apps/ios/#integrate-branch) into your app.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Prerequisites",
+  "body": "* [x] To track installs from Facebook Ads you should [integrate the Branch SDK](/apps/ios/#integrate-branch) into your app.
 	* [x] To use Branch links in Facebook App Install Ads ensure you have:
 		* [x] URI schemes configured on iOS
 		* [x] URI schemes configured on Android
@@ -33,68 +41,79 @@ App Installs | ✔︎ | ✔︎ | ✔︎ | ✔︎ | - | - | ✔︎
 		* [x] Android Package Name set
 		* [x] Social Media Settings filled out (i.e. OG tags at the bottom of [Link Settings](/links/default-link-behavior/#social-media))
 	* [x] If you want to deep link from your ads directly to content, you should [configure deep link routing](/deep-linking/routing/).
-	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality.
+	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality."
+}
+[/block]
 
-	#### Enable Facebook as an Ad Partner (for measurement)
+#### Enable Facebook as an Ad Partner (for measurement)
 
-	!!! Note
-	    Completing this section -- "Enable Facebook as an Ad Partner" -- will result in Branch sending app events to Facebook in order to attribute them back to ad campaigns. <notranslate>**This does not enable deep linking for the ad**</notranslate>. Further work below is required for deep linking.
+[block:callout]
+{
+  "type": "info",
+  "title": "Enable Facebook as an Ad Partner",
+  "body": "Completing this section -- "Enable Facebook as an Ad Partner" -- will result in Branch sending app events to Facebook in order to attribute them back to ad campaigns. <notranslate>**This does not enable deep linking for the ad**</notranslate>. Further work below is required for deep linking."
+}
+[/block]
 
-	If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow this section to do so. Advanced options for sending events can be found [here](/deep-linked-ads/facebook-ads-faq/#facebook-mmp-event-options).
+If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow this section to do so. Advanced options for sending events can be found [here](/deep-linked-ads/facebook-ads-faq/#facebook-mmp-event-options).
 
-	1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management).
+1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management).
 
-	    ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
+    ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
 
-	1. Search for <notranslate>**Facebook**</notranslate>.
+1. Search for <notranslate>**Facebook**</notranslate>.
 
-	1. Click <notranslate>**Connect With Facebook**</notranslate>
+1. Click <notranslate>**Connect With Facebook**</notranslate>
 
-	    ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
+    ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
 
-	1. Login to Facebook if you are not logged in
+1. Login to Facebook if you are not logged in
 
-	    ![Login](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
+    ![Login](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
 
-	1. Confirm that Branch can receive your public profile
+1. Confirm that Branch can receive your public profile
 
-	    ![Public profile](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
+    ![Public profile](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
 
-	1. Confirm that Branch can have permissions `ads_read`
+1. Confirm that Branch can have permissions `ads_read`
 
-	    ![OAuth scopes](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
+    ![OAuth scopes](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
 
-	 	`ads_read` is used to surface impressions and clicks on the Branch Dashboard.
+ 	`ads_read` is used to surface impressions and clicks on the Branch Dashboard.
 
-	1. Select the ad accounts for which you want to run app install ads or app engagement ads
+1. Select the ad accounts for which you want to run app install ads or app engagement ads
 
-	    ![Choose ad accounts](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
+    ![Choose ad accounts](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
 
-	    !!! Note
-	        If you are having trouble finding or selecting the ad account(s) for which you want to run ads, please visit our [FAQ](/deep-linked-ads/facebook-ads-faq/#im-having-problems-finding-or-choosing-the-correct-ad-accounts).
+		[block:callout]
+		{
+		  "type": "info",
+		  "title": "Ad Account FAQ",
+		  "body": "If you are having trouble finding or selecting the ad account(s) for which you want to run ads, please visit our [FAQ](/deep-linked-ads/facebook-ads-faq/#im-having-problems-finding-or-choosing-the-correct-ad-accounts)."
+		}
+		[/block]
 
-	1. Click to select a Facebook app id for which you want to run Facebook ads
+1. Click to select a Facebook app id for which you want to run Facebook ads
 
-	    ![enter app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
+    ![enter app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
 
-	1. Copy the app id
+1. Copy the app id
 
-	    ![find app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
+    ![find app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
 
-	1. Paste the app id and press `Save`
+1. Paste the app id and press `Save`
 
-	    ![paste app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
+    ![paste app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
 
-	1. Facebook is now enabled as an ad partner!
+1. Facebook is now enabled as an ad partner!
 
-		Note that if you have different attribution windows between Facebook and Branch, those will be highlighted. The warning has a link to the docs on how to align these attribution windows.
+	Note that if you have different attribution windows between Facebook and Branch, those will be highlighted. The warning has a link to the docs on how to align these attribution windows.
 
-	    ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
+    ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
-	1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
+1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
 
-	    ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
-
+    ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
 
 ## Branch <> Facebook Field Mappings
 
@@ -170,8 +189,13 @@ Cost| Total cost (spend) for those dimensions (analytics tags, user data, time r
 <notranslate>Return On Investment (ROI)</notranslate> | (revenue-cost / cost) * 100 | Deriving return on investment, to understand the percentage "profit" made on ad spend
 <notranslate>Return On Ad Spend (ROAS)</notranslate> | (revenue / cost) * 100 | Deriving return on investment by understanding the percentage revenue multiple for a given unit of spend
 
-!!! info
-    All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran.
+[block:callout]
+{
+  "type": "info",
+  "title": "Cost Data Translation",
+  "body": "All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran."
+}
+[/block]
 
 ### View Your Data
 
@@ -185,7 +209,7 @@ The table shows summary data on the performance of each Ad campaign. On the righ
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Interacting with your data",
   "body": "Breakdown and compare aspects of your Ad campaigns' performance by using the `Compare by +` button to add a parameter to split the data displayed data by."
 }
@@ -227,7 +251,7 @@ This section is **not required for measurement** if you are running app-only ads
 ### Create an Ad Link for deep linking
 
 1. Create a Branch Ad link from the [Partner Management page](https://dashboard.branch.io/ads/partner-management) `Create Facebook Link` button under the Facebook Partner and select `App Install or Engagement`
-<img src="/_assets/img/pages/deep-linked-ads/reusable-images/create-link-install-engagement.png" alt="Link Creation" class="half left">
+![image](/_assets/img/pages/deep-linked-ads/reusable-images/create-link-install-engagement.png)
 1. Enter a Link Name for later reference.
 1. Configure the link with the Ad Format set to <notranslate>**App Only**</notranslate>, the Ad Partner set to <notranslate>**Facebook**</notranslate>, and the Secondary Ad Format set to <notranslate>**App Install Ads**</notranslate>.
 ![Create Ad Link](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/link-setup.png)
@@ -238,8 +262,13 @@ This section is **not required for measurement** if you are running app-only ads
 1. Because this is an app install ad, the redirect section will be largely ignored. We highly recommend that you leave this section untouched.
 1. Analytics will be automatically pulled in from the direct Facebook integration above, and so you can ignore the analytics section of the configuration.
 
-!!! warning ""
-	In order for your campaign to run effectively, be sure to disable Deepviews. You can either [disable Deepviews](/web/deep-views/) for your entire account or [disable Deepviews for one link](/web/deep-views/#disable-per-link-deepviews).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Disable Deepviews",
+  "body": "In order for your campaign to run effectively, be sure to disable Deepviews. You can either [disable Deepviews](/web/deep-views/) for your entire account or [disable Deepviews for one link](/web/deep-views/#disable-per-link-deepviews)."
+}
+[/block]
 
 ### Configure your campaign to deep link the Ad Link
 
@@ -263,7 +292,7 @@ Your Facebook Ad Campaign is now setup to use Branch Links to handle App Install
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Optional: Ad formats with Multiple Links",
   "body": "Some ad formats such as Carousel format can handle multiple deep links. To have link performance data on each image or component of the advertisement, create multiple Branch Ad links to be used in each part of the multiple link advertisement format. This format is useful if you want to drive customers to different content pieces or products."
 }
@@ -283,11 +312,17 @@ The only way to test the deep linking functionality is outside of the actual ads
 1. Click 'Send to iOS/Android'
 1. Install the app and it should deep link!
 
-!!! note "Note the following common mistakes for testing"
+[block:callout]
+{
+  "type": "info",
+  "title": "Note the following common mistakes for testing",
+  "body": "
 	1. If you reset the GAID or IDFA on a device, you must uninstall Facebook and re-install prior to testing. Facebook does not update the IDFA/GAID every time it's opened.
 	2. Send deferred does not require a notification to be sent or to be clicked. Checking "Send Deferred" will automatically queue up a match for the test device with the deep link data. The notification is completely separate from deferred deep linking.
 	3. The Facebook account on the desktop where you click "Send Deferred" must match the account logged into the test device for deferred deep link data to be queued up. Note that we've observed issues where you log in and out of multiple accounts on test devices that cause Facebook to not correctly queue up a match.
-	4. If you see that someone liked your ad, do not bother trying to click and test it. Clicking your own, live advertisement that shows up in notifications will not deep link.
+	4. If you see that someone liked your ad, do not bother trying to click and test it. Clicking your own, live advertisement that shows up in notifications will not deep link."
+}
+[/block]
 
 ## Troubleshooting
 
@@ -332,8 +367,8 @@ We recently discovered an issue where an app was calling Facebook's SDK to fetch
 
 If Facebook is having trouble reading the App Links from the Branch link, you might see messages like these while trying to test out the flow. This means that there is something corrupted in the OG tags causing Facebook to not parse your link.
 
-<img src="/_assets/img/ingredients/deep-linked-ads/fb-ads-support/invalid-app-links-error.png" alt="Invalid App Links" class="left half">
-<img src="/_assets/img/ingredients/deep-linked-ads/fb-ads-support/missing_applinks.png" alt="Troubleshooting" class="left">
+![image](_assets/img/ingredients/deep-linked-ads/fb-ads-support/invalid-app-links-error.png)
+![image](_assets/img/ingredients/deep-linked-ads/fb-ads-support/missing_applinks.png)
 
 **Rescrape the OG Tags**
 
@@ -344,12 +379,18 @@ You can test the OG tags using the [OG tag tester tool](https://developers.faceb
 1. Examine errors regarding App Links from the output window.
 1. Click on the Fetch New Scrape Information button. This last step typically resolves this problem if you are certain that your Branch Link Settings are correct.
 
-!!! tip ""
-	You can further automate the rescraping process by using this command after you create a new link and before you use it for any ads:
+[block:callout]
+{
+  "type": "info",
+  "title": "Automate Rescraping Process",
+  "body": "You can further automate the rescraping process by using this command after you create a new link and before you use it for any ads:
 
 	``` sh
 	curl --insecure "https://graph.facebook.com/?id=[YOUR-URL-TO-SCRAPE]&scrape=true"
 	```
+	"
+}
+[/block]
 
 **If the OG tag tester continues to report problems**
 

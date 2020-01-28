@@ -1,11 +1,11 @@
 ---
 title: Customization & Edge Cases
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads Resources"
-		- [Overview](/deep-linked-ads/google-ads-overview/)
-		- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)
-		- [Reporting & Discrepancies](/deep-linked-ads/google-ads-reporting/)
-		- **Customization & Edge Cases (this page)**
+##  Google Ads Resources
+	- [Overview](/deep-linked-ads/google-ads-overview/)
+	- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)
+	- [Reporting & Discrepancies](/deep-linked-ads/google-ads-reporting/)
+	- **Customization & Edge Cases (this page)**
 
 ## Overview
 
@@ -75,7 +75,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Optional: Deep Link Data",
   "body": "You can use this configuration section to specify custom link parameters that will be deep linked into the app after install. These could include a coupon code or a page identifier to route the user. Visit the [Deep Link Routing](/deep-linking/routing/) page to learn more."
 }
@@ -85,7 +85,7 @@ If you are running any Web-based (non-UAC) Google Ads campaigns and want to leve
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "For Branch Deep Linking into App Only",
   "body": "Because the <notranslate>**Final URL**</notranslate> for your campaigns must match your display URL and not contain any cross-domain redirects, you cannot put a Branch link directly in that box. However, you can append query parameters to the Final URL in order to pass the required data needed for Branch to route and attribute your users properly."
 }

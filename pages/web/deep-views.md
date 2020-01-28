@@ -12,7 +12,7 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Intended for apps without a mobile website",
   "body": "If you already have a mobile website with content, [Journeys](/web/journeys/) is better suited."
 }
@@ -27,16 +27,23 @@ Deepviews are discoverable in all search portals (Google, Apple Spotlight, Bing,
 
 ![image](/_assets/img/pages/deepviews/deepviews_enable.png)
 
-!!! warning
-    To enable desktop Deepviews, be sure to select "Branch-hosted SMS Landing Page" for Desktop redirects on [Link Settings](https://dashboard.branch.io/link-settings).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Enabling Desktop Deepviews",
+  "body": "
+  To enable desktop Deepviews, be sure to select "Branch-hosted SMS Landing Page" for Desktop redirects on [Link Settings](https://dashboard.branch.io/link-settings).
 
-    ![image](/_assets/img/pages/deepviews/deepviews_desktop.png)
+  ![image](/_assets/img/pages/deepviews/deepviews_desktop.png)
 
-    Note that this will override any [Text-Me-The-App](/web/text-me-the-app/) page you have configured.
+  Note that this will override any [Text-Me-The-App](/web/text-me-the-app/) page you have configured.
+  "
+}
+[/block]
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Changing the app icon",
   "body": "If we pulled the wrong app icon, you can upload a new one in the _Social Media Display Customization_ section of the [dashboard Settings](https://dashboard.branch.io/link-settings)."
 }
@@ -57,8 +64,13 @@ There are various metrics to understand when deep linking from your mobile websi
 
 Only users who do not have the app will go through this flow. You can view the total counts and conversion rate from each step on this chart.
 
-!!! warning
-    If a user without your app clicks a Branch link with an Active Deepview enabled but does not click the Deepview CTA, downstream activity (e.g. installs, purchases) will not be attributed to the original link click.
+[block:callout]
+{
+  "type": "warning",
+  "title": "No Deepview CTA Click",
+  "body": "If a user without your app clicks a Branch link with an Active Deepview enabled but does not click the Deepview CTA, downstream activity (e.g. installs, purchases) will not be attributed to the original link click."
+}
+[/block]
 
 ## Advanced
 
@@ -223,9 +235,13 @@ The Basic tab displays your new template, and allows you to modify the default f
 
 <notranslate>**App Settings**</notranslate>
 
-!!! warning ""
-    These fields are duplicates of the _Social Media_ section of your app's [main link settings page](https://dashboard.branch.io/link-settings). Any updates will be applied in both locations.
-
+[block:callout]
+{
+  "type": "warning",
+  "title": "Social Media Duplicates",
+  "body": "These fields are duplicates of the _Social Media_ section of your app's [main link settings page](https://dashboard.branch.io/link-settings). Any updates will be applied in both locations."
+}
+[/block]
 
 | Setting | Usage |
 | --- | --- |

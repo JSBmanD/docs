@@ -11,8 +11,13 @@ title: Legacy Webhooks
 
 ## Overview
 
-!!! note
-    You are viewing docs for our legacy Webhooks system. We recommend viewing docs on the newer [Webhooks](/exports/ua-webhooks/) offering, which is powered by [People-Based Attribution](/dashboard/people-based-attribution).
+[block:callout]
+{
+  "type": "info",
+  "title": "Legacy Webhooks",
+  "body": "You are viewing docs for our legacy Webhooks system. We recommend viewing docs on the newer [Webhooks](/exports/ua-webhooks/) offering, which is powered by [People-Based Attribution](/dashboard/people-based-attribution)."
+}
+[/block]
 
 Branch’s webhook system allows you to receive install and down funnel event data from us as it occurs, for install attribution or conversion funnels in your own database. You simply need to specify a URL for us to send all this data to.
 
@@ -47,8 +52,14 @@ Here are explanations of what each field on this screen controls:
 | <notranslate>**click**</notranslate> | Triggered whenever a Branch link is clicked on any platform
 | <notranslate>**-- other --**</notranslate> | Enter an event you created through the Branch SDK.
 
-!!! tip
-	The <notranslate>**referred session**</notranslate> and <notranslate>**web session start**</notranslate> options will only appear after at least one event of that type has been recorded.
+[block:callout]
+{
+  "type": "$info",
+  "title": "Pro Tip",
+  "body": "The <notranslate>**referred session**</notranslate> and <notranslate>**web session start**</notranslate> options will only appear after at least one event of that type has been recorded.
+"
+}
+[/block]
 
 - <notranslate>**Filter (Advanced):**</notranslate> See the [Advanced](#advanced) page to read about customizing when events are sent.
 
@@ -198,7 +209,7 @@ Filters allow you to specify when a webhook gets sent to your URL based off crit
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Filtering installs by referring link campaign",
   "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~campaign**</notranslate> is equal to <notranslate>**App Install Campaign**</notranslate>. The key would equal <notranslate>**session.link_data.~campaign**</notranslate> and the value would equal <notranslate>**App Install Campaign**</notranslate>."
 }
@@ -208,7 +219,7 @@ Filters allow you to specify when a webhook gets sent to your URL based off crit
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Filtering clicks by link channel",
   "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**~channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. The key would equal <notranslate>**click.link_data.~channel**</notranslate> and the value would equal <notranslate>**AppLovin**</notranslate>."
 }
@@ -218,7 +229,7 @@ Filters allow you to specify when a webhook gets sent to your URL based off crit
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Filtering custom signup event by location",
   "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**sign_up**</notranslate> event that is triggered via the <notranslate>**userCompletedAction**</notranslate> method in the SDKs, but only in a specific market, like Chicago. Your event metadata will look something like the following:"
 }
@@ -244,7 +255,7 @@ If you plan on sending click or install data to a third party, you’ll likely n
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Creating a dynamic conversion postback for an ad agency",
   "body": "Let’s say you have created a Branch link in the Ads tab specifically for SEM campaigns and you’re going to give the link to an advertising agency. This ad agency wants to receive install conversion events from Branch by tracking your Branch link with specific query parameters. Your Branch link might potentially look something like this: `http://branch.app.link/my-sf-campaign?clickId=12345`."
 }
@@ -296,8 +307,13 @@ When a Branch link is opened, triggering a <notranslate>**click**</notranslate> 
 | <notranslate>**click.device.metadata.os_version**</notranslate> | The OS version
 | <notranslate>**click.date**</notranslate> | Time of link click
 
-!!! note ""
-    <notranslate>**click.device**</notranslate> will only be available for Universal/App Links without a browser redirect. Similarly, <notranslate>**click.browser**</notranslate> will only be available for non-Universal/App Links. Handle this appropriately in your code.
+[block:callout]
+{
+  "type": "info",
+  "title": "Device Click vs Browser Click",
+  "body": "<notranslate>**click.device**</notranslate> will only be available for Universal/App Links without a browser redirect. Similarly, <notranslate>**click.browser**</notranslate> will only be available for non-Universal/App Links. Handle this appropriately in your code."
+}
+[/block]
 
 | Key | Description
 | --- | ---
@@ -326,7 +342,7 @@ When a user triggers an event inside your app, either one [created by you](/apps
 
 [block:callout]
 {
-  "type": "Note",
+  "type": "info",
   "title": "Identity vs. Session",
   "body": "<notranslate>**Identity properties**</notranslate> are _set once_, the very first time Branch sees a user. Once set for each user, these are never changed. <notranslate>**Session properties**</notranslate> are the data of the _most recent_ record Branch has for a user."
 }
@@ -359,8 +375,13 @@ Identity Data
 
 - Identity data is unique for each user Branch tracks. These values are permanently tied to that user, meaning if a link with a campaign of 'google' drives an install, then that user will have a permanent <notranslate>**identity.link_data.~campaign**</notranslate> value equal to 'google'.
 
-!!! note ""
-    Except for identity.id, these will not be populated if the user installed your app without opening a Branch link first.
+[block:callout]
+{
+  "type": "info",
+  "title": "Branch Link Required",
+  "body": "Except for identity.id, these will not be populated if the user installed your app without opening a Branch link first."
+}
+[/block]
 
 | Key | Description
 | --- | ---

@@ -19,8 +19,13 @@ To create an impression tracking link for non-SAN networks, simply create an ad 
 
 As a part of our Ad Partners VTA verification process it’s essential to confirm that our integration works as expected and we deliver the best user experience. Because of that we want to guarantee the highest quality of Ad Partnership integrations and verify VTA verification process.
 
-!!! info ""
-	For proper view through attribution, make sure the impression pixel returned by Branch's dashboard has an `%24idfa` OR `%24aaid` macro values. If you just want to count impressions, without attribution, these macros are not needed. The impression event has to drive conversion within the default Partner setting 1 day(24hrs) lookback window period.
+[block:callout]
+{
+  "type": "info",
+  "title": "Impression Pixel Macros",
+  "body": "For proper view through attribution, make sure the impression pixel returned by Branch's dashboard has an `%24idfa` OR `%24aaid` macro values. If you just want to count impressions, without attribution, these macros are not needed. The impression event has to drive conversion within the default Partner setting 1 day(24hrs) lookback window period."
+}
+[/block]
 
 ## Impression Tracking URL Testing
 

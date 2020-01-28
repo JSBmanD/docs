@@ -56,7 +56,7 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Account credentials",
   "body": "Please ask your ad partner where you can find your credentials."
 }

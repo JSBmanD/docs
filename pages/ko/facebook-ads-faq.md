@@ -458,7 +458,7 @@ Facebook 연동을 처음 설정한 경우 [Ads Analytics](https://dashboard.bra
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "참고",
   "body": "드문 경우지만 광고주 측에서 동일한 이름의 복수의 Facebook 캠페인을 진행하는 경우가 있었습니다. 이 경우 Branch 대시보드는 동일한 이름으로 모든 캠페인에 대한 통계 수치를 합산하여 보여주지만 Facebook 캠페인 ID가 다르므로 해당 데이터는 백엔드에서 별도로 보관됩니다. Branch 대시보드에 이 데이터를 표시하지는 않지만, 캠페인 ID를 기준으로 [Query API](/exports/query-api)를 통해 통계 자료를 가져올 수 있습니다."
 }

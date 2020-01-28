@@ -14,7 +14,7 @@ If you'd like Branch to collect the [Google Advertising ID](https://support.goog
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Why does Branch use the GAID?",
   "body": "Branch uses the GAID to identify users across our entire partner network, greatly increasing match accuracy rate. You can read more about this on the [matching accuracy page](/resources/matching/). You do not need to perform these steps if you elect **not** to import Play Services or the Ads framework."
 }

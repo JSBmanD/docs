@@ -54,7 +54,7 @@ Data Integrations are included as part of the Data Feeds product. For more infor
 
     [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "We've upgraded our Data Integrations!",
   "body": "We've upgraded our Data Integrations to use people-based attribution. If you see the below screen instead of the screenshot above, please click <notranslate>"Preview Now"</notranslate> to upgrade to our updated integrations. We will be deprecating our legacy integrations in 2018."
 }

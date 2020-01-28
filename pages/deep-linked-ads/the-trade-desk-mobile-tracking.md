@@ -46,7 +46,7 @@ Please reference the general [V2 Event Tracking Guide](/apps/v2event/#overview).
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Testing your events with Liveview",
   "body": "You can test your integration by going to our [Liveview page](https://dashboard.branch.io/liveview/events){:target="\_blank"}. Set a filter with the event name to verify that the Branch SDK is recording each event."
 }
@@ -68,7 +68,7 @@ Enter any credentials that may be required, and click Save and Enable in the bot
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Account credentials",
   "body": "Please ask your ad partner where you can find your credentials."
 }

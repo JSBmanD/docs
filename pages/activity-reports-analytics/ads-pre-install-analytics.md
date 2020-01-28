@@ -107,12 +107,22 @@ If those values are non-null and this is a first time open for the device, the r
 	    }
 	}
 	```
-!!! warning "Must use Branch $3p Parameter Value"
-		When applying the `preinstall_partner` value, you must use Branch's $3p value as the partner's name.  Learn how to [find a partner's $3p value](https://docs.branch.io/resources/testing-universal-ads-campaign-setup/#how-to-find-a-partners-webhook-key).
+[block:callout]
+{
+  "type": "warning",
+  "title": "Must use Branch $3p Parameter Value",
+  "body": "When applying the `preinstall_partner` value, you must use Branch's $3p value as the partner's name.  Learn how to [find a partner's $3p value](https://docs.branch.io/resources/testing-universal-ads-campaign-setup/#how-to-find-a-partners-webhook-key)."
+}
+[/block]
 2. Ask the device manufacturer to add the file in the OS level file system.
 3. Set the file path in the build.props as below:
 	`io.branch.preinstall.apps.path=/pre_install_apps.branch`
 4. The SDK checks if the APK has the pre-install data; if it's included, Branch uses the pre-install to override the link click data for attribution.
 
-!!! info "OEM / App Store Specifics"
-	If your app is pre-installed by the OEM and/or App Store, please see our [App Store specific guides](/app-stores/app-stores-list/).
+[block:callout]
+{
+  "type": "info",
+  "title": "OEM / App Store Specifics",
+  "body": "If your app is pre-installed by the OEM and/or App Store, please see our [App Store specific guides](/app-stores/app-stores-list/)."
+}
+[/block]

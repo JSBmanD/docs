@@ -177,5 +177,10 @@ For most implementations this will never be an issue, since your deep links will
 1. Add your custom domain(s) as a string. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domain.png)
 1. Save the file.
 
-!!! tip "Multiple custom domains"
-	If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)
+[block:callout]
+{
+  "type": "info",
+  "title": "Multiple custom domains",
+  "body": "If you have an unusual situation with multiple custom link domains, you may also configure `branch_universal_link_domains` as an array of strings. ![image](/_assets/img/pages/deep-linking/universal-links/branch-universal-link-domains.png)"
+}
+[/block]

@@ -239,10 +239,16 @@ You can append macros to your Branch Link that will be tracked with Branch and G
 
 In Google Ad Manager make sure to replace Branch Campaign Macros with the related Google Ad Manager Macros listed [here](https://support.google.com/admanager/answer/2376981?hl=en).
 
-!!! info "Important notes about Google Ad Manager macros"
-	*   Macros are case-sensitive. Use `%%CACHEBUSTER%%`, not `%%Cachebuster%%`.
-	*   Unescaped and escaped macro versions expand differently. [Learn more](https://support.google.com/admanager/answer/6081628)
-	*   Ad Manager inserts macros automatically for [third-party creatives](https://support.google.com/admanager/answer/1746123) or VAST tag URLs if Ad Manager recognizes the third party. For [custom creatives](https://support.google.com/admanager/answer/3180782) and [creative templates](https://support.google.com/admanager/answer/1138308), you need to add the macros manually. If you are unsure where to place a macro, contact your creative vendor.
+[block:callout]
+{
+  "type": "info",
+  "title": "Important notes about Google Ad Manager macros",
+  "body": "
+  	*   Macros are case-sensitive. Use `%%CACHEBUSTER%%`, not `%%Cachebuster%%`.
+  	*   Unescaped and escaped macro versions expand differently. [Learn more](https://support.google.com/admanager/answer/6081628)
+  	*   Ad Manager inserts macros automatically for [third-party creatives](https://support.google.com/admanager/answer/1746123) or VAST tag URLs if Ad Manager recognizes the third party. For [custom creatives](https://support.google.com/admanager/answer/3180782) and [creative templates](https://support.google.com/admanager/answer/1138308), you need to add the macros manually. If you are unsure where to place a macro, contact your creative vendor."
+}
+[/block]
 
 After all modifications are done, input the Branch ad links into the related Ad Creative fields in Ad Manager 360:
 

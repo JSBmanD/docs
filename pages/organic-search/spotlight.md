@@ -5,9 +5,13 @@ title: Spotlight Search
 
 Listing your app content on Apple's new Spotlight search with Branch is easy. Note that this guide will list on both _cloud search_ and _local spotlight search_.
 
-!!! warning
-    Some older devices cannot index content. iPad minis, for example, cannot use CoreSpotlight. The SDK includes a check for these devices and will return an error message if you attempt to index content on them.
-
+[block:callout]
+{
+  "type": "warning",
+  "title": "Indexing Content",
+  "body": "Some older devices cannot index content. iPad minis, for example, cannot use CoreSpotlight. The SDK includes a check for these devices and will return an error message if you attempt to index content on them."
+}
+[/block]
 
 ## Setup
 
@@ -203,8 +207,13 @@ If the goal is to simply index the content of the app without creating a `Branch
             }
         }];
         ```
-!!! note
-    Content would be indexed using NSUserActivity if contentIndexMode of BranchUniversalObject is Public, otherwise it would be indexed using CSSearchableIndex
+[block:callout]
+{
+  "type": "info",
+  "title": "Content Indexing",
+  "body": "Content would be indexed using `NSUserActivity` if `contentIndexMode` of BranchUniversalObject is Public; otherwise it would be indexed using `CSSearchableIndex`."
+}
+[/block]
 
 - Index batch of Branch Universal Objects on Spotlight using CSSearchableIndex
 
@@ -230,8 +239,13 @@ If the goal is to simply index the content of the app without creating a `Branch
         }];
         ```
 
-!!! note
-    All the Branch Universal Objects will be indexed using CSSearchableIndex irrespective of it's contentIndexMode
+[block:callout]
+{
+  "type": "info",
+  "title": "BUO Indexing",
+  "body": "All the Branch Universal Objects will be indexed using `CSSearchableIndex` irrespective of it's `contentIndexMode`."
+}
+[/block]
 
 - Remove single Branch Universal Object from Spotlight if privately indexed
 
@@ -277,8 +291,13 @@ If the goal is to simply index the content of the app without creating a `Branch
         }];
         ```
 
-!!! note
-    "spotlightIdentifier" member variable of Branch Universal Object should contain the spotlight indentifier which was used to index content to successfully remove indexing.
+[block:callout]
+{
+  "type": "info",
+  "title": "spotlightIdentifier",
+  "body": "`spotlightIdentifier` member variable of Branch Universal Object should contain the spotlight indentifier which was used to index content to successfully remove indexing."
+}
+[/block]
 
 - Remove all the content from Spotlight if privately indexed using Branch SDK
 

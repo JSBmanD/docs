@@ -732,11 +732,21 @@ public void onCreate() {
         branch.openURL("https://example.app.link/u3fzDwyyjF", {newActivity: true}) // Finish the Android current activity before opening the link. Results in a new activity window. Ignored on iOS.
         ```
 
-!!! note
-    If you aren't using the `newActivity` option, it is necessary to move the call to the `RNBranch.initSession method` to the main activity's `onResume` method instead of `onStart`.
+[block:callout]
+{
+  "type": "info",
+  "title": "When Not Using newActivity option",
+  "body": "If you aren't using the `newActivity` option, it is necessary to move the call to the `RNBranch.initSession method` to the main activity's `onResume` method instead of `onStart`."
+}
+[/block]
 
-!!! warning
-    Handling a new deep link in your app will clear the current session data and a new referred "open" will be attributed.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Handling a new deep link in your app",
+  "body": "Handling a new deep link in your app will clear the current session data and a new referred "open" will be attributed."
+}
+[/block]
 
 - ### Handle push notifications
 

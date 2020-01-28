@@ -417,7 +417,7 @@ This class is need for customize "Link sharing"
 * Method `SetDefaultUrl` allows you set default url if url generating was failed
 * Method `SetBitmap` set image for your share
 
-#####!!! `DataTransferManager.GetForCurrentView()` and `Dispatcher` should be called from main thread !!!#####
+**`DataTransferManager.GetForCurrentView()` and `Dispatcher` should be called from main thread**
 
 
 ## Branch Metrics Windows COM

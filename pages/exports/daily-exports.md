@@ -15,7 +15,7 @@ A few important notes:
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Data Feeds is a premium solution",
   "body": "The Daily Export API is included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}."
 }
@@ -124,8 +124,13 @@ The response payload will be in JSON format and for each export it will have an 
 
 All exports via Data Feeds are powered by Branch's [People-Based Attribution](/dashboard/people-based-attribution/). For an exhaustive list of events included in these exports and more detailed definitions of each event, please see the [Event Ontology Data Schema](/exports/event_ontology_data_schema/).
 
-!!! tip
-    A full day's files will be available on our S3 bucket at that location to download around 7:00pm UTC. It will return a blank array from S3 for any empty files until the UTC day is over and the data has been transfered to S3, therefore it is recommended you schedule any ETLs to fetch the data for the previous day around 7:00pm UTC (12pm PST).
+[block:callout]
+{
+  "type": "info",
+  "title": "Pro Tip",
+  "body": "A full day's files will be available on our S3 bucket at that location to download around 7:00pm UTC. It will return a blank array from S3 for any empty files until the UTC day is over and the data has been transfered to S3, therefore it is recommended you schedule any ETLs to fetch the data for the previous day around 7:00pm UTC (12pm PST)."
+}
+[/block]
 
 [block:callout]
 {
@@ -145,5 +150,11 @@ Data will be available through the API only for 7 days after the date it's poste
 
 In accordance with our internal policies related to GDPR and other data protection laws, we hash many fields, including IP address and advertising identifiers, after 7 days. This means that if you want to export data beyond 7 days, either via the Dashboard's CSV Exports or by requesting a manual data dump, these fields will no longer contain the original values. For this reason, we highly recommend you always export raw data within 7 days.
 
-!!! note "Manual Data Dump"
-    Due to the resources required to complete a manual data dump, this service is available to Branch Enterprise tier clients only.
+[block:callout]
+{
+  "type": "info",
+  "title": "Manual Data Dump",
+  "body": "Due to the resources required to complete a manual data dump, this service is available to Branch Enterprise tier clients only.
+"
+}
+[/block]

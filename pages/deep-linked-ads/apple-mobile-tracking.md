@@ -28,8 +28,13 @@ You must add Apple's <notranslate>**iAd.framework**</notranslate> and <notransla
 
 ![image](/_assets/img/pages/apps/ios-frameworks.png)
 
-!!! warning ""
-  If using Cocoapods, the iAd framework is automatically added (in build phase) and the headers are imported. If not using Cocoapods, you will need to do this manually.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Using Cocoapods",
+  "body": "If using Cocoapods, the iAd framework is automatically added (in build phase) and the headers are imported. If not using Cocoapods, you will need to do this manually."
+}
+[/block]
 
 #### Enable Apple Search Ads Check
 
@@ -144,8 +149,13 @@ Cost| Total cost (spend) for those dimensions (analytics tags, user data, time r
 <notranslate>Return On Investment (ROI)</notranslate> | (revenue-cost / cost) * 100 | Deriving return on investment, to understand the percentage "profit" made on ad spend
 <notranslate>Return On Ad Spend (ROAS)</notranslate> | (revenue / cost) * 100 | Deriving return on investment by understanding the percentage revenue multiple for a given unit of spend
 
-!!! info
-    All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran.
+[block:callout]
+{
+  "type": "info",
+  "title": "Cost Data Translation",
+  "body": "All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran."
+}
+[/block]
 
 ### Cost Data Support
 

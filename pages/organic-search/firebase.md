@@ -89,7 +89,7 @@ Both the sitemap itself and statistics about Google scraping your links are upda
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Google does not scrape sitemaps for apps with custom domains",
   "body": "If you're using a custom domain for your Branch links, Google will not scrape your auto-generated sitemap."
 }
@@ -169,7 +169,7 @@ Analytics related to Google's attempts to index your App's content via these tag
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Testing with webmaster tools",
   "body": "We have read on Google's official blog that Googlebot renders javascript before it indexes webpages however, there are times where it may choose not to. The reasons why are unclear to us. Therefore, dynamically generated App Indexing meta tags created as part of this function may or may not appear in your tests with Webmaster Tools when you try to fetch and render as Googlebot."
 }

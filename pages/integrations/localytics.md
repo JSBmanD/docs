@@ -11,7 +11,7 @@ We have built a custom integration to automatically send all Branch install data
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "How do we differentiate Localytics and Branch installs?",
   "body": "We rely on a Branch link being clicked which leads to an install. This sets an internal boolean that an install came from Branch."
 }
@@ -34,7 +34,7 @@ We have built a custom integration to automatically send all Branch install data
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "What does this mean?",
   "body": "Once you have selected to allow third-party attribution, Localytics will attribute non-Localytics installs to your dashboard. <notranslate>**This information is delayed by 10 minutes.**</notranslate>"
 }

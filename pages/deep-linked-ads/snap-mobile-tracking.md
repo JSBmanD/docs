@@ -33,8 +33,13 @@ Before you begin, be sure the following is confirmed.
 1. Click <notranslate>**Log in with Snapchat**</notranslate>.
 1. Read and accept the Snap Advertiser Agreement terms if you haven't already.
 
-    !!! info
-        You must be an Admin on the Branch account in order to accept the Snap Advertiser Agreement terms. You must accept the terms to track your Snap advertising.
+    [block:callout]
+    {
+      "type": "info",
+      "title": "Branch Admin Required",
+      "body": "You must be an Admin on the Branch account in order to accept the Snap Advertiser Agreement terms. You must accept the terms to track your Snap advertising."
+    }
+    [/block]
 
     ![Accept Terms](/_assets/img/pages/deep-linked-ads/snap/sign-terms.png)
 
@@ -44,10 +49,16 @@ Before you begin, be sure the following is confirmed.
     ![Log in to Snap](/_assets/img/pages/deep-linked-ads/snap/log-in-to-snap.png)
     ![Continue OAuth](/_assets/img/pages/deep-linked-ads/snap/accept-oauth.png)
 
-    !!! warning
-        Due to an issue with Snap Login, if you see the Snap "My Account" screen after logging in, you'll need to manually return to the Branch dashboard at [https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings](https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings){:target="\_blank"}. Click <notranslate>**Log in with Snapchat**</notranslate> again in the same browser, and you should see the <notranslate>**Continue**</notranslate>  button instead of the login screen.
+    [block:callout]
+    {
+      "type": "warning",
+      "title": "$2",
+      "body": "
+      Due to an issue with Snap Login, if you see the Snap "My Account" screen after logging in, you'll need to manually return to the Branch dashboard at [https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings](https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings){:target="\_blank"}. Click <notranslate>**Log in with Snapchat**</notranslate> again in the same browser, and you should see the <notranslate>**Continue**</notranslate>  button instead of the login screen.
 
-        ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-my-account.png)
+      ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-my-account.png)"
+    }
+    [/block]
 
 1. Click <notranslate>**Continue**</notranslate> to return to the Branch dashboard.
 
@@ -168,8 +179,13 @@ You can edit your attribution windows for Snap only. With this, you can preserve
 
    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
 
-!!! info
-      Please make sure your Branch attribution windows for Snap match those in your Snap account. See the Troubleshooting section for more detail.
+ [block:callout]
+ {
+   "type": "info",
+   "title": "Matching Attribution Windows",
+   "body": "Please make sure your Branch attribution windows for Snap match those in your Snap account. See the Troubleshooting section for more detail."
+ }
+ [/block]
 
 ## Data Mapping between Branch & Snap
 
@@ -238,8 +254,13 @@ Cost| Total cost (spend) for those dimensions (analytics tags, user data, time r
 <notranslate>Return On Investment (ROI)</notranslate> | (revenue-cost / cost) * 100 | Deriving return on investment, to understand the percentage "profit" made on ad spend
 <notranslate>Return On Ad Spend (ROAS)</notranslate> | (revenue / cost) * 100 | Deriving return on investment by understanding the percentage revenue multiple for a given unit of spend
 
-!!! info
-    All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran.
+[block:callout]
+{
+  "type": "info",
+  "title": "Cost Data Translation",
+  "body": "All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran."
+}
+[/block]
 
 ## Troubleshooting
 

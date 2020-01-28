@@ -9,12 +9,18 @@ Branch offers a truly cross-platform measurement solution that allows customers 
 
 This article covers the generic setup & troubleshooting steps for Facebook & Google web campaigns, but applies to other SANs such as Snap.
 
-!!! info
-	This article is about tracking web campaigns with Self-Attributing Networks (SANs), particularly Google and Facebook. "Web" campaigns means ads that serve on either mobile web or app inventory but direct to a website rather than an app.
+[block:callout]
+{
+  "type": "info",
+  "title": "
+	Tracking Web cCmpaigns with Self-Attributing Networks (SANs)",
+  "body": "This article is about tracking web campaigns with Self-Attributing Networks (SANs), particularly Google and Facebook. "Web" campaigns means ads that serve on either mobile web or app inventory but direct to a website rather than an app.
 
 	For tracking app campaigns, please see the relevant documentation for [Google](/deep-linked-ads/google-ads-overview/#other-campaigns) and [Facebook](/deep-linked-ads/facebook-ads-overview/).
 
-	For non-SAN web campaigns (for example, affiliate web tracking), please find the relevant partner's documentation in the Branch docs sidebar.
+	For non-SAN web campaigns (for example, affiliate web tracking), please find the relevant partner's documentation in the Branch docs sidebar."
+}
+[/block]
 
 ## Generic Setup
 
@@ -29,8 +35,13 @@ First, you'll want to ensure you are capturing web conversions by [integrating t
 1. **IMPORTANT**. Ensure that the link has the following properties:
     1. <notranslate>**All desired analytics tags**</notranslate>. If you don't add analytics tags, you won't see clicks alongside downstream conversion events in the Branch dashboard later. At a minimum you will want to set the *Campaign* (*~campaign* as query parameter or link data), but if you want to filter by other analytics tags, please add those.
 
-        !!! success
-            In order to line up *impressions*, *clicks* and *cost* with all downstream events, analytics tags must be present on the link and the values must *exactly* match the values in the Ad Network's dashboard.
+		[block:callout]
+		{
+		  "type": "success",
+		  "title": "Analytics Tag Values",
+		  "body": "In order to line up *impressions*, *clicks* and *cost* with all downstream events, analytics tags must be present on the link and the values must *exactly* match the values in the Ad Network's dashboard."
+		}
+		[/block]
 
     1. <notranslate>**Campaign ID**</notranslate> (*~campaign_id* in link data). Campaign ID is required to avoid duplicating clicks. More on this in the troubleshooting section.
 

@@ -13,7 +13,7 @@ Our new webhook infrastructure supports for all Branch events. The data is forma
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Data Feeds is a premium solution",
   "body": "The Webhooks are included in Branch’s [Data Feeds](/exports/data-feeds/) offering, which can be purchased according to Branch’s [pricing schedule](https://branch.io/pricing/){:target="\_blank"}, and is available at no additional charge to customers who are on Launch and Startup plans for [Journeys](https://branch.io/journeys/){:target="\_blank"}, [Universal Email](https://branch.io/email/){:target="\_blank"}, or [Universal Ads](https://branch.io/attribution/){:target="\_blank"}. Without Data Feeds, you can still export Branch data in CSV form directly from the Branch dashboard via [Sources](https://dashboard.branch.io/sources){:target="\_blank"} or [CSV Exports](https://dashboard.branch.io/data-import-export/csv-exports){:target="\_blank"}."
 }
@@ -49,8 +49,13 @@ As you fill out the configuration, you'll see the following options:
 | <notranslate>**click**</notranslate> | Triggered whenever a Branch link is clicked on any platform
 | <notranslate>**-- additional events --**</notranslate> | A complete list of events you track through the Branch Web or App SDKs.
 
-!!! tip
-    Events will only appear in the event dropdown if at least one of those events has been recorded in the past 30 days.
+[block:callout]
+{
+  "type": "info",
+  "title": "Pro Tip",
+  "body": "Events will only appear in the event dropdown if at least one of those events has been recorded in the past 30 days."
+}
+[/block]
 
 For an exhaustive list of events and more detailed definitions of each event, please see the [Event Ontology Data Schema](/exports/event_ontology_data_schema/).
 
@@ -83,7 +88,7 @@ This should be your final view before saving:
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Filtering installs by attributed link campaign",
   "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**install**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Campaign**</notranslate> field to <notranslate>**App Install Campaign**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Campaign**</notranslate> is equal to <notranslate>**"App Install Campaign"**</notranslate>. You would select <notranslate>**Campaign**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~campaign**</notranslate>. Finally, you'd set the value equal to <notranslate>**App Install Campaign**</notranslate>."
 }
@@ -93,7 +98,7 @@ This should be your final view before saving:
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Filtering clicks by link channel",
   "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**click**</notranslate> event that is referred from a Branch link where you set the <notranslate>**Channel**</notranslate> field to <notranslate>**AppLovin**</notranslate>. You would configure a filter to fire a webhook only when <notranslate>**Channel**</notranslate> is equal to <notranslate>**AppLovin**</notranslate>. You would select <notranslate>**Channel**</notranslate> from the dropdown, the key would be be autofilled and would equal <notranslate>**last_attributed_touch_data.~channel**</notranslate>. Finally, you'd set the value equal to <notranslate>**AppLovin**</notranslate>."
 }
@@ -125,9 +130,13 @@ To test whether your webhook is configured correctly, you can use [RequestBin](h
 
 	![image](/_assets/img/pages/exports/requestbin_response.png)
 
-    !!! caution
-        Please archive your Requestbin webhook when you have finished testing. Requestbins only last for 24 hours and return errors once they expire.
-
+    [block:callout]
+    {
+    "type": "warning",
+    "title": "RequestBin",
+    "body": "Please archive your Requestbin webhook when you have finished testing. Requestbins only last for 24 hours and return errors once they expire."
+    }
+    [/block]
 
 ## Data Format
 
@@ -262,7 +271,7 @@ To create a filter:
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Example: Filtering purchases for a specific coupon",
   "body": "Let’s say you’re interested in receiving a webhook for every <notranslate>**Purchase**</notranslate> event using a specific coupon. When you set up the Purchase event in your app or on your website, you [added a specific piece of metadata for "coupon"](/apps/v2event/#track-commerce-events). In the [Event Ontology Schema](/exports/event_ontology_data_schema/#full-list-of-fields) you saw that "coupon" is inside "event_data". To configure your filter to fire a webhook only when <notranslate>**coupon**</notranslate> is equal to <notranslate>**SUMMERDEALS10**</notranslate> you will:"
 }
@@ -277,7 +286,7 @@ To create a filter:
 
 [block:callout]
 {
-  "type": "caution",
+  "type": "warning",
   "title": "Array filtering not yet available",
   "body": "Currently, webhooks do not support filtering on values inside arrays. Example arrays that cannot be filtered by value are <notranslate>**tags**</notranslate>, <notranslate>**+via_features**</notranslate> and <notranslate>**content_items**</notranslate>."
 }

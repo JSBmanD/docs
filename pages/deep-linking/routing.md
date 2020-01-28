@@ -188,7 +188,7 @@ All of the examples below create links that will cause Branch to display `myapp:
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "When creating links dynamically",
   "body": "If you're creating a link by appending query parameters, just append the control parameters to the URL. Please make sure to URL encode everything, lest the link will break."
 }
@@ -200,7 +200,7 @@ All of the examples below create links that will cause Branch to display `myapp:
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "When using a mobile SDK",
   "body": "- *iOS - Objective C*"
 }
@@ -233,7 +233,7 @@ All of the examples below create links that will cause Branch to display `myapp:
 
 [block:callout]
 {
-  "type": "example",
+  "type": "info",
   "title": "When creating Quick Links on the Branch dashboard",
   "body": "You can specify the control parameters for individual Quick Links by inserting the keys and values into the _Deep Link Data (Advanced)_ section."
 }
@@ -398,8 +398,13 @@ Now whenever your app launches from a Branch link that has the `product_picture`
 | <notranslate>**BNCViewControllerOptionPush**</notranslate> | This option pushes view controller onto the navigation stack in a similar way as the pushViewController
 | <notranslate>**BNCViewControllerOptionPresent**</notranslate> | This option presents view controller onto the root view controller of window in a similar way as the presentViewController
 
-!!! note
-	<notranslate>**BNCViewControllerOptionShow**</notranslate> or <notranslate>**BNCViewControllerOptionPush**</notranslate> option would only push a view controller if the root view controller of window is of type <notranslate>**UINavigationViewController**</notranslate>. Or else, the view controller would be presented by default.
+[block:callout]
+{
+  "type": "info",
+  "title": "View Controller",
+  "body": "<notranslate>**BNCViewControllerOptionShow**</notranslate> or <notranslate>**BNCViewControllerOptionPush**</notranslate> option would only push a view controller if the root view controller of window is of type <notranslate>**UINavigationViewController**</notranslate>. Or else, the view controller would be presented by default."
+}
+[/block]
 
 ### Auto-routing in Android
 

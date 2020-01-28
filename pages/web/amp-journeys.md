@@ -7,9 +7,16 @@ title: Journeys via AMP
 
 AMP pages by design make it difficult for users to go anywhere except back to Google search, and difficult for you to convert users to your website or your app. With AMP-compatible Journeys, you can convert mobile web traffic from Google search results to your app and take advantage of extra traffic from AMP pages. Select Journeys templates can be shown on your AMP-compatible website.
 
-!!! note "Pre-reqs"
-    - To host AMP Journeys and show in Google search as an AMP page, your webpage must be [AMP](https://www.ampproject.org/docs/)-compatible.
-    - Journeys uses your alternate domain for Universal Links. Make sure you include your `xxxx-alternate.app.link` domain in your [Associated Domains](/apps/ios/#configure-associated-domains). If you’re unsure of your Branch-assigned app.link subdomain, [contact support](https://support.branch.io/support/tickets/new)
+[block:callout]
+{
+  "type": "info",
+  "title": "Prerequisites",
+  "body": "
+  - To host AMP Journeys and show in Google search as an AMP page, your webpage must be [AMP](https://www.ampproject.org/docs/)-compatible.
+  - Journeys uses your alternate domain for Universal Links. Make sure you include your `xxxx-alternate.app.link` domain in your [Associated Domains](/apps/ios/#configure-associated-domains). If you’re unsure of your Branch-assigned app.link subdomain, [contact support](https://support.branch.io/support/tickets/new)
+  "
+}
+[/block]
 
 ## Setup
 
@@ -37,7 +44,7 @@ Finally, if you do not already have the following AMP scripts on your page, add 
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Include canonical URL for SEO and deep linking",
   "body": "[Google recommends](https://www.ampproject.org/docs/guides/discovery){:target="\_blank"} that on your AMP page, you include a reference to the canonical URL of the non-AMP page with the same content. For example, you should include a tag like this in the `<head></head>` section of your AMP page: `<link rel="canonical" href="https://example.com/article.html">`. This helps make your AMP page discoverable, and likely helps ensure that SEO information is shared between these two pages. Additionally, Branch automatically embeds the canonical URL in the Journey link data, leading to better identification of content and the ability to use this key for deep linking."
 }
@@ -93,7 +100,7 @@ You can [configure links] with deep link data on AMP in two ways:
 
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Use $canonical_url for deep linking",
   "body": "AMP Journeys, along with regular Journeys and the Quick Link Creator, automatically embeds `$canonical_url` in your link data based on meta tags on your web or AMP page. If you use this key to route to specific content in your app, you do not have to add anything extra for AMP."
 }

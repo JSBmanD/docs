@@ -37,7 +37,7 @@ If you don't want to use Branch's default Text Me The App Page or show a desktop
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Make sure you can access this page",
   "body": "Because you will be making changes to this URL, be sure you have access to the page and can make changes to its HTML."
 }
@@ -108,7 +108,7 @@ Please reach out to support@branch.io or your CSM with the above information to 
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Phone number retention policy",
   "body": "Phone numbers are redacted from Branch's Twilio instance, but if you use your own SMS provider, phone numbers may be stored either temporarily or indefinitely by that provider."
 }

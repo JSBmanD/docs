@@ -14,7 +14,7 @@ By connecting your Twitter Ads and Branch accounts, the following is enabled:
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Deep Linking Not Supported",
   "body": "Twitter Ads does not support the use of deep links at this time.  As such, this integration does not require the use of Branch links."
 }
@@ -22,15 +22,21 @@ By connecting your Twitter Ads and Branch accounts, the following is enabled:
 
 ## Prerequisites
 
-!!! warning "Prerequisites"
-	* [x] Ensure Branch is the only MMP configured in your Twitter account.  This must be done before you enable the Twitter integration in your Branch dashboard.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Prerequisites",
+  "body": "
+  * [x] Ensure Branch is the only MMP configured in your Twitter account.  This must be done before you enable the Twitter integration in your Branch dashboard.
 	* [x] To track installs from Twitter Ads you should [integrate the Branch SDK](/apps/ios/#integrate-branch) into your app OR send events via server to server integration including device IDs (Google AID or Apple IFA).
 	* [x] To use Twitter App Install Ads ensure you have:
 		* [x] URI schemes configured on iOS
 		* [x] URI schemes configured on Android
 		* [x] iOS App Store ID set
 		* [x] Android Package Name set
-	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality.
+	* [x] Ads is a premium product priced on Monthly Active Users. Sign up for the Ads product to enable this functionality."
+}
+[/block]
 
 ## Campaign Support
 
@@ -48,9 +54,15 @@ App campaigns do not support Branch links. Branch links can be used on Tweets, p
 
 ## Enable Twitter Ads for Measurement
 
-!!! note "Enabling Twitter"
-	- Completing this section -- "Enable Twitter Ads for Measurement" -- will result in Branch sending app events to Twitter in order to attribute them back to Twitter ad campaigns.
-	- Ensure Branch is the only MMP configured in your Twitter account.  This must be done before you enable the Twitter integration in your Branch dashboard.
+[block:callout]
+{
+  "type": "info",
+  "title": "Enabling Twitter",
+  "body": "
+  - Completing this section -- "Enable Twitter Ads for Measurement" -- will result in Branch sending app events to Twitter in order to attribute them back to Twitter ad campaigns.
+	- Ensure Branch is the only MMP configured in your Twitter account.  This must be done before you enable the Twitter integration in your Branch dashboard."
+}
+[/block]
 
 1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management) and search for **Twitter**.
 

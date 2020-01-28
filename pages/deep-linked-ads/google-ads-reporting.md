@@ -1,39 +1,38 @@
 ---
 title: Reporting & Discrepancies
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads Resources"
-		- [Overview](/deep-linked-ads/google-ads-overview/)
-		- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)
-		- **Reporting & Discrepancies (this page)**
-		- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
+##  Google Ads Resources
+	- [Overview](/deep-linked-ads/google-ads-overview/)
+	- [Enabling the Integration](/deep-linked-ads/google-ads-setup/)
+	- **Reporting & Discrepancies (this page)**
+	- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
 
-		[block:callout]
+[block:callout]
 {
   "type": "info",
   "title": "Available Compare By Dimensions for SANs",
   "body": "Self-Attributing Networks (SANs) do not always support all of the dimensions available in your Branch analytics.  Please refer to the following table when using Compare by dimensions."
-}
-[/block]
 
-		    |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
-		    |---------------------|-------------|-------------|------------------|-------------|
-		    | <notranslate>**Feature**</notranslate>             | Supported   | Supported   | Supported        | Supported   |
-		    | <notranslate>**Channel**</notranslate>             | Unsupported | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**Campaign**</notranslate>            | Supported   | Supported   | Supported        | Supported   |
-		    | <notranslate>**Tags**</notranslate>               | Unsupported | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**Stage**</notranslate>               | Unsupported | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**Ad Partner**</notranslate>          | Supported   | Supported   | Supported        | Supported   |
-		    | <notranslate>**Secondary Publisher**</notranslate> | Supported   | Supported   | Unsupported      | Unsupported |
-		    | <notranslate>**Ad Set Name**</notranslate>         | Supported   | Unsupported | Supported        | Supported   |
-		    | <notranslate>**Ad Name**</notranslate>             | Supported   | Unsupported | Unsupported      | Supported   |
-		    | <notranslate>**Creative Name**</notranslate>       | Supported   | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**Keyword**</notranslate>             | Unsupported | Supported   | Supported        | Unsupported |
-		    | <notranslate>**Last Touch Type**</notranslate>     | Unsupported | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**Link ID**</notranslate>             | Unsupported | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**Country**</notranslate>             | Supported   | Unsupported | Unsupported      | Unsupported |
-		    | <notranslate>**OS**</notranslate>                  | Unsupported | Unsupported | Supported        | Unsupported |
-		    | <notranslate>**Platform**</notranslate>            | Unsupported | Unsupported | Unsupported      | Unsupported |
-
+  |                     | <notranslate>**Facebook**</notranslate>    | <notranslate>**Google**</notranslate>      | <notranslate>**Apple Search Ads**</notranslate> | <notranslate>**Snap**</notranslate>        |
+  |---------------------|-------------|-------------|------------------|-------------|
+  | <notranslate>**Feature**</notranslate>             | Supported   | Supported   | Supported        | Supported   |
+  | <notranslate>**Channel**</notranslate>             | Unsupported | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**Campaign**</notranslate>            | Supported   | Supported   | Supported        | Supported   |
+  | <notranslate>**Tags**</notranslate>               | Unsupported | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**Stage**</notranslate>               | Unsupported | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**Ad Partner**</notranslate>          | Supported   | Supported   | Supported        | Supported   |
+  | <notranslate>**Secondary Publisher**</notranslate> | Supported   | Supported   | Unsupported      | Unsupported |
+  | <notranslate>**Ad Set Name**</notranslate>         | Supported   | Unsupported | Supported        | Supported   |
+  | <notranslate>**Ad Name**</notranslate>             | Supported   | Unsupported | Unsupported      | Supported   |
+  | <notranslate>**Creative Name**</notranslate>       | Supported   | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**Keyword**</notranslate>             | Unsupported | Supported   | Supported        | Unsupported |
+  | <notranslate>**Last Touch Type**</notranslate>     | Unsupported | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**Link ID**</notranslate>             | Unsupported | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**Country**</notranslate>             | Supported   | Unsupported | Unsupported      | Unsupported |
+  | <notranslate>**OS**</notranslate>                  | Unsupported | Unsupported | Supported        | Unsupported |
+  | <notranslate>**Platform**</notranslate>            | Unsupported | Unsupported | Unsupported      | Unsupported |
+	}
+	[/block]
 
 ## Enabling and Segmenting View-Through Conversions in Reporting
 
@@ -62,29 +61,34 @@ Cost| Total cost (spend) for those dimensions (analytics tags, user data, time r
 <notranslate>Return On Investment (ROI)</notranslate> | (revenue-cost / cost) * 100 | Deriving return on investment, to understand the percentage "profit" made on ad spend
 <notranslate>Return On Ad Spend (ROAS)</notranslate> | (revenue / cost) * 100 | Deriving return on investment by understanding the percentage revenue multiple for a given unit of spend
 
-!!! info
-    All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran.
+[block:callout]
+{
+  "type": "info",
+  "title": "Cost Data Translation",
+  "body": "All cost data is ingested in local currency and then translated to USD on the dashboard using the exchange rate for that currency on the day the data is stored.  In effect, this means the dashboard shows the amount that campaign cost converted to USD at the time it ran."
+}
+[/block]
 
-		#### Branch Cost data not matching the Ad Partner dashboard
+#### Branch Cost data not matching the Ad Partner dashboard
 
-		Please ensure that you've selected the same time zone in your Ad Partner's dashboard and your Branch dashboard.
+Please ensure that you've selected the same time zone in your Ad Partner's dashboard and your Branch dashboard.
 
-		#### CPI metric doesn't match between Ad Partner and Branch, although cost metric does
+#### CPI metric doesn't match between Ad Partner and Branch, although cost metric does
 
-		Branch's last-click attribution model can lead to differences in install counts for Branch vs self-attributing networks (SANs) that in turn cause differences in CPI metrics. Verify whether your cost and install metrics match the Ad Partner's dashboard. If there is an install discrepancy, it is likely legitimate and due to differences in install counts, where Branch's number is more accurate. If the discrepancy is very large, investigate causes of install discrepancies through the usual troubleshooting steps.
+Branch's last-click attribution model can lead to differences in install counts for Branch vs self-attributing networks (SANs) that in turn cause differences in CPI metrics. Verify whether your cost and install metrics match the Ad Partner's dashboard. If there is an install discrepancy, it is likely legitimate and due to differences in install counts, where Branch's number is more accurate. If the discrepancy is very large, investigate causes of install discrepancies through the usual troubleshooting steps.
 
-		#### Cost, click and impression data is all missing
+#### Cost, click and impression data is all missing
 
-		Generally, reauthenticating a partner and waiting 24 hours will re-enable cost data.
+Generally, reauthenticating a partner and waiting 24 hours will re-enable cost data.
 
-		When you reauthenticate, double check that you have selected the correct accounts. We will only pull cost data for accounts that you select as part of the authentication process.
+When you reauthenticate, double check that you have selected the correct accounts. We will only pull cost data for accounts that you select as part of the authentication process.
 
-		Background:
-		Cost, click and impression data for SANs are generally sourced from Partner APIs (unless Branch impression pixels or links are being intentionally used for attribution, for example, in web campaigns). When you enable a SAN, you authenticate with your provider. Branch uses this authentication to retrieve click, cost and impression data. If the authentication token expires (for example, if you reset your password, or the partner force resets your token), then you may not see click, impression or cost data. In this case, simply reauthenticate and that will refresh your token.
+Background:
+Cost, click and impression data for SANs are generally sourced from Partner APIs (unless Branch impression pixels or links are being intentionally used for attribution, for example, in web campaigns). When you enable a SAN, you authenticate with your provider. Branch uses this authentication to retrieve click, cost and impression data. If the authentication token expires (for example, if you reset your password, or the partner force resets your token), then you may not see click, impression or cost data. In this case, simply reauthenticate and that will refresh your token.
 
-		#### Cost data is missing or incorrect for certain <notranslate>"compare by"</notranslate> breakdowns
+#### Cost data is missing or incorrect for certain <notranslate>"compare by"</notranslate> breakdowns
 
-		Downstream events, such as _installs_, should always have the full range of compare by options in the dashboard. However, _clicks, impressions and cost_ data for SAN are often imported via Partner APIs. These APIs do not necessarily provide the same breakdowns for cost data that Branch supports with raw install events, so there may be cases where the Branch Dashboard cannot compare by the same dimensions for cost data vs install data.
+Downstream events, such as _installs_, should always have the full range of compare by options in the dashboard. However, _clicks, impressions and cost_ data for SAN are often imported via Partner APIs. These APIs do not necessarily provide the same breakdowns for cost data that Branch supports with raw install events, so there may be cases where the Branch Dashboard cannot compare by the same dimensions for cost data vs install data.
 
 
 ## Click Reporting

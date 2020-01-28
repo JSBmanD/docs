@@ -68,8 +68,13 @@ Here's a snippet of xml you can copy into your Info.plist. Right click on your I
 	</array>
 ```
 
-!!! warning ""
-	Your app's URI scheme must be the first scheme defined (item 0) in the list.
+[block:callout]
+{
+  "type": "warning",
+  "title": "First Scheme Defined",
+  "body": "Your app's URI scheme must be the first scheme defined (item 0) in the list."
+}
+[/block]
 
 The Branch SDK will use the first URI Scheme from your list that does not start with `fb`, `db`, `twitterkit-`, `pin`, or `com.googleusercontent.apps`. These schemes are ignored by Branch since they are commonly used by other app kits for oauth and other uses.
 

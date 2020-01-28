@@ -69,8 +69,13 @@ Create a `BranchUniversalObject` containing details about the content that is be
                         .addCustomMetadata("monsterName", "Mr. Squiggles"));
     ```
 
-!!! tip
-    The `canonicalIdentifier` or `canonicalUrl` parameter greatly improves the content analytics data Branch captures. It should be unique to that piece of content and helps Branch dedupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities.
+[block:callout]
+{
+  "type": "info",
+  "title": "canonicalIdentifier or canonicalUrl",
+  "body": "The `canonicalIdentifier` or `canonicalUrl` parameter greatly improves the content analytics data Branch captures. It should be unique to that piece of content and helps Branch de-dupe across many instances of the same thing. Suitable options: a website with pathing, or a database with identifiers for entities."
+}
+[/block]
 
 Then define the properties of the link. In the example, our properties reflect that this is shared content and the user selected Facebook as the destination. You can find examples of [the other platforms here](#dialog-code?ios=create-link-reference&android=create-link-reference&adobe=create-deep-link&cordova=create-link-reference&mparticleAndroid=create-link-reference&mparticleIos=create-link-reference&titanium=create-link-reference&reactNative=create-link-reference&unity=create-link-reference&xamarin=create-link-reference).
 
@@ -92,7 +97,7 @@ Then define the properties of the link. In the example, our properties reflect t
 
 - *Android*
 
-    ```java
+    ```
     LinkProperties linkProperties = new LinkProperties()
                    .setChannel("facebook")
                    .setFeature("sharing")
@@ -102,14 +107,14 @@ Note that on Android, you can customize the styling with the ShareSheetStyle cla
 
 **Android**
 ```java
-ShareSheetStyle shareSheetStyle = new ShareSheetStyle(MainActivity.this, "Check this out!", "This stuff is awesome: ")
+ShareSheetStyle shareSheetStyle = new ShareSheetStyle(MainActivity.this, "Check this out!", "This stuff is awesome:")
                         .setCopyUrlStyle(getResources().getDrawable(android.R.drawable.ic_menu_send), "Copy", "Added to clipboard")
                         .setMoreOptionStyle(getResources().getDrawable(android.R.drawable.ic_menu_search), "Show more")
                         .addPreferredSharingOption(SharingHelper.SHARE_WITH.FACEBOOK)
                         .addPreferredSharingOption(SharingHelper.SHARE_WITH.EMAIL)
                         .setAsFullWidthStyle(true)
                         .setSharingTitle("Share With");
-```
+                        ```
 
 Then, trigger the share sheet to appear without having to create a link. Calling this method will automatically generate a Branch link with the appropriate analytics channel when the user selects a sharing destination. You can find examples of [the other platforms here](#dialog-code?ios=share-deep-link&android=share-deep-link&adobe=create-deep-link&cordova=share-deep-link&mparticleAndroid=share-deep-link&mparticleIos=share-deep-link&titanium=share-deep-link&reactNative=share-deep-link&unity=share-deep-link&xamarin=share-deep-link).
 
@@ -154,12 +159,6 @@ Then, trigger the share sheet to appear without having to create a link. Calling
 Here's an example of what you'll see with iOS on the left and Android on the right:
 
 ![image](/_assets/img/pages/viral/content-sharing/combined_share_sheet.png)
-
-!!! note "To learn more about the concepts we used, visit these pages"
-    - [Creating Links in Apps](#dialog-code?ios=create-deep-link&android=create-deep-link&adobe=create-deep-link&cordova=create-deep-link&mparticleAndroid=create-deep-link&mparticleIos=create-deep-link&titanium=create-deep-link&reactNative=create-deep-link&unity=create-deep-link&xamarin=create-deep-link)
-    - [Configuring Links](/links/integrate/#configure-deep-links)
-    - [Branch Universal Object](#dialog-code?ios=create-content-reference&android=create-content-reference&adobe=create-deep-link&cordova=create-content-reference&mparticleAndroid=create-content-reference&mparticleIos=create-content-reference&titanium=create-content-reference&reactNative=create-content-reference&unity=create-content-reference&xamarin=create-content-reference)
-    - [Deep Link Routing](/deep-linking/routing/)
 
 ### Route incoming users directly to content
 

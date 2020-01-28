@@ -98,8 +98,13 @@ Generally, no. Facebook MMP allows us to measure Facebook app install and app en
 
 ### Can I get the data out?
 
-!!! Warning
-	Data Integrations will never include events attributed to Facebook. This is because we cannot share device-level Facebook attribution data with third parties.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Facebook Attributed Events",
+  "body": "Data Integrations will never include events attributed to Facebook. This is because we cannot share device-level Facebook attribution data with third parties."
+}
+[/block]
 
 There are many ways to access data pertaining to Facebook.
 
@@ -134,14 +139,19 @@ Please see the section below, [Sources of Discrepancies between Facebook and Bra
 
 ### Facebook MMP event options
 
-!!! Tip
-	To see the options below on the Branch Dashboard, [click here](https://dashboard.branch.io/ads/partner-management/a_facebook?tab=events){:target="\_blank"}.
+[block:callout]
+{
+  "type": "info",
+  "title": "Event Options",
+  "body": "To see the options below on the Branch Dashboard, [click here](https://dashboard.branch.io/ads/partner-management/a_facebook?tab=events)."
+}
+[/block]
 
 Branch + Facebook MMP allows you to attribute events back to your Facebook ad campaigns. Branch sends events to Facebook, along with metadata including advertising ID. Facebook then returns info on the ad that the user last viewed or clicked, if any. Branch then surfaces this on our Dashboard, and conditionally* makes this data available in our [Data Feeds](/exports/data-feeds/) product.
 
 Partners have several options when it comes to sending events to Facebook. These are discussed below.
 
- (*) You must have signed the [Data Use Terms for Advanced Mobile App Measurement](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos){:target="\_blank"}
+- You must have signed the [Data Use Terms for Advanced Mobile App Measurement](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos).
 
 #### Tracking installs
 
@@ -149,8 +159,13 @@ Branch sends all installs to Facebook. Facebook de-duplicates installs on their 
 
 #### Tracking reinstalls and opens
 
-!!! Warning
-	Facebook does not de-duplicate custom app events on their backend. So if you have the Facebook SDK integrated or another MMP tracking app opens, choose option 1 below.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Event De-duplication",
+  "body": "Facebook does not de-duplicate custom app events on their backend. So if you have the Facebook SDK integrated or another MMP tracking app opens, choose option 1 below."
+}
+[/block]
 
 When tracking reinstalls and opens, you have 3 options:
 
@@ -160,8 +175,13 @@ When tracking reinstalls and opens, you have 3 options:
 
 #### Tracking other conversion events
 
-!!! Warning
-	Facebook does not de-duplicate custom app events on their backend. If you are tracking conversion events with the Facebook SDK or another MMP, choose option 1 below.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Custom Event De-duplication",
+  "body": "acebook does not de-duplicate custom app events on their backend. If you are tracking conversion events with the Facebook SDK or another MMP, choose option 1 below."
+}
+[/block]
 
 It's possible to track app events using only Branch! You can [track the events](/apps/v2event/#v2-event) with Branch once, and then we send them to Facebook as well as other analytics systems. Use the [v2/event logging methods](/apps/v2event/#v2-event) outlined here.
 
@@ -183,8 +203,13 @@ When tracking custom events that have no equivalent [Facebook App Event](https:/
 
 ### Migrating from the existing Facebook integration to MMP
 
-!!! Note
-	You can no longer see the previous Facebook onboarding flow that required you to copy-paste your Facebook app secret. Please use the "Authenticate with Facebook" option instead.
+[block:callout]
+{
+  "type": "info",
+  "title": "Authenitcation",
+  "body": "You can no longer see the previous Facebook onboarding flow that required you to copy-paste your Facebook app secret. Please use the "Authenticate with Facebook" option instead."
+}
+[/block]
 
 If you have been using our integration with Facebook prior to February 14, 2018, then we highly recommend that you upgrade to our new integration that includes MMP.
 
@@ -315,8 +340,13 @@ If you're unable to see installs, reinstalls, or opens on the Branch Dashboard, 
 
 ##### 2. I see installs on the Facebook Dashboard, but no clicks
 
-!!! Note
-	Branch will only show impressions and clicks for campaigns that have installs, reinstalls, or opens. If you have campaigns that have not resulted in these app-based outcomes, we will hide them. This is to prevent massively inflating analytics on the Branch Dashboard with data that is not relevant. If you have feedback on this, please [contact us](https://support.branch.io/support/tickets/new){:target="\_blank"} and include "Facebook MMP + clicks" in the subject.
+[block:callout]
+{
+  "type": "info",
+  "title": "Showing Impressions & Clicks",
+  "body": "Branch will only show impressions and clicks for campaigns that have installs, reinstalls, or opens. If you have campaigns that have not resulted in these app-based outcomes, we will hide them. This is to prevent massively inflating analytics on the Branch Dashboard with data that is not relevant. If you have feedback on this, please [contact us](https://support.branch.io/support/tickets/new){:target="\_blank"} and include "Facebook MMP + clicks" in the subject."
+}
+[/block]
 
 If you turned on the integration within the last hour, then you may need to refresh the Branch Dashboard to see clicks. We automatically start a background job to pull in impressions and clicks from Facebook the first time you visit the [Ads Analytics](https://dashboard.branch.io/ads/analytics){:target="\_blank"} page after enabling Facebook.
 
@@ -398,8 +428,13 @@ If after all this you're still seeing discrepancies, please [contact us](https:/
 * For every day in date range, the number of installs Facebook is reporting - include both a table and a screenshot
 * For every day in date range, the number of installs Branch is reporting - include both a table and a screenshot
 
-!!! Note
-	In some rare cases, we've seen partners running multiple Facebook campaigns with the same name. In this case, the Branch Dashboard will combine stats for all of these campaigns under the same name. We still retain this data separately on our backend, as there are different Facebook campaign ids. While we do not expose this on the Branch Dashboard, you can pull statistics by campaign id via the [Query API](/exports/query-api).
+[block:callout]
+{
+  "type": "info",
+  "title": "Campaigns using the Same Name",
+  "body": "In some rare cases, we've seen partners running multiple Facebook campaigns with the same name. In this case, the Branch Dashboard will combine stats for all of these campaigns under the same name. We still retain this data separately on our backend, as there are different Facebook campaign ids. While we do not expose this on the Branch Dashboard, you can pull statistics by campaign id via the [Query API](/exports/query-api)."
+}
+[/block]
 
 ##### 3. I don't see any conversion events on the Branch Dashboard
 

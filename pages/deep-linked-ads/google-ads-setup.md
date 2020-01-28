@@ -1,11 +1,12 @@
 ---
 title: Enabling the Integration
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads Resources"
-		- [Overview](/deep-linked-ads/google-ads-overview/)
-		- **Enabling the Integration (this page)**
-		- [Reporting & Discrepancies](/deep-linked-ads/google-ads-reporting/)
-		- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
+
+##  Google Ads Resources
+	- [Overview](/deep-linked-ads/google-ads-overview/)
+	- **Enabling the Integration (this page)**
+	- [Reporting & Discrepancies](/deep-linked-ads/google-ads-reporting/)
+	- [Customization & Edge Cases](/deep-linked-ads/google-ads-customization/)
 
 ## Overview
 
@@ -120,9 +121,15 @@ Below is Google's **recommendation**:
 
 Firstly, it is not necessary to connect all Google Ads accounts. However, you must connect the Google Ads account that owns in-app conversions for your mobile app. Often, this is the MCC account.
 
-!!! tip
+[block:callout]
+{
+  "type": "info",
+  "title": "MCC Accounts",
+  "body": "
 	Inside an MCC, it is possible to configure which account (the MCC or the child account) is responsible for conversions. Ensure that you create link IDs with the account that is noted as the Conversion Account under the `MCC > Management` tab.
 
-	![MCC Accounts](/_assets/img/pages/deep-linked-ads/google/mcc-conversion-account.png)
+	![MCC Accounts](/_assets/img/pages/deep-linked-ads/google/mcc-conversion-account.png)"
+}
+[/block]
 
 If you only have access to the child account (but that account is attached to an MCC), you can see which account is recording conversions within the child account as well, by going to `Tools > Conversions > Settings > Conversion Account` in Google Ads.

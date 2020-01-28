@@ -619,7 +619,7 @@ title: Deep Linking API
 
     [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Please take note of the `type` parameter",
   "body": "`type` = `credit` will create a reward rule on your dashboard. To see the structure of the webhook callback, please test this with [RequestBin](https://requestbin.com/) or a similar service."
 }

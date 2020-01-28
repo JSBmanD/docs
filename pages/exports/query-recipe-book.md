@@ -3,7 +3,7 @@ title: Query Recipe Book
 ---
 [block:callout]
 {
-  "type": "protip",
+  "type": "info",
   "title": "Want to see a Query API reference?",
   "body": "For an exhaustive list of options for this Query API, flip over to the [Query API](/exports/query-api/) reference page."
 }

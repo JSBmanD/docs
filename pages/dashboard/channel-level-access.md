@@ -307,5 +307,10 @@ You can add new webhooks, edit existing webhooks and archive unwanted webhooks.
 
 ![image](/_assets/img/pages/dashboard/access-levels/channel-webhooks1.png)
 
-!!! info "Webhook Setup"
-	Please refer to the [Webhooks](/exports/ua-webhooks/) article for an in-depth tutorial on how to configure webhooks.
+[block:callout]
+{
+  "type": "info",
+  "title": "Webhook Setup",
+  "body": "Please refer to the [Webhooks](/exports/ua-webhooks/) article for an in-depth tutorial on how to configure webhooks."
+}
+[/block]

@@ -112,7 +112,7 @@ When viewing analytics, data is filterable by `Agency` via:
 
 [block:callout]
 {
-  "type": "note",
+  "type": "info",
   "title": "Viewing other Agencies Data",
   "body": "Only Agencies given the ability to view other Agencies data will be able to filter analytics by Agency."
 }

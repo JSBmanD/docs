@@ -5,13 +5,23 @@ title: Export Access
 
 The <notranslate>"Export"</notranslate> level of access applies specifically to the [Sensitive Data](/dashboard/sensitive-data-access/) level of access and allows users to export sensitive data from pages they've been given view access to.
 
-!!! warning ""
-	Users with export access to sensitive data, can export **log-level data** via the <notranslate>**Export**</notranslate> section.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Access to Sensitive Data",
+  "body": "Users with export access to sensitive data, can export **log-level data** via the <notranslate>**Export**</notranslate> section."
+}
+[/block]
 
 ## Granting a User Export Access
 
-!!! info ""
- By default, any user with the `Admin` access level includes both access to `Sensitive Data` and `Export Access`.
+[block:callout]
+{
+  "type": "info",
+  "title": "Admin Access",
+  "body": "By default, any user with the `Admin` access level includes both access to `Sensitive Data` and `Export Access`."
+}
+[/block]
 
  To give export access to non-Admin users (both creating new and editing existing):
 

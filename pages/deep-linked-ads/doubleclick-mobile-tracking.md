@@ -7,12 +7,17 @@ title: Doubleclick (Legacy)
 
 Track your **[Doubleclick](https://doubleclick.com)** campaigns using Branch's Universal Ads product. Branch's Ad Product will enable you to update your Doubleclick Campaign Manager (DCM) campaigns with deep links that send data back to Doubleclick's servers.
 
-!!! info
-	DoubleClick supports tracking links, and is also a self-attributing network with limited data in the response. Follow the relevant setup guide for the behavior you would like to see. Where possible, we recommend setting up *both* implementations for complete coverage, so data appears in Branch, the ad partner, and DoubleClick.
+[block:callout]
+{
+  "type": "info",
+  "title": "Doubleclick Complete Coverage,
+  "body": "DoubleClick supports tracking links, and is also a self-attributing network with limited data in the response. Follow the relevant setup guide for the behavior you would like to see. Where possible, we recommend setting up *both* implementations for complete coverage, so data appears in Branch, the ad partner, and DoubleClick.
 
 	Setup 1: You can see conversion data in *DoubleClick Campaign Manager* without using any tracking links by setting up Floodlight tags. DoubleClick will be notified of all conversions.
 
-	Setup 2: You can see conversion data in the *Branch* dashboard by using tracking links for the ad network you are running ads with. Postbacks will be sent to the ad network.
+	Setup 2: You can see conversion data in the *Branch* dashboard by using tracking links for the ad network you are running ads with. Postbacks will be sent to the ad network."
+}
+[/block]
 
 ## Setup 1: Seeing data in DoubleClick
 
@@ -88,5 +93,10 @@ If you're looking to see data in the Branch dashboard and postback to ad partner
 
 For example, if you're running a campaign on Pandora via DoubleClick, follow the [instructions for enabling Pandora and creating a Pandora link](/deep-linked-ads/pandora-mobile-tracking/), then use that link in the click tracking URL field of your DCM creative tag.
 
-!!! warning
-	If a placement's "click" is handled *server-side* by a specific publisher and there is *no [device ID macro]*(/deep-linked-ads/branch-universal-ads-mobile-tracking/#device-information), Branch will record clicks but not attribute downstream events in Branch's dashboard (client-side clicks will attribute downstream events in Branch's dashboard). Clicks with a device ID macro or client-side handling will attribute downstream events in Branch. Please contact integrations@branch.io or contact your Account Manager for details on specific networks before implementation.
+[block:callout]
+{
+  "type": "warning",
+  "title": "Server-side vs Client-side Handling",
+  "body": "If a placement's "click" is handled *server-side* by a specific publisher and there is no [device ID macro](/deep-linked-ads/branch-universal-ads-mobile-tracking/#device-information), Branch will record clicks but not attribute downstream events in Branch's dashboard (client-side clicks will attribute downstream events in Branch's dashboard). Clicks with a device ID macro or client-side handling will attribute downstream events in Branch. Please contact integrations@branch.io or contact your Account Manager for details on specific networks before implementation."
+}
+[/block]
