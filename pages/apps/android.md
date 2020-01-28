@@ -51,7 +51,7 @@ title: Android SDK
 
     - Make sure <notranslate>**Always try to open app**</notranslate> and <notranslate>**I have an Android App**</notranslate> are both enabled
 
-        ![image](/_assets/img/pages/dashboard/android.png)
+        ![image](/images/pages/dashboard/android.png)
 
 - ### Install Branch
 

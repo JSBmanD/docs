@@ -21,7 +21,7 @@ When viewing your Branch account via the Organization entity, you can access (ei
 
 <table>
   <tr>
-    <th rowspan="6"><img src="/_assets/img/pages/dashboard/access-levels/org-level-nav.png"></th>
+    <th rowspan="6"><img src="/images/pages/dashboard/access-levels/org-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -89,7 +89,7 @@ When viewing your Branch account via the Organization entity, you can access (ei
 }
 [/block]
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 - <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
@@ -103,7 +103,7 @@ When viewing your Branch account via the Organization entity, you can access (ei
 
 ### Managing your Organization Profile
 
-![image](/_assets/img/pages/dashboard/access-levels/org-profile.png)
+![image](/images/pages/dashboard/access-levels/org-profile.png)
 
 If you are an Organization Admin, you have edit access to the <notranslate>**Profile**</notranslate> tab.
 
@@ -113,7 +113,7 @@ If you are an Organization Admin, you have edit access to the <notranslate>**Pro
 
 ### Managing your User Profile
 
-![image](/_assets/img/pages/dashboard/access-levels/org-level-user.png)
+![image](/images/pages/dashboard/access-levels/org-level-user.png)
 
 Any user type - Admin, Team Member, Full Read, Limited Read - has the ability to edit the <notranslate>**User**</notranslate> tab.
 
@@ -129,7 +129,7 @@ If you are an Organization Admin, you have edit access to the <notranslate>**Tea
 
 #### Adding an Organization User
 
-![image](/_assets/img/pages/dashboard/access-levels/org-team-add.gif)
+![image](/images/pages/dashboard/access-levels/org-team-add.gif)
 
 To add a new Organization User:
 
@@ -172,7 +172,7 @@ Each access level - as defined above - comes with predefined permissions which y
 
 #### Modifying an Organization Team Member
 
-![image](/_assets/img/pages/dashboard/access-levels/org-team-edit.png)
+![image](/images/pages/dashboard/access-levels/org-team-edit.png)
 
 To modify an existing Organization Team Member:
 

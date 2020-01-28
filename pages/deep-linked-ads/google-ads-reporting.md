@@ -135,7 +135,7 @@ Default Valuetrack Parameters on Branch Ad links | What it returns
 
 **A:** When viewing a campaign, it shows the sum of all conversion events that apply to it. To view by conversion, navigate to `Segment` > `Conversions` > `Conversion name`, in order to clearly see the breakdown of your campaign's conversions.
 
-<img src="/_assets/img/pages/deep-linked-ads/google-conversions/conversion-segment.png" alt="Google Ads Conversion Segment" class="center">
+<img src="/images/pages/deep-linked-ads/google-conversions/conversion-segment.png" alt="Google Ads Conversion Segment" class="center">
 
 #### Post-install events are attributed to Google Ads in the Branch dashboard but are not appearing in Google Ads
 

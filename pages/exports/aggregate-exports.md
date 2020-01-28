@@ -39,7 +39,7 @@ For creating and checking the status of exports, the rate limit is 2 requests pe
 
 In order to access Aggregate Exports, a user will need to have both <notranslate>**Aggregate Data**</notranslate> and <notranslate>**Export**</notranslate> access.
 
-![image](/_assets/img/pages/dashboard/access-levels/aggregate-access.png)
+![image](/images/pages/dashboard/access-levels/aggregate-access.png)
 
 For more details on how to give a user the required access, please follow [Granting a User Export Access](/dashboard/export-access/#granting-a-user-export-access).
 
@@ -64,7 +64,7 @@ To provide an agency team member with access to the Custom Export API:
     1. Under <notranslate>**Data Filters**</notranslate>, toggle any necessary data filters on/blue. Exported data will be filtered accordingly.
 6. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/dashboard/access-levels/agency-aggregate-export.png)
+![image](/images/pages/dashboard/access-levels/agency-aggregate-export.png)
 
 [block:callout]
 {

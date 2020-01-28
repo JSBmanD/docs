@@ -71,7 +71,7 @@ To configure a SAN’s event mappings:
     3. <notranslate>**Ad Partner Event Name**</notranslate> - The ad partner’s name for the app events they support; see default event mappings above.
 6. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/partner-management/event-mappings.gif)
+![image](/images/pages/partner-management/event-mappings.gif)
 
 ## Things to Keep in Mind
 

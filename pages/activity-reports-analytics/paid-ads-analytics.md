@@ -9,7 +9,7 @@ At the top of the page, you'll see a menu of options that applies to both the gr
 
 Additionally, you can share your current dashboard view using the share button, preserving filters and time windows. This is useful for circulating a specific set of filters among your team or with your Branch Technical Account Manager.
 
-![image](/_assets/img/pages/analytics/paid-ads0.png)
+![image](/images/pages/analytics/paid-ads0.png)
 
 
 ## Graph View
@@ -18,17 +18,17 @@ Here you can see a visual breakdown of where your various in-app and web events 
 
 To see which ad networks are leading to your installs (default view):
 
-![image](/_assets/img/pages/analytics/paid-ads1.png)
+![image](/images/pages/analytics/paid-ads1.png)
 
 
 To see which campaigns for a specific ad network (GlobalWide Media in this case) got the most clicks:
 
-![image](/_assets/img/pages/analytics/paid-ads2.png)
+![image](/images/pages/analytics/paid-ads2.png)
 
 
 To see which ad networks lead to the most in-app iOS purchases:
 
-![image](/_assets/img/pages/analytics/paid-ads3.png)
+![image](/images/pages/analytics/paid-ads3.png)
 
 [block:callout]
 {
@@ -62,25 +62,25 @@ To see which ad networks lead to the most in-app iOS purchases:
 
 The Table View lets you see a more granular view of your event data. Here you can filter and compare fields by the same parameters as in the graph view, and see a side by side view of your events. Use the three vertical column button to select which events you'd like to see in this table.
 
-![image](/_assets/img/pages/analytics/paid-ads4.png)
+![image](/images/pages/analytics/paid-ads4.png)
 
 Some examples of table views:
 
 View which ad networks and campaigns are leading to the most purchases:
 
-![image](/_assets/img/pages/analytics/paid-ads5.png)
+![image](/images/pages/analytics/paid-ads5.png)
 
 
 View your impression-driven app events:
 
-![image](/_assets/img/pages/analytics/paid-ads6.png)
+![image](/images/pages/analytics/paid-ads6.png)
 
 
 ## Tips and Tricks
 
 - You can export your current table view as a csv file using the download button on the top right of the table.
 
-	![image.half-width](/_assets/img/pages/analytics/paid-ads7.png)
+	![image.half-width](/images/pages/analytics/paid-ads7.png)
 
 - The Unique checkbox on both the graph and table views allows you to restrict reports to one event of each type per user. For example, take a user who clicked an ad link, then opened the app 7 times within the attribution window for that link. With the Unique box checked, we'd report one of those opens, with it unchecked, we'd report all 7.
 	- One thing to be aware of is that unique counts may be within a 4% window of error across the dashboard. For example, if you have 100 total clicks, and 90 were truly unique, it's possible that the dashboard could report within 4% of that 90 number. If you want true uniques, you can export raw data and de-dupe across events.

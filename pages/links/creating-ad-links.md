@@ -45,7 +45,7 @@ To create a Branch Ad Link:
 }
 [/block]
 
-	![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
+	![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 
 1. Click <notranslate>**Continue**</notranslate>.
 
@@ -58,7 +58,7 @@ To create a Branch Ad Link:
 	- Name Your Link
 	- Select the ad partner the link is for
 
-	![image](/_assets/img/pages/links/ad-link-define.png)
+	![image](/images/pages/links/ad-link-define.png)
 
 ### Configuring Options
 
@@ -70,7 +70,7 @@ To create a Branch Ad Link:
 		- <notranslate>**Redirects**</notranslate>
 		- <notranslate>**Analytics Tags**</notranslate>
 
-		![image](/_assets/img/pages/links/ad-link-configure-options.gif)
+		![image](/images/pages/links/ad-link-configure-options.gif)
 
 1. Click <notranslate>**Create Link Now**</notranslate>.
 
@@ -83,7 +83,7 @@ To add additional data - i.e. key-value pairs - to your Ad Link:
 1. Click <notranslate>**+More Data**</notranslate>.
 1. Input the parameter name in the <notranslate>**Key**</notranslate> field, and it's corresponding value or macro in the <notranslate>**Value**</notranslate> field.
 
-![image](/_assets/img/pages/links/ad-link-deep-linking.png)
+![image](/images/pages/links/ad-link-deep-linking.png)
 
 [block:callout]
 {
@@ -139,7 +139,7 @@ Once you've created your Ad link, we will automatically validate it's settings t
 
 If we recognize an issue with your ad link, you will see an error message with what needs to be fixed before sharing your link.
 
-![image](/_assets/img/pages/links/ad-link-validation.png)
+![image](/images/pages/links/ad-link-validation.png)
 
 Click on the error message to go back and fix the offending setting.
 
@@ -149,6 +149,6 @@ Once no issues exist, you should only see green checks next to your links settin
 
 We provide you with a Branch link for both clicks and impressions.  Simply copy and paste the links in the tracking section of your campaign tool or email to your Ad Partner's account manager.
 
-![image](/_assets/img/pages/links/ad-link-share.png)
+![image](/images/pages/links/ad-link-share.png)
 
 You can also text yourself (or someone else) the link by providing a phone number and clicking <notranslate>**Send**</notranslate>.

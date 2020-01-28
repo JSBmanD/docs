@@ -39,7 +39,7 @@ To access your attribution settings, navigate to the [Link Settings](https://das
 
 Each attribution window has its own default measured in days. Please refer to the image below for these defaults.
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 *   <notranslate>**Click to x**</notranslate> refers to events - session start/install/conversion event -  that occur after someone clicks a Branch link. If someone clicks and installs from a link, and comes back 10 days later to purchase, we would count that as a conversion, and it would surface in our dashboard. Measured in days.
 *   <notranslate>**Impression to x**</notranslate> refers to events - session start/install/conversion event - that occur after someone views a Branch impression link. Measured in days.
@@ -68,7 +68,7 @@ If your account includes an organization level, you can choose to inherit (or no
 
 To access app-level attribution window settings, navigate to [Link Settings](https://branch.dashboard.branch.io/link-settings), click on the <notranslate>**Attribution Windows**</notranslate> tab and turn the toggle <notranslate>**Inherit attribution windows from your app's parent organization**</notranslate> on.
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-settings-inherit.png)
+![image](/images/pages/dashboard/people-based-attribution/attribution-settings-inherit.png)
 
 
 #### Disinheriting Attribution Window Settings from the App Level
@@ -77,7 +77,7 @@ You can override the app-level attribution window defaults on a per ad partner b
 
 To access ad partner attribution settings, navigate to the [Partner Management](https://branch.dashboard.branch.io/ads/partner-management) page, search for and select the corresponding Ad Partner, and click on the Attribution Windows tab.
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/ad-partner-attribution-window.png)
+![image](/images/pages/dashboard/people-based-attribution/ad-partner-attribution-window.png)
 
 [block:callout]
 {
@@ -93,7 +93,7 @@ Branch and Tune have different terminology for Attribution windowing, but the lo
 
 ### Deterministic Attribution Windows
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/deterministic-attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/deterministic-attribution-windows.png)
 
 Differences:
 
@@ -103,7 +103,7 @@ Differences:
 
 ### Fingerprint Attribution Windows
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/fingerprint-attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/fingerprint-attribution-windows.png)
 
 Differences:
 

@@ -29,13 +29,13 @@ Before we start anything on the Branch side, we need to configure options on the
 
 First, we'll need to grab the advertiser ID. Select the advertiser you want to track with, and grab the Advertiser ID. In this example, it is 6637276. This is the advertiser you will track campaigns with. Please keep note of it.
 
-![image](/_assets/img/pages/deep-linked-ads/doubleclick/advertiser.png)
+![image](/images/pages/deep-linked-ads/doubleclick/advertiser.png)
 
 #### Grab Server to Server Token
 
 Once you've captured the advertiser ID and selected the advertiser, navigate to <notranslate>**Floodlight Configuration**</notranslate>. From there, go to <notranslate>"server to server"</notranslate>, and make sure <notranslate>"in-app attribution tracking"</notranslate> is check-marked. Click new token, call it <notranslate>“Branch token”</notranslate>, and save it. Copy this value, as well.
 
-![image](/_assets/img/pages/deep-linked-ads/doubleclick/server-token.png)
+![image](/images/pages/deep-linked-ads/doubleclick/server-token.png)
 
 Now that you have <notranslate>**Advertiser ID**</notranslate> and <notranslate>**Server to Server Token**</notranslate>, the last step is to find the events you need to track.
 
@@ -43,7 +43,7 @@ Now that you have <notranslate>**Advertiser ID**</notranslate> and <notranslate>
 
 Go to the <notranslate>**Floodlight activities**</notranslate> tab. For all the events you want to track, grab the <notranslate>**Activity tag String**</notranslate> and <notranslate>**Group tag String**</notranslate>.
 
-![image](/_assets/img/pages/deep-linked-ads/doubleclick/cat-type.png)
+![image](/images/pages/deep-linked-ads/doubleclick/cat-type.png)
 
 In the above screenshot, the two values for <notranslate>**Activity tag String**</notranslate> are *act-ios* and *act-android*. The one value for <notranslate>**Group tag String**</notranslate> is *sales*. Do this for all activities you want to track.
 
@@ -83,7 +83,7 @@ If you don't have two different tags for iOS and Android, then it will look simp
 
 `https://ad.doubleclick.net/ddm/s2s/appactivity/src=6637276;cat=act-tag;type=sales;ord=${ (id)! }`
 
-![image](/_assets/img/pages/deep-linked-ads/doubleclick/final-postback-doubleclick.png)
+![image](/images/pages/deep-linked-ads/doubleclick/final-postback-doubleclick.png)
 
 ## Setup 2: Seeing data in Branch, postbacks to ad partners
 

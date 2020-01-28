@@ -19,11 +19,11 @@ Branch 계정의 "앱" 보기는 표준 레벨의 엔터티 액세스로, 액세
 
 * 광고 링크/빠른 링크의 `agency_id`는 딥링킹 설정에서 키 값으로 포함됩니다.
 
-![이미지](/_assets/img/pages/dashboard/access-levels/app-view-link-agency-id.png)
+![이미지](/images/pages/dashboard/access-levels/app-view-link-agency-id.png)
 
 * Journeys 웹-투-웹 링크의 `agency_id`는 템플릿 수준의 링크 데이터에서 키 값으로 포함됩니다.
 
-![이미지](/_assets/img/pages/dashboard/access-levels/app-view-journeys-agency-id.png)
+![이미지](/images/pages/dashboard/access-levels/app-view-journeys-agency-id.png)
 
 ### 에이전시와 자체 어트리뷰션 네트워크(SAN) 연결
 

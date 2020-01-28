@@ -51,7 +51,7 @@ To ensure you can use your device to test:
 	3. **Device Platform**
 4. Click **Add Device**.
 
-![image](/_assets/img/pages/links/add-test-device.png)
+![image](/images/pages/links/add-test-device.png)
 
 ### Things to Keep In Mind
 
@@ -69,4 +69,4 @@ To reset your test device data:
 2. Click **Reset Device Data**.
 3. In the pop-up modal, click **Yes, Reset**.
 
-![image](/_assets/img/pages/links/reset-device.png)
+![image](/images/pages/links/reset-device.png)

@@ -29,11 +29,11 @@ title: Unity
 
     - Complete your [Branch Dashboard](https://dashboard.branch.io/settings/link)
 
-        ![image](/_assets/img/pages/apps/unity-configure.png)
+        ![image](/images/pages/apps/unity-configure.png)
 
     - Customize your app.link domain:
 
-        ![image](/_assets/img/pages/apps/unity-link-domain.png)
+        ![image](/images/pages/apps/unity-link-domain.png)
 
 - ### Get the Branch SDK
 
@@ -47,7 +47,7 @@ title: Unity
 
     - ##### Update your Branch prefab
 
-        ![image](/_assets/img/pages/apps/unity-settings.png)
+        ![image](/images/pages/apps/unity-settings.png)
 
         > Do not forget to click on the **Update iOS Wrapper** and the **Update Android Manifest** buttons once you are done.
 

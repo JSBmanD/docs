@@ -23,7 +23,7 @@ The <notranslate>**Branch Web SDK**</notranslate> allows you to create and share
 
     - Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
-        ![image](/_assets/img/pages/dashboard/fallback.png)
+        ![image](/images/pages/dashboard/fallback.png)
 
 - ### Integrate app
 

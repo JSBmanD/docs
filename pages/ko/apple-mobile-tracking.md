@@ -3,7 +3,7 @@ title: Apple 광고 캠페인 트래킹 관련
 ---
 ## 개요
 
-![Apple Search Ads](/_assets/img/pages/deep-linked-ads/apple-search/search-ads-reduced-logo.png)
+![Apple Search Ads](/images/pages/deep-linked-ads/apple-search/search-ads-reduced-logo.png)
 
 Branch는 Apple Search Ads 어트리뷰션 API를 가져와 **[Apple Search Ads](https://searchads.apple.com/)** 캠페인의 트래킹을 지원합니다.  그러면 여러분은 Apple Search Ads 대시보드에서 설정한 캠페인 이름과 같은 파라미터를 사용할 수 있으며, 인스톨 후 앱에서 특수한 조치를 취할 수 있습니다. 아니면 Branch 대시보드에서 총 인스톨 수, 리퍼럴, 앱 링크 통계와 같은 Branch 통계 자료를 사용하여 캠페인의 효과를 트래킹할 수도 있습니다.
 
@@ -18,7 +18,7 @@ Branch는 Apple Search Ads 어트리뷰션 API를 가져와 **[Apple Search Ads]
 
 Apple의 **iAd.framework** 및 **AdSupport.framework** 를 Xcode 프로젝트의 **Linked Frameworks** 로 가져와 Apple Search Ads 확인을 활성화해야 합니다.
 
-![이미지](/_assets/img/pages/apps/ios-frameworks.png)
+![이미지](/images/pages/apps/ios-frameworks.png)
 
 #### Apple Search Ads 확인 활성화
 
@@ -60,18 +60,18 @@ branch.initSession.....
 
 1. [Apple Search Ads UI > Settings > API](https://app.searchads.apple.com/cm/app/settings/apicertificates)로 이동합니다. *우측 상단의 계정 선택기를 사용하여 올바른 계정을 선택했는지 확인하세요.*
 
-   ![이미지](/_assets/img/pages/deep-linked-ads/apple-search/apple-api-screen.png)
+   ![이미지](/images/pages/deep-linked-ads/apple-search/apple-api-screen.png)
 2. API 인증서 생성
 
-   ![이미지](/_assets/img/pages/deep-linked-ads/apple-search/apple-search-api.png)
+   ![이미지](/images/pages/deep-linked-ads/apple-search/apple-search-api.png)
 3. API 인증서를 컴퓨터에 다운로드합니다. 폴더의 압축을 해제하면 `.key` 및 `.pem` 파일이 각각 하나씩 있습니다.
 
-   ![이미지](/_assets/img/pages/deep-linked-ads/apple-search/apple-download-certs.png)
+   ![이미지](/images/pages/deep-linked-ads/apple-search/apple-download-certs.png)
 4. Branch 대시보드에서 [Apple Search Ads partner manager](https://dashboard.branch.io/ads/partner-management/a_apple?tab=settings)로 이동합니다.
 
 5. 여기에서 각 파일을 선택하고 파란색 업로드 화살표를 클릭하여 인증서를 업로드합니다. *다음* 을 클릭하여 계속 진행합니다.
 
-   ![이미지](/_assets/img/pages/deep-linked-ads/apple-search/apple-upload-certs.png)
+   ![이미지](/images/pages/deep-linked-ads/apple-search/apple-upload-certs.png)
 6. 데이터를 수집할 조직을 선택하고 *Save* 를 클릭하여 Apple Search Ads의 비용 데이터를 활성화합니다.
 
 {! ingredients/deep-linked-ads/ko/cost-data.md !}
@@ -122,7 +122,7 @@ Branch는 Apple Search Ads 어트리뷰션 API를 통해 다음 매개변수를 
 
 Link Settings > Attribution Windows에서 어트리뷰션 윈도우를 편집할 수 있습니다.
 
-![이미지](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+![이미지](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 계정 수준 어트리뷰션 윈도우에 대한 자세한 내용은 [사용자 중심 어트리뷰션](/dashboard/people-based-attribution/#attribution-windows)을 참조하세요.
 
@@ -130,7 +130,7 @@ Link Settings > Attribution Windows에서 어트리뷰션 윈도우를 편집할
 
 광고 네트워크에서 어트리뷰션 윈도우를 사용해야 한다면 광고 네트워크 수준에서 어트리뷰션 윈도우를 편집할 수 있습니다. 이 방법은 인스톨에 대해 다른 어트리뷰션 윈도우 기간을 두는 Apple Search Ads, Facebook, Google과 같은 네트워크를 사용할 때 권장됩니다. 이렇게 하면 계정별 설정된 어트리뷰션 윈도우도 유지할 수 있습니다.
 
-![이미지](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+![이미지](/images/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
 
 ## 통합 지원
 

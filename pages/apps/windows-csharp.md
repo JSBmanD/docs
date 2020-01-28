@@ -30,7 +30,7 @@ A Branch-integrated app called TestBed-Windows and assigned the default Branch l
 
 Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
-    ![image](/_assets/img/pages/dashboard/fallback.png)
+    ![image](/images/pages/dashboard/fallback.png)
 
 The Branch key can be found on the [General Settings](https://dashboard.branch.io/settings) page. The app's Branch link domain  will be listed at the very bottom of the [Link Settings](https://dashboard.branch.io/link) page.
 

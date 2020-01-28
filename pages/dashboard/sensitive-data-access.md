@@ -5,7 +5,7 @@ The <notranslate>"Sensitive Data"</notranslate> level of a Branch account is the
 
 <table>
   <tr>
-    <th rowspan="6"><img src="/_assets/img/pages/dashboard/access-levels/org-level-nav.png"></th>
+    <th rowspan="6"><img src="/images/pages/dashboard/access-levels/org-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -58,7 +58,7 @@ If you are an Admin, you have edit access to the sections below.
 }
 [/block]
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-data-feeds-manager.png)
+![image](/images/pages/dashboard/access-levels/channel-data-feeds-manager.png)
 
 - <notranslate>**Daily Export API**</notranslate> - Programmatically access Branch event data with granular details like timestamp, OS, and more.
 - <notranslate>**Query API**</notranslate> - Programmatically query for any of the pre-aggregated Branch event data that you can see on the dashboard.
@@ -73,7 +73,7 @@ If you are an Admin, you have edit access to the sections below.
 }
 [/block]
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-data-integrations.png)
+![image](/images/pages/dashboard/access-levels/channel-data-integrations.png)
 
 [block:callout]
 {
@@ -95,7 +95,7 @@ If you are an Admin, you have edit access to the sections below.
 
 You can add new webhooks, edit existing webhooks and archive unwanted webhooks.
 
-![image](/_assets/img/pages/dashboard/access-levels/channel-webhooks1.png)
+![image](/images/pages/dashboard/access-levels/channel-webhooks1.png)
 
 [block:callout]
 {
@@ -113,7 +113,7 @@ If you are an Admin, you have edit access to the <notranslate>**Team**</notransl
 
 #### Adding an App Team User
 
-![image](/_assets/img/pages/dashboard/access-levels/app-team-add.gif)
+![image](/images/pages/dashboard/access-levels/app-team-add.gif)
 
 To add a new App Team User:
 
@@ -150,7 +150,7 @@ Each access level - as defined above - comes with predefined permissions which y
 
 #### Modifying an App Team Member
 
-![image](/_assets/img/pages/dashboard/access-levels/app-team-edit.png)
+![image](/images/pages/dashboard/access-levels/app-team-edit.png)
 
 To modify an existing App Team Member:
 
@@ -192,7 +192,7 @@ Credits
 
 If you are an Admin, you have view access to the <notranslate>**Set Up SDK**</notranslate> tab.
 
-![image](/_assets/img/pages/dashboard/access-levels/sensitive-set-up-sdk.gif)
+![image](/images/pages/dashboard/access-levels/sensitive-set-up-sdk.gif)
 
 [block:callout]
 {

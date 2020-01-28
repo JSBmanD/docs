@@ -23,7 +23,7 @@ If you are a Branch client wishing to invite your Agency and/or Ad Partner to ac
 
 Once a Branch client has invited you to access their Branch app data, an email is sent from Branch that includes an invitation link **Join the Team**.
 
-![image](/_assets/img/pages/dashboard/invite.png)
+![image](/images/pages/dashboard/invite.png)
 
 ### New User
 

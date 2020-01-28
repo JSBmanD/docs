@@ -54,31 +54,31 @@ If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow 
 
 1. Navigate to the [Partner Management tab](https://dashboard.branch.io/ads/partner-management).
 
-    ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
+    ![Ads Partner Management](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
 
 1. Search for <notranslate>**Facebook**</notranslate>.
 
 1. Click <notranslate>**Connect With Facebook**</notranslate>
 
-    ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
+    ![Connect with Facebook](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
 
 1. Login to Facebook if you are not logged in
 
-    ![Login](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
+    ![Login](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
 
 1. Confirm that Branch can receive your public profile
 
-    ![Public profile](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
+    ![Public profile](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
 
 1. Confirm that Branch can have permissions `ads_read`
 
-    ![OAuth scopes](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
+    ![OAuth scopes](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
 
  	`ads_read` is used to surface impressions and clicks on the Branch Dashboard.
 
 1. Select the ad accounts for which you want to run app install ads or app engagement ads
 
-    ![Choose ad accounts](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
+    ![Choose ad accounts](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
 
 		[block:callout]
 		{
@@ -90,25 +90,25 @@ If you haven't enabled Facebook as an Ad Partner on the Branch dashboard follow 
 
 1. Click to select a Facebook app id for which you want to run Facebook ads
 
-    ![enter app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
+    ![enter app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
 
 1. Copy the app id
 
-    ![find app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
+    ![find app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
 
 1. Paste the app id and press `Save`
 
-    ![paste app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
+    ![paste app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
 
 1. Facebook is now enabled as an ad partner!
 
 	Note that if you have different attribution windows between Facebook and Branch, those will be highlighted. The warning has a link to the docs on how to align these attribution windows.
 
-    ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
+    ![complete](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
 1. Finally, to create a Facebook Ads link click the <notranslate>**Create Facebook Link**</notranslate> button in the top right hand corner.
 
-    ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
+    ![Create Facebook Ad Link](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
 
 
 ## Setup
@@ -122,11 +122,11 @@ Branch makes it easy for you to create and manage feeds with Facebook-compatible
 1. Enter a Deep Linked Feed Name.
 1. Enter a already set up feed source or upload a new source.
 1. Configure the feed with the Ad Partner set to <notranslate>**Facebook**</notranslate>, and the Ad Format set to <notranslate>**Product**</notranslate>.
-![Ad Link Setup](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/feed-setup.png)
+![Ad Link Setup](/images/pages/deep-linked-ads/facebook-dynamic-ads/feed-setup.png)
 1. On the next section, select any keys from your feed that you'd like to include in the deep linked data contained in the generated links.
-![image](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/feed-keys-setup.png)
+![image](/images/pages/deep-linked-ads/facebook-dynamic-ads/feed-keys-setup.png)
 1. If you used a Feed Source hosted on a URL (recommended), you will see two options for accessing your feed. We recommend selecting “Schedule Refresh.” If you select this option, Branch will host a URL for your Deep Linked Feed that will update itself from your Feed Source URL at regular intervals.
-![image](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/hosted-dlf.png)
+![image](/images/pages/deep-linked-ads/facebook-dynamic-ads/hosted-dlf.png)
 1. Download the feed data or copy the deep linked feed URL (for hosted feeds) to be used in your Ad Campaign.
 
 #### Upload your feed to Facebook
@@ -148,16 +148,16 @@ To set up a Facebook Product Catalogue campaign, you will need to first create y
 
 1. Navigate to your [Facebook Ads Manager](https://www.facebook.com/ads/manager/).
 1. In the top left hand corner, click into the menu, select <notranslate>**All tools**</notranslate>, and select <notranslate>**Product Catalogues**</notranslate>.
-![Facebook Product Catalogues](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/fb-product-catalogs.png)
+![Facebook Product Catalogues](/images/pages/deep-linked-ads/facebook-dynamic-ads/fb-product-catalogs.png)
 1. From the drop down menu click "Create new catalog...", name it (remember this name, you'll need it later) and select <notranslate>"Products sold online"</notranslate>.
-![image](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/create-new-catalog.png)
+![image](/images/pages/deep-linked-ads/facebook-dynamic-ads/create-new-catalog.png)
 1. Now that you have a product catalog, you can add a new feed. Click "Add Product Feed."
-![Add New Feed](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/add-new-feed.png)
+![Add New Feed](/images/pages/deep-linked-ads/facebook-dynamic-ads/add-new-feed.png)
 1. If you have a [Hosted Deep Linked Feed](/features/deep-linked-feeds/guide/#schedule-refresh) (recommended), select the option "Scheduled recurring uploads." Paste your Branch-provided URL into the <notranslate>**Feed URL**</notranslate> text field.
-![Feed URL option](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/new-feed-settings.png)
-![Feed URL settings](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/upload-feed-url.png)
+![Feed URL option](/images/pages/deep-linked-ads/facebook-dynamic-ads/new-feed-settings.png)
+![Feed URL settings](/images/pages/deep-linked-ads/facebook-dynamic-ads/upload-feed-url.png)
 1. If you've created a Deep Linked Feed CSV file to upload, select the option "Single upload: Upload a single file feed now." Select the Deep Linked Feed URL or CSV file you would like to upload to Facebook, and click "Upload".
-![Feed Uploaded](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/successful-feed-upload.png)
+![Feed Uploaded](/images/pages/deep-linked-ads/facebook-dynamic-ads/successful-feed-upload.png)
 1. Wait for the upload to complete successfully. If you'd like to create a <notranslate>"Product set"</notranslate> (a subset of products in your catalog for use in specific ad sets) you can do that now.
 
 #### Setting up App Events and the Facebook Pixel
@@ -173,7 +173,7 @@ Use the <notranslate>"Product events"</notranslate> tab in your Product Catalog 
 
 1. Navigate to [https://www.facebook.com/ads/create](https://www.facebook.com/ads/create) while logged in to the account that owns your Facebook app.
 1. Choose <notranslate>**Product Catalog Sales**</notranslate>. Select the Product Catalog to which you uploaded your Deep Linked Feed.
-![Feed Uploaded](/_assets/img/pages/deep-linked-ads/facebook-dynamic-ads/campaign-selection.png)
+![Feed Uploaded](/images/pages/deep-linked-ads/facebook-dynamic-ads/campaign-selection.png)
 1. Select the targeting, bid, budget and placements that you'd like.
 1. Select your desired ad format and launch your campaign. The Branch deep linked feed will be automatically set up in your Facebook product catalogue ads.
 
@@ -189,11 +189,11 @@ Use the <notranslate>"Product events"</notranslate> tab in your Product Catalog 
 
 The [Ads Analytics Page](https://dashboard.branch.io/ads/analytics) on the Branch dashboard provides an interactive time series graph and table to view the performance of your Ad campaigns.
 
-![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
+![Example Ads Analytics Graph](/images/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
 
 The table shows summary data on the performance of each Ad campaign. On the right top side of the table you can find a <notranslate>**download button**</notranslate> to retrieve the chart's content as a CSV file.
 
-![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
+![Example Ads Table](/images/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 
 [block:callout]
 {

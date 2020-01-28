@@ -5,7 +5,7 @@ The <notranslate>"App"</notranslate> level of a Branch account is the third leve
 
 <table>
   <tr>
-    <th rowspan="7"><img src="/_assets/img/pages/dashboard/access-levels/app-level-nav.png"></th>
+    <th rowspan="7"><img src="/images/pages/dashboard/access-levels/app-level-nav.png"></th>
   </tr>
 	<tr>
 		<th></th>
@@ -55,7 +55,7 @@ The <notranslate>"App"</notranslate> level of a Branch account is the third leve
 
 ### Managing your App Profile
 
-![image](/_assets/img/pages/dashboard/access-levels/app-level-profile.png)
+![image](/images/pages/dashboard/access-levels/app-level-profile.png)
 
 If you are an Admin, you have edit access to the <notranslate>**Profile**</notranslate> tab.
 
@@ -75,7 +75,7 @@ If you are an Admin, you have edit access to the <notranslate>**Profile**</notra
 
 ### Managing your User Profile
 
-![image](/_assets/img/pages/dashboard/access-levels/org-user.png)
+![image](/images/pages/dashboard/access-levels/org-user.png)
 
 Any user type - Admin, Team Member, Full Read, Limited Read - has the ability to edit the <notranslate>**User**</notranslate> tab.
 
@@ -92,7 +92,7 @@ If you are an Admin, you have edit access to the <notranslate>**Team**</notransl
 
 #### Adding an App Team User
 
-![image](/_assets/img/pages/dashboard/access-levels/app-team-add.gif)
+![image](/images/pages/dashboard/access-levels/app-team-add.gif)
 
 To add a new App Team User:
 
@@ -130,7 +130,7 @@ Each access level - as defined above - comes with predefined permissions which y
 
 #### Modifying an App Team Member
 
-![image](/_assets/img/pages/dashboard/access-levels/app-team-edit.png)
+![image](/images/pages/dashboard/access-levels/app-team-edit.png)
 
 To modify an existing App Team Member:
 
@@ -155,7 +155,7 @@ If you are an Admin, you have edit access to the <notranslate>**General**</notra
 
 #### General Redirect Settings
 
-![image](/_assets/img/pages/dashboard/access-levels/general-redirect-settings.png)
+![image](/images/pages/dashboard/access-levels/general-redirect-settings.png)
 
 This selector allows you to control how and when Branch uses URI schemes to open your app when Universal Links and Android App Links fail. See browser specifics in the docs here.
 
@@ -165,7 +165,7 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 #### iOS Redirects
 
-![image](/_assets/img/pages/dashboard/access-levels/ios-redirects.png)
+![image](/images/pages/dashboard/access-levels/ios-redirects.png)
 
 - Use these settings to control the default behavior of your deep links on iOS
 - Enable Universal Links
@@ -174,7 +174,7 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 #### Android Redirects
 
-![image](/_assets/img/pages/dashboard/access-levels/android-redirects.png)
+![image](/images/pages/dashboard/access-levels/android-redirects.png)
 
 - Use these settings to control the default behavior of your deep links on Android
 - Play Store is for published apps, if your app cannot be located or is a local/dev build, please use the Custom URL option
@@ -187,19 +187,19 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 #### Fire Redirects
 
-![image](/_assets/img/pages/dashboard/access-levels/fire-redirects.png)
+![image](/images/pages/dashboard/access-levels/fire-redirects.png)
 
 - Use these settings to control the default behavior of your deep links on Fire
 
 #### Default URL
 
-![image](/_assets/img/pages/dashboard/access-levels/default-url.png)
+![image](/images/pages/dashboard/access-levels/default-url.png)
 
 - Use these settings to control the default behavior of your deep links on any other platform.
 
 #### Desktop Redirects
 
-![image](/_assets/img/pages/dashboard/access-levels/desktop-redirects.png)
+![image](/images/pages/dashboard/access-levels/desktop-redirects.png)
 
 [block:callout]
 {
@@ -219,13 +219,13 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 #### Advanced Mobile Redirects
 
-![image](/_assets/img/pages/dashboard/access-levels/advanced-mobile-redirects.png)
+![image](/images/pages/dashboard/access-levels/advanced-mobile-redirects.png)
 
 - Use these settings to control the default behavior of your deep links on other devices.
 
 #### Advanced Settings
 
-![image](/_assets/img/pages/dashboard/access-levels/advanced-settings.png)
+![image](/images/pages/dashboard/access-levels/advanced-settings.png)
 
 - <notranslate>**Match Type**</notranslate>
     - Recommended `Normal`. Selecting `Unique` means that Branch will only make a deep link through install match if there is a single, unique outstanding footprint. For example, if you and your twin both have iPhone 5s with the same OS/version, etc and click different links for the same app, then open the app up at the same time, we won’t deep link when Unique is selected. You probably don’t want this as it’s mostly for very special circumstances.
@@ -245,14 +245,14 @@ This selector allows you to control how and when Branch uses URI schemes to open
 
 #### Social Media Display Customization
 
-![image](/_assets/img/pages/dashboard/access-levels/social-media-display-customization.png)
+![image](/images/pages/dashboard/access-levels/social-media-display-customization.png)
 
 - Set the default image preview for your deep links when shared on social media
 - These values are typically overridden by [Custom link behavior](/links/integrate/#custom-link-behavior) which differentiate your deep links between one another
 
 #### Link Domain
 
-![image](/_assets/img/pages/dashboard/access-levels/link-domain.png)
+![image](/images/pages/dashboard/access-levels/link-domain.png)
 
 - Choose a <notranslate>**link domain**</notranslate> which will be used for all your links
 - The <notranslate>**link domain**</notranslate> is the website which hosts your deep links
@@ -289,7 +289,7 @@ If you choose to delete your app, this will be a permanent change. Note the foll
 }
 [/block]
 
-![image](/_assets/img/pages/dashboard/people-based-attribution/attribution-windows.png)
+![image](/images/pages/dashboard/people-based-attribution/attribution-windows.png)
 
 - <notranslate>**Deep Linking Duration**</notranslate> refers to the duration of time someone is eligible to receive deep link data. This includes anyone clicking a Branch link, or being automatically redirected to the app through a Branch Web SDK call. Measured in minutes.
 
@@ -305,7 +305,7 @@ If you choose to delete your app, this will be a permanent change. Note the foll
 
 If you are an Admin, you have edit access to the <notranslate>**Partner Management**</notranslate> tab.
 
-![image](/_assets/img/pages/dashboard/access-levels/app-partner-management.gif)
+![image](/images/pages/dashboard/access-levels/app-partner-management.gif)
 
 Each Universal Ad Partner has the following settings:
 

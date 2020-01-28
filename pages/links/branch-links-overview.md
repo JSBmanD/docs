@@ -9,11 +9,11 @@ A Branch link is an actual page on the web. When users click a Branch link, they
 <!-- Link Configuration -->
 <div class="nav-wrap flex-wrap">
   <a href="/links/default-link-behavior/">
-    <img src="../../../_assets/img/pages/links/basic-config.png" />
+    <img src="../../../images/pages/links/basic-config.png" />
     <p>Default Link Behavior</p>
   </a>
   <a href="/links/advanced-settings-configuration/">
-    <img src="../../../_assets/img/pages/links/advanced-config.png" />
+    <img src="../../../images/pages/links/advanced-config.png" />
     <p>Advanced Settings</p>
   </a>
 </div>
@@ -23,19 +23,19 @@ A Branch link is an actual page on the web. When users click a Branch link, they
 <!-- Deep Links -->
 <div class="nav-wrap flex-wrap">
   <a href="/deep-linking/universal-links/">
-		<img src="../../../_assets/img/pages/links/ios.png" />
+		<img src="../../../images/pages/links/ios.png" />
 		<p>iOS Universal Links</p>
 	</a>
   <a href="/deep-linking/android-app-links/">
-    <img src="../../../_assets/img/pages/links/android.png" />
+    <img src="../../../images/pages/links/android.png" />
     <p>Android App Links</p>
   </a>
 	<a href="/deep-linking/routing/">
-    <img src="../../../_assets/img/pages/links/in-app-routing.png" />
+    <img src="../../../images/pages/links/in-app-routing.png" />
     <p>In-App Deep Link Routing</p>
   </a>
 	<a href="/links/integrate/">
-		<img src="../../../_assets/img/pages/links/create-link.png" />
+		<img src="../../../images/pages/links/create-link.png" />
 		<p>Creating Deep Links</p>
 	</a>
 </div>
@@ -45,11 +45,11 @@ A Branch link is an actual page on the web. When users click a Branch link, they
 <!-- Branch Links -->
 <div class="nav-wrap flex-wrap">
   <a href="/links/quick-links/">
-		<img src="../../../_assets/img/pages/links/create-link.png" />
+		<img src="../../../images/pages/links/create-link.png" />
 		<p>Quick Links</p>
 	</a>
   <a href="/links/creating-ad-links/">
-    <img src="../../../_assets/img/pages/links/create-link.png" />
+    <img src="../../../images/pages/links/create-link.png" />
     <p>Ad Links</p>
   </a>
 </div>
@@ -60,7 +60,7 @@ A Branch link is an actual page on the web. When users click a Branch link, they
 <!-- Test Devices -->
 <div class="nav-wrap flex-wrap">
   <a href="/links/adding-test-devices/">
-		<img src="../../../_assets/img/pages/links/test-device.png" />
+		<img src="../../../images/pages/links/test-device.png" />
 		<p>Adding a Test Device</p>
 	</a>
 </div>

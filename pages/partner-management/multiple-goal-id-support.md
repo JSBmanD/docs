@@ -25,7 +25,7 @@ In the example below, the HasOffers Postbacks are mapped as follows:
 *   PURCHASE is mapped with <notranslate>**goalid_2**</notranslate>
 *   PAGEVIEW is mapped with <notranslate>**goalid_3**</notranslate>
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/multiple-goal-ids.png)
+![image](/images/pages/deep-linked-ads/partner-resources/multiple-goal-ids.png)
 
 This means that when a user triggers an OPEN event via the tracking link above, Branch returns the relevant value (XXX) and sends it in the Postback URL.
 

@@ -29,7 +29,7 @@ When viewing your Branch account via the Agency entity, you can access (either e
 
 <table>
   <tr>
-    <th rowspan="5"><img src="/_assets/img/pages/dashboard/access-levels/agency-nav.png"></th>
+    <th rowspan="5"><img src="/images/pages/dashboard/access-levels/agency-nav.png"></th>
   </tr>
 	<tr>
 		<th><b>Agency Entity Access</b></th>
@@ -67,7 +67,7 @@ When viewing your Branch account via the Agency entity, you can access (either e
 
 If you are an Agency Admin, you have edit access to the <notranslate>**Profile**</notranslate> tab.
 
-![image](/_assets/img/pages/dashboard/access-levels/agency-profile.png)
+![image](/images/pages/dashboard/access-levels/agency-profile.png)
 
 - <notranslate>**Agency Name**</notranslate> - provided by you; editable.
 - <notranslate>**Agency ID**</notranslate> - assigned by Branch; not editable.
@@ -76,7 +76,7 @@ If you are an Agency Admin, you have edit access to the <notranslate>**Profile**
 
 Any user type - Agency Admin, Agency Team Member - has the ability to edit the <notranslate>**User**</notranslate> tab.
 
-![image](/_assets/img/pages/dashboard/access-levels/agency-user.png)
+![image](/images/pages/dashboard/access-levels/agency-user.png)
 
 - <notranslate>**Dashboard UID**</notranslate> - assigned by Branch; not editable.
 - <notranslate>**First and Last Names**</notranslate> - provided by you; editable.
@@ -87,7 +87,7 @@ Any user type - Agency Admin, Agency Team Member - has the ability to edit the <
 
 If you are an Agency Admin, you have edit access to the <notranslate>**Agencies**</notranslate> tab.
 
-![image](/_assets/img/pages/dashboard/access-levels/agency-team-add.gif)
+![image](/images/pages/dashboard/access-levels/agency-team-add.gif)
 
 #### Adding an Agency User
 

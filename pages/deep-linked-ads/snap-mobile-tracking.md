@@ -28,7 +28,7 @@ Before you begin, be sure the following is confirmed.
 1. Navigate to the [partner management](https://dashboard.branch.io/ads/partner-management){:target="\_blank"} tab and search for Snap.
 1. Select the tile with the ghost logo.
 
-    ![Find Snap](/_assets/img/pages/deep-linked-ads/snap/find-snap.png)
+    ![Find Snap](/images/pages/deep-linked-ads/snap/find-snap.png)
 
 1. Click <notranslate>**Log in with Snapchat**</notranslate>.
 1. Read and accept the Snap Advertiser Agreement terms if you haven't already.
@@ -41,13 +41,13 @@ Before you begin, be sure the following is confirmed.
     }
     [/block]
 
-    ![Accept Terms](/_assets/img/pages/deep-linked-ads/snap/sign-terms.png)
+    ![Accept Terms](/images/pages/deep-linked-ads/snap/sign-terms.png)
 
 
 1. Log in to Snap. Once logged in, accept permissions and click <notranslate>**Continue**</notranslate> .
 
-    ![Log in to Snap](/_assets/img/pages/deep-linked-ads/snap/log-in-to-snap.png)
-    ![Continue OAuth](/_assets/img/pages/deep-linked-ads/snap/accept-oauth.png)
+    ![Log in to Snap](/images/pages/deep-linked-ads/snap/log-in-to-snap.png)
+    ![Continue OAuth](/images/pages/deep-linked-ads/snap/accept-oauth.png)
 
     [block:callout]
     {
@@ -56,21 +56,21 @@ Before you begin, be sure the following is confirmed.
       "body": "
       Due to an issue with Snap Login, if you see the Snap "My Account" screen after logging in, you'll need to manually return to the Branch dashboard at [https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings](https://dashboard.branch.io/ads/partner-management/a_snap?tab=settings){:target="\_blank"}. Click <notranslate>**Log in with Snapchat**</notranslate> again in the same browser, and you should see the <notranslate>**Continue**</notranslate>  button instead of the login screen.
 
-      ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-my-account.png)"
+      ![Snap - My Account](/images/pages/deep-linked-ads/snap/snap-my-account.png)"
     }
     [/block]
 
 1. Click <notranslate>**Continue**</notranslate> to return to the Branch dashboard.
 
-    ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/oauth-redirect-return.png)
+    ![Snap - My Account](/images/pages/deep-linked-ads/snap/oauth-redirect-return.png)
 
 1. Confirm the ad accounts that you would like to track.
 
-    ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-select-accounts.png)
+    ![Snap - My Account](/images/pages/deep-linked-ads/snap/snap-select-accounts.png)
 
 1. Click <notranslate>**Save**</notranslate> to finish.
 
-    ![Snap - My Account](/_assets/img/pages/deep-linked-ads/snap/snap-complete.png)
+    ![Snap - My Account](/images/pages/deep-linked-ads/snap/snap-complete.png)
 
 **Note:** The Snap measurement integration requires you to have configured your Android and iOS apps on the Link Settings page. If those have not been set up, you will not be able to track ads and you may see a validation warning.
 
@@ -82,11 +82,11 @@ To use Branch links in your <notranslate>**Drive Traffic to App**</notranslate> 
 
 1. Generate/fetch your Branch link from the Branch dashboard.
 1. Set up your Snap campaign, selecting <notranslate>**Drive Traffic to App**</notranslate>.
-  ![image](/_assets/img/pages/deep-linked-ads/snap/drive-traffic-to-app.png)
+  ![image](/images/pages/deep-linked-ads/snap/drive-traffic-to-app.png)
 1. On the <notranslate>**Build Your Ads**</notranslate> page:
     1. Paste your Branch link into the <notranslate>**DEEPLINK URI**</notranslate> field.
     1. Select <notranslate>**Web Site**</notranslate> as the <notranslate>**FALLBACK TYPE**</notranslate> to ensure deferred deep linking via your Branch link.
-  ![image](/_assets/img/pages/deep-linked-ads/snap/build-your-ad.png)
+  ![image](/images/pages/deep-linked-ads/snap/build-your-ad.png)
 1. Finish building your Snap campaign.
 
 [block:callout]
@@ -177,7 +177,7 @@ Note that these stats are **limited to the date range** at the top of the page. 
 
 You can edit your attribution windows for Snap only. With this, you can preserve your Account Level Attribution Windows, but the attribution windows set for Snap will take precedence for Snap campaigns.
 
-   ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+   ![image](/images/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
 
  [block:callout]
  {
@@ -269,7 +269,7 @@ Cost| Total cost (spend) for those dimensions (analytics tags, user data, time r
 - Snap Ads Manager time zones are set at the time your ad account is created. You can see your Snap time zone in your Snap Ad Account Settings, but you cannot change it. You can change your Branch dashboard time zone in [Account Settings](https://dashboard.branch.io/account-settings/app) to match.
 - Verify your Snap attribution windows match your Branch attribution windows. Ask your Snap account manager for your attribution windows. Your Branch windows are visible either in Link Settings (global windows) or in the [Attribution Windows](https://dashboard.branch.io/ads/partner-management/a_snap?tab=attribution_windows) section of the Snap entry in Ads Partner Manager. Snap windows can be configured under "Customize Columns" in the Snap UI.
 
-    ![Snap - Attribution Windows](/_assets/img/pages/deep-linked-ads/snap/snap-attribution-windows.png)
+    ![Snap - Attribution Windows](/images/pages/deep-linked-ads/snap/snap-attribution-windows.png)
 
 - When deep linking, create a link via the Branch dashboard. If you are running an app campaign, please ensure your link has `%24deeplink_no_attribution=true` as a query parameter to remove that link's ability to claim attribution, otherwise the link may claim attribution over the SAN claim. The link will still deep link.
 - Snap's reporting API does not provide any <notranslate>"compare by"</notranslate> functionality outside of the ads analytics tags. So, you cannot compare Snap click + impression data by platform, OS or country, for example.

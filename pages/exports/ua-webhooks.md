@@ -28,11 +28,11 @@ Our new webhook infrastructure supports for all Branch events. The data is forma
 1. Open the [Webhooks](https://dashboard.branch.io/data-import-export/webhooks) page on the Branch dashboard.
 1. Click <notranslate>**+ Add New Webhook**</notranslate>:
 
-![image](/_assets/img/pages/exports/ua-webhooks/add-new-webhook.png)
+![image](/images/pages/exports/ua-webhooks/add-new-webhook.png)
 
 ### Configure webhook criteria
 
-![image](/_assets/img/pages/exports/ua-webhooks/edit-webhook.png)
+![image](/images/pages/exports/ua-webhooks/edit-webhook.png)
 
 As you fill out the configuration, you'll see the following options:
 
@@ -84,7 +84,7 @@ To create a filter:
 
 This should be your final view before saving:
 
-![image](/_assets/img/pages/exports/ua-webhooks/basic-filtering.png)
+![image](/images/pages/exports/ua-webhooks/basic-filtering.png)
 
 [block:callout]
 {
@@ -94,7 +94,7 @@ This should be your final view before saving:
 }
 [/block]
 
-    ![image](/_assets/img/pages/exports/ua-webhooks/campaign-install-filter.png)
+    ![image](/images/pages/exports/ua-webhooks/campaign-install-filter.png)
 
 [block:callout]
 {
@@ -104,7 +104,7 @@ This should be your final view before saving:
 }
 [/block]
 
-    ![image](/_assets/img/pages/exports/ua-webhooks/channel-click-filter.png)
+    ![image](/images/pages/exports/ua-webhooks/channel-click-filter.png)
 
 
 See the [Advanced Filtering](#advanced-filtering) page to read more about customizing when events are sent.
@@ -116,19 +116,19 @@ To test whether your webhook is configured correctly, you can use [RequestBin](h
 
 1. Go to [RequestBin](https://requestbin.com/) and click <notranslate>**+ Create a RequestBin**</notranslate>:
 
-	![image](/_assets/img/pages/exports/requestbin_create.png)
+	![image](/images/pages/exports/requestbin_create.png)
 
 1. Copy the <notranslate>**Bin URL**</notranslate>:
 
-	![image](/_assets/img/pages/exports/requestbin_inspect.png)
+	![image](/images/pages/exports/requestbin_inspect.png)
 
 1. Paste this into the URL field of your Branch webhook's configuration screen:
 
-    ![image](/_assets/img/pages/exports/ua-webhooks/requestbin.png)
+    ![image](/images/pages/exports/ua-webhooks/requestbin.png)
 
 1. Now whenever your webhook is triggered, you will see a full report on RequestBin:
 
-	![image](/_assets/img/pages/exports/requestbin_response.png)
+	![image](/images/pages/exports/requestbin_response.png)
 
     [block:callout]
     {
@@ -282,7 +282,7 @@ To create a filter:
     1. Select "equals" on the equivalency dropdown
     1. Enter a value of <notranslate>**SUMMERDEALS10**</notranslate>
 
-	![image](/_assets/img/pages/exports/ua-webhooks/coupon-filter-purchase.png)
+	![image](/images/pages/exports/ua-webhooks/coupon-filter-purchase.png)
 
 [block:callout]
 {

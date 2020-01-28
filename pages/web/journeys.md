@@ -5,7 +5,7 @@ title: Journeys App Banners
 
 On a daily basis, Google Search drives **more app installs** than all of Facebook's paid install products combined. Converting your mobile web visitors into native app users is one of the most effective acquisition channels available, and Branch's Journeys App Banners platform makes this easy.
 
-![image](/_assets/img/pages/journeys/journeys-examples.png)
+![image](/images/pages/journeys/journeys-examples.png)
 
 - **Customizable presentation.** WYSIWYG designer for smart banner or full-page interstitial, with more coming soon.
 - **Powerful targeting rules.** Want to show your Journey only visitors without your app installed already? All iOS users from Japan? Just users viewing your checkout page? Android users who have visited your website twice AND purchased something using your app? The possibilities are infinite.
@@ -97,17 +97,17 @@ If a user is referred to a page running Journeys via a Branch link, then referri
 1. Head to the [Journeys page](http://dashboard.branch.io/journeys) on the Branch dashboard.
 2. Click the <notranslate>**Create New Journey**</notranslate> button to get started.
 
-![image](/_assets/img/pages/journeys/create-journey-button.png)
+![image](/images/pages/journeys/create-journey-button.png)
 
 3. In the <notranslate>**Journey Name:**</notranslate> field, enter a name to use for internal reference (this will never be shown to your users).
 
-![image](/_assets/img/pages/journeys/journeys-name.png)
+![image](/images/pages/journeys/journeys-name.png)
 
 ### Select audience
 
 You can customize the audience that will see your Journey by choosing target platforms and device types, and by adding additional targeting rules.
 
-![image](/_assets/img/pages/journeys/journeys_select_audience.png)
+![image](/images/pages/journeys/journeys_select_audience.png)
 
 | Option | Description |
 | --- | --- |
@@ -117,12 +117,12 @@ You can customize the audience that will see your Journey by choosing target pla
 
 ### Select and style the banner or interstitial
 
-1. First, click the <notranslate>**Select a Template**</notranslate> button. ![image](/_assets/img/pages/journeys/select-template.png)
+1. First, click the <notranslate>**Select a Template**</notranslate> button. ![image](/images/pages/journeys/select-template.png)
 1. Next, click to select the type of template that you want to show. There are three template options:
     - Smart Banner at bottom of screen.
     - Smart Banner at top of screen
     - Full Screen Interstitial (SEO friendly!)
-    - _The fourth option shown is an alternate preconfiguration of the full screen interstitial_![image](/_assets/img/pages/journeys/select-template-type.png)
+    - _The fourth option shown is an alternate preconfiguration of the full screen interstitial_![image](/images/pages/journeys/select-template-type.png)
 1. Click <notranslate>**Customize**</notranslate> to make changes to the template.
 1. In the <notranslate>**Customize Template**</notranslate> heading, you may edit the the name to use for internal reference.
 1. Click any object in the preview to edit it. To see documentation on all customization options, [click here](/web/journeys/#template-customization-options).
@@ -134,17 +134,17 @@ You can customize the audience that will see your Journey by choosing target pla
 
 This screen allows you to preview your Journey variations, and is where you can perform final validation and testing on your Journey before publishing it.
 
-![image](/_assets/img/pages/journeys/validate-and-test.png)
+![image](/images/pages/journeys/validate-and-test.png)
 
 #### Preview
 
 Use the dropdown menu to switch between your Journey variations.
 
-![image](/_assets/img/pages/journeys/select-preview-variation.png)
+![image](/images/pages/journeys/select-preview-variation.png)
 
 To preview your Journey in your live, production website, enter your website URL in the <notranslate>**Test on your mobile device**</notranslate> field, and press the copy button. <notranslate>**The URL you enter must have the Branch Web SDK integrated and be using your Branch Key.**</notranslate>
 
-![image](/_assets/img/pages/journeys/test-on-device.png)
+![image](/images/pages/journeys/test-on-device.png)
 
 [block:callout]
 {
@@ -156,7 +156,7 @@ To preview your Journey in your live, production website, enter your website URL
 
 #### Validation
 
-![image](/_assets/img/pages/journeys/validation-messages.png)
+![image](/images/pages/journeys/validation-messages.png)
 
 There are a number of errors and warnings you may encounter.
 
@@ -179,7 +179,7 @@ If you have built a Journey that includes premium-only functionality, you will s
 
 The [Journeys Manager](https://dashboard.branch.io/journeys) is your homepage for all of the personalized experiences create. You can turn Journeys on and off, clone them, or view performance.
 
-![image](/_assets/img/pages/journeys/journeys-manager.png)
+![image](/images/pages/journeys/journeys-manager.png)
 
 A Journey can have one of four states:
 
@@ -192,7 +192,7 @@ A Journey can have one of four states:
 
 You can activate a journey directly from the creation flow, or from <notranslate>**Start**</notranslate> in the Actions menus in the Journeys Manager.
 
-![image](/_assets/img/pages/journeys/edit-journeys.png)
+![image](/images/pages/journeys/edit-journeys.png)
 
 [block:callout]
 {
@@ -216,21 +216,21 @@ In general, you'd like the interstitial to show ahead of the smart banner on the
 
 To prioritize Journeys, switch to the Priority View by clicking on the toggle.
 
-![image](/_assets/img/pages/journeys/priority-view-toggle.png)
+![image](/images/pages/journeys/priority-view-toggle.png)
 
 You're now in Priority View.
 
 1. Drag and drop Journeys in the order you'd like them to show. The lower numbers mean higher priority (i.e. a Journey with priority 1 is going to show ahead of a Journey with priority 2).
 
-![image](/_assets/img/pages/journeys/first-priority-view.png)
+![image](/images/pages/journeys/first-priority-view.png)
 
 2. Click the <notranslate>**Save**</notranslate> button.
 
-![image](/_assets/img/pages/journeys/save-priority.png)
+![image](/images/pages/journeys/save-priority.png)
 
 3. Your Journeys have now been prioritized.
 
-![image](/_assets/img/pages/journeys/final-priority-view.png)
+![image](/images/pages/journeys/final-priority-view.png)
 
 [block:callout]
 {
@@ -256,13 +256,13 @@ Journeys map to [standard Branch analytics labels](/getting-started/configuring-
 
 You can access your Journey’s performance by selecting <notranslate>**View Performance**</notranslate> from the actions menu in the Journeys Manager.
 
-![image](/_assets/img/pages/journeys/view-performance.png)
+![image](/images/pages/journeys/view-performance.png)
 
 #### Using Source Analytics
 
 You can also access Journeys analytics by selecting the above filters from the [Source Analytics](http://dashboard.branch.io/analytics/source) page of the Branch dashboard.
 
-![image](/_assets/img/pages/journeys/view-source-analytics.png)
+![image](/images/pages/journeys/view-source-analytics.png)
 
 ##### To compare all of your Journeys
 
@@ -288,7 +288,7 @@ You can also access Journeys analytics by selecting the above filters from the [
 
 You can target users on a more granular level - based on behavior like where they came from, whether they already have your app installed, and what they’ve done on your website or in your app. We've created a bunch of great examples on the [next tab](/web/journeys/#examples).
 
-![image](/_assets/img/pages/journeys/advanced-audience-rules.png)
+![image](/images/pages/journeys/advanced-audience-rules.png)
 
 #### Has completed event
 
@@ -411,9 +411,9 @@ While we don’t think these limitations should discourage you from using featur
 
 This feature allows you to run A/B tests by designing multiple templates and assigning a percentage of your audience to each one.
 
-1. Click the <notranslate>**Add Variation**</notranslate> button to add another design variation. ![image](/_assets/img/pages/journeys/add-variation.png)
-1. To remove an unwanted variation, click the `-` button. ![image](/_assets/img/pages/journeys/remove-variation.png)
-1. Use the percentage fields to control the ratio of your audience that will see each variation.![image](/_assets/img/pages/journeys/multiple-templates.png)
+1. Click the <notranslate>**Add Variation**</notranslate> button to add another design variation. ![image](/images/pages/journeys/add-variation.png)
+1. To remove an unwanted variation, click the `-` button. ![image](/images/pages/journeys/remove-variation.png)
+1. Use the percentage fields to control the ratio of your audience that will see each variation.![image](/images/pages/journeys/multiple-templates.png)
 
 [block:callout]
 {
@@ -427,11 +427,11 @@ This feature allows you to run A/B tests by designing multiple templates and ass
 
 You can auto-open the app for users have your app installed with Journeys. You can find this setting by selecting the CTA in the template editor:
 
-![image](/_assets/img/pages/journeys/auto-open-find.png)
+![image](/images/pages/journeys/auto-open-find.png)
 
 When this box is checked, if a user views this Journey variation on your website and they have the app installed, the app will automatically open without them clicking.
 
-![image](/_assets/img/pages/journeys/auto-open.png)
+![image](/images/pages/journeys/auto-open.png)
 
 As opening the app automatically is the best user experience in most cases, this is checked by default for all new templates.
 
@@ -482,7 +482,7 @@ branch.setBranchViewData({
 
 Or, set it for individual templates by adding deep link data `$uri_redirect_mode:1`:
 
-![image](/_assets/img/pages/journeys/uri-redirect-mode.png)
+![image](/images/pages/journeys/uri-redirect-mode.png)
 
 [Read our blog](https://blog.branch.io/making-uri-schemes-great-again-uri_redirect_mode/){:target="\_blank"} to learn more about the challenges of URI schemes on iOS and the URI redirect mode feature.
 
@@ -498,7 +498,7 @@ Choose what happens when a user dismisses a Journey. “Close Journey” will si
 
 First, use the dropdown to choose how long the Journey should be dismissed for. Next, decide whether dismissing this Journey should cause only this Journey to be dismissed for the chosen dismissal period, or whether it should cause all Journeys to be dismissed for that period.
 
-![image](/_assets/img/pages/journeys/dismissal_settings.png)
+![image](/images/pages/journeys/dismissal_settings.png)
 
 ### Preserve or discard referring link data
 
@@ -538,7 +538,7 @@ You can set a time when your Journey will become active and be visible to your u
 
 You can access this feature from the <notranslate>**Validate & Test**</notranslate> step or directly from the action menu on the Journeys manager page.
 
-![image](/_assets/img/pages/journeys/schedule-action.png)
+![image](/images/pages/journeys/schedule-action.png)
 
 [block:callout]
 {
@@ -549,7 +549,7 @@ You can access this feature from the <notranslate>**Validate & Test**</notransla
 [/block]
 
 
-    ![image](/_assets/img/pages/journeys/schedule-modal.png)
+    ![image](/images/pages/journeys/schedule-modal.png)
 
 [block:callout]
 {
@@ -560,7 +560,7 @@ You can access this feature from the <notranslate>**Validate & Test**</notransla
 [/block]
 
 
-    ![image](/_assets/img/pages/journeys/schedule-modal-recurring.png)
+    ![image](/images/pages/journeys/schedule-modal-recurring.png)
 
 #### Scheduling FAQ
 
@@ -601,13 +601,13 @@ For example, if you were adding a custom liquid tag in CSS to dynamically contro
 ```
 {{ fontSize | 12px }}
 ```
-![image](/_assets/img/pages/journeys/custom-tags-1.png)
+![image](/images/pages/journeys/custom-tags-1.png)
 
 And if you were adding a custom liquid tag in your template text, you might use a tag like the one below:
 ```
 {{ adjective | best }}
 ```
-![image](/_assets/img/pages/journeys/custom-tags-2.png)
+![image](/images/pages/journeys/custom-tags-2.png)
 
 Then, to dynamically update values for the “fontSize” and “adjective” variables, you would set values for those variables using `setBranchViewData()`:
 
@@ -757,7 +757,7 @@ Journeys provides limited server-side localization. This functionality is curren
 
 If you have an upgraded premium account, you may also modify your CSS code directly in addition to using the WYSIWYG View Editor. To do so, go to the <notranslate>**Configure Views**</notranslate> step, click to edit a template, and then select the <notranslate>**CSS Editor**</notranslate> tab on the <notranslate>**Customize Template**</notranslate> screen.
 
-![image](/_assets/img/pages/journeys/view-css-editor.png)
+![image](/images/pages/journeys/view-css-editor.png)
 
 #### Adding a Second Line of Text
 
@@ -781,11 +781,11 @@ branch-banner .branch-banner-description::before
 
 1) Go to [Google Fonts](https://fonts.google.com/) and select a font.
 
-![image](/_assets/img/pages/journeys/font_embedding.png)
+![image](/images/pages/journeys/font_embedding.png)
 
 2) Add to CSS EDITOR in Journeys. Please note: trailing semicolon on @import line is important. It's always good to have a fallback web font in case the google font fails to load.
 
-![image](/_assets/img/pages/journeys/custom_font.png)
+![image](/images/pages/journeys/custom_font.png)
 
 ### Template customization options
 
@@ -801,7 +801,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Background
 
-![image](/_assets/img/pages/journeys/customize-banner-background.png)
+![image](/images/pages/journeys/customize-banner-background.png)
 
 | Option | Usage |
 | --- | --- |
@@ -810,7 +810,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Title
 
-![image](/_assets/img/pages/journeys/customize-banner-title.png)
+![image](/images/pages/journeys/customize-banner-title.png)
 
 | Option | Usage |
 | --- | --- |
@@ -819,7 +819,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Description
 
-![image](/_assets/img/pages/journeys/customize-banner-description.png)
+![image](/images/pages/journeys/customize-banner-description.png)
 
 | Option | Usage |
 | --- | --- |
@@ -828,7 +828,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Rating
 
-![image](/_assets/img/pages/journeys/customize-banner-rating.png)
+![image](/images/pages/journeys/customize-banner-rating.png)
 
 | Option | Usage |
 | --- | --- |
@@ -837,7 +837,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Reviews
 
-![image](/_assets/img/pages/journeys/customize-banner-reviews.png)
+![image](/images/pages/journeys/customize-banner-reviews.png)
 
 | Option | Usage |
 | --- | --- |
@@ -846,7 +846,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Button
 
-![image](/_assets/img/pages/journeys/customize-banner-button.png)
+![image](/images/pages/journeys/customize-banner-button.png)
 
 | Option | Usage |
 | --- | --- |
@@ -867,7 +867,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Dismiss
 
-![image](/_assets/img/pages/journeys/dismissal_banner.png)
+![image](/images/pages/journeys/dismissal_banner.png)
 
 | Option | Usage |
 | --- | --- |
@@ -875,7 +875,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### App Icon
 
-![image](/_assets/img/pages/journeys/customize-banner-icon.png)
+![image](/images/pages/journeys/customize-banner-icon.png)
 
 | Option | Usage |
 | --- | --- |
@@ -885,7 +885,7 @@ The available configuration options are identical for banners at both the top an
 
 ##### Background
 
-![image](/_assets/img/pages/journeys/customize-fullpage-background.png)
+![image](/images/pages/journeys/customize-fullpage-background.png)
 
 | Option | Usage |
 | --- | --- |
@@ -913,7 +913,7 @@ The content block contains everything except for the background image. Dimension
 
 ##### Title
 
-![image](/_assets/img/pages/journeys/customize-fullpage-title.png)
+![image](/images/pages/journeys/customize-fullpage-title.png)
 
 | Option | Usage |
 | --- | --- |
@@ -922,7 +922,7 @@ The content block contains everything except for the background image. Dimension
 
 ##### Description
 
-![image](/_assets/img/pages/journeys/customize-fullpage-description.png)
+![image](/images/pages/journeys/customize-fullpage-description.png)
 
 | Option | Usage |
 | --- | --- |
@@ -931,7 +931,7 @@ The content block contains everything except for the background image. Dimension
 
 ##### Button
 
-![image](/_assets/img/pages/journeys/customize-fullpage-button.png)
+![image](/images/pages/journeys/customize-fullpage-button.png)
 
 | Option | Usage |
 | --- | --- |
@@ -952,7 +952,7 @@ The content block contains everything except for the background image. Dimension
 
 ##### Dismiss
 
-![image](/_assets/img/pages/journeys/dismissal_interstitial.png)
+![image](/images/pages/journeys/dismissal_interstitial.png)
 
 | Option | Usage |
 | --- | --- |
@@ -964,7 +964,7 @@ The content block contains everything except for the background image. Dimension
 
 ##### Button Text
 
-![image](/_assets/img/pages/journeys/customize-button-template.png)
+![image](/images/pages/journeys/customize-button-template.png)
 
 | Option | Usage |
 | --- | --- |
@@ -990,7 +990,7 @@ The content block contains everything except for the background image. Dimension
 
 ##### Dismiss
 
-![image](/_assets/img/pages/journeys/dismissal-button.png)
+![image](/images/pages/journeys/dismissal-button.png)
 
 | Option | Usage |
 | --- | --- |
@@ -1013,7 +1013,7 @@ To access the template's container (iFrame) CSS code:
 2. Under <notranslate>**Page Settings**</notranslate> on the <notranslate>**Page Placement**</notranslate> tab, click the <notranslate>**Customize Container (iFrame)**</notranslate> radio button.
 3. Modify the iFrame as you see fit and click <notranslate>**Save & Close**</notranslate>.
 
-![image](/_assets/img/pages/journeys/customize-container-iframe.png)
+![image](/images/pages/journeys/customize-container-iframe.png)
 
 [block:callout]
 {
@@ -1131,7 +1131,7 @@ The image will not look scaled properly in the editor view. This is because the 
     <div class="branch-journeys-top"></div>
     ```
 
-    ![image](/_assets/img/pages/journeys/sticky.png)
+    ![image](/images/pages/journeys/sticky.png)
 
 
 ## Examples
@@ -1148,21 +1148,21 @@ The Journeys audience tool is extremely powerful, but sometimes a few examples c
 
 All of these examples require you to configure advanced audience rules, which is a premium feature. You can add any set of complex rules using the following button:
 
-![image](/_assets/img/pages/journeys/examples/advanced_add_filter.png)
+![image](/images/pages/journeys/examples/advanced_add_filter.png)
 
 #### New Users
 
 In this example, you'll configure an audience to target people who have visited your site **less than 3 times** historically. Anyone who had visited more than this will be excluded. First, you'll add a new rule for <notranslate>**Has visted web**</notranslate> in the advanced section.
 
-![image](/_assets/img/pages/journeys/examples/new_users_0.png)
+![image](/images/pages/journeys/examples/new_users_0.png)
 
 Next, you'll choose the <notranslate>**Less than or equal to**</notranslate> in the middle section:
 
-![image](/_assets/img/pages/journeys/examples/new_users_1.png)
+![image](/images/pages/journeys/examples/new_users_1.png)
 
 Finally, you'll enter 2 in the last part to indicate you want to target people who have visited less than 3 times historically.
 
-![image](/_assets/img/pages/journeys/examples/new_users_2.png)
+![image](/images/pages/journeys/examples/new_users_2.png)
 
 Save and continue!
 
@@ -1170,15 +1170,15 @@ Save and continue!
 
 In this example, you'll configure an audience to target people who have visited your site **more than 4 times** historically. Anyone who had visited less than this will be excluded. First, you'll add a new rule for <notranslate>**Has visted web**</notranslate> in the advanced section.
 
-![image](/_assets/img/pages/journeys/examples/new_users_0.png)
+![image](/images/pages/journeys/examples/new_users_0.png)
 
 Next, you'll choose the <notranslate>**More than or equal to**</notranslate> in the middle section:
 
-![image](/_assets/img/pages/journeys/examples/loyal_users_1.png)
+![image](/images/pages/journeys/examples/loyal_users_1.png)
 
 Finally, you'll enter 5 in the last part to indicate you want to target people who have visited more than 4 times historically.
 
-![image](/_assets/img/pages/journeys/examples/loyal_users_2.png)
+![image](/images/pages/journeys/examples/loyal_users_2.png)
 
 Save and continue!
 
@@ -1186,19 +1186,19 @@ Save and continue!
 
 In this example, you'll configure an audience to target people who have completed some action on your site in a past or current session. For example, if a user had added something to their cart or had previously completed a purchase. You can retarget these users with a custom call to action to download. We'll use a generic event called `MyAction` in the example. First, you'll add a new rule for <notranslate>**Has completed event**</notranslate> in the advanced section.
 
-![image](/_assets/img/pages/journeys/examples/retargeting_users_0.png)
+![image](/images/pages/journeys/examples/retargeting_users_0.png)
 
 In this next dropdown, you'll choose the custom event to retarget from. Here, we'll use a generic event called `MyAction` but you would select `Purchase` or something more meaningful to your use case.
 
-![image](/_assets/img/pages/journeys/examples/retargeting_users_1.png)
+![image](/images/pages/journeys/examples/retargeting_users_1.png)
 
 Next, you'll choose the <notranslate>**More than or equal to**</notranslate> in the middle section:
 
-![image](/_assets/img/pages/journeys/examples/retargeting_users_2.png)
+![image](/images/pages/journeys/examples/retargeting_users_2.png)
 
 Finally, you'll enter 3 in the last part to indicate you want to target people who have completed `MyAction` more than 2 times historically.
 
-![image](/_assets/img/pages/journeys/examples/retargeting_users_3.png)
+![image](/images/pages/journeys/examples/retargeting_users_3.png)
 
 Save and continue!
 
@@ -1206,29 +1206,29 @@ Save and continue!
 
 Google has recently announced that it will begin punishing sites that show a full page interstitial when a user comes from search. Because of this, you'll likely need to treat Google search traffic differently than traffic that comes from any other source. In this example, you'll set up an audience specific to users who come from Google. First, you'll add a new rule for <notranslate>**Came directly from a url**</notranslate> in the advanced section.
 
-![image](/_assets/img/pages/journeys/examples/seo_friendly_0.png)
+![image](/images/pages/journeys/examples/seo_friendly_0.png)
 
 Next, you'll choose the <notranslate>**starts with**</notranslate> in the middle section to match a substring:
 
-![image](/_assets/img/pages/journeys/examples/seo_friendly_1.png)
+![image](/images/pages/journeys/examples/seo_friendly_1.png)
 
 Finally, you'll enter `google.com` to target users who came from Google search (where the referrer starts with google.com):
 
-![image](/_assets/img/pages/journeys/examples/seo_friendly_2.png)
+![image](/images/pages/journeys/examples/seo_friendly_2.png)
 
 Alternatively, you can target users who did NOT come from Google search (where the referrer doesn't start with google.com):
 
-![image](/_assets/img/pages/journeys/examples/seo_friendly_3.png)
+![image](/images/pages/journeys/examples/seo_friendly_3.png)
 
 #### Example: English speaking iOS users
 
 In this example, you'll restrict the audience to users in countries where English is the native language who are on the iOS operating system. Note that this is not in the advanced audience section, but rather in the top section. First, select `iOS` of the mobile OS checkboxes.
 
-![image](/_assets/img/pages/journeys/examples/ios_english_0.png)
+![image](/images/pages/journeys/examples/ios_english_0.png)
 
 Next, go through and choose the following countries: `United States`, `Canada`, <notranslate>**United Kingdom**</notranslate> and `Australia`.
 
-![image](/_assets/img/pages/journeys/examples/ios_english_1.png)
+![image](/images/pages/journeys/examples/ios_english_1.png)
 
 Save and continue!
 

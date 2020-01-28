@@ -15,7 +15,7 @@ Branch’s Fraud Detection Platform uses an intelligent blacklist to block known
 
 The platform leverages Branch’s persona data to give you RealScore - a model that intelligently scores the likelihood that any given install comes from a real person rather than a bot, malware or false attribution claim. RealScore depends on a variety of web and app signals to establish patterns of normal and fraudulent behavior, making it the first fraud detection product to leverage the full set of signals available on mobile.
 
-![image](/_assets/img/pages/analytics/fraud-analytics.png)
+![image](/images/pages/analytics/fraud-analytics.png)
 
 ## Events Blocked by Fraud Rules
 
@@ -64,17 +64,17 @@ Device reset fraud is characterized by new devices from suspicious IPs. Keep an 
 
 ## Core Metrics
 
-![image](/_assets/img/pages/analytics/core-metrics.png)
+![image](/images/pages/analytics/core-metrics.png)
 
 ### % Blocked Installs
 
-![image](/_assets/img/pages/analytics/blocked-installs.png)
+![image](/images/pages/analytics/blocked-installs.png)
 
 The percentage of blocked installs divided by total installs.
 
 ### Click to Install %
 
-![image](/_assets/img/pages/analytics/cti.png)
+![image](/images/pages/analytics/cti.png)
 
 The percentage of attributed installs divided by clicks.
 
@@ -84,7 +84,7 @@ The percentage of unblocked installs where the time from click to install was ov
 
 ### Short Install Times
 
-![image](/_assets/img/pages/analytics/short-install-times.png)
+![image](/images/pages/analytics/short-install-times.png)
 
 #### Install % Under 10 Seconds
 

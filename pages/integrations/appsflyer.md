@@ -16,7 +16,7 @@ Branch will send all Branch mobile link clicks to AppsFlyer. This includes sendi
 
 Branch events will appear on the AppsFlyer dashboard, in the overview page. Scroll to the <notranslate>**Aggregated Performance Report**</notranslate> section, and you'll notice Branch led attributions fall under the name `branch_int`.
 
-![image](/_assets/img/pages/integrations/appsflyer/appsflyer.png)
+![image](/images/pages/integrations/appsflyer/appsflyer.png)
 
 You can click into `branch_int` in the above screenshot and then see the breakdown of clicks and installs by campaign specified.
 

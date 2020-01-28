@@ -75,7 +75,7 @@ To manually add a custom partner in your Branch dashboard:
 3. In the <notranslate>**Add New Custom Partner**</notranslate> modal, provide a clearly identifiable name.
 4. Click <notranslate>**Save and Enable**</notranslate>.
 
-![image](/_assets/img/pages/deep-linked-ads/google-marketing-platform/google-ad-manager1.png)
+![image](/images/pages/deep-linked-ads/google-marketing-platform/google-ad-manager1.png)
 
 ### Create a Branch Link
 
@@ -86,11 +86,11 @@ Once you've enabled the integration it's time to create a tracking link.
 	- For Search or Display campaigns where the user should go to web if they don't have the app, then you should select <notranslate>**Cross-Platform Search**</notranslate> or <notranslate>**Cross-Platform Display**</notranslate>.
 	- <notranslate>**Product Links**</notranslate> are for shopping or dynamic re-marketing campaigns.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link.png)
 
 2. At this point you need to name your link. Select something that will make it easy to find if you need it later. Your Ad Format and Ad Partner should be selected already, but feel free to choose one if they aren't. It's important that you select the right Ad Partner for analytics later on. Click <notranslate>**Configure Options**</notranslate> to continue.
 
-![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-name.png)
+![image](/images/pages/deep-linked-ads/branch-universal-ads/create-link-name.png)
 
 3. This is your chance to add deep link data and analytics tags. Analytics tags are important for later segmentation, so click the <notranslate>**Analytics**</notranslate> sub tab to add a Channel and Campaign value.
 
@@ -110,7 +110,7 @@ When an Agency users saves an ad link/Journey/Quick Link, that ad link/Journey/Q
 
 4. Click <notranslate>**Create Link Now**</notranslate>, and you have your tracking link!
 
-![alt_text](/_assets/img/pages/deep-linked-ads/branch-universal-ads/create-link-completed.png)
+![alt_text](/images/pages/deep-linked-ads/branch-universal-ads/create-link-completed.png)
 
 Take the Branch link and give it to your Ad Manager 360 Technical Account Manager or paste it into the tracking section of your campaign yourself.
 
@@ -257,4 +257,4 @@ After all modifications are done, input the Branch ad links into the related Ad 
 
 Make sure to hit the <notranslate>**TEST**</notranslate> Button and verify the links are working before pushing the campaign live.
 
-![image](/_assets/img/pages/deep-linked-ads/google-marketing-platform/google-ad-manager2.png)
+![image](/images/pages/deep-linked-ads/google-marketing-platform/google-ad-manager2.png)

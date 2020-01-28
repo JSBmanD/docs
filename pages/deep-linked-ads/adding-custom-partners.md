@@ -16,7 +16,7 @@ To manually add a custom partner in your Branch dashboard:
 3. In the <notranslate>**Add New Custom Partner**</notranslate> modal, provide a clearly identifiable name.
 4. Click <notranslate>**Save and Enable**</notranslate>.
 
-![image](/_assets/img/pages/deep-linked-ads/custom-partner.png)
+![image](/images/pages/deep-linked-ads/custom-partner.png)
 
 ## Additional Setup
 
@@ -28,10 +28,10 @@ To continue setting up your new custom partner, you can set up postback URLs and
 
 2. A modal will appear with Branch default events, as well as any commerce or custom events you've set up. Select an event, enter a postback URL if you're asked to, and click <notranslate>**Save**</notranslate>. This will be the event that triggers your new postback.
 
-    ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/add-new-postback-modal1.png)
+    ![image](/images/pages/deep-linked-ads/branch-universal-ads/add-new-postback-modal1.png)
 
 ### Attribution Windows
 
 You can edit your attribution windows at the partner level, if your partner requires it. This is recommended when you enable networks like Facebook and Google, who may have different windows for installs. With this, you can preserve your Account Level Attribution Windows, as well.
 
-   ![image](/_assets/img/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)
+   ![image](/images/pages/deep-linked-ads/branch-universal-ads/anaw_clear.png)

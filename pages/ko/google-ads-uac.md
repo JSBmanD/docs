@@ -1,7 +1,7 @@
 ---
 title: 앱 인스톨 캠페인
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
+!!! info "<img src="../../../images/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
 - [Google Ads 개요](/deep-linked-ads/google-ads-overview/)
 - [연동 활성화](/deep-linked-ads/google-ads-enable/)
 - **앱 인스톨 캠페인**  (이 페이지)
@@ -48,4 +48,4 @@ Google Ads의 [앱 인스톨 캠페인 설정](https://support.google.com/google
 
 앱 인스톨 캠페인은 사용자를 해당 앱 스토어로 직접 연결하기 때문에 캠페인 생성 시 Branch 링크가 필요하지 않습니다. Google Ads는 자동으로 사용자를 앱 스토어로 라우팅하며, 앱 스토어에서 사용자가 앱을 다운로드할 수 있습니다.  앱 내에 Branch SDK가 구현되어 있으면 앱이 오픈될 때 당사가 이러한 앱 다운로드를 측정하며, Google Ads의 전환 API를 통해 Google Ads로부터 직접 전달받는 정보와 당사 SDK를 통해 확보한 데이터를 매칭합니다.
 
-![이미지](/_assets/img/pages/deep-linked-ads/google/google-ads-uac.png)
+![이미지](/images/pages/deep-linked-ads/google/google-ads-uac.png)

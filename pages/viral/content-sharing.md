@@ -158,7 +158,7 @@ Then, trigger the share sheet to appear without having to create a link. Calling
 
 Here's an example of what you'll see with iOS on the left and Android on the right:
 
-![image](/_assets/img/pages/viral/content-sharing/combined_share_sheet.png)
+![image](/images/pages/viral/content-sharing/combined_share_sheet.png)
 
 ### Route incoming users directly to content
 

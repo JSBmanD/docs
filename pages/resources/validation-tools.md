@@ -28,7 +28,7 @@ The [Branch CLI](https://github.com/BranchMetrics/branch_io_cli) is a simple plu
 
 1. Type ```br setup``` into terminal, and you’ll be greeted with a few options on the following screen:
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_1.png)
+    ![image](/images/pages/resources/validation/cli_install_1.png)
 
 2. Fill out your Branch Key from [Account Settings](https://branch.dashboard.branch.io/account-settings/app), and your app’s link domain information from your [Link Settings](https://branch.dashboard.branch.io/link-settings) pages.
 
@@ -37,30 +37,30 @@ The [Branch CLI](https://github.com/BranchMetrics/branch_io_cli) is a simple plu
 
 3. Once complete, you’ll see the following set of instructions:
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_2.png)
+    ![image](/images/pages/resources/validation/cli_install_2.png)
 
 4. If your app does not have any third party SDKs integrated, pick option 2: <notranslate>**Set this project up to use CocoaPods and add the Branch SDK**</notranslate>.
 5. Before modifying your project, the CLI will confirm your inputs. If something is entered incorrectly, you’ll have the option to return and change your values:
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_3.png)
+    ![image](/images/pages/resources/validation/cli_install_3.png)
 
 6. To make changes to your URI scheme for example, enter <notranslate>**N**</notranslate> to the prompt.
 7. To insert your app’s URI scheme, enter <notranslate>**4**</notranslate> into the prompt:
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_4.png)
-    ![image](/_assets/img/pages/resources/validation/cli_install_5.png)
+    ![image](/images/pages/resources/validation/cli_install_4.png)
+    ![image](/images/pages/resources/validation/cli_install_5.png)
 
 8. After entering a URI scheme, enter option <notranslate>**19: Accept and Continue**</notranslate>, which starts the Universal Link validation process:
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_6.png)
+    ![image](/images/pages/resources/validation/cli_install_6.png)
 
 9. If your link domains, are found in your app's <notranslate>**apple-app-site-association**</notranslate> file, the rest of the process will continue as expected.
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_7.png)
+    ![image](/images/pages/resources/validation/cli_install_7.png)
 
 10. After installing cocoapods, the CLI will install the Branch plugin and inject values and various snippets from your app into your project.
 
-    ![image](/_assets/img/pages/resources/validation/cli_install_8.png)
+    ![image](/images/pages/resources/validation/cli_install_8.png)
 
 You're all done!
 

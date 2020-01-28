@@ -22,16 +22,16 @@ Liveview enables you to debug the following objects:
 
 Choose among the supported objects using the tabs at the top of the screen.
 
-  ![liveview object](/_assets/img/pages/exports/pba-liveview/liveview-objects.png)
+  ![liveview object](/images/pages/exports/pba-liveview/liveview-objects.png)
 
 ### 2. Choose event type
 
 If you are viewing `Events`, then be sure to choose the appropriate event type from the dropdown, e.g. `commerce event`.
 
-  ![liveview filter on name](/_assets/img/pages/exports/pba-liveview/liveview-events-filter.gif)
+  ![liveview filter on name](/images/pages/exports/pba-liveview/liveview-events-filter.gif)
 
 ### 3. Add advanced filters (optional)
 
 Add advanced filters. Some of the most useful include `name` (e.g. `PURCHASE`), `feature`, `channel`, `campaign`, and device identifiers like `IDFA`.
 
-  ![liveview filter on name](/_assets/img/pages/exports/pba-liveview/liveview-add-filter.gif)
+  ![liveview filter on name](/images/pages/exports/pba-liveview/liveview-add-filter.gif)

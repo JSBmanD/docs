@@ -63,7 +63,7 @@ To start, from your Branch dashboard, click on the Create Link button on the top
 	- Send a text of it to yourself
 	- Download the link embedded in a QR code (available in a PNG or SVG file)
 
-![image](/_assets/img/pages/links/link-share-options.png)
+![image](/images/pages/links/link-share-options.png)
 
 Utilize these options to see how the link will act on various devices to make sure:
 

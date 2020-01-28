@@ -30,7 +30,7 @@ was opened with the expanded data.
 
 Complete the **Basic integration** within [Configure your dashboard](/dashboard/integrate/)
 
-    ![image](/_assets/img/pages/dashboard/fallback.png)
+    ![image](/images/pages/dashboard/fallback.png)
 
 ### Install the Framework
 

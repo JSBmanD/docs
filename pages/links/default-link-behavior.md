@@ -11,7 +11,7 @@ title: Default Link Behavior Configuration
 
         - Use these settings to control the default behavior of your deep links on iOS
 
-            ![image](/_assets/img/pages/dashboard/ios.png)
+            ![image](/images/pages/dashboard/ios.png)
 
         - The Apple App Prefix is found within the [Apple Developer Portal](https://developer.apple.com/account/ios/identifier/bundle) for your app
 
@@ -22,7 +22,7 @@ title: Default Link Behavior Configuration
           "body": "
           For any user running on an iOS version below 12.3, a popup first appears prompting the user to open in the App Store when being redirected to the app store. The user must click <notranslate>**OK**</notranslate> to be fully routed to the App Store to download your app.  This popup cannot be removed from the user flow as it's inherent to iOS.
 
-          ![image](/_assets/img/pages/links/app-store-redirect.png)"
+          ![image](/images/pages/links/app-store-redirect.png)"
         }
         [/block]
 
@@ -32,7 +32,7 @@ title: Default Link Behavior Configuration
 
         - Play Store is for published apps, if your app cannot be located or is a local/dev build, please use the Custom URL option
 
-            ![image](/_assets/img/pages/dashboard/android.png)
+            ![image](/images/pages/dashboard/android.png)
 
         - Generate a SHA256 Cert Fingerprint
             - Navigate to your `keystore file` (used to build the debug and production version of your APK file before it gets deployed)
@@ -52,7 +52,7 @@ title: Default Link Behavior Configuration
 
         - Use these settings to control the default behavior of your deep links on Desktop browsers
 
-            ![image](/_assets/img/pages/dashboard/desktop.png)
+            ![image](/images/pages/dashboard/desktop.png)
 
         - For Desktop apps
             - Enter your Desktop URI Scheme (e.g. `your_desktop_uri_scheme://`)
@@ -63,7 +63,7 @@ title: Default Link Behavior Configuration
     - ##### Fallback
         - Use these settings to control the default behavior of your deep links on any other platform
 
-            ![image](/_assets/img/pages/dashboard/fallback.png)
+            ![image](/images/pages/dashboard/fallback.png)
 
     - ##### Link domain
         - Choose a `link domain` which will be used for all your links
@@ -73,16 +73,16 @@ title: Default Link Behavior Configuration
                 - e.g. https://example.app.link/VZsTctoINF
                 - e.g. https://example.app.link/custom-alias
 
-            ![image](/_assets/img/pages/dashboard/link-domain.png)
+            ![image](/images/pages/dashboard/link-domain.png)
 
     - ##### Social media
 
         - Set the default image preview for your deep links when shared on social media
         - These values are typically overridden by [Custom link behavior](/links/integrate/#custom-link-behavior) which differentiate your deep links between one another
 
-            ![image](/_assets/img/pages/dashboard/social-media.png)
+            ![image](/images/pages/dashboard/social-media.png)
 
     - ##### Save
         - Make sure you commit any changes
 
-            ![image](/_assets/img/pages/dashboard/save.png)
+            ![image](/images/pages/dashboard/save.png)

@@ -35,7 +35,7 @@ The <notranslate>"Export"</notranslate> level of access applies specifically to 
 	 - <notranslate>**Aggregate Data**</notranslate> - Summary data that contains no granular data.
 5. Click <notranslate>**Save**</notranslate>.
 
-![image](/_assets/img/pages/dashboard/access-levels/export-access.png)
+![image](/images/pages/dashboard/access-levels/export-access.png)
 
 ## Agency Access to Export Sensitive Data via API
 

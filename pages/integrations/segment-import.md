@@ -18,7 +18,7 @@ Branch will import events that are not auto-tracked with the Branch SDKs. This i
     1. Select <notranslate>**Segment**</notranslate> from the menu on the left.
     1. Select the platforms you would like to import events from and click <notranslate>**Save**</notranslate>.
 
-    ![image](/_assets/img/pages/integrations/segment/segment-import.png)
+    ![image](/images/pages/integrations/segment/segment-import.png)
 
 1. Navigate to your your Segment UI’s Destinations page.
     1. Click on <notranslate>**Add Destination**</notranslate>.
@@ -166,11 +166,11 @@ loadBranchAndGetFingerprint.then(function(data) {
 
 Once you have import turned on in both Segment and Branch, events should come through. You will see a green dot on the import card if Branch has seen events:
 
-![image](/_assets/img/pages/integrations/segment/segment-import-status.png)
+![image](/images/pages/integrations/segment/segment-import-status.png)
 
 To see more information on the events that are coming in, you can look at events with <notranslate>**origin**</notranslate> `SEGMENT` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
 
-![image](/_assets/img/pages/integrations/segment/segment-import-liveview.png)
+![image](/images/pages/integrations/segment/segment-import-liveview.png)
 
 Branch imports events from Segment as [commerce, user lifecycle, content, or custom events](#supported-events).
 

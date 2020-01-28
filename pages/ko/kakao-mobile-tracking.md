@@ -17,13 +17,13 @@ title: 카카오 광고 캠페인 트래킹 관련
 
 {! ingredients/deep-linked-ads/ko/enable-partner.md !}
 
-![이미지](/_assets/img/pages/deep-linked-ads/kakao/kakao-enable.png)
+![이미지](/images/pages/deep-linked-ads/kakao/kakao-enable.png)
 
 {! ingredients/deep-linked-ads/ko/add-credentials.md !}
 
 {! ingredients/deep-linked-ads/ko/enable-partner-tip.md !}
 
-![이미지](/_assets/img/pages/deep-linked-ads/kakao/kakao-postbacks.png)
+![이미지](/images/pages/deep-linked-ads/kakao/kakao-postbacks.png)
 
 {! ingredients/deep-linked-ads/ko/create-ad-link.md !}
 

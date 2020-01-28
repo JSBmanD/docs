@@ -30,26 +30,26 @@ Tap on the test click URL.
 At the bottom of page click on <notranslate>**Install Full App**</notranslate> to install the Branch Monster Factory app.
 You will be redirected to Google Play Store. Click on `Install` button to initiate INSTALL event
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/test-install-android.png)
+![image](/images/pages/deep-linked-ads/partner-resources/test-install-android.png)
 
 ### iOS
 Tap on the test click URL. The iOS prompts to open in App Store.
 When redirected to App Store click on the `Cloud` download icon. Once the app is installed the INSTALL event  initiated.
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/test-install-ios.png)
+![image](/images/pages/deep-linked-ads/partner-resources/test-install-ios.png)
 
 ## OPEN
 
 ### Android
 To open the Branch Monster Factory app, find it on your Phone or navigate to Google Play and click the `Open` button. Once the Branch Monster Factory app opens, the OPEN event is initiated.
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/test-open-android.png)
+![image](/images/pages/deep-linked-ads/partner-resources/test-open-android.png)
 
 ### iOS
 Make sure the Branch Monster Factory app is installed. Find it on your phone or tap on `Open` button in App Store
 Once Monster Factory app opened the OPEN event initiated.
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/test-open-ios.png)
+![image](/images/pages/deep-linked-ads/partner-resources/test-open-ios.png)
 
 
 ## PURCHASE
@@ -57,9 +57,9 @@ Once Monster Factory app opened the OPEN event initiated.
 ### Android
 Open the installed Branch Monster Factory app and tap on the `Share` icon. The share window pops up with multiple options. Tap on the <notranslate>**Copy to clipboard**</notranslate> item. When you see the <notranslate>**Copied to clipboard**</notranslate> notice, the PURCHASE event is initiated.
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/test-purchase-android.png)
+![image](/images/pages/deep-linked-ads/partner-resources/test-purchase-android.png)
 
 ### iOS
 Open the installed Branch Monster Factory app and tap on the <notranslate>**Share Your Monster link**</notranslate> at the bottom. The share window pops up with multiple options. Tap on the `Copy` item to initiate PURCHASE event.
 
-![image](/_assets/img/pages/deep-linked-ads/partner-resources/test-purchase-ios.png)
+![image](/images/pages/deep-linked-ads/partner-resources/test-purchase-ios.png)

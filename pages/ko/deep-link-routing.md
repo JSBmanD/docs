@@ -238,7 +238,7 @@ Link Data Dictionary 에 정의한 커스텀 Key/value 외에 Branch에서는 �
 }
 [/block]
 
-	![image](/_assets/img/pages/deep-linking/routing/deep-link_path.png)
+	![image](/images/pages/deep-linking/routing/deep-link_path.png)
 
 
 ### Universal Link 와 App Link 에서 딥링크 URI Path 를 핸들링하는 방법

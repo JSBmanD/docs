@@ -48,58 +48,58 @@ Branch 대시보드 내에서 페이스북을 광고 파트너로 연동하는 �
 
 1. [Partner Management tab](https://dashboard.branch.io/ads/partner-management) 으로 이동합니다.
 
-    ![Ads Partner Management](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
+    ![Ads Partner Management](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/ads-partner-management.png)
 
 1. **Facebook** 을 검색합니다.
 
-    ![Find Facebook in Partner Manager](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/find-facebook-partner.png)
+    ![Find Facebook in Partner Manager](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/find-facebook-partner.png)
 
 1. `Connect With Facebook` 을 클릭합니다.
 
-    ![Connect with Facebook](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
+    ![Connect with Facebook](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/1-connect.png)
 
 1. Facebook 계정으로 로그인합니다.
 
-    ![Login](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
+    ![Login](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/2-login.png)
 
 1. Branch가 공개 프로파일 정보를 받을 수 있도록 확인합니다.
 
-    ![Public profile](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
+    ![Public profile](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/3-profile.png)
 
 1. Branch가 `ads_read` 권한을 받을 수 있도록 확인합니다.
 
-    ![OAuth scopes](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
+    ![OAuth scopes](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/4-scopes.png)
 
  	`ads_read` 는 Branch 대시보드 내에서 클릭과 임프레션 확인 용도로 사용됩니다.
 
 1. Install 광고 혹은 App Engagement 광고를 진행할 광고 계정을 선택합니다.
 
-    ![Choose ad accounts](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
+    ![Choose ad accounts](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/5-adaccounts.png)
 
     !!! Note
         광고 집행 어카운트 확인에 어려움이 있으시다면 [FAQ](/deep-linked-ads/facebook-ads-faq/#im-having-problems-finding-or-choosing-the-correct-ad-accounts)페이지를 확인해 주십시오.
 
 1. Facebook 광고 집행을 위해 Facebook 앱 아이디를 선택합니다.
 
-    ![enter app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
+    ![enter app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/6-app-1.png)
 
 1. 앱 아이디를 복사합니다.
 
-    ![find app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
+    ![find app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/7-app-2.png)
 
 1. 앱 아이디 붙여넣기 후 `Save` 클릭.
 
-    ![paste app id](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
+    ![paste app id](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/8-app-3.png)
 
 1. Facebook이 광고 파트너로 연동되었습니다!
 
 	만일 Facebook과 Branch 간에 서로 다른 어트리뷰션 윈도우가 설정되어 있을 경우 아래와 같이 확인될 수 있습니다.  두 대시보드의 어트리뷰션 윈도우를 동일하게 조정하는 방법은 아래 페이지의 링크를 참조 부탁 드립니다.
 
-    ![complete](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
+    ![complete](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/9-complete.png)
 
 1. 마지막으로 페이스북 광고 링크 생성을 위해서는 우측 상단의 `Create Facebook Link` 버튼을 클릭해 주십시오.
 
-    ![Create Facebook Ad Link](/_assets/img/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
+    ![Create Facebook Ad Link](/images/ingredients/deep-linked-ads/enable-facebook-ad-partner/create-facebook-link.png)
 
 ### 비용 데이터
 
@@ -121,11 +121,11 @@ eCPA | 구매 (웹과 앱 구매 포함) 당 비용 | 모든 네트워크의 구
 
 브랜치 대시보드의 [Ads Analytics Page](https://dashboard.branch.io/ads/analytics) 에서는 광고 캠페인의 퍼포먼스 확인을 위한 상호적 시간 그래프와 표를 제공합니다.
 
-![Example Ads Analytics Graph](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
+![Example Ads Analytics Graph](/images/ingredients/deep-linked-ads/view-ad-link-data/analytics-graph.png)
 
 표는 각각의 광고 캠페인 퍼포먼스의 요약 데이터를 보여줍니다. 표의 우측 상단 **download button** 을 누르시면 해당 차트의 내용을 CSV 파일로 다운로드 받으실 수 있습니다.
 
-![Example Ads Table](/_assets/img/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
+![Example Ads Table](/images/ingredients/deep-linked-ads/view-ad-link-data/analytics-table.png)
 
 [block:callout]
 {
@@ -173,10 +173,10 @@ eCPA | 구매 (웹과 앱 구매 포함) 당 비용 | 모든 네트워크의 구
 
 1. [파트너 관리 페이지](https://dashboard.branch.io/ads/partner-management)에서 Facebook Partner의 `Create Facebook Link` 버튼을 클릭해 Branch 광고 링크를 생성한 뒤 `App Install or Engagement`를 선택합니다.
 
-![링크 생성](/_assets/img/pages/deep-linked-ads/reusable-images/create-link-install-engagement.png) 1. 추후 참조를 위해 링크 이름을 입력합니다. 1. 링크의 광고 형식을 **App Only** 로 설정한 뒤, 광고 파트너를 **Facebook**으로 설정하고 보조 광고 형식을 **App Install Ads** 로 설정합니다. ![광고 링크 생성](/_assets/img/pages/deep-linked-ads/facebook-platform-ads/link-setup.png)
+![링크 생성](/images/pages/deep-linked-ads/reusable-images/create-link-install-engagement.png) 1. 추후 참조를 위해 링크 이름을 입력합니다. 1. 링크의 광고 형식을 **App Only** 로 설정한 뒤, 광고 파트너를 **Facebook**으로 설정하고 보조 광고 형식을 **App Install Ads** 로 설정합니다. ![광고 링크 생성](/images/pages/deep-linked-ads/facebook-platform-ads/link-setup.png)
 
 1. Configure Options 탭에서 딥링크 데이터 입력 섹션을 이용해 딥링킹 파라미터를 추가합니다. 이 설정 섹션에서는 인스톨 이후 앱으로 딥링킹될 커스텀 링크 파라미터를 설정하실 수 있습니다. 여기에는 사용자를 라우팅할 수 있는 쿠폰 코드 또는 페이지 식별자가 포함될 수 있습니다. 자세한 내용은 [딥링킹 라우팅](/deep-linking/routing/) 페이지에서 확인해 주세요.
-   ![광고 링크 생성](/_assets/img/pages/deep-linked-ads/reusable-images/create-link-deep-link-data.png)
+   ![광고 링크 생성](/images/pages/deep-linked-ads/reusable-images/create-link-deep-link-data.png)
 
 2. 이것은 앱 인스톨 광고인 관계로 리다이렉션은 무시될 수 있습니다. 따라서 본 섹션을 변경하지 않은 상태로 유지하는 것을 권장합니다.
 
@@ -190,7 +190,7 @@ eCPA | 구매 (웹과 앱 구매 포함) 당 비용 | 모든 네트워크의 구
 1. Facebook 앱을 보유한 계정에 로그인한 상태에서 https://www.facebook.com/ads/create로 이동합니다.
 
 2. 캠페인 마케팅 목표로 **앱 설치** 를 선택합니다.
-   ![캠페인 선택](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/campaign-selection.png)
+   ![캠페인 선택](/images/pages/deep-linked-ads/facebook-app-install-ads/campaign-selection.png)
 
 3. 광고할 앱, 오디언스, 게재 위치, 그리고 예산 등을 지정하여 캠페인 생성합니다. 그런 다음 계속을 눌러 광고 작성 단계로 들어갑니다.
 
@@ -200,10 +200,10 @@ eCPA | 구매 (웹과 앱 구매 포함) 당 비용 | 모든 네트워크의 구
 
    * App Store를 선택할 경우 **딥링크** 필드에 Branch 광고 링크를 입력합니다.
 
-   ![딥링크 게재 위치](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/deep-link.png)
+   ![딥링크 게재 위치](/images/pages/deep-linked-ads/facebook-app-install-ads/deep-link.png)
    * 캔버스를 선택할 경우 캔버스 광고 구성 요소에 사용될 **랜딩 페이지** 웹사이트 URL로 Branch 광고 링크를 추가합니다.
 
-   ![캔버스 설정](/_assets/img/pages/deep-linked-ads/facebook-app-install-ads/facebook-canvas-setup.png)
+   ![캔버스 설정](/images/pages/deep-linked-ads/facebook-app-install-ads/facebook-canvas-setup.png)
 6. 나머지 광고 캠페인 세팅을 완료합니다.
 
 이제 귀하의 Facebook 광고 캠페인이 Branch Links를 사용하여 App Installs를 처리하도록 설정되었습니다!
@@ -276,7 +276,7 @@ Branch는 최근, 앱이 Facebook SDK를 호출하여 iOS 및 Android 앱 내에
 #### Facebook 앱 링크를 읽을 때 발생하는 문제
 
 Facebook이 Branch 링크에서 앱 링크를 읽는 데 문제가 있는 경우, 해당 절차를 테스트하는 동안 다음과 같은 메시지가 표시될 수 있습니다. 이 메시지는 OG 태그에 손상된 부분이 있어 Facebook에서 해당 링크를 파싱하지 못할 때 표시됩니다.
-![잘못된 앱 링크](/_assets/img/ingredients/deep-linked-ads/fb-ads-support/invalid-app-links-error.png) ![문제 해결](/_assets/img/ingredients/deep-linked-ads/fb-ads-support/missing_applinks.png)
+![잘못된 앱 링크](/images/ingredients/deep-linked-ads/fb-ads-support/invalid-app-links-error.png) ![문제 해결](/images/ingredients/deep-linked-ads/fb-ads-support/missing_applinks.png)
 
 **OG 태그 다시 스크랩**
 
@@ -324,7 +324,7 @@ Facebook에서 제공하는 [OG 태그 테스터 도구](https://developers.face
 
 **정확히는** 아래와 같이 표시되어야 합니다.
 
-![앱 제한 문제 해결](/_assets/img/ingredients/deep-linked-ads/fb-ads-support/app_restrictions.png)
+![앱 제한 문제 해결](/images/ingredients/deep-linked-ads/fb-ads-support/app_restrictions.png)
 
 ### 데이터를 가져올 수 있나요?
 
@@ -353,4 +353,4 @@ Branch는 디바이스 레의 Facebook 어트리뷰션 데이터를 서드 파�
 
 다음은 '고급 모바일 측정' 계약서에 서명한 광고 계정을 볼 수 있는 페이지입니다.
 
-![AMM](/_assets/img/pages/deep-linked-ads/facebook-ads-faq/amm.png)
+![AMM](/images/pages/deep-linked-ads/facebook-ads-faq/amm.png)

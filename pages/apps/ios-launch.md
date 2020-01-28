@@ -10,7 +10,7 @@ After integrating the Branch SDK, you need to let Apple know that you use the ID
 	1. <notranslate>**Attribute this app installation to a previously served advertisement**</notranslate>
 	2. <notranslate>**Attribute an action taken within this app to a previously served advertisement**</notranslate>
 
-![image](/_assets/img/pages/apps/idfa.png)
+![image](/images/pages/apps/idfa.png)
 
 [block:callout]
 {

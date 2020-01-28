@@ -11,7 +11,7 @@ title: Google Ads Overview
 
 With Branch, you can integrate with **[Google Ads](https://ads.google.com/home/)**, improving conversion rates and letting you measure the impact of your campaigns right on the Branch dashboard.
 
-![image](/_assets/img/pages/deep-linked-ads/google/google-ads-overview.png)
+![image](/images/pages/deep-linked-ads/google/google-ads-overview.png)
 
 [block:callout]
 {
@@ -165,11 +165,11 @@ In order to track these events, please refer to this document for further [infor
 }
 [/block]
 
-![image](/_assets/img/pages/deep-linked-ads/google/legacy-sequential-tracking.png)
+![image](/images/pages/deep-linked-ads/google/legacy-sequential-tracking.png)
 
 With the change to “parallel tracking”, Google sends the customer directly to the Final URL, and uses the new Beacon API to "click" the Tracking URL (including following any server side redirects) in the background. The key here is that the Tracking URL (and redirects) are still being visited by the end user's browser, but because this happens “in parallel” (i.e., not visible to the customer), the user experience is better. For browsers without Beacon API support, Google will fall back to legacy sequential tracking.
 
-![image](/_assets/img/pages/deep-linked-ads/google/new-parallel-tracking.png)
+![image](/images/pages/deep-linked-ads/google/new-parallel-tracking.png)
 
 #### How Does Parallel Tracking Work?
 
@@ -177,7 +177,7 @@ If you are running a Universal App Install Campaign, parallel tracking does not 
 
 If you are running a non-UAC Web-based Ad (Display, Search, Shopping, Video), and using a Branch link as either the `Final URL` or `Tracking Template`, parallel tracking ensures your users are directly routed to the final destination while also allowing Branch to properly measure and attribute the resulting actions/conversions.
 
-![image](/_assets/img/pages/deep-linked-ads/google/google-ads-non-uac.png)
+![image](/images/pages/deep-linked-ads/google/google-ads-non-uac.png)
 
 #### How Does This Impact Me?
 

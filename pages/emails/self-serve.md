@@ -8,7 +8,7 @@ title: Self Serve
 
 You can use Branch links in email campaigns to launch your app or gracefully fall back to the App or Play Store download page. For more advanced purposes, you can even deep link users directly to content after your app opens.
 
-![image](/_assets/img/pages/email/self-serve/email.png)
+![image](/images/pages/email/self-serve/email.png)
 
 ## Guide
 
@@ -31,7 +31,7 @@ Many third-party providers add redirects to your URLs. This facilitates click tr
 }
 [/block]
 
-    ![image](/_assets/img/pages/email/no-esp.png)
+    ![image](/images/pages/email/no-esp.png)
 
     And let your ESP know, too!
 

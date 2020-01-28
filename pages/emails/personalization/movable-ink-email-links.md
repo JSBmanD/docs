@@ -25,12 +25,12 @@ With your ESP make sure to add the URL parameter **`$follow_redirect=true`** to 
 
 The last step to enable the deep linking experience is to ignore the query parameter **`$follow_redirect=true`** within the Movable Ink platform.  You’ll add `$follow_redirect` to the list of ignored query parameters here:
 
-![image](/_assets/img/pages/email/movable-ink/movable-ink-email1.png)
+![image](/images/pages/email/movable-ink/movable-ink-email1.png)
 
 ### QA Testing For Movable Ink
 
 Once you’ve ignored the query parameter within the Movable Ink platform you’ll want to test to make sure the branch url is tracking clicks within your Movable Ink campaign. To test the tracking you’ll take the finalized branch url that is placed within your email template and click the URL.  After the URL is click you’ll check to make sure the clicks are recorded within the Movable Ink campaign dashboard:
 
-![image](/_assets/img/pages/email/movable-ink/movable-ink-email2.png)
+![image](/images/pages/email/movable-ink/movable-ink-email2.png)
 
 If clicks are recording then the setup is successful.

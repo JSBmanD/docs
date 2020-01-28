@@ -18,7 +18,7 @@ Branch will import events that are not auto-tracked with the Branch SDKs. This i
     1. Select <notranslate>**mParticle**</notranslate> from the menu on the left.
     1. Select the platforms you would like to import events from and click <notranslate>**Save**</notranslate>.
 
-    ![image](/_assets/img/pages/integrations/mparticle/mparticle-import.png)
+    ![image](/images/pages/integrations/mparticle/mparticle-import.png)
 
 1. Navigate to your your mParticle UI’s Connections page.
     1. Select an input and add Branch S2S as the output.
@@ -94,11 +94,11 @@ At this time, Branch [will not attribute logged out web events](#attribution-for
 
 Once you have import turned on in both mParticle and Branch, events should come through. You will see a green dot on the import card if Branch has seen events:
 
-![image](/_assets/img/pages/integrations/mparticle/mparticle-import-status.png)
+![image](/images/pages/integrations/mparticle/mparticle-import-status.png)
 
 To see more information on the events that are coming in, you can look at events with <notranslate>**origin**</notranslate> `MPARTICLE` in [Liveview](https://dashboard.branch.io/liveview/events){:target="\_blank"}:
 
-![image](/_assets/img/pages/integrations/mparticle/mparticle-import-liveview.png)
+![image](/images/pages/integrations/mparticle/mparticle-import-liveview.png)
 
 Branch imports events from mParticle as [commerce, user lifecycle, content, or custom events](#supported-events).
 

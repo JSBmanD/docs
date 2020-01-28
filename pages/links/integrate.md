@@ -128,7 +128,7 @@ title: Creating Deep Links
   "body": "
   To disable this functionality, go to <notranslate>**Link Settings**</notranslate> -> <notranslate>**Advance Settings**</notranslate> -> <notranslate>**Analytics mapping with UTM**</notranslate>.
 
-  ![image](/_assets/img/pages/links/utm-mapping.png)"
+  ![image](/images/pages/links/utm-mapping.png)"
 }
 [/block]
 
@@ -244,7 +244,7 @@ You're free to add any of your own key-value parameters to a Branch link. These 
         | --- | --- | ---
         | `$uri_redirect_mode` | <notranslate>**0**</notranslate> | This is the default value that yields the standard behavior where we don't try to open the app if the user can see an error.
         | `$uri_redirect_mode` | <notranslate>**1**</notranslate> | Smart redirect mode. Same behavior as 0 until we know the user has the app installed through Branch persona data. In that case, force URI schemes to open the app.
-        | `$uri_redirect_mode` | <notranslate>**2**</notranslate> | Forceful redirect mode. Always try to force open the app, even if it risks showing an [error message](/_assets/img/pages/links/uri-error-message.png) when the app is not installed.
+        | `$uri_redirect_mode` | <notranslate>**2**</notranslate> | Forceful redirect mode. Always try to force open the app, even if it risks showing an [error message](/images/pages/links/uri-error-message.png) when the app is not installed.
 
     - Supported Apps
 

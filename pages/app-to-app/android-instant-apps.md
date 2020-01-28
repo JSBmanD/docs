@@ -7,7 +7,7 @@ At the 2017 Google IO, Google launched the public version of Instant Apps for de
 
 Branch has made it incredibly easy to start using your basic Branch links in your Instant Apps as shown below. The guide on this page will walk you through the full configuration process to enable Branch in your new Instant App.
 
-![Instant Apps Diagram](/_assets/img/pages/app-to-app/android-instant-apps/android_instant_apps.png){ .full-width }
+![Instant Apps Diagram](/images/pages/app-to-app/android-instant-apps/android_instant_apps.png){ .full-width }
 
 [block:callout]
 {

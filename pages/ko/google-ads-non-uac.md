@@ -1,7 +1,7 @@
 ---
 title: 웹 기반 광고(비 UAC)
 ---
-!!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
+!!! info "<img src="../../../images/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
 - [Google Ads 개요](/deep-linked-ads/google-ads-overview/)
 - [연동 활성화](/deep-linked-ads/google-ads-enable/)
 - [앱 인스톨 캠페인](/deep-linked-ads/google-ads-uac/)
@@ -39,7 +39,7 @@ title: 웹 기반 광고(비 UAC)
   * [x]  링크 데이터에 `$uri_redirect_mode=1` 추가. 앱 링크 설정 `URI Deep Link Mode`가 `Intelligent`로 설정된 경우에는 이 링크 키가 필요하지 않습니다.
   * [x]  [앱 링크(Android)](/deep-linking/android-app-links/) 및/또는 [유니버설 링크(iOS)](/deep-linking/universal-links/).
 
-![이미지](/_assets/img/pages/deep-linked-ads/google/web-based-ads-routing-options.png)
+![이미지](/images/pages/deep-linked-ads/google/web-based-ads-routing-options.png)
 
 ## 설정
 
@@ -54,17 +54,17 @@ title: 웹 기반 광고(비 UAC)
 ### Branch 광고 링크 생성
 
 1. [Partner Management 페이지](https://dashboard.branch.io/ads/partner-management)에서 Google Ads 파트너 아래의 `Create Google Ads Link` 버튼을 클릭해 Branch 광고 링크를 생성한 뒤, 실행하는 캠페인 유형에 따라 `Create Search/Display Link`를 선택합니다.
-![링크 생성](/_assets/img/pages/deep-linked-ads/reusable-images/create-link-display.png)
+![링크 생성](/images/pages/deep-linked-ads/reusable-images/create-link-display.png)
 1. Define 섹션에서 나중에 참조할 링크 이름을 선택합니다.
 1. 링크를 구성할 때 Ad Format을 **Search** 또는 **Display** 로 설정하고 Ad Partner는 **Google Ads** 로 설정합니다.
-![광고 링크 생성](/_assets/img/pages/deep-linked-ads/google-xplatform-display-ads/link-setup.png)
+![광고 링크 생성](/images/pages/deep-linked-ads/google-xplatform-display-ads/link-setup.png)
 1. Configure Options 탭에서 Redirects 하위 섹션으로 이동한 뒤, 웹 리디렉션이 광고 캠페인에서 홍보하려는 최종 웹사이트로 설정되어 있는지 확인합니다.
-![광고 링크 생성](/_assets/img/pages/deep-linked-ads/reusable-images/example-link-redirect.png)
+![광고 링크 생성](/images/pages/deep-linked-ads/reusable-images/example-link-redirect.png)
 1. Analytics Tags 하위 섹션에서 추가 태그를 설정할 수 있습니다. 이러한 필드의 내용은 Branch의 Ads Analytics 보기에서 필터로 사용될 수 있으므로 작성해 두는 것이 좋습니다. 광고 링크를 애드워즈 캠페인과 최적의 상태로 연결하는 방법은 다음과 같습니다.
 	1. `Channel` 필드를 Google Ads로 설정합니다.
 	1. `Campaign` 필드를 Google Ads에 사용되는 광고 캠페인 이름과 동일한 이름으로 설정합니다.
 	1. Google Ads의 동일 캠페인 ID에 새 태그 `~campaign_id`를 추가합니다.
-![분석 태그](/_assets/img/pages/deep-linked-ads/reusable-images/adwords-analytics-tags.png)
+![분석 태그](/images/pages/deep-linked-ads/reusable-images/adwords-analytics-tags.png)
 
 [block:callout]
 {
@@ -223,7 +223,7 @@ Google Ads 캠페인에 관한 자세한 내용은 [광고 및 캠페인 생성]
 ##### Google 판매자 센터에 업로드
 
 1. Google 판매자 센터에서 `Products`로 이동한 뒤 `Feeds`로 이동합니다.
-![판매자 센터 홈](/_assets/img/pages/deep-linked-ads/google-xplatform-shopping-ads/google-merchant-center-home.png)
+![판매자 센터 홈](/images/pages/deep-linked-ads/google-xplatform-shopping-ads/google-merchant-center-home.png)
 1. 큰 파란색 더하기 버튼을 클릭해 새 피드를 추가합니다.
 1. 프롬프트를 따라 피드 이름을 지정하고 피드 언어를 선택한 뒤 피드를 업로드하거나 연결합니다.
 1. 피드가 생성되면 판매자 센터에서 몇 분 정도에 걸쳐 이를 처리합니다. 처리가 끝나면 애드워즈 캠페인에 피드를 사용할 수 있습니다.
@@ -231,10 +231,10 @@ Google Ads 캠페인에 관한 자세한 내용은 [광고 및 캠페인 생성]
 ##### 애드워즈에서 판매자 센터 피드 활용
 
 1. 애드워즈 대시보드에서 All Campaigns 페이지로 이동합니다.
-![애드워즈 캠페인 보기](/_assets/img/pages/deep-linked-ads/google-xplatform-shopping-ads/google-adwords-campaign-view.png)
+![애드워즈 캠페인 보기](/images/pages/deep-linked-ads/google-xplatform-shopping-ads/google-adwords-campaign-view.png)
 1. 빨간색 캠페인 버튼을 클릭한 뒤 새로운 쇼핑 캠페인을 생성합니다.
 1. Shopping Ads Setup 페이지에서 정확한 판매자 식별자를 선택해야 합니다. 즉, 판매자 센터 대시보드의 값과 일치시켜야 합니다.
-![애드워즈 판매자 식별자](/_assets/img/pages/deep-linked-ads/google-xplatform-shopping-ads/google-adwords-merchant-identifier.png)
+![애드워즈 판매자 식별자](/images/pages/deep-linked-ads/google-xplatform-shopping-ads/google-adwords-merchant-identifier.png)
 1. 광고 구성을 완료하고 광고 그룹의 이름을 지정합니다.
 1. 이제 새로운 캠페인과 광고 그룹이 표시됩니다.
 

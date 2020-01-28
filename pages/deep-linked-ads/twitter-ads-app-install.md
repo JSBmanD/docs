@@ -3,7 +3,7 @@ title: Twitter Ads
 ---
 title: Twitter Ads App Install Measurement
 
-![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-logo.png)
+![image](/images/pages/deep-linked-ads/twitter-ads/twitter-ads-logo.png)
 
 ## Overview
 
@@ -68,21 +68,21 @@ App campaigns do not support Branch links. Branch links can be used on Tweets, p
 
 1. Click <notranslate>**Log in with Twitter**</notranslate>
 
-    ![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-enable.png)
+    ![image](/images/pages/deep-linked-ads/twitter-ads/twitter-ads-enable.png)
 
 1. Provide your Twitter credentials to begin the authorization process.
 
 1. Agree to the Advertising Terms & Conditions by checking the `I agree to the Twitter Ads Terms & Conditions`.
 
-    ![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-tocs.png)
+    ![image](/images/pages/deep-linked-ads/twitter-ads/twitter-ads-tocs.png)
 
 1. Authorize Branch Twitter Ads Manager to use your account by clicking `Authorize app`.
 
-    ![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-authorize.png)
+    ![image](/images/pages/deep-linked-ads/twitter-ads/twitter-ads-authorize.png)
 
 1. Select the ad accounts for which you want to run app install ads and click `Save`.
 
-    ![image](/_assets/img/pages/deep-linked-ads/twitter-ads/twitter-ads-accounts.png)
+    ![image](/images/pages/deep-linked-ads/twitter-ads/twitter-ads-accounts.png)
 
 1. Finally, to create a Twitter Ads link click the `Create Twitter Link` button in the top right hand corner.
 

@@ -44,7 +44,7 @@ We have built a custom integration to automatically send all Branch install data
         3. The default Braze endpoint is `rest.iad-01.braze.com`; if you wish to use a different endpoint, please  refer to [Braze's documentation](https://www.braze.com/docs/api/basics?redirected=true#endpoints).
 5. Click <notranslate>**Enable**</notranslate>.
 
-![image](/_assets/img/pages/integrations/braze/braze-di.png)
+![image](/images/pages/integrations/braze/braze-di.png)
 
 ### Pass Braze Android Install Tracking ID
 

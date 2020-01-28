@@ -15,8 +15,8 @@ title: Cordova PhoneGap Ionic
 
     - Complete your [Branch Dashboard](https://dashboard.branch.io/settings/link)
 
-        ![image](/_assets/img/pages/apps/cordova-configure.png)
-        ![image](/_assets/img/pages/apps/cordova-link-domain.png)
+        ![image](/images/pages/apps/cordova-configure.png)
+        ![image](/images/pages/apps/cordova-link-domain.png)
 
 - ### Configure app
 
@@ -188,7 +188,7 @@ title: Cordova PhoneGap Ionic
 
     - Long press on the deep link *(not 3D Touch)*
 
-    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/_assets/img/pages/apps/ios-notes.png))*
+    - Click <notranslate>**Open in "APP_NAME"**</notranslate> to open your app *([example](/images/pages/apps/ios-notes.png))*
 
 - ### Test deep link Android
 
