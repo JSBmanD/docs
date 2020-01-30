@@ -57,7 +57,7 @@ title: Creating Deep Links
             | Kakao Browser | | | App |
             | Opera Browser | App | | App |
             | Ghostery Browser | App | | Fallback | Query strings must be encoded ($ = %24)
-            | Google Hangouts | App | | App |
+            | Google Hangouts | Fallback | Able to force app open | App |
             | Samsung SMS | | | App |
             | Samsung SMS Browser | | | App |
             | Apple iMessage | App |

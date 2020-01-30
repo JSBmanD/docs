@@ -1,3 +1,7 @@
+---
+title: Adding Test Devices
+---
+
 ## Overview
 
 In order to easily test your Universal Ads campaign setup, we recommend you first add a test device to your Branch account. Doing so tells Branch servers that resulting conversions from said device are for testing purposes only; i.e. these conversions will not be considered normal traffic and therefore not be treated as such.  
