@@ -2,12 +2,11 @@
 title: 웹 기반 광고(비 UAC)
 ---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
-- [Google Ads 개요](/deep-linked-ads/google-ads-overview/)
-- [연동 활성화](/deep-linked-ads/google-ads-enable/)
-- [앱 인스톨 캠페인](/deep-linked-ads/google-ads-uac/)
-- [앱 참여 캠페인](/deep-linked-ads/google-ads-app-engagement/)
-- **웹 기반 광고** (이 페이지)
-- [문제 해결 및 FAQ](/deep-linked-ads/google-ads-troubleshooting/)
+    - [Google Ads 개요](/ko/google-ads-overview/)
+    - [연동 활성화](/deep-linked-ads/google-ads-enable/)
+    - [앱 인스톨 캠페인](/ko/google-ads-uac/)  
+    - **웹 기반 광고(non-UAC)**  (이 페이지)
+    - [문제 해결 및 FAQ](/deep-linked-ads/google-ads-troubleshooting/)
 
 유니버설 웹 캠페인은 `앱 다운로드` 라는 단일 전환 유형에만 초점을 맞추는 반면에 **검색, 디스플레이, 쇼핑, 동영상** 같은 다른 Google Ads 캠페인 유형을 활용하면 앱과 웹 전환 모드를 활성화할 수 있도록 마케팅 노력을 확대할 수 있습니다.
 
@@ -49,17 +48,14 @@ title: 웹 기반 광고(비 UAC)
 ### Branch 광고 링크 생성
 
 1. [Partner Management 페이지](https://dashboard.branch.io/ads/partner-management)에서 Google Ads 파트너 아래의 `Create Google Ads Link` 버튼을 클릭해 Branch 광고 링크를 생성한 뒤, 실행하는 캠페인 유형에 따라 `Create Search/Display Link`를 선택합니다.
-![링크 생성](/_assets/img/pages/deep-linked-ads/reusable-images/create-link-display.png)
 1. Define 섹션에서 나중에 참조할 링크 이름을 선택합니다.
 1. 링크를 구성할 때 Ad Format을 **Search** 또는 **Display** 로 설정하고 Ad Partner는 **Google Ads** 로 설정합니다.
 ![광고 링크 생성](/_assets/img/pages/deep-linked-ads/google-xplatform-display-ads/link-setup.png)
 1. Configure Options 탭에서 Redirects 하위 섹션으로 이동한 뒤, 웹 리디렉션이 광고 캠페인에서 홍보하려는 최종 웹사이트로 설정되어 있는지 확인합니다.
-![광고 링크 생성](/_assets/img/pages/deep-linked-ads/reusable-images/example-link-redirect.png)
 1. Analytics Tags 하위 섹션에서 추가 태그를 설정할 수 있습니다. 이러한 필드의 내용은 Branch의 Ads Analytics 보기에서 필터로 사용될 수 있으므로 작성해 두는 것이 좋습니다. 광고 링크를 애드워즈 캠페인과 최적의 상태로 연결하는 방법은 다음과 같습니다.
 	1. `Channel` 필드를 Google Ads로 설정합니다.
 	1. `Campaign` 필드를 Google Ads에 사용되는 광고 캠페인 이름과 동일한 이름으로 설정합니다.
 	1. Google Ads의 동일 캠페인 ID에 새 태그 `~campaign_id`를 추가합니다.
-![분석 태그](/_assets/img/pages/deep-linked-ads/reusable-images/adwords-analytics-tags.png)
 
 !!! warning "분석 태그"
 	*임프레션* , *클릭* , *비용* 을 모든 다운스트림 이벤트와 함께 나열하려면 분석 태그가 링크에 반드시 존재해야 하며 그 값은 광고 네트워크 대시보드에 있는 값과 *정확히* 일치해야 합니다.
@@ -94,7 +90,17 @@ Google Ads 캠페인에 관한 자세한 내용은 [광고 및 캠페인 생성]
 !!! tip "어트리뷰션 윈도우 설정"
 	계정 전체 수준으로 또는 링크 수준별로 링크의 어트리뷰션 윈도우를 지정할 수 있습니다. 이 윈도우를 이용해 Branch 링크의 어트리뷰션 데이터를 정확히 측정할 수 있습니다. 관련 지침은 [어트리뷰션 윈도우 변경](/deep-linked-ads/branch-universal-ads/#change-attribution-windows)을 참조하세요.
 
-{! ingredients/deep-linked-ads/ko/view-ad-link-data.md !}
+데이터 조회
+------
+
+Branch 대시보드의 [광고 분석 페이지](https://dashboard.branch.io/ads/analytics) 에서 광고 캠페인의 성과에 대한 상호적 시간 그래프와 표를 살펴볼 수 있습니다.
+
+표는 각 광고 캠페인의 성과에 대한 요약 데이터를 보여줍니다. 표의 오른쪽 상단 **다운로드 버튼** 을 클릭하여 차트의 내용을 CSV 파일로 다운로드할 수 있습니다.
+
+!!! info "데이터 활용하기"
+    `비교 +` 버튼을 통해 광고 캠페인의 성과에 대한 다양한 측면을 분석 및 비교하고, 매개변수를 추가하여 데이터를 나누어 살펴볼 수 있습니다.
+
+    그런 다음 '추가 +' 버튼으로 더욱 정제된 데이터를 얻을 수 있으며, 이를 활용하여 광고 캠페인의 성과에 대한 더욱 깊이 있는 인사이트를 확인할 수 있습니다.
 
 부록
 ---

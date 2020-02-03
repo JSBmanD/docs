@@ -2,11 +2,11 @@
 title: Google 광고에 대한 전반적인 소개
 ---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
-- **Google Ads 개요(현재 페이지)**
-- [연동 활성화하기](/deep-linked-ads/google-ads-enable/)
-- [유니버설 앱 캠페인(UAC)](/deep-linked-ads/google-ads-uac/)
-- [웹 기반 광고(non-UAC)](/deep-linked-ads/google-ads-non-uac/)
-- [문제 해결 및 FAQ](/deep-linked-ads/google-ads-troubleshooting/)
+    - **Google Ads 개요(현재 페이지)**
+    - [연동 활성화하기](/deep-linked-ads/google-ads-enable/)
+    - [유니버설 앱 캠페인(UAC)](/ko/google-ads-uac/)
+    - [웹 기반 광고(non-UAC)](/ko/google-ads-non-uac/)
+    - [문제 해결 및 FAQ](/deep-linked-ads/google-ads-troubleshooting/)
 
 ##Google Ads + Branch 이용 사례
 

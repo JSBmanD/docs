@@ -2,12 +2,11 @@
 title: 앱 인스톨 캠페인
 ---
 !!! info "<img src="../../../_assets/img/pages/deep-linked-ads/google/google-ads-logo.png" width="50"/> Google Ads 리소스"
-- [Google Ads 개요](/deep-linked-ads/google-ads-overview/)
-- [연동 활성화](/deep-linked-ads/google-ads-enable/)
-- **앱 인스톨 캠페인**  (이 페이지)
-- [앱 참여 캠페인](/deep-linked-ads/google-ads-app-engagement/)
-- [웹 기반 광고(비 UAC)](/deep-linked-ads/google-ads-non-uac/)
-- [문제 해결 및 FAQ](/deep-linked-ads/google-ads-troubleshooting/)
+		- [Google Ads 개요](/ko/google-ads-overview/)
+		- [연동 활성화](/deep-linked-ads/google-ads-enable/)
+		- **앱 인스톨 캠페인**  (이 페이지)
+		- [웹 기반 광고(non-UAC)](/ko/google-ads-non-uac/)
+		- [문제 해결 및 FAQ](/deep-linked-ads/google-ads-troubleshooting/)
 
 앱 인스톨 캠페인을 사용하면 Google Search, Google Play, YouTube, Gmail, 그 외 디스플레이 네트워크상의 앱 및 모바일 웹사이트 전반에서 앱을 홍보할 수 있습니다.
 
