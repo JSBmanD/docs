@@ -1,7 +1,7 @@
 ---
 title: iOS SDK
 ---
-!!! info "Current SDK Version 0.31.3"
+!!! info "Current SDK Version 0.31.4"
     Please see the [iOS Version History](/version-histories/ios-version-history) to view change log.
 
 ## Integrate Branch
