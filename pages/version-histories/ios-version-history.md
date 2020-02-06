@@ -1,6 +1,13 @@
 ---
 title: iOS Version History
 ---
+### v0.31.4
+
+**(2020-Feb-03)**
+
+- Add sharesheet option to override placeholder url.  This allows more control over the iOS 13 preview header.
+- Fix a compilation warning.
+
 ### v0.31.3
 
 **(2019-Dec-30)**
