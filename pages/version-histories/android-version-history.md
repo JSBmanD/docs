@@ -1,6 +1,14 @@
 ---
 title: Android Version History
 ---
+
+### v4.3.2
+
+**( 30 Jan 2020 )**
+
+- Accommodate single activity architecture/navigation component (reintroduced "SDK already initialized" error and ensured `reInitSession()` only fires when intent contains branch data).
+- Do not self-initialize if SDK is bundled with a plugin.
+
 ### v4.3.1
 
 **( 23 Jan 2020 )**
