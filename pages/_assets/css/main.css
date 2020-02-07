@@ -204,9 +204,15 @@ html.modal {
   font-weight: bold;
   cursor: pointer;
 }
-.modal-close:hover, .modal-close:focus, .branch-header-button:hover, .branch-header-button:focus, .modal-content a:hover, .modal-content a:focus {
+.modal-close:hover, .modal-close:focus, .modal-content a:hover, .modal-content a:focus {
   opacity: 0.7;
 }
+
+.branch-header-button:hover,
+.branch-header-button:focus {
+  color: #8DBEE7;
+}
+
 .modal-content h2 {
   font-size: 2.25em;
   margin: 0;
@@ -533,15 +539,16 @@ html.modal {
 /* ////////////////////////////// */
 /* Language selector
 /* ////////////////////////////// */
-.language-selector>button {
+.language-selector span.globe {
+    cursor: pointer;
     color: inherit;
     border: none;
     padding: 0;
     font: inherit;
     outline: inherit;
     cursor: pointer;
-/*    -webkit-mask: url("/img/assets/icons/globe.svg") no-repeat center;
-    mask: url("/img/assets/icons/globe.svg") no-repeat center;*/
+/*    -webkit-mask: url("http://branch.io/img/assets/icons/globe.svg") no-repeat center;
+    mask: url("http://branch.io/img/assets/icons/globe.svg") no-repeat center;*/
     background-color: #4E5760
 }
 
@@ -554,7 +561,7 @@ html.modal {
     text-transform: uppercase !important
 }
 
-.language-selector:hover>button {
+.language-selector:hover span.globe {
     background-color: #0075C9
 }
 

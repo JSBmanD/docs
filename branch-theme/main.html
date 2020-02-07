@@ -152,25 +152,15 @@
     // END// end minified
 
 
-    console.log('SmtMenu', SmtMenu.currentSites);
     let languageWrapper = document.querySelector(".language-wrapper");
 
     Object.keys(SmtMenu.currentSites).forEach(function (lang, index) {
       const { code, name, def } = SmtMenu.currentSites[lang];
-
-      // var child = document.createElement("a");
-      // child.className = code+" bds-pad-y-xxs bds-pad-r-xl bds-block bds-txt-white bds-hov-txt-grey-05";
-      // child.innerHTML = name;
-
       if(def){
         currentLang = name;
         currentCode = code;
         console.log('active language', lang, currentLang);
-        // child.className = 'selected ' +child.className;
       }
-
-      // console.log('child', child);
-      // languageWrapper.appendChild(child);
     });
 
     document.getElementsByClassName('current-locale')[0].innerHTML = currentLang;
