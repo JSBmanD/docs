@@ -1,9 +1,6 @@
 ---
 title: Configuring Events for Self-Attributing Networks
 ---
-!!! info "BETA ACCESS ONLY"
-	The ability to configure event mappings for Self Attributing Networks is currently in BETA.  
-
 ## Overview
 
 Branch accepts different naming conventions for the conversion events we measure. For example, maybe Uber sends a custom event called “RiderFirstBooking.” Most people who see this name would understand what it means. If they sent it as “PURCHASE” it wouldn’t be the same event, nor would it be clear.
@@ -42,6 +39,10 @@ Please refer to the following respective documents for our default event mapping
 
 ## Configuring Event Mappings
 
+!!! info "Default Event Mappings"
+    By clicking <notranslate>**Configure Defaults**</notranslate>, the default event mappings for each partner are shown and can be modified. Only those events you are currently tracking in your app will be shown.  
+    ![image](/_assets/img/pages/partner-management/san-events-config.png)
+
 If you do not want to use the default event mappings, you can configure how Branch maps the events it tracks with those of the Self-Attributing Network.
 
 To configure a SAN’s event mappings:
@@ -50,7 +51,7 @@ To configure a SAN’s event mappings:
 2. Find and select the SAN for which you want to configure the event mappings.
 3. Click the <notranslate>**Events Config**</notranslate> tab.
 4. Click the <notranslate>**Add Event Mappings**</notranslate> button.
-5.  Map your event by providing the following:
+5.  Map your event by selecting the following:
     1. <notranslate>**Your Event Name**</notranslate> - The app event you want mapped; only app events you are tracking with the Branch SDK are available to be mapped.
     2. <notranslate>**Your Customer Event Alias**</notranslate> - Your custom name for your app event; only available if you’ve already implemented `customer_event_alias` in the Branch or TUNE SDK.
     3. <notranslate>**Ad Partner Event Name**</notranslate> - The ad partner’s name for the app events they support; see default event mappings above.
@@ -58,15 +59,22 @@ To configure a SAN’s event mappings:
 
 ![image](/_assets/img/pages/partner-management/event-mappings.gif)
 
+### Legacy Facebook Event Configuration
+
+If you were previously using the Facebook event configuration, you will be prompted to <notranslate>**Migrate**</notranslate> your current settings rather than <notranslate>**Configure Defaults**</notranslate>. Any custom event configurations already set up will automatically be migrated to use the event mapping functionality instead.
+
+![image](/_assets/img/pages/partner-management/san-events-migrate.png)
+
 ## Things to Keep in Mind
 
-*   Branch defines an “event” as a combination of Your Event Name + Customer Event Alias.
-*   You cannot configure more than one of the same event; i.e. the same combination of event name and customer event alias.
+*   Branch defines an “event” as a combination of Your Event Name + Customer Event Alias (when applicable).
+*   You **cannot** configure more than one of the same event; i.e. the same combination of event name and customer event alias.
 *   You **cannot** map to a single Branch event to two different Ad Partner events.
     *   You **can** map two different Branch events to a single Ad Partner Event.
 *   You can only configure at the event level; sub-parameters (e.g. order_id or revenue) cannot be mapped to ad partner events.
-    *   If you use a [custom event,](https://docs.branch.io/apps/v2event/) you can still attach specific event_data metadata to that event.
-*   If you start to measure a new app event after you’ve enabled the SAN integration, you must manually configure the event.
+    *   If you use a [custom event](https://docs.branch.io/apps/v2event/), you can still attach specific event_data metadata to that event.
+*   If you start to measure a new app event after you’ve enabled the SAN integration, you will see an alert explaining how to add the new app event to your event mappings.
 *   Some SANs accept custom events.  For those that do, it’s indicated in the Ad Partner Event Name drop-down.
-*   If you have not configured any event mappings, Branch will use the default mappings outlined above for all events.
+*   If you do not <notranslate>**Configure Defaults**</notranslate>, Branch will use the default mappings outlined above for all of the events you are tracking in your app.
 *   If you have **at least one event mapped, only the mapped events visible in the UI will be sent.**
+*   You cannot configure more than 100 custom event mappings.`
