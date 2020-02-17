@@ -181,4 +181,4 @@ Events imported from Segment with anonymous ID attached will retain that value o
 
 ### Attribution for logged out users on web
 
-Branch uses a custom, in-house identifier for logged out users on web. If you enable the server to server integration from Segment to Branch, you will not be able to attribute logged out web events to a campaign run with Branch. For this reason, you may want to track web events directly with the Branch web SDK, while still sending app events server to server from Segment. Branch allows you to then toggle web event import off to prevent duplicate data.
+Branch uses a custom, in-house identifier for logged out users on web. If you enable the server to server integration from Segment to Branch, you will not be able to attribute logged out web events to a campaign run with Branch out-of-the-box. To close this gap, you can either: (1) track web events with the Branch web SDK, while only ingesting app events from Segment; OR (2) [add client-side javascript to attach Branch browser fingerprints to all web events tracked via Segment](#### Identifiers for web events)
