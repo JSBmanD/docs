@@ -150,7 +150,7 @@ If you have signed Facebook's ["Advanced Mobile Measurement" agreement (<notrans
 | [Webhooks](/exports/ua-webhooks/) | Device-level analytics x |
 | [Data Integrations](/integrations/data-integrations/) | Not supported |
 
-[x] You must have signed you have signed Facebook's ["Advanced Mobile Measurement" agreement (<notranslate>"Data Use Terms for Advanced Mobile App Measurement"</notranslate>)](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos) to view this data.
+[x] You must have signed Facebook's ["Advanced Mobile Measurement" agreement (<notranslate>"Data Use Terms for Advanced Mobile App Measurement"</notranslate>)](https://www.facebook.com/ads/manage/advanced_mobile_measurement/tos) to view this data.
 
 Here is the page where you can see which ad accounts have signed the AMM agreement:
 
