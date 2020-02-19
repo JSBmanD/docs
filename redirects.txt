@@ -257,7 +257,6 @@ deep-linked-ads/convivial-cords-mobile-tracking/index.html https://docs.branch.i
 deep-linked-ads/cooper-media-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/cpi-droid-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/creative-clicks-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
-deep-linked-ads/criteo-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/crobo-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/cronbay-technologies-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
 deep-linked-ads/cross-audience-mobile-tracking/index.html https://docs.branch.io/deep-linked-ads/branch-universal-ads-mobile-tracking/
